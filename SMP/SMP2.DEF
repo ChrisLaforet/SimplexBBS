@@ -1,0 +1,8 @@
+NAME 		SMP2 WINDOWCOMPAT
+PROTMODE
+STACKSIZE 	10240
+HEAPSIZE	8192
+DESCRIPTION 	'SMP/2 -- Mail Packer/Router for Simplex BBS. Copyright (c) 1990, Chris Laforet Software'
+EXETYPE		OS2
+
+

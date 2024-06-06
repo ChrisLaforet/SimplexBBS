@@ -1,0 +1,12 @@
+name skill.exe
+format dos
+option dosseg
+option stack=10240
+option caseexact
+option map
+library clibc.lib
+file skill
+file s_date
+file s_filfnd
+file s_kill
+

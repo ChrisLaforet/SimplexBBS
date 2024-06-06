@@ -1,0 +1,39 @@
+# Makefile for Watcom C 9.0
+#
+# For SMP - Simplex mail packer
+
+smp2.exe : os2\smp.obj os2\s_action.obj os2\s_arc.obj os2\s_file.obj \
+	os2\s_getmsg.obj os2\s_outb.obj os2\s_pack.obj os2\s_pass.obj
+	wlink @makeos2.lst
+
+os2\smp.obj : smp.c smp.h
+	wcl -ml -ox -2 -s -zp1 -fo=os2\ -w4 -dPROTECTED -c smp.c > smp.err
+	type smp.err
+
+os2\s_action.obj : s_action.c smp.h
+	wcl -ml -ox -2 -s -zp1 -fo=os2\ -w4 -dPROTECTED -c s_action.c > s_action.err
+	type s_action.err
+
+os2\s_arc.obj : s_arc.c smp.h
+	wcl -ml -ox -2 -s -zp1 -fo=os2\ -w4 -dPROTECTED -c s_arc.c > s_arc.err
+	type s_arc.err
+
+os2\s_file.obj : s_file.c smp.h
+	wcl -ml -ox -2 -s -zp1 -fo=os2\ -w4 -dPROTECTED -c s_file.c > s_file.err
+	type s_file.err
+
+os2\s_getmsg.obj : s_getmsg.c smp.h
+	wcl -ml -ox -2 -s -zp1 -fo=os2\ -w4 -dPROTECTED -c s_getmsg.c > s_getmsg.err
+	type s_getmsg.err
+
+os2\s_outb.obj : s_outb.c smp.h
+	wcl -ml -ox -2 -s -zp1 -fo=os2\ -w4 -dPROTECTED -c s_outb.c > s_outb.err
+	type s_outb.err
+
+os2\s_pack.obj : s_pack.c smp.h
+	wcl -ml -ox -2 -s -zp1 -fo=os2\ -w4 -dPROTECTED -c s_pack.c > s_pack.err
+	type s_pack.err
+
+os2\s_pass.obj : s_pass.c smp.h
+	wcl -ml -ox -2 -s -zp1 -fo=os2\ -w4 -dPROTECTED -c s_pass.c > s_pass.err
+	type s_pass.err

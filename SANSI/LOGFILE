@@ -1,0 +1,8 @@
+This code is for the SIMPLEX BBS ANSI-ASCII file compiler.  This uses a high
+level language to describe the attributes which are replaced with the
+codes when compiled.  It is a port of an earlier compiler called QANSI which
+was for QuickBBS.  The project os Copyright (c) Chris Laforet and Chris
+Laforet Software.
+
+
+

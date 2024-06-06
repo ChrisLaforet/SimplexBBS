@@ -1,0 +1,6 @@
+This is version 1.07. Among other things the following were done:
+
+ - Added support for alias change option.
+ - Corrected bug wherein SMC blows up when a CTRL-Z is appended to a source
+   file.
+

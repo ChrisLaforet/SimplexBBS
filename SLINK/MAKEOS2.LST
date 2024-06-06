@@ -1,0 +1,12 @@
+name slink2.exe
+format os2 pmcompatible
+option protmode
+option packcode=64k
+option caseexact
+option map
+option stack=8192
+option heapsize=8192
+library clibc.lib
+library os2.lib
+file os2\slink
+file os2\s_build

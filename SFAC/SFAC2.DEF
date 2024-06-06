@@ -1,0 +1,5 @@
+NAME		SFAC2
+DESCRIPTION	'Simplex File Area Listing Converter'
+EXETYPE		OS2
+PROTMODE
+STACKSIZE	8192

@@ -1,0 +1,6 @@
+listgen2.exe : listgen2.obj
+	link listgen2,,,/NOD:CLIBCE CLIBCEP OS2,listgen2.def
+
+listgen2.obj : listgen.c listgen.h
+	cl -AC -Ocglnt -Zp1 -G2s -DPROTECTED -Zp1 -Folistgen2 -c listgen.c > listgen.err
+

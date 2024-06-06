@@ -1,0 +1,7 @@
+NAME		SMONITOR
+PROTMODE
+STACKSIZE 	8192
+HEAPSIZE	8192
+DESCRIPTION 	'Smonitor -- Copyright (c) 1991 Chris Laforet Software'
+EXETYPE		OS2
+

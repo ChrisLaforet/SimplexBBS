@@ -1,0 +1,101 @@
+TARGET : sconfig2.exe sconfig.hlp
+	echo Finished!
+
+sconfig.hlp : sconfig.src
+	helpgen sconfig.src
+
+sconfig2.exe : os2\sconfig.obj os2\s_apath.obj os2\s_cfg.obj os2\s_date.obj \
+	os2\s_event.obj os2\s_fedit.obj os2\s_file.obj os2\s_flist.obj \
+	os2\s_gen.obj os2\s_gpath.obj os2\s_main.obj os2\s_medit.obj \
+	os2\s_menu.obj os2\s_misc.obj os2\s_modem.obj os2\s_msel.obj \
+	os2\s_msg.obj os2\s_npath.obj os2\s_times.obj os2\s_upath.obj \
+	os2\s_users.obj os2\s_util.obj
+	wlink @makeos2.lst
+
+os2\sconfig.obj : sconfig.c sconfig.h
+	wcl -ml -oxt -2 -s -zp1 -fo=os2\ -w4 -zt20 -dPROTECTED -c sconfig.c > sconfig.err
+	type sconfig.err
+
+os2\s_apath.obj : s_apath.c sconfig.h
+	wcl -ml -oxt -2 -s -zp1 -fo=os2\ -w4 -zt20 -dPROTECTED -c s_apath.c > s_apath.err
+	type s_apath.err
+
+os2\s_cfg.obj : s_cfg.c sconfig.h
+	wcl -ml -oxt -2 -s -zp1 -fo=os2\ -w4 -zt20 -dPROTECTED -c s_cfg.c > s_cfg.err
+	type s_cfg.err
+
+os2\s_date.obj : s_date.c sconfig.h
+	wcl -ml -oxt -2 -s -zp1 -fo=os2\ -w4 -zt20 -dPROTECTED -c s_date.c > s_date.err
+	type s_date.err
+
+os2\s_event.obj : s_event.c sconfig.h
+	wcl -ml -oxt -2 -s -zp1 -fo=os2\ -w4 -zt20 -dPROTECTED -c s_event.c > s_event.err
+	type s_event.err
+
+os2\s_fedit.obj : s_fedit.c sconfig.h
+	wcl -ml -oxt -2 -s -zp1 -fo=os2\ -w4 -zt20 -dPROTECTED -c s_fedit.c > s_fedit.err
+	type s_fedit.err
+
+os2\s_file.obj : s_file.c sconfig.h
+	wcl -ml -oxt -2 -s -zp1 -fo=os2\ -w4 -zt20 -dPROTECTED -c s_file.c > s_file.err
+	type s_file.err
+
+os2\s_flist.obj : s_flist.c sconfig.h
+	wcl -ml -oxt -2 -s -zp1 -fo=os2\ -w4 -zt20 -dPROTECTED -c s_flist.c > s_flist.err
+	type s_flist.err
+
+os2\s_gen.obj : s_gen.c sconfig.h
+	wcl -ml -oxt -2 -s -zp1 -fo=os2\ -w4 -zt20 -dPROTECTED -c s_gen.c > s_gen.err
+	type s_gen.err
+
+os2\s_gpath.obj : s_gpath.c sconfig.h
+	wcl -ml -oxt -2 -s -zp1 -fo=os2\ -w4 -zt20 -dPROTECTED -c s_gpath.c > s_gpath.err
+	type s_gpath.err
+
+os2\s_main.obj : s_main.c sconfig.h
+	wcl -ml -oxt -2 -s -zp1 -fo=os2\ -w4 -zt20 -dPROTECTED -c s_main.c > s_main.err
+	type s_main.err
+
+os2\s_medit.obj : s_medit.c sconfig.h
+	wcl -ml -oxt -2 -s -zp1 -fo=os2\ -w4 -zt20 -dPROTECTED -c s_medit.c > s_medit.err
+	type s_medit.err
+
+os2\s_menu.obj : s_menu.c sconfig.h
+	wcl -ml -oxt -2 -s -zp1 -fo=os2\ -w4 -zt20 -dPROTECTED -c s_menu.c > s_menu.err
+	type s_menu.err
+
+os2\s_misc.obj : s_misc.c sconfig.h
+	wcl -ml -oxt -2 -s -zp1 -fo=os2\ -w4 -zt20 -dPROTECTED -c s_misc.c > s_misc.err
+	type s_misc.err
+
+os2\s_modem.obj : s_modem.c sconfig.h
+	wcl -ml -oxt -2 -s -zp1 -fo=os2\ -w4 -zt20 -dPROTECTED -c s_modem.c > s_modem.err
+	type s_modem.err
+
+os2\s_msel.obj : s_msel.c sconfig.h
+	wcl -ml -oxt -2 -s -zp1 -fo=os2\ -w4 -zt20 -dPROTECTED -c s_msel.c > s_msel.err
+	type s_msel.err
+
+os2\s_msg.obj : s_msg.c sconfig.h
+	wcl -ml -oxt -2 -s -zp1 -fo=os2\ -w4 -zt20 -dPROTECTED -c s_msg.c > s_msg.err
+	type s_msg.err
+
+os2\s_npath.obj : s_npath.c sconfig.h
+	wcl -ml -oxt -2 -s -zp1 -fo=os2\ -w4 -zt20 -dPROTECTED -c s_npath.c > s_npath.err
+	type s_npath.err
+
+os2\s_times.obj : s_times.c sconfig.h
+	wcl -ml -oxt -2 -s -zp1 -fo=os2\ -w4 -zt20 -dPROTECTED -c s_times.c > s_times.err
+	type s_times.err
+
+os2\s_upath.obj : s_upath.c sconfig.h
+	wcl -ml -oxt -2 -s -zp1 -fo=os2\ -w4 -zt20 -dPROTECTED -c s_upath.c > s_upath.err
+	type s_upath.err
+
+os2\s_users.obj : s_users.c sconfig.h
+	wcl -ml -oxt -2 -s -zp1 -fo=os2\ -w4 -zt20 -dPROTECTED -c s_users.c > s_users.err
+	type s_users.err
+
+os2\s_util.obj : s_util.c sconfig.h
+	wcl -ml -oxt -2 -s -zp1 -fo=os2\ -w4 -zt20 -dPROTECTED -c s_util.c > s_util.err
+	type s_util.err

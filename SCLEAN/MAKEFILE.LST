@@ -1,0 +1,12 @@
+name sclean.exe
+format dos
+option dosseg
+option stack=10240
+option caseexact
+option map
+library clibc.lib
+file sclean
+file s_all
+file s_date
+file s_num
+file s_recv

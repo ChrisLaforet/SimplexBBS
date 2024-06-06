@@ -1,0 +1,10 @@
+multchat.exe : multchat.obj m_wait.obj
+	link multchat m_wait,multchat,/MAP,/NOD:llibce llibcep os2,multchat.def
+
+multchat.obj : multchat.c multchat.h
+	cl -AL -Ocglnt -W3 -Lp -G2s -Zp1 -c multchat.c > multchat.err
+	type multchat.err
+
+m_wait.obj : m_wait.c multchat.h
+	cl -AL -Ocglnt -W3 -Lp -G2s -Zp1 -c m_wait.c > m_wait.err
+	type m_wait.err

@@ -1,0 +1,5 @@
+This code is for the Simplex project.  It handles a small utility to pack
+AD message files (removing deleted messages and deleting messages whose
+delete date has passed).
+
+

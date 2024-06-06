@@ -1,0 +1,15 @@
+{moreoff lightred}Help for the {lightgreen}Read Ads Menu {lightmagenta}------------------
+
+{yellow}<F> Read Forward    {cyan}- Read ads in forward order starting with a
+                      specified message number.
+{yellow}<R> Read Reverse    {cyan}- Read ads in reverse order starting with a
+                      specified message number.
+{yellow}<I> Read Individual {cyan}- Read an individual message.  If you choose this
+                      option, you will be prompted for which message
+                      number to read.
+{yellow}<S> Read Search     {cyan}- Read ads in the fields:  To name, From name,
+                      or Subject.  You will be prompted which field you want to
+                      search on.
+{yellow}<X> Exit            {cyan}- Exit to the previous menu.
+
+{lightcyan}Press {lightred blink}ENTER {lightcyan}to continue....{enter}

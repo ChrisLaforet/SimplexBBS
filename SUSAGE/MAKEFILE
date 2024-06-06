@@ -1,0 +1,8 @@
+susage.exe : susage.obj
+	wlink @makefile.lst
+	bind susage.exe e:\lib\os2.lib 
+
+susage.obj : susage.c susage.h
+	wcl -ms -ox -0 -s -zp1 -w4 -c susage.c > susage.err
+	type susage.err
+

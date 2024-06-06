@@ -1,0 +1,681 @@
+
+
+
+
+
+
+           ÚÄÄÄÄÄÄÄ¿ ÚÄ¿ ÚÄÄÄÄÄÄÄÄÄ¿ ÚÄÄÄÄÄÄ¿ ÚÄ¿      ÚÄÄÄÄÄÄ¿ ÚÄ¿   ÚÄ¿           ÚÄÄÄÄÄÄÄ¿ ÚÄ¿ ÚÄÄÄÄÄÄÄÄÄ¿ ÚÄÄÄÄÄÄ¿ ÚÄ¿      ÚÄÄÄÄÄÄ¿ ÚÄ¿   ÚÄ¿
+           ³ ÚÄÄÄÄÄÙ ³ ³ ³ ÚÄ¿ ÚÄ¿ ³ ³ ÚÄÄ¿ ³ ³ ³      ³ ÚÄÄÄÄÙ À¿À¿ ÚÙÚÙ           ³ ÚÄÄÄÄÄÙ ³ ³ ³ ÚÄ¿ ÚÄ¿ ³ ³ ÚÄÄ¿ ³ ³ ³      ³ ÚÄÄÄÄÙ À¿À¿ ÚÙÚÙ
+           ³ ÀÄÄÄÄÄ¿ ³ ³ ³ ³ ³ ³ ³ ³ ³ ÀÄÄÙ ³ ³ ³      ³ ÀÄÄ¿    À¿ÀÄÙÚÙ           ³ ÀÄÄÄÄÄ¿ ³ ³ ³ ³ ³ ³ ³ ³ ³ ÀÄÄÙ ³ ³ ³      ³ ÀÄÄ¿    À¿ÀÄÙÚÙ
+           ÀÄÄÄÄÄ¿ ³ ³ ³ ³ ³ ÀÄÙ ³ ³ ³ ÚÄÄÄÄÙ ³ ³      ³ ÚÄÄÙ    ÚÙÚÄ¿À¿           ÀÄÄÄÄÄ¿ ³ ³ ³ ³ ³ ÀÄÙ ³ ³ ³ ÚÄÄÄÄÙ ³ ³      ³ ÚÄÄÙ    ÚÙÚÄ¿À¿
+           ÚÄÄÄÄÄÙ ³ ³ ³ ³ ³     ³ ³ ³ ³      ³ ÀÄÄÄÄ¿ ³ ÀÄÄÄÄ¿ ÚÙÚÙ À¿À¿           ÚÄÄÄÄÄÙ ³ ³ ³ ³ ³     ³ ³ ³ ³      ³ ÀÄÄÄÄ¿ ³ ÀÄÄÄÄ¿ ÚÙÚÙ À¿À¿
+           ÀÄÄÄÄÄÄÄÙ ÀÄÙ ÀÄÙ     ÀÄÙ ÀÄÙ      ÀÄÄÄÄÄÄÙ ÀÄÄÄÄÄÄÙ ÀÄÙ   ÀÄÙ           ÀÄÄÄÄÄÄÄÙ ÀÄÙ ÀÄÙ     ÀÄÙ ÀÄÙ      ÀÄÄÄÄÄÄÙ ÀÄÄÄÄÄÄÙ ÀÄÙ   ÀÄÙ
+
+           ÚÄÄÄÄÄÄ¿ ÚÄ¿  ÚÄ¿ ÚÄÄÄÄÄÄ¿ ÚÄÄ¿ ÚÄ¿ ÚÄÄÄÄÄÄ¿  ÚÄÄÄÄÄÄ¿ ÚÄÄÄÄÄÄ¿           ÚÄÄÄÄÄÄ¿ ÚÄ¿  ÚÄ¿ ÚÄÄÄÄÄÄ¿ ÚÄÄ¿ ÚÄ¿ ÚÄÄÄÄÄÄ¿  ÚÄÄÄÄÄÄ¿ ÚÄÄÄÄÄÄ¿
+           ³ ÚÄÄ¿ ³ ³ ³  ³ ³ ³ ÚÄÄ¿ ³ ³  À¿³ ³ ³ ÚÄÄ¿ ³  ³ ÚÄÄÄÄÙ ³ ÚÄÄÄÄÙ           ³ ÚÄÄ¿ ³ ³ ³  ³ ³ ³ ÚÄÄ¿ ³ ³  À¿³ ³ ³ ÚÄÄ¿ ³  ³ ÚÄÄÄÄÙ ³ ÚÄÄÄÄÙ
+           ³ ³  ÀÄÙ ³ ÀÄÄÙ ³ ³ ÀÄÄÙ ³ ³ Ú¿ÀÙ ³ ³ ³  ÀÄÙ  ³ ÀÄÄ¿   ³ ÀÄÄÄÄ¿           ³ ³  ÀÄÙ ³ ÀÄÄÙ ³ ³ ÀÄÄÙ ³ ³ Ú¿ÀÙ ³ ³ ³  ÀÄÙ  ³ ÀÄÄ¿   ³ ÀÄÄÄÄ¿
+           ³ ³  ÚÄ¿ ³ ÚÄÄ¿ ³ ³ ÚÄÄ¿ ³ ³ ³À¿  ³ ³ ³ ÚÄÄÄ¿ ³ ÚÄÄÙ   ÀÄÄÄÄ¿ ³           ³ ³  ÚÄ¿ ³ ÚÄÄ¿ ³ ³ ÚÄÄ¿ ³ ³ ³À¿  ³ ³ ³ ÚÄÄÄ¿ ³ ÚÄÄÙ   ÀÄÄÄÄ¿ ³
+           ³ ÀÄÄÙ ³ ³ ³  ³ ³ ³ ³  ³ ³ ³ ³ À¿ ³ ³ ÀÄÙ  ÚÙ ³ ÀÄÄÄÄ¿ ÚÄÄÄÄÙ ³           ³ ÀÄÄÙ ³ ³ ³  ³ ³ ³ ³  ³ ³ ³ ³ À¿ ³ ³ ÀÄÙ  ÚÙ ³ ÀÄÄÄÄ¿ ÚÄÄÄÄÙ ³
+           ÀÄÄÄÄÄÄÙ ÀÄÙ  ÀÄÙ ÀÄÙ  ÀÄÙ ÀÄÙ  ÀÄÙ ÀÄÄÄÄÄÄÙ  ÀÄÄÄÄÄÄÙ ÀÄÄÄÄÄÄÙ           ÀÄÄÄÄÄÄÙ ÀÄÙ  ÀÄÙ ÀÄÙ  ÀÄÙ ÀÄÙ  ÀÄÙ ÀÄÄÄÄÄÄÙ  ÀÄÄÄÄÄÄÙ ÀÄÄÄÄÄÄÙ
+
+
+
+
+                              Simplex BBS - (c) 1989-92
+                      Chris Laforet Software/Christopher Laforet
+                                All Rights Reserved.
+
+
+
+
+
+
+
+
+
+                         Chris Laforet can be contacted at:
+
+               The Programmer's Oasis BBS - Graham, NC - 919/226-6984
+              The Programmer's Oasis 2 BBS - Graham, NC - 919/226-7136
+                 FidoNet Mail 1:3644/1 or 1:3644/2 as Chris Laforet
+                        CompuServe Email - User ID: 76120,110
+                            BIX Email - User ID: laforet
+
+
+
+
+
+                            Programming by Chris Laforet
+                       Unauthorized Selling/Renting Prohibited
+               Documentation Title Page/Help Files/Etc by Robbie Foust
+
+
+
+
+
+
+                   S i m p l e x   R e v i s i o n   H i s t o r y
+
+
+          This document provides a listing of all of the major changes
+          accomplished between versions of Simplex.  It is handy as a quick
+          reference to what is new or changed with a new release.
+
+
+          Version 1.00:  Released Jan 3, 1991.  This was the first non-beta
+                         version of Simplex.  Events are not completed.
+                         ANSI editor can have some additional features
+                         added.  External protocols are not yet
+                         implemented.
+
+          Version 1.01:  Released Feb 24, 1991.  The following things were
+                         modified or added:
+
+             - Linted and cleaned up code.
+             - Added logic to put commas in displays of numbers (as in
+               1,009,198).
+             - Squashed bug in Ymodem and Ymodem-G send which wasted file-
+               handles by reopening the file to send each time it send SOH!
+             - Fixed the problem when adding a new message area, causing
+               false message counts for that area instead of a count of 0.
+             - Added logic for handling logins of deleted users.
+             - Added logic for re-entering names if hitting enter on
+               password 3 times in a row.
+             - Cleaned up s_start.c to stop initializing and deintializing
+               fossil each time it went out to reinitialize the modem.
+             - Cleaned up OS/2 fossil threads to exit upon deinitialization
+               of fossil.
+             - Started work on the MultiChat version of OS/2.
+             - Fixed problem that allowed echomail-barred users to reply to
+               echomail messages!  Now if user doesn't have a level >=
+               write_level for the echo, they cannot reply.
+             - Added option that users with a level >= sysop_level for an
+               echomail area can now send echomail addressed to "Sysop".
+               Other users cannot enter mail to sysop in an echomail area.
+             - Added new options, uptime, downtime, change priv.
+             - Allow zone to go up to 99.
+             - Smailfix now has a new option -date to delete messages with
+               a date greater than today's date.
+             - SMC and Config were modified to support the new menu options
+               in Simplex.
+
+             The only known bug at this point is that Simplex Zmodem
+               download will occassionally hang when garbage characters are
+               coming in on the back channel and it requests a ZACK from
+               the receiver.
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       Version Changes          Simplex BBS                                       Version Changes
+                                        Page 2                                        Page 2
+
+
+
+
+
+
+          Version 1.02:  Released March 3, 1991.  The following things were
+                         added and modified:
+
+             - Corrected minor bug in s_user which didn't clear change flag
+               when searching or next find.
+             - Corrected bug in search nodelist.
+             - Corrected bug in show new files in a single area.
+             - Added support for user flags.
+             - Added file handling that closes open handles when carrier is
+               dropped.
+
+          Version 1.03:  Released March 10, 1991.  The following things
+                         were added and modified:
+
+             - Set up Path separators as macros to aid portability.
+             - Set up get_closefile in preparation for porting.
+             - Added SETFLAG and UNSETFLAG keywords to questionaire
+               language.
+             - Set up to handle all ^a kludges if area is echo or net and
+               user has
+               sysop priv in the message area.
+             - Fixed bug in SMC with compiling flags.
+             - Fixed SMAIL to handle ^a kludges.
+             - Fixed SMAIL to handle PATH and SEEN-BY lines correctly.
+
+          Version 1.04:  Released April 27, 1991.  The following things
+                         were added and modified:
+
+             - Added absolute time setting menu option.
+             - Changed efficiency percentages of protocols.
+             - Fixed move_messages to correctly turn on netmail/echomail
+               entered flags.
+             - Added $k option to external shell which allows a user's time
+               to be kept untouched while he/she is out of Simplex (i.e.
+               time is not recalculated upon reentry).
+             - Added logic to check for events after returning from
+               external shell.
+             - Expanded file-list buffer from 150 to 256 characters.
+             - Fixed bug in running help in ANSI editor from quote window
+               which blew memory!
+             - Added 8th-bit filter to chat mode on incoming to help if
+               chatting with someone who has 7 bits and even, mark or odd
+               parity on!
+             - Set up to show crash-mail boards in listings of Fido nodes.
+             - Show warnings that a board is not CM if it isn't when
+               entering a message.
+             - Fixed error FATAL to ERROR in s_run.c if unable to spawn
+               program.
+             - Added combined message boards - reading, scanning and
+               quick-scanning.
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       Version Changes          Simplex BBS                                       Version Changes
+                                        Page 3                                        Page 3
+
+
+
+
+
+
+             - Fixed problem where a user couldn't quote messages with
+               Ctrl-A kludge in s_full.c (ANSI editor).
+             - Installed menu template types in s_menu.c
+             - Fixed problem with logging in if there are no message areas.
+               This was due to calling message-handling functions which had
+               no checks for message file existence.
+             - Fixed bug in filename search routines to correctly handle
+               wildcards.
+             - Added S flag for DOS startup which prevents Simplex from
+               closing the
+                stdout (console writes) handle and reopening it to the NUL
+               device (to prevent fossils like X00 from messing up the
+               screen!).
+             - Added new menu item: Replace Current Menu.
+             - Added new menu item: Show Quote from file.
+             - Added downloadable combination mail.
+             - Shorted timeouts in Zmodem.
+             - Corrected bug in ansi editor.  User could insert a blank
+               line and arrow over a few spaces and start typing -- this
+               would cause the contents of the previous line to spill out
+               of the end of the current line as if they were being pushed
+               by the insertion of the new text!
+             - Sped up filename and keyword searches across file areas.
+               Fixed minor bugs in keyword search code.
+             - Cleaned up OS/2 FOSSIL startup.
+             - Cleaned up Zmodem and Ymodem-G along with protocol-sends
+               under OS/2.
+             - Set up netmail to handle routed and hold-for-pickup mail
+               options.
+             - Added -D flag which allows Simplex to start up with a data
+               file containing a user's information.
+             - Added quiet flags to SPACK and SCLEAN.
+             - SMP: Stopped echomail with INTL addresses from being sent to
+               their origins by comparing INTL-net and INTL-node with
+               header destination net/node.  If no match, the message is
+               sent to header net/node else it is sent to INTL location.
+             - SMP: Corrected problem in preliminary routing where "ALL"
+               destinations were not matched and acted upon.
+             - SMP: Changed routing verbs to match new Simplex mail
+               philosophy.
+             - SMAIL: Corrected message headers for echomail to include
+               current node's address when forwarding mail.
+             - SMAIL: Improved resynchronizing algorithm while unpacking
+               packets.
+             - SMAIL: Corrected problem that prevented grunged packets from
+               being deleted.
+             - CONFIG: Set up Path seperators as macros to aid portability.
+             - CONFIG: Fixed minor problem with deleting user.
+             - CONFIG: Corrected problem with net-credit field.
+
+             Known bugs at this point:
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       Version Changes          Simplex BBS                                       Version Changes
+                                        Page 4                                        Page 4
+
+
+
+
+
+
+             - Occasionally, some Zmodem and Ymodem-G users encounter
+               problems.
+             - Last Read message pointers can sometimes be reset for some
+               users.
+             - Smail still cannot handle every perversion of FSC-0001's
+               date/time stamp standard.  Please report the source programs
+               (e.g. Simplex) which have problems in this area!
+
+          Version 1.04.02:  Released September 1, 1991.  The following
+                         things were added and modified:
+
+             - Corrected bug in combined boards where + and - wouldn't
+               toggle the change flag.
+             - Fixed problem which limited zone address to < 10.
+             - Corrected zone extension calculations for outbound areas in
+               different
+                zones.
+             - Strip Ctrl-Z's when showing ans/asc files or files.bbs.
+             - Show character pressed at the prompt of menus.
+             - First version using Zortech's swap library (simplex/s).
+             - Corrected reply options in s_indiv and s_thread to correctly
+               calculate
+                net addresses for replies.
+             - Corrected bug in downloadable mail which did not trap
+               RESTRICTED messages.
+             - Corrected DORINFO1.DEF file to include 0 or 1 if fossil is
+               present and
+                corrected com port value in DOS to be com1 not com0!
+             - Simplex now shows the hotkey pressed at a menu IF it is
+               pressed after the menu has painted.
+             - Added new menu option - show ansi/ascii screens with hotkeys
+               only if expert mode is off.
+             - Added keyboard abort while uploading/downloading.
+             - Added collection of Attn string in Zmodem with playback of
+               the same on sending ZRPOS headers.
+             - Added ARJ option to Show Contents of Archives.
+             - Changed Show Contents of Archives to check the file and
+               deduce which archive type to show.
+             - Added a screen-saver mode while waiting for a call.
+             - Added support for locked modem baudrate.
+             - Added support for an automatic new user questionaire.  This
+               is implemented with a new flag in the user_flags
+               (USER_ANSWERED).
+             - Added a 5-second pause at the end of the quote-of-the-day.
+             - Corrected protocols to not hang up until after file
+               transfers are complete.
+             - Enforce download hours to anyone with priv level below 250.
+             - Corrected bug that clobbered sysop's lastread message
+               pointers.
+             - Log CPS and efficiency of transfers to Sysop's log.
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       Version Changes          Simplex BBS                                       Version Changes
+                                        Page 5                                        Page 5
+
+
+
+
+
+
+             - Show upload and download transfer statistics after ul and
+               dl.
+             - Added Clear Marks option to Scan menu.
+             - Sped up searches through the nodelist.
+             - Corrected bug that did not reopen lastread pointers after
+               running an external program.
+             - SCLEAN: Hopefully fixed Last Message pointers.
+             - CONFIG: Added support for locked baudrate.
+             - CONFIG: Added DOS support for 38K baudrates.
+             - CONFIG: Added -M (monochrome color set) flag.
+             - SPACK: Added option to kill messages larger than 100K.
+             - SMAIL: Prevented SMAIL from deleting non-packet files
+               extracted from inbound mail archives.
+
+             Known bugs at this point:
+
+             - Smail *STILL* cannot handle every perversion of FSC-0001's
+               date/time stamp standard!
+             - Events are still not enabled.  Sorry guys.
+
+          Version 1.05:  Released November 4, 1991.  The following things
+                         were added and modified:
+             - Corrected bug in passing 0 baud rate (local) being changed
+               to 300 baud.
+             - Added new menu option, Sysop definable log entry.
+             - Added search for fido node to echo and netmail areas.
+             - Fixes on Zmodem get_zheader().
+             - Ensured that aborted uploads are deleted!
+             - Fixed bug with logging downloadable mail archiver.
+             - Found problem (not stopping timer) that would lock Simplex/S
+               while archiving mail.
+             - Changed stripping of Ctrl-Z in files.bbs to converting it to
+               a space.
+             - Added info.a?? and info2.a?? as files shown between bulletin
+               and main menu.
+             - Fixed replies to net/node addresses to show destination.
+             - Corrected bug in $### macro in type 240 menu data lines.
+             - Added SETPRIV, LEAVEMESSAGE and HANGUP questionnaire
+               commands.
+             - Corrected bug in SETFLAG, SHOW and UNSETFLAG questionnaire
+               commands.
+             - Corrected _TIMEOUT problems in X, Y and Zmodem protocols.
+             - Added support for GUEST user flag in userlist.
+             - Added option to change subject when replying to message.
+             - Added support for multiple addresses and netmail/echomail
+               areas.
+             - Added support for ARJing downloadable mail.
+             - Corrected bug in local login that made Simplex open the com
+               port!
+             - Added search for a node to Nodelist Searching Utility.
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       Version Changes          Simplex BBS                                       Version Changes
+                                        Page 6                                        Page 6
+
+
+
+
+
+
+             - Added critical error handlers to ignore critical errors and
+               avoid hangs.
+             - Added local file copying support to local fileattach areas.
+             - Xmodem and Ymodem protocols now add ^Z padding on last block
+               of file.
+             - Added logic to track messages read and sent in user's
+               record.
+             - Added a trashcan file for undesireable logins
+               (NONGRATA.BBS).
+             - Added message uploading.
+             - Corrected Ymodem and Ymodem-G to correctly cut file down to
+               size after an upload.
+             - Added ability to ask user for complete mailing address.
+             - Linted code and cleaned up some "iffy" code.
+             - Added the ability to send urgent APB messages to users in
+               local areas.
+             - Added unlimited-time yell option.
+             - CONFIG: Added support for new config structure.
+             - CONFIG: Added support for new user structure.
+             - CONFIG: Added support for new message area structure.
+             - CONFIG: Added support for multiple addresses and
+               netmail/echomail areas.
+             - CONFIG: Corrected zone addressing to accept numbers up to
+               255.
+             - CONFIG: Added support for complete addressing in userlist.
+             - SMAIL: Fixed bug in path lines.
+             - SMAIL: Set Local flag in outbound matrix mail for other mail
+               handlers (like FD).
+             - SMAIL: Invalid inbound messge dates/times replaced with
+               current date/time.
+             - SMAIL: Added support for new config structure.
+             - SMAIL: Added support for new message area structure.
+             - SMAIL: Added support for multiple addresses in multiple
+               netmail areas and for specific echomail area source
+               addresses being different from the main address.
+             - SMAIL: Added support for unARJing mail packets.
+             - SMAIL: Added -r option to permit echomail to be
+               exported/forwarded as ROUTED mail rather than DIRECT (CM).
+             - SMP: Corrected message header when international messages
+               are bound for a zonegate.
+             - SMP: Added support for changed config structure.
+             - SMP: Added support for ARJing mail.
+             - SCLEAN: Added new feature to delete messages in an area
+               leaving a specified amount.
+
+          Version 1.05.01:  Released November 25, 1991.  The following
+                         things were added and modified:
+             - Corrected bug when in chat while someone is in full-screen
+               editor.  The time-left display would continuously reshow.
+             - Added ability to recognize - and ' as legal name components.
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       Version Changes          Simplex BBS                                       Version Changes
+                                        Page 7                                        Page 7
+
+
+
+
+
+
+             - Corrected bug that dropped a user for inactivity after
+               exiting chat mode.
+             - Added user's name to chat log.
+             - Added ability to open Nodelist files in DENY_NONE mode.
+             - Removed tagline from netmail messages.
+             - CONFIG: Corrected minor bug in record numbers of users.
+             - SMAIL: Allowed a limit of exported .MSG files.
+             - SMAIL: Set up to include INTL kludge in netmail regardless.
+             - SMAIL: Correctly set up the Zone information in message
+               headers.  Fixed bug.
+             - SMP: Corrected way of handling internetwork messages.
+             - SMP: Corrected for errors in node addresses in the SMP.CTL
+               file.
+             - SCLEAN: Corrected error in delete messages leaving x msgs
+               that was numbering them backwards.
+
+             Known bugs at this point:
+
+             - In chat mode, the user's time appears to be dropping,
+               however it will be restored as soon as chat mode is exited.
+
+          Version 1.05.02:  Released March 28, 1992.  The following things
+                         were added and modified:
+             - Ported DOS version to Watcom C 8.5
+             - Correctly handle regions as net addresses in nodelist.
+             - Corrected minor bug in placing flags after editing in sysop
+               user editor.
+             - Added .QWK (offline reader) upload/download support to
+               combined boards.
+             - Set default zone/net in searches to that assigned to current
+               netmail area.
+             - Added baudrate to netmail node information during search.
+             - Added support to new configuration structure.
+             - Added support for 2 connect strings per baud rate.
+             - Added ability to skip to next area while reading combined
+               boards.
+             - Corrected bug with More (y/n) in quickscan not stopping if N
+               was pressed.
+             - Added countup while searching for messages.
+             - Added new -A (Answer immediately) option for voice-mail
+               applications.
+             - Found full-screen message editor memory allocation error!
+             - Rewrote last-read message pointer handlers.
+             - Corrected bug in searching across file areas which missed
+               the last area.
+             - Changed file download to show files/sizes/d-l times in batch
+               downloads as users enter names to d/l.
+             - Changed upload to look a little nicer.
+             - Added the ability to call a "welcome" program that runs
+               after the mail
+                check and before the bulletin.
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       Version Changes          Simplex BBS                                       Version Changes
+                                        Page 8                                        Page 8
+
+
+
+
+
+
+             - Added an interface for a virus checker.  It is called after
+               uploads and before descriptions are entered, and is passed
+               the path to the upload#.bbs file and the node number.
+             - DOS version now calls XSPAWN to permit swapping, a function
+               controlled by the new -O flags.  Swapping can go to disk or
+               EMS.
+             - CONFIG: Corrected minor bug in record numbers of users.
+             - CONFIG: Added monochrome option to OS/2 version.
+             - CONFIG Changed cfg structure to handle virus checker and
+               welcome program options.
+             - CONFIG: Changed msgboard and fileboard structures to include
+               flags in addition to privs.
+             - SMP: Added support for Simplex 1.05.02 config structure.
+             - SMP: Made SMP create a zone specific outbound directory if
+               it is not there.
+             - SMAIL: Changed config structure for version 1.05.02 of
+               Simplex.
+             - SMAIL: Changed msg structure for version 1.05.02 of Simplex.
+             - SMAIL: Added support for tossing messages addressed to a
+               specific name (e.g. Areafix) into a special directory.
+             - SMAIL: Closed stdaux and stdprn to get some more file
+               handles....
+             - SMAIL: Added support for echomail security.
+             - SMAIL: Corrected support for private messages in special
+               private/public echos.
+             - SCLEAN: Changed configuration structure.
+             - SCLEAN: Fixed bug in kill message area leaving x messages
+               intact.
+             - SLINK: Changed message area structure for Simplex v. 1.05.02
+
+          Version 1.06.00:  Released October 25, 1992.  The following
+                         things were added and modified:
+             - Set up Simplex to not run doors with less than 2 minutes
+               left.
+             - Corrected way of detecting OS/2 version (major/10 instead of
+               major-9).
+             - Fixed $t bug in menu line (minutes section of time).
+             - Converting file area handling over to a database format.
+             - Correcting search for mail when addressee line has "on
+               x:x/x" or "at x:x/x"
+             - Added support for uploader name and date.
+             - Added support for last download date and # of downloads.
+             - Show downloads as first part of description line.
+             - Linted code and cleaned up questionable areas.
+             - Fixed DORINFO?.DEF file to say COM0 in DOS for local mode
+               and -1 for file handle in local mode OS/2.
+             - Fixed DOS downtime bug where rightmost character would not
+               show on status line while lowering a user's time.
+             - Corrected bug in which if a user dropped carrier while
+               downloading AND the BBS is configured to reset/no exit, the
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       Version Changes          Simplex BBS                                       Version Changes
+                                        Page 9                                        Page 9
+
+
+
+
+
+
+               next downloader would append choices to the previous user's
+               list.
+             - Fixed kill files to take a list and delete all of them.
+               Also asks for confirmation before the final deletion
+               operation.
+             - After reading Ray Gwinn's docs, changed initialization of
+               com port to attempt to use the 0x1c/0x1d pair rather than
+               the 0x4/0x5 pair of int 14h calls.  He indicated that after
+               July 1991, he was not going to support the 0x4/0x5
+               interface.
+             - I *think* I found the problem that was blowing the DOS
+               version of Simplex!  It was initializing the timer-tick
+               parameters using fossil call 0x7 when starting the timer-
+               interrupt routine.  Problem with this is that there might
+               not have been a fossil, or it was not initialized!  i.e.
+               timer was started BEFORE the fossil was initialized.  Now I
+               just hard-code the standard PC constants (18.2 ticks/sec).
+             - Added logic to boot user off when out of disk space to write
+               to log file. Simplex provides a message and then hangs up
+               and exits with errorlevel 1.
+             - Added the ability to prompt for complete (252 character)
+               descriptions for uploaded files.
+             - Zmodem, Ymodem and Ymodem-G uploads now correctly timestamp
+               the uploaded files with the date contained in the header
+               information (as long as it IS sent in the header, otherwise
+               the date is left alone).
+             - Fixed problem with Restricted Urgent User Messages not being
+               readable by most users!
+             - Downloads now permit users to auto hangup after d/l is
+               complete.
+             - Downloads now permit tagging and management of tagged files.
+             - Added menu option for reverse filelisting option.
+             - Added menu option for Sysop Alert Tone option.
+             - Added logoff notification tune (Alt-L).
+             - Added event handling to Simplex (finally!).
+             - Added the ability to cross-area download.
+             - Corrected bug in routine that allows users to change phone
+               numbers online.
+             - Corrected bug in qwk mail that was causing some indicies to
+               remain undeleted.
+             - Speeded up OS/2 version with the assistance of Watcom's
+               profiler.
+             - Corrected bug in QWK importing where a destination name of
+               "sysop" was not xlated to the sysop's name.
+             - Provided cross-area download searching option for Xmodem and
+               Xmodem-1K.
+             - Fixed file requests to handle passworded files.
+             - Fixed file requests to generate Crash message to Sysop of
+               recipient BBS.
+             - Corrected bug that prevented TOOSLOW.ASC from being shown to
+               callers below minimum baud rate.
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       Version Changes          Simplex BBS                                       Version Changes
+                                       Page 10                                       Page 10
+
+
+
+
+
+
+             - Added option to log which message areas were read by each
+               user.
+             - Added duplicate phone number checking option to menu types.
+             - Fixed bug in menus which would not spawn type 1 non-keyed
+               auto menus.
+             - Corrected problem in OS/2 version wherein normal comm output
+               was not going through ring-buffer but was waiting for the
+               comm port to clear!
+             - SMAIL: Correcting checksum for searching mail when addressee
+               line has "on x:x/x" or "at x:x/x".
+             - SMAIL: Corrected for error in XFIDO CNET wherein the date
+               information is space padded not "0" padded as specified in
+               the FSC-0001 standard!
+             - SMAIL: Moved over to Watcom C 9.0
+             - SMAIL: Packets less than a packet header + packed message
+               header are deleted.
+             - SPACK: Added option to kill messages from non-existant area
+               0.
+             - SPACK: Moved over to Watcom C 9.0
+             - SCLEAN: Moved over to Watcom C 9.0.
+             - SMAILFIX: Correcting checksum for searching mail when
+               addressee line has "on x:x/x" or "at x:x/x".
+             - SMAILFIX: Moved over to Watcom C 9.0
+             - CONFIG: No longer supported.  Replaced with SCONFIG.
+             - SCONFIG: First version of SCONFIG.
+             - SFAC: First version.  Handles compiling files.bbs to
+               filelist.bbs.
+             - SFAC: Added support for the -u"uploader string" parameter.
+             - SFAC: Added support for the -d (current date = upload date)
+               parameter.
+             - SFAC: Added support for the -k (kill files.bbs if
+               successful) parameter.
+             - SUPACK: Moved over to Watcom C 9.0.
+             - SAPACK: First version of SAPACK.
+             - SLINK: Moved over to Watcom C 9.0
+             - SMP: Made SMP add \n after names it places in ?lo files.
+             - SMP: Moved over to Watcom C 9.0
+             - SMC: Added support for reverse filelisting option.
+             - SMC: Added support for Sysop Alert Tone option.
+             - SMC: Moved over to Watcom C 9.0
+             - SRECENT: Moved over to Watcom C 9.0
+             - SUSAGE: Moved over to Watcom C 9.0
+             - SQUOTE: Moved over to Watcom C 9.0
+
+
+
+
+
+
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       Version Changes          Simplex BBS                                       Version Changes
+                                       Page 11                                       Page 11
+

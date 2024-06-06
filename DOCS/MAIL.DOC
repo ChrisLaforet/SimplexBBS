@@ -1,0 +1,994 @@
+
+
+
+
+
+
+           ÚÄÄÄÄÄÄÄ¿ ÚÄ¿ ÚÄÄÄÄÄÄÄÄÄ¿ ÚÄÄÄÄÄÄ¿ ÚÄ¿      ÚÄÄÄÄÄÄ¿ ÚÄ¿   ÚÄ¿           ÚÄÄÄÄÄÄÄ¿ ÚÄ¿ ÚÄÄÄÄÄÄÄÄÄ¿ ÚÄÄÄÄÄÄ¿ ÚÄ¿      ÚÄÄÄÄÄÄ¿ ÚÄ¿   ÚÄ¿
+           ³ ÚÄÄÄÄÄÙ ³ ³ ³ ÚÄ¿ ÚÄ¿ ³ ³ ÚÄÄ¿ ³ ³ ³      ³ ÚÄÄÄÄÙ À¿À¿ ÚÙÚÙ           ³ ÚÄÄÄÄÄÙ ³ ³ ³ ÚÄ¿ ÚÄ¿ ³ ³ ÚÄÄ¿ ³ ³ ³      ³ ÚÄÄÄÄÙ À¿À¿ ÚÙÚÙ
+           ³ ÀÄÄÄÄÄ¿ ³ ³ ³ ³ ³ ³ ³ ³ ³ ÀÄÄÙ ³ ³ ³      ³ ÀÄÄ¿    À¿ÀÄÙÚÙ           ³ ÀÄÄÄÄÄ¿ ³ ³ ³ ³ ³ ³ ³ ³ ³ ÀÄÄÙ ³ ³ ³      ³ ÀÄÄ¿    À¿ÀÄÙÚÙ
+           ÀÄÄÄÄÄ¿ ³ ³ ³ ³ ³ ÀÄÙ ³ ³ ³ ÚÄÄÄÄÙ ³ ³      ³ ÚÄÄÙ    ÚÙÚÄ¿À¿           ÀÄÄÄÄÄ¿ ³ ³ ³ ³ ³ ÀÄÙ ³ ³ ³ ÚÄÄÄÄÙ ³ ³      ³ ÚÄÄÙ    ÚÙÚÄ¿À¿
+           ÚÄÄÄÄÄÙ ³ ³ ³ ³ ³     ³ ³ ³ ³      ³ ÀÄÄÄÄ¿ ³ ÀÄÄÄÄ¿ ÚÙÚÙ À¿À¿           ÚÄÄÄÄÄÙ ³ ³ ³ ³ ³     ³ ³ ³ ³      ³ ÀÄÄÄÄ¿ ³ ÀÄÄÄÄ¿ ÚÙÚÙ À¿À¿
+           ÀÄÄÄÄÄÄÄÙ ÀÄÙ ÀÄÙ     ÀÄÙ ÀÄÙ      ÀÄÄÄÄÄÄÙ ÀÄÄÄÄÄÄÙ ÀÄÙ   ÀÄÙ           ÀÄÄÄÄÄÄÄÙ ÀÄÙ ÀÄÙ     ÀÄÙ ÀÄÙ      ÀÄÄÄÄÄÄÙ ÀÄÄÄÄÄÄÙ ÀÄÙ   ÀÄÙ
+
+                          ÚÄÄÄÄÄÄÄÄÄ¿ ÚÄÄÄÄÄÄ¿ ÚÄ¿ ÚÄ¿                          ÚÄÄÄÄÄÄÄÄÄ¿ ÚÄÄÄÄÄÄ¿ ÚÄ¿ ÚÄ¿
+                          ³ ÚÄ¿ ÚÄ¿ ³ ³ ÚÄÄ¿ ³ ³ ³ ³ ³                          ³ ÚÄ¿ ÚÄ¿ ³ ³ ÚÄÄ¿ ³ ³ ³ ³ ³
+                          ³ ³ ³ ³ ³ ³ ³ ÀÄÄÙ ³ ³ ³ ³ ³                          ³ ³ ³ ³ ³ ³ ³ ÀÄÄÙ ³ ³ ³ ³ ³
+                          ³ ³ ÀÄÙ ³ ³ ³ ÚÄÄ¿ ³ ³ ³ ³ ³                          ³ ³ ÀÄÙ ³ ³ ³ ÚÄÄ¿ ³ ³ ³ ³ ³
+                          ³ ³     ³ ³ ³ ³  ³ ³ ³ ³ ³ ÀÄÄÄ¿                          ³ ³     ³ ³ ³ ³  ³ ³ ³ ³ ³ ÀÄÄÄ¿
+                          ÀÄÙ     ÀÄÙ ÀÄÙ  ÀÄÙ ÀÄÙ ÀÄÄÄÄÄÙ                          ÀÄÙ     ÀÄÙ ÀÄÙ  ÀÄÙ ÀÄÙ ÀÄÄÄÄÄÙ
+
+
+
+
+                              Simplex BBS - (c) 1989-92
+                      Chris Laforet Software/Christopher Laforet
+                                All Rights Reserved.
+
+
+
+
+
+
+
+
+
+                         Chris Laforet can be contacted at:
+
+               The Programmer's Oasis BBS - Graham, NC - 919/226-6984
+              The Programmer's Oasis 2 BBS - Graham, NC - 919/226-7136
+                 FidoNet Mail 1:3644/1 or 1:3644/2 as Chris Laforet
+                        CompuServe Email - User ID: 76120,110
+                            BIX Email - User ID: laforet
+
+
+
+
+
+                            Programming by Chris Laforet
+                       Unauthorized Selling/Renting Prohibited
+               Documentation Title Page/Help Files/Etc by Robbie Foust
+
+
+
+
+
+
+
+
+
+
+
+
+                                      Chapter 1                                      Chapter 1
+
+                Legalistic Mumbo-Jumbo (i.e. Better Read This Stuff)                Legalistic Mumbo-Jumbo (i.e. Better Read This Stuff)
+
+
+          Simplex is copyright (c) 1989-92, Chris Laforet Software and/or
+          Christopher Laforet.  This copyright is waived for the
+          distribution of the executable files for Simplex.  This means
+          that you are free to distribute the Simplex executables as you
+          wish as long as they are contained in the original form in which
+          you received them.
+
+          Simplex executables as released by Chris Laforet Software are
+          absolutely free of charge to individuals and corporations.  Sale
+          of any of these executables is in violation of this agreement and
+          is subject to court action.  The only exception to this is
+          shareware and freeware software distribution houses are allowed
+          to charge for distribution materials (e.g. diskettes).  Even
+          though it is free for use, if you want to send a contribution to
+          Chris Laforet Software, be assured that it will be cheerfully
+          accepted!
+
+          The source code for Simplex is available for purchase from Chris
+          Laforet Software.  When you purchase this code, you are granted
+          an exclusive license to modify it for your own use.  The
+          executables that you produce must never be distributed in place
+          of the original executables as compiled and distributed from
+          Chris Laforet Software unless you arrange a royalty system with
+          Chris Laforet Software.  During the course of your modifications,
+          should you develop a feature which you believe should be a part
+          of the distributed Simplex executables, you may submit the code
+          to Chris Laforet Software for review and for possible
+          incorporation into Simplex, as long as such incorporation does
+          not place Chris Laforet Software and/or Christopher Laforet under
+          any monetary obligations.  Your submitted code must include a
+          cover letter indicating that you are freely granting permission
+          to Chris Laforet Software for the incorporation of your code into
+          Simplex.
+
+          Should you wish to purchase Simplex for use as a platform for
+          another product, or wish to convert Simplex to another language
+          (French, Japanese, Swahili) or to another operating system (Atari
+          ST, VAX, AX-400), and wish to market the resultant product,
+          contact Chris Laforet Software and a royalty agreement can be
+          developed.  Royalties generally range somewhere between 10% and
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                   Fidonet Mail Manual          Simplex BBS                                   Fidonet Mail Manual
+                                        Page 2                                        Page 2
+
+
+
+
+
+
+          15% of the sales price of the product, but each case is different
+          and merits discussion.
+
+          There are no warranties of any kind, explicit or implied, on the
+          Simplex software.  Simplex's executables are provided on an "AS
+          IS" basis.  What this means is that if you decide to use Simplex,
+          it is at your own risk.  In plain English, this means that if you
+          use Simplex and your machine blows up, the developers and
+          distributors of Simplex are not responsible in any fashion.  If
+          you use Simplex and it loses all of the files on your disk, once
+          again the developers and distributors of Simplex are not to be
+          held accountable.  While these scenarios are rather extreme in
+          nature, they serve to indicate that Chris Laforet Software and/or
+          Christopher Laforet does not warrant, guarantee, or make any
+          other representations regarding the use, or results of use, of
+          Simplex or its documentation in terms of accuracy, reliability,
+          correctness, currentness, or otherwise.
+
+          Simplex has been developed and tested on a 386-20 and 386-25
+          running OS/2 1.xx and 2.xx.  Two copies of Simplex using US
+          Robotics Courier HST/v32bis 14.4 Kbaud Dual-Standard baud modems
+          have run simultaneously 24 hours/day on these setups.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                   Fidonet Mail Manual          Simplex BBS                                   Fidonet Mail Manual
+                                        Page 3                                        Page 3
+
+
+
+
+
+
+
+
+
+
+
+
+                                      Chapter 2                                      Chapter 2
+
+                                Basic Mail Utilities                                Basic Mail Utilities
+
+
+          This chapter describes all of the basic external mail utilities
+          for Simplex.  These utilities are basically of two types,
+          utilities to maintain Simplex's message base, and utilities to
+          handle incoming and outgoing Net mail.
+
+          Simplex's message base is contained in a series of files
+          contained in the Simplex root directory.  The message filenames
+          are described in the accompanying SIMPLEX.DOC file.
+
+
+
+                     2.1  SCLEAN: Simplex Mail Cleaning Utility                     2.1  SCLEAN: Simplex Mail Cleaning Utility
+
+
+          SCLEAN.EXE (or SCLEAN2.EXE for OS/2) is a message base
+          maintenance program which cleans out messages from message
+          boards.  Messages can be cleaned out completely from message
+          boards, deleted if received, or deleted if older than a specified
+          number of days.  SCLEAN has the following options:
+
+                  -q      Quiet....do not show message by message activity
+                  -dxx    Sets maximum days for message killing to xx
+                  -nxx    Sets maximum number of messages to keep on boards
+          to xx
+                  -knxx   Kill messages on board #xx keeping maximum number
+          in area
+                  -kaxx   Kill ALL messages on board #xx
+                  -kdxx   Kill messages prior to maximum days on board #xx
+                  -krxx   Kill all received messages on board #xx
+
+          The quiet flag can be used to speed up SCLEAN considerably on
+          slow machines.
+
+          SCLEAN can be used to kill messages older than 10 days on message
+          boards 1, 7 and 12 and kill all received messages on board 8 with
+          the following command line:
+
+                  sclean -d10 -kd1 -kd7 -kd12 -kr8
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                   Fidonet Mail Manual          Simplex BBS                                   Fidonet Mail Manual
+                                        Page 4                                        Page 4
+
+
+
+
+
+
+          The -ka option will normally be used to remove a defunct message
+          board's messages from the message base.  Notice that SCLEAN
+          merely deletes messages and does not actually remove them from
+          the message base.
+
+
+
+                      2.2  SPACK: Simplex Message Base Deletion                      2.2  SPACK: Simplex Message Base Deletion
+
+
+          SPACK.EXE (or SPACK2.EXE for OS/2) is a message base compression
+          program.  It will analyse the message base and determine how many
+          messages have been deleted, then check file space prior to
+          packing.  Packing may optionally be done in-place instead of in
+          duplicate files if disk space is at a premium, however this
+          method is frowned upon since it might be dangerous should a power
+          failure occur.
+
+          SPACK has the following command line options:
+
+                  -q      Quiet....do not show message activity
+                  -k      Kill unreasonably sized messages (>100K each)
+                  -p      Pack message base
+                  -w      Write message base files in place
+
+          The quiet flag will speed up SPACK considerably and should be
+          used on slow machines!
+
+          In order to pack the message base, use the following command
+          line:
+
+                  spack -p
+
+          Notice: While SPACK runs, if it finds messages larger than 100K,
+          it will automatically delete them under the presumption that if a
+          message is that large, it is most likely a corruption of the
+          message base.
+
+
+
+                      2.3  SLINK: Simplex Message Thread Linker                      2.3  SLINK: Simplex Message Thread Linker
+
+
+          SLINK.EXE (or SLINK2.EXE for OS/2) is a message base thread
+          linker program which will link messages by topic by message
+          board.  What SLINK loads all the message topics for a board,
+          removes all RE's from the topic lines, then links matching
+          message topics into threads.
+
+          By default, SLINK links ALL message boards, however if a file
+          called SLINK.BBS is located in the root Simplex directory, only
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                   Fidonet Mail Manual          Simplex BBS                                   Fidonet Mail Manual
+                                        Page 5                                        Page 5
+
+
+
+
+
+
+          the board numbers contained in that file are linked (SLINK.BBS is
+          a series of 16-bit ints with each board number to link).  This
+          file is generally created by SMAIL when it is importing Net mail
+          so that SLINK would not waste time uselessly relinking boards
+          that were not imported.
+
+          There are no options to SLINK.  To run it, merely type SLINK (or
+          SLINK2) on the command line and hit Enter.
+
+
+
+                          2.4  SMAILFIX: Simplex Mail Fixer                          2.4  SMAILFIX: Simplex Mail Fixer
+
+
+          Occasionally, systems crash and lock up.  That is almost a rule
+          in the world of computing.  Unfortunately, these crashes and
+          lock-ups have a nasty habit of occurring at the worst possible
+          moment, and in the case of Simplex, the worst possible moment is
+          when the message base is being manipulated!  Since the message
+          base files are so intertwined, any corruption to any of the files
+          could be quite disasterous.
+
+          Hence the raison d'etre of SMAILFIX.  Should your message base
+          appear to have become corrupted, SMAILFIX gives you a chance to
+          attempt to restore/rebuild some of the message files so that you
+          can recover as much of the message base as possible.  OS/2 users
+          should ensure that no utilities are able to manipulate the
+          message files while SMAILFIX is running, and both DOS and OS/2
+          users should ensure that their systems do not shut down or reboot
+          before SMAILFIX is finished.
+
+          To run SMAILFIX, just type it's name on the command line and hit
+          Enter.  Notice that you should be in your Simplex root directory
+          when you do this.  SMAILFIX will prompt you if you are sure that
+          you want to run it.  Answer Y and it will begin attempting to
+          recover your message base.  Once it is finished it will inform
+          you if you need to run SLINK and/or SPACK on the message base.
+
+          An option for SMAILFIX is the -DATE (or /DATE) option.  This
+          makes SMAILFIX delete any messages which have a date beyond
+          today's date.
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                   Fidonet Mail Manual          Simplex BBS                                   Fidonet Mail Manual
+                                        Page 6                                        Page 6
+
+
+
+
+
+
+
+
+
+
+
+
+                                      Chapter 3                                      Chapter 3
+
+                               Network Mail Utilities                               Network Mail Utilities
+
+
+          This chapter describes the special network mail utilities
+          provided with Simplex.  SMAIL is used in importing and exporting
+          Netmail and echomail, while SMP is used to packetize the
+          resultant exported and forwarded messages.
+
+          Netmail is exported from the message base in standard FSC-0001
+          message format.  Incoming Netmail may be either in standard
+          FSC-0001 packed message packets or in archived format.  Outgoing
+          Net mail is prepared in standard FSC-0001 packed message packets
+          and then archived by SMP.
+
+
+
+                         3.1  SMAIL: Simplex Netmail Utility                         3.1  SMAIL: Simplex Netmail Utility
+
+
+          SMAIL.EXE (or SMAIL2.EXE for OS/2) is a Netmail importation and
+          exportation utility.  SMAIL is used to export Netmail and
+          Echomail to other systems after mail has been entered, a
+          situation which can be determined by Simplex's exit errorlevel.
+          Incoming Net and echomail can be imported into the Simplex
+          message base when your front-end mailer detects incoming mail
+          packets.
+
+          The command line options for SMAIL are the following:
+
+                  -ua     unarc inbound mail packets
+                  -it     import/toss net and echo mail
+                  -ib     import/toss net and echo mail in bad messages
+          area
+                  -nx     export netmail to other systems
+                  -ex     export echomail to other systems
+                  -re     report on echomail passing through the system
+                  -es     enable echo security
+                  -k      keep seen-by and path kludge in imported messages
+                  -r      export echomail as ROUTED (normal) instead of
+          DIRECT (CM)
+                  -s      disable conversion of "sysop" messages to sysop's
+          name
+                  -#xxx   limit number of .MSG files im matrix to xxx.
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                   Fidonet Mail Manual          Simplex BBS                                   Fidonet Mail Manual
+                                        Page 7                                        Page 7
+
+
+
+
+
+
+                  -c###   clean out signatures over ### days old
+
+          SMAIL uses the unarchiver command lines specified in SCONFIG if
+          you specify the -ua flag.  It also uses the packet path from
+          SCONFIG as the destination directory for the contents of the
+          archived mail.
+
+          SMAIL handles Echomail signatures, which are files containing
+          data from messages which have passed through the system.  These
+          are kept in order to stop duplicate messages from being passed
+          along.  These signatures are kept in the Simplex directory in
+          files called SMAILxxx.SIG where where xxx is the Julian date of
+          the year when the signature file is created.  These files can be
+          maintained by using the SMAIL -c command.  This deletes signature
+          files older then the specified number of days.  A reasonable
+          period to keep signatures is between 3 and 10 days.  Too short a
+          period might allow duplicates to slip through, and too long a
+          period will slow the system down excessively while loading the
+          files.  The best time in your setting will be best left to
+          experimentation!
+
+          The -RE flag reads in the signature files and generates an
+          echomail traffic report for each area contained in the AREAS.BBS
+          file.
+
+          Echomail is exported generally as DIRECT (Crash) by SMAIL.  Since
+          most other mail processors normally toss it out as ROUTED, SMAIL
+          allows you to select the -R flag if this is your preferred
+          methodology.
+
+          Since DOS has problems with large quantities of files in a
+          directory on FAT drives, systems that handle lots of mail can use
+          SMAIL to limit the actual number of files in a directory by using
+          the -# option.  This option will not allow *.MSG files to exceed
+          the number following the # (i.e. -#250 limits the MSG files to
+          250).  If mail still remains to be tossed because SMAIL reached
+          this limit, it creates a file in the Simplex directory called
+          SMAIL.LIM.  Your batch file can always check for the existence of
+          this file and loop back to catch the rest of the mail when SMP
+          completes packing.  Here is an example:
+
+                  :unpack
+                  del smail.lim
+                  smail -ua -it -#250
+                  smp -p
+                  if exist smail.lim goto unpack
+
+
+          SMAIL, by default, converts any messages addressed to "Sysop"
+          over to messages addressed to the sysop's name as specified in
+          SCONFIG.  This behavior might be considered annoying by some
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                   Fidonet Mail Manual          Simplex BBS                                   Fidonet Mail Manual
+                                        Page 8                                        Page 8
+
+
+
+
+
+
+          Sysops and therefore can be disabled using the -S switch on the
+          command line.
+
+          Here are some sample parts of a Netmail compatible system's batch
+          file which illustrate using SMAIL for exporting entered mail:
+
+                  :runbbs
+                  simplex -b%d -x
+                  if errorlevel 6 goto runbbs
+                  if errorlevel 5 goto echomatrix
+                  if errorlevel 4 goto echo
+                  if errorlevel 3 goto matrix
+                  goto runbbs
+
+                  :echomatrix
+                  smail -nx -ex
+                  smp -p
+                  goto end
+
+                  :echo
+                  smail -ex
+                  smp -p
+                  goto end
+
+                  :matrix
+                  smail -nx
+                  smp -p
+                  goto end
+
+                  :end
+
+          Here is a sample of a front-end mailer's batch file,
+          demonstrating the use of SMAIL for importing and forwarding
+          incoming mail.
+
+                  :runmailer
+                  mailer
+                  if errorlevel 2 goto runmailer
+                  if errorlevel 1 goto import
+                  goto end
+
+                  :import
+                  smail -ua -it
+                  smp -p
+                  goto runmailer
+
+                  :end
+
+          The -ES flag enables echomail security.  This ensures that
+          echomail for each area is only imported from nodes listed for
+          that echo in the AREAS.BBS file.
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                   Fidonet Mail Manual          Simplex BBS                                   Fidonet Mail Manual
+                                        Page 9                                        Page 9
+
+
+
+
+
+
+          The -K flag activates SMAIL to keep the SEEN-BY and PATH
+          information that is contained in echomail messages as ^A kludge.
+          SMAIL's default is to discard this information when importing
+          messages since it tends to generate sizable messge bodies.  When
+          diagnosing network problems (such as duplicate messages), it
+          might be helpful to switch on this option.  Once kludge is kept,
+          anyone with Sysop privilege in an echo area can use the <K>
+          option while reading messages to see the resulting extra
+          information.
+
+
+
+                              3.2  Layout of AREAS.BBS                              3.2  Layout of AREAS.BBS
+
+
+          The AREAS.BBS file must be created by the Sysop using a plain
+          text editor.  It is used by SMAIL to export and import echomail
+          and it is organized as follows:
+
+                  <msgarea number> <echo-areaname> <destination addresses>
+
+          The <msgarea number> is the Simplex message area number as
+          defined in SCONFIG.  The <echo-areaname> is the official echo
+          "tag" for that echo.  The destination addresses are the addresses
+          which your BBS "feeds".
+
+          The special area "number" P is reserved for "pass through"
+          echomail areas, that is areas which are not on your BBS but which
+          you might be passing on to other BBSes.
+
+          Comment lines in this file begin with a semicolon (;).
+
+          In order to support external mail handling by other packages
+          (e.g. Areafix), there is the ability to specify a "toss"
+          directory.  This is done in a comment line (to avoid confusing
+          older packages), and it is formatted as:
+
+                  ; T <"name"> <destination path>
+
+          The quotes are essential for names with embedded spaces (e.g.
+          "John Doe") but not for single word names (e.g. Autoecho).
+
+          Here is an example of an AREAS.BBS file:
+
+
+
+
+
+
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                   Fidonet Mail Manual          Simplex BBS                                   Fidonet Mail Manual
+                                       Page 10                                       Page 10
+
+
+
+
+
+
+               ; This is a sample AREAS.BBS comment!
+               ;
+               ; Here are normal areas.  The mail is tossed into the
+               ; message base and forwarded if neccessary.
+               ;
+               10 C_ECHO  1:151/401 1:151/403 1:151/404 1:151/1000
+               11 SIMPLEX 1:151/401 1:151/404 1:151/1000
+               12 LUNATIC 1:151/401
+               ;
+               ; Here is a pass-thru area - messages are not imported,
+               ; just passed on to the respective addresses.
+               ;
+               P  WRITING 1:151/404 1:151/1000
+               P  AMIGA   1:151/403 1:151/1000
+               ;
+               ; Here is an example of a Toss area - messages are not
+               ; imported, just tossed as *.MSG files into the
+               ; specified directory for later processing.
+               ;
+               ; T areafix g:\bbs\areafix
+               ; T "autoecho" g:\bbs\areafix
+
+          C_ECHO, for example, is imported to area 10, and is forwarded to
+          the other addresses listed.  On the other hand, AMIGA is not
+          imported, but just forwarded to the listed nodes.  Note the full
+          use of zone notation.  If you omit the zone and net they will
+          default to the same as your zone and net number as configured in
+          SCONFIG (e.g. 10 C_ECHO 401 403 404 1000 is the same as above
+          since my address is 1:151/402).  Messages to areafix or to
+          autoecho are tossed into the g:\bbs\areafix directory as MSG
+          files.
+
+          **Urgent**  In AREAS.BBS, the FIRST line must contain a comment
+          or anything other than an echo area list.  This is for
+          compatibility with older systems.
+
+
+
+                            3.3  SMP: Simplex Mail Packer                            3.3  SMP: Simplex Mail Packer
+
+
+          SMP (or SMP2 for OS/2) is a Net compatible mail
+          router/packer/archiver.  It uses the archiver command lines
+          configured in SCONFIG.  Essentially SMP reads the messages in the
+          matrix directory, and based on the rules in the SMP.CTL file (see
+          above), packs the messages in packets and optionally archives
+          them to their ultimate destinations.
+
+          SMP will delete truncated (i.e. 0-length) files in the outbound
+          directories before it begins packing.  Notice that it will not
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                   Fidonet Mail Manual          Simplex BBS                                   Fidonet Mail Manual
+                                       Page 11                                       Page 11
+
+
+
+
+
+
+          delete truncated files for the current day of the week, only for
+          the other 6 days.
+
+          SMP's options are the following:
+
+                  -p      Pack and route files in matrix and outbound areas
+                  -s(tag) Use information for sched (tag) in SMP.CTL where
+                          (tag) is a letter from A to Z
+
+          Use of SMP is demonstrated in the sample batch files under SMAIL
+          above.
+
+
+
+                               3.4  Layout of SMP.CTL                               3.4  Layout of SMP.CTL
+
+
+          This file is used by SMP to export messages to other systems.
+          Prior to version 1.04 Simplex, it was somewhat similar to oMMM's
+          CTL file, but after 1.04's release, the verbs changed radically
+          to bring them in line with the new policy underlying Net mail as
+          implemented in Simplex.
+
+          Routing verbs allow mail to be converted between states (Held <->
+          Routed <-> Direct), moved out and into of the reach of mailers
+          (Left <-> Send), and  archived (Arc, Zip, Zoo, Lzh, Arj) to
+          specific nodes.  Here is a listing of the various verbs:
+
+            HOLDTO <destination> <sources...>
+                      This causes all held mail bound to sources to be held
+                      for destination.  e.g. HOLDTO 151/402 151/400 151/401
+                      151/402.  This holds all held mail for 151/400, 401
+                      and 402 for 151/402.
+
+            HOSTHOLD <destinations...>
+                      This causes all held mail bound to destinations to be
+                      held for network host (node 0 of one's net).  e.g.
+                      HOSTHOLD 151/ALL 120/ALL will cause all held mail for
+                      nets 151 and 120 to be held for 151/0 (from 151/401).
+
+            ROUTETO <destination> <sources...>
+                      This causes all routed mail bound to sources to get
+                      routed to destination.  e.g. ROUTETO 151/402 151/ALL
+                      120/ALL will route all routed mail for nets 151 and
+                      120 to 151/402.
+
+            HOSTROUTE <destinations...>
+                      This causes all routed mail bound to destinations to
+                      get routed to network host (node 0 of one's net).
+                      e.g. HOSTROUTE 151/ALL 120/ALL will cause all routed
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                   Fidonet Mail Manual          Simplex BBS                                   Fidonet Mail Manual
+                                       Page 12                                       Page 12
+
+
+
+
+
+
+                      mail for nets 151 and 120 to be routed to 151/0 (from
+                      151/401).
+
+            DIRECTTO <destination> <sources...>
+                      This causes all direct mail bound to sources to get
+                      directed to destination.  e.g. DIRECTTO 151/402
+                      151/ALL 120/ALL will direct all directed mail for
+                      nets 151 and 120 to 151/402.
+
+            HOSTDIRECT <destinations...>
+                      This causes all direct mail bound to destinations to
+                      get directed to network host (node 0 of one's net).
+                      e.g. HOSTDIRECT 151/ALL 120/ALL will cause all routed
+                      mail for nets 151 and 120 to be directed to 151/0
+                      (from 151/401).
+
+            ARCHOLD <destination> <sources...>
+            ZIPHOLD <destination> <sources...>
+            LZHHOLD <destination> <sources...>
+            ARJHOLD <destination> <sources...>
+            ZOOHOLD <destination> <sources...>
+                      These options archive held mail for sources using the
+                      archiver specified to the specified destination.
+                      e.g. ZIPHOLD 151/402 151/401 151/402 151/405 151/406
+                      will archive all held mail to 151/401, 402, 405 and
+                      406 with ZIP and route it to 151/402.
+
+            ARCROUTE <destination> <sources...>
+            ZIPROUTE <destination> <sources...>
+            LZHROUTE <destination> <sources...>
+            ARJROUTE <destination> <sources...>
+            ZOOROUTE <destination> <sources...>
+                      These options archive routed mail for sources using
+                      the archiver specified to the specified destination.
+                      e.g. ZIPROUTE 151/402 151/401 151/402 151/405 151/406
+                      will archive all routed mail to 151/401, 402, 405 and
+                      406 with ZIP and route it to 151/402.
+
+            ARCDIRECT <destination> <sources...>
+            ZIPDIRECT <destination> <sources...>
+            LZHDIRECT <destination> <sources...>
+            ARJDIRECT <destination> <sources...>
+            ZOODIRECT <destination> <sources...>
+                      These options archive direct mail for sources using
+                      the archiver specified to the specified destination.
+                      e.g. ZIPDIRECT 151/402 151/401 151/402 151/405
+                      151/406 will archive all direct mail to 151/401, 402,
+                      405 and 406 with ZIP and route it to 151/402.
+
+            HOLDROUTE <destinations...>
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                   Fidonet Mail Manual          Simplex BBS                                   Fidonet Mail Manual
+                                       Page 13                                       Page 13
+
+
+
+
+
+
+                      This option converts all held mail bound for
+                      destinations to routed mail (from HOLD to ROUTE).
+                      e.g. HOLDROUTE 151/402 will convert held mail for
+                      151/402 to routed mail.
+
+            HOLDDIRECT <destinations...>
+                      This option converts all held mail bound for
+                      destinations to directed mail (from HOLD to DIRECT).
+                      e.g. HOLDROUTE 151/402 will convert held mail for
+                      151/402 to directed mail.
+
+            ROUTEHOLD <destinations...>
+                      This option converts all routed mail bound for
+                      destinations to held mail (from ROUTE to HOLD).  e.g.
+                      ROUTEHOLD 151/402 will convert routed mail for
+                      151/402 to held mail.
+
+            ROUTEDIRECT <destinations...>
+                      This option converts all routed mail bound for
+                      destinations to directed mail (from ROUTE to DIRECT).
+                      e.g. ROUTEDIRECT 151/402 will convert routed mail for
+                      151/402 to directed mail.
+
+            DIRECTHOLD <destinations...>
+                      This option converts all direct mail bound for
+                      destinations to held mail (from DIRECT to HOLD).
+                      e.g. DIRECTHOLD 151/402 will convert directed mail
+                      for 151/402 to held mail.
+
+            DIRECTROUTE <destinations...>
+                      This option converts all direct mail bound for
+                      destinations to routed mail (from DIRECT to ROUTE).
+                      e.g. DIRECTROUTE 151/402 will convert directed mail
+                      for 151/402 to routed mail.
+
+            LEAVEHOLD <destinations...>
+                      This option converts all held mail bound for
+                      destinations to non-active held mail.
+
+            LEAVEROUTE <destinations...>
+                      This option converts all routed mail bound for
+                      destinations to non-active routed mail.
+
+            LEAVEDIRECT <destinations...>
+                      This option converts all direct mail bound for
+                      destinations to non-active direct mail.
+
+            SENDHOLD <destinations...>
+                      This option converts all non-active held mail bound
+                      for destinations to regular held mail.
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                   Fidonet Mail Manual          Simplex BBS                                   Fidonet Mail Manual
+                                       Page 14                                       Page 14
+
+
+
+
+
+
+            SENDROUTE <destinations...>
+                      This option converts all non-active routed mail bound
+                      for destinations to regular routed mail.
+
+            SENDDIRECT <destinations...>
+                      This option converts all non-active direct mail bound
+                      for destinations to regular direct mail.
+
+            POLL <destinations...>
+                      This will create a blank .flo file to the
+                      destinations providing there is not already direct
+                      mail addressed to the same address.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                   Fidonet Mail Manual          Simplex BBS                                   Fidonet Mail Manual
+                                       Page 15                                       Page 15
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Contents                                    Contents
+
+
+
+               Chapter 1  Legalistic Mumbo-Jumbo (i.e. Better Read
+                          This Stuff)                                2
+
+               Chapter 2  Basic Mail Utilities                       4
+                  2.1  SCLEAN: Simplex Mail Cleaning Utility . . . . 4
+                  2.2  SPACK: Simplex Message Base Deletion  . . . . 5
+                  2.3  SLINK: Simplex Message Thread Linker  . . . . 5
+                  2.4  SMAILFIX: Simplex Mail Fixer  . . . . . . . . 6
+
+               Chapter 3  Network Mail Utilities                     7
+                  3.1  SMAIL: Simplex Netmail Utility  . . . . . . . 7
+                  3.2  Layout of AREAS.BBS . . . . . . . . . . . .  10
+                  3.3  SMP: Simplex Mail Packer  . . . . . . . . .  11
+                  3.4  Layout of SMP.CTL . . . . . . . . . . . . .  12
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                          i
+

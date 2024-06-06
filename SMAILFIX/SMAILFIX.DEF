@@ -1,0 +1,6 @@
+NAME 		SMAILFIX WINDOWCOMPAT
+STACKSIZE 	4096
+HEAPSIZE	8192
+DESCRIPTION 	'SMAILFIX -- Simplex BBS Mail Header Repair Utility. Copyright (c) 1989-90, Christopher Laforet'
+EXETYPE		OS2
+

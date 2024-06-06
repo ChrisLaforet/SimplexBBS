@@ -1,0 +1,23 @@
+latecht2.exe : os2\latechat.obj os2\l_fossil.obj os2\l_recv.obj \
+	os2\l_xmit.obj os2\sleep.obj
+	link os2\latechat os2\l_fossil os2\l_recv os2\l_xmit os2\sleep,latecht2,,/NOD:slibce slibcep os2,latecht2.def
+
+os2\latechat.obj : latechat.c latechat.h
+	cl -AS -W3 -Zp1 -Ocgilnt -Foos2\ -DPROTECTED -Lp -c latechat.c > latechat.err
+	type latechat.err
+
+os2\l_fossil.obj : l_fossil.c latechat.h
+	cl -AS -W3 -Zp1 -Ocgilnt -Foos2\ -DPROTECTED -Lp -c l_fossil.c > l_fossil.err
+	type l_fossil.err
+
+os2\l_recv.obj : l_recv.c latechat.h
+	cl -AS -W3 -Zp1 -Ocgilnt -Foos2\ -DPROTECTED -Lp -c l_recv.c > l_recv.err
+	type l_recv.err
+
+os2\l_xmit.obj : l_xmit.c latechat.h
+	cl -AS -W3 -Zp1 -Ocgilnt -Foos2\ -DPROTECTED -Lp -c l_xmit.c > l_xmit.err
+	type l_xmit.err
+
+os2\sleep.obj : sleep.c latechat.h
+	cl -AS -W3 -Zp1 -Od -Foos2\ -DPROTECTED -Lp -c sleep.c > sleep.err
+	type sleep.err

@@ -1,0 +1,42 @@
+
+ LATECHAT2
+
+ Start     Length     Name                   Class
+ 0001:0000 03238H     _TEXT                  CODE
+ 0001:3240 00002H     EMULATOR_TEXT          CODE
+ 0001:3242 00000H     C_ETEXT                ENDCODE
+ 0002:0000 00000H     EMULATOR_DATA          FAR_DATA
+ 0002:0000 00042H     NULL                   BEGDATA
+ 0002:0042 00E60H     _DATA                  DATA
+ 0002:0EA2 00000H     XPB                    DATA
+ 0002:0EA2 00002H     XP                     DATA
+ 0002:0EA4 00000H     XPE                    DATA
+ 0002:0EA4 0000EH     CDATA                  DATA
+ 0002:0EB2 00000H     XIFB                   DATA
+ 0002:0EB2 00000H     XIF                    DATA
+ 0002:0EB2 00000H     XIFE                   DATA
+ 0002:0EB2 00000H     XIB                    DATA
+ 0002:0EB2 00000H     XI                     DATA
+ 0002:0EB2 00000H     XIE                    DATA
+ 0002:0EB2 00000H     XCB                    DATA
+ 0002:0EB2 00000H     XC                     DATA
+ 0002:0EB2 00000H     XCE                    DATA
+ 0002:0EB2 00000H     XCFB                   DATA
+ 0002:0EB2 00000H     XCF                    DATA
+ 0002:0EB2 00000H     XCFE                   DATA
+ 0002:0EB2 00000H     CONST                  CONST
+ 0002:0EB2 00008H     HDR                    MSG
+ 0002:0EBA 00102H     MSG                    MSG
+ 0002:0FBC 00002H     PAD                    MSG
+ 0002:0FBE 00001H     EPAD                   MSG
+ 0002:0FC0 00008H     _BSS                   BSS
+ 0002:0FC8 00000H     XOB                    BSS
+ 0002:0FC8 00000H     XO                     BSS
+ 0002:0FC8 00000H     XOE                    BSS
+ 0002:0FD0 00944H     c_common               BSS
+ 0002:1920 01000H     STACK                  STACK
+
+ Origin   Group
+ 0002:0   DGROUP
+
+Program entry point at 0001:12FC

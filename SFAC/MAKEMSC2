@@ -1,0 +1,16 @@
+sfac2.exe : os2\sfac.obj os2\s_date.obj os2\s_flist.obj
+	link os2\sfac os2\s_date os2\s_flist,sfac2,/MAP,/NOD:slibce slibcep doscalls,sfac2.def
+
+os2\sfac.obj : sfac.c sfac.h
+	cl -AS -Ocgilnt -G2s -Zp1 -FPi -W3 -DPROTECTED -Foos2\ -c sfac.c > sfac.err
+	type sfac.err
+
+os2\s_date.obj : s_date.c sfac.h
+	cl -AS -Ocgilnt -G2s -Zp1 -FPi -W3 -DPROTECTED -Foos2\ -c s_date.c > s_date.err
+	type s_date.err
+
+os2\s_flist.obj : s_flist.c sfac.h
+	cl -AS -Ocgilnt -G2s -Zp1 -FPi -W3 -DPROTECTED -Foos2\ -c s_flist.c > s_flist.err
+	type s_flist.err
+
+

@@ -1,0 +1,22 @@
+latechat.exe : latechat.obj l_fossil.obj l_recv.obj l_xmit.obj sleep.obj
+	link /ST:4096 latechat l_fossil l_recv l_xmit sleep;
+
+latechat.obj : latechat.c latechat.h
+	cl -AS -W3 -Zp1 -Ocgilnt -c latechat.c > latechat.err
+	type latechat.err
+
+l_fossil.obj : l_fossil.c latechat.h
+	cl -AS -W3 -Zp1 -Ocgilnt -c l_fossil.c > l_fossil.err
+	type l_fossil.err
+
+l_recv.obj : l_recv.c latechat.h
+	cl -AS -W3 -Zp1 -Ocgilnt -c l_recv.c > l_recv.err
+	type l_recv.err
+
+l_xmit.obj : l_xmit.c latechat.h
+	cl -AS -W3 -Zp1 -Ocgilnt -c l_xmit.c > l_xmit.err
+	type l_xmit.err
+
+sleep.obj : sleep.c latechat.h
+	cl -AS -W3 -Zp1 -Od -c sleep.c > sleep.err
+	type sleep.err

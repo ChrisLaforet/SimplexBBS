@@ -1,0 +1,8 @@
+This is version 1.09.  Among other things the following were done:
+
+ - Corrected minor bug in record numbers of users.
+ - Added monochrome option to OS/2 version.
+ - Changed cfg structure to handle virus checker and welcome program options.
+ - Changed msgboard and fileboard structures to include flags in addition to
+   privs.
+

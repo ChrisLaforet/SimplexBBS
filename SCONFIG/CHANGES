@@ -1,0 +1,9 @@
+This is version 1.01.  Among other things the following were done:
+
+ - Changed baud rates into unsigned values.
+ - Corrected bug wherein if a user's flags are changed, the main user screen
+   is correctly updated.
+ - Added option to delete the file in addition to the file's description.
+ - Added support for user aliases.
+ - Added support for change user-alias menu option.
+ - Permitted zone values > 255 and < 10000.

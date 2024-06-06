@@ -1,0 +1,31 @@
+name sconfig.exe
+format dos
+option dosseg
+option stack=10240
+option caseexact
+
+file sconfig
+file s_apath
+file s_date
+file s_event
+file s_fedit
+file s_file
+file s_flist
+file s_gen
+file s_gpath
+file s_main
+file s_medit
+file s_menu
+file s_misc
+file s_modem
+file s_msel
+file s_msg
+file s_npath
+file s_upath
+file s_users
+file s_util
+
+library e:\lib\lscreen.lib
+library e:\lib\leditor.lib
+library e:\lib\lmouse.lib
+library e:\lib\llibce.lib

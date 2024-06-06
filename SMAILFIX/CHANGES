@@ -1,0 +1,8 @@
+This is version 1.09.  Among other things the following were done:
+
+ - Changed smailfix to run only when -y flag is provided.
+ - Added option to smailfix which kills messages by size specified on command
+   line.
+ - Added option to smailfix which kills messages containing invalid characters
+   in header fields (to, from and subject).
+ - Added support for 1.07 cfg struct.

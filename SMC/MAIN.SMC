@@ -1,0 +1,143 @@
+/* Decompilation of menu file main.mnu
+**
+** Achieved by SMC (v 1.01)
+*/
+
+
+menu "main"
+
+  prompt "[^$r min^] What is your choice?"
+  	color 15	hilite 14
+
+  /* Line 1> Type: Show menu line */
+  line "[ ^Chris Laforet Software BBS^ >------------------------------"
+  	type 0	expert
+  	priv 0	flags ""
+  	color 13	hilite 14
+
+  /* Line 2> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	flags ""
+  	color 7	hilite 15
+
+  /* Line 3> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	flags ""
+  	color 7	hilite 15
+
+  /* Line 4> Type: Call new menu - Add to return stack */
+  line "<^M^> Go to Message Areas                 $c"
+  	type 1
+  	key "M"	data "msgarea"
+
+  	priv 100	flags ""
+  	color 10	hilite 14
+
+  /* Line 5> Type: Call new menu - Add to return stack */
+  line "<^F^> Go to File Area"
+  	type 1
+  	key "F"	data "file"
+
+  	priv 100	flags ""
+  	color 10	hilite 14
+
+  /* Line 6> Type: Call new menu - Add to return stack */
+  line "<^C^> Change Configuration                $c"
+  	type 1
+  	key "C"	data "cfgmenu"
+
+  	priv 0	flags ""
+  	color 11	hilite 14
+
+  /* Line 7> Type: Show version/copyright information */
+  line "<^V^> Version Information"
+  	type 242
+  	key "V"
+  	priv 0	flags ""
+  	color 11	hilite 14
+
+  /* Line 8> Type: Show user's usage statistics */
+  line "<^T^> Show Time Info                      $c"
+  	type 243
+  	key "T"
+  	priv 0	flags ""
+  	color 12	hilite 14
+
+  /* Line 9> Type: Yell for chat with Sysop */
+  line "<^Y^> Yell for SYSOP"
+  	type 244
+  	key "Y"
+  	priv 0	flags ""
+  	color 12	hilite 14
+
+  /* Line 10> Type: Search userlist */
+  line "<^U^> Search for User                     $c"
+  	type 20
+  	key "U"
+  	priv 0	flags ""
+  	color 13	hilite 14
+
+  /* Line 11> Type: Show current time of day */
+  line "<^D^> Get Time of Day"
+  	type 245
+  	key "D"
+  	priv 0	flags ""
+  	color 13	hilite 14
+
+  /* Line 12> Type: Show ascii/ansi file */
+  line "<^R^> Show Recent Callers                 $c"
+  	type 48
+  	key "R"	data "srecent"
+
+  	priv 100	flags ""
+  	color 11	hilite 14
+
+  /* Line 13> Type: Show ascii/ansi file */
+  line "<^S^> Show System Usage Chart"
+  	type 48
+  	key "S"	data "susage"
+
+  	priv 0	flags ""
+  	color 11	hilite 14
+
+  /* Line 14> Type: Run a program from within SIMPLEX */
+  line "<^L^> Late Night Chat                     $c"
+  	type 240
+  	key "L"	data "latecht2.exe $p $b 12 $a $f $l \"Trying to raise Chris....\""
+
+  	priv 250	flags ""
+  	color 13	hilite 14
+
+  /* Line 15> Type: Enter a message on board */
+  line "<^N^> Leave a Note to the Sysop"
+  	type 16
+  	key "N"	data "1 /T=Chris_Laforet"
+
+  	priv 100	flags ""
+  	color 13	hilite 14
+
+  /* Line 16> Type: Run a program from within SIMPLEX */
+  line "<^$$^> Shell to OS/2                       $c"
+  	type 240
+  	key "$"	data "os2you %$p 100 -600 c:\bin2\fshl.exe"
+
+  	priv 200	flags ""
+  	color 12	hilite 14
+
+  /* Line 17> Type: Sysop's user-upgrade option */
+  line "<^*^> Sysop's User Update"
+  	type 247
+  	key "*"
+  	priv 255	flags ""
+  	color 12	hilite 14
+
+  /* Line 18> Type: Call new menu - Add to return stack */
+  line "<^G^> Goodbye!  Log Off!!"
+  	type 1
+  	key "G"	data "logoff"
+
+  	priv 0	flags ""
+  	color 10	hilite 14
+

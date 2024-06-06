@@ -1,0 +1,53 @@
+# Makefile for NMAKE
+#
+# For SMAIL - Simplex net mail manager
+
+smail2.exe : os2\smail.obj os2\s_areas.obj os2\s_badmsg.obj os2\s_date.obj \
+	os2\s_export.obj os2\s_file.obj os2\s_impmsg.obj os2\s_import.obj \
+	os2\s_sig.obj os2\s_toss.obj os2\s_unarc.obj
+	link /F /PACKD os2\smail os2\s_areas os2\s_badmsg os2\s_date os2\s_export os2\s_file os2\s_impmsg os2\s_import os2\s_sig os2\s_toss os2\s_unarc,smail2,/MAP,/NOD:clibce clibcep doscalls,smail2.def
+
+os2\smail.obj : smail.c smail.h
+	cl -AC -Ocglnt -Zp1 -FPi -G2s -DPROTECTED -Foos2\smail.obj -c smail.c > smail.err
+	type smail.err
+
+os2\s_areas.obj : s_areas.c smail.h
+	cl -AC -Ocglnt -Zp1 -FPi -G2s -DPROTECTED -Foos2\s_areas.obj -c s_areas.c > s_areas.err
+	type s_areas.err
+
+os2\s_badmsg.obj : s_badmsg.c smail.h
+	cl -AC -Ocglnt -Zp1 -FPi -G2s -DPROTECTED -Foos2\s_badmsg.obj -c s_badmsg.c > s_badmsg.err
+	type s_badmsg.err
+
+os2\s_date.obj : s_date.c smail.h
+	cl -AC -Ocglnt -Zp1 -FPi -G2s -DPROTECTED -Foos2\s_date.obj -c s_date.c > s_date.err
+	type s_date.err
+
+os2\s_export.obj : s_export.c smail.h
+	cl -AC -Ocglnt -Zp1 -FPi -G2s -DPROTECTED -Foos2\s_export.obj -c s_export.c > s_export.err
+	type s_export.err
+
+os2\s_file.obj : s_file.c smail.h
+	cl -AC -Ocglnt -Zp1 -FPi -G2s -DPROTECTED -Foos2\s_file.obj -c s_file.c > s_file.err
+	type s_file.err
+
+os2\s_impmsg.obj : s_impmsg.c smail.h
+	cl -AC -Ocglnt -Zp1 -FPi -G2s -DPROTECTED -Foos2\s_impmsg.obj -c s_impmsg.c > s_impmsg.err
+	type s_impmsg.err
+
+os2\s_import.obj : s_import.c smail.h
+	cl -AC -Ocglnt -Zp1 -FPi -G2s -DPROTECTED -Foos2\s_import.obj -c s_import.c > s_import.err
+	type s_import.err
+
+os2\s_sig.obj : s_sig.c smail.h
+	cl -AC -Ocglnt -Zp1 -FPi -G2s -DPROTECTED -Foos2\s_sig.obj -c s_sig.c > s_sig.err
+	type s_sig.err
+
+os2\s_toss.obj : s_toss.c smail.h
+	cl -AC -Ocglnt -Zp1 -FPi -G2s -DPROTECTED -Foos2\s_toss.obj -c s_toss.c > s_toss.err
+	type s_toss.err
+
+os2\s_unarc.obj : s_unarc.c smail.h
+	cl -AC -Ocglnt -Zp1 -FPi -G2s -DPROTECTED -Foos2\s_unarc.obj -c s_unarc.c > s_unarc.err
+	type s_unarc.err
+

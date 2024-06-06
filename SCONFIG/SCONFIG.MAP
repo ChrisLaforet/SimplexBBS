@@ -1,0 +1,946 @@
+Stack Allocation = 10240 bytes
+
+ Start  Stop   Length Name                   Class
+ 00000H 014A1H 014A2H SCONFIG_TEXT           CODE
+ 014A2H 01971H 004D0H S_APATH_TEXT           CODE
+ 01972H 01C31H 002C0H S_DATE_TEXT            CODE
+ 01C32H 02C95H 01064H S_EVENT_TEXT           CODE
+ 02C96H 04B73H 01EDEH S_FEDIT_TEXT           CODE
+ 04B74H 05B71H 00FFEH S_FILE_TEXT            CODE
+ 05B72H 065D9H 00A68H S_FLIST_TEXT           CODE
+ 065DAH 07ACDH 014F4H S_GEN_TEXT             CODE
+ 07ACEH 08007H 0053AH S_GPATH_TEXT           CODE
+ 08008H 08319H 00312H S_MAIN_TEXT            CODE
+ 0831AH 08B65H 0084CH S_MENU_TEXT            CODE
+ 08B66H 0A809H 01CA4H S_MISC_TEXT            CODE
+ 0A80AH 0BCB3H 014AAH S_MODEM_TEXT           CODE
+ 0BCB4H 0DA4DH 01D9AH S_MSG_TEXT             CODE
+ 0DA4EH 0DF9DH 00550H S_NPATH_TEXT           CODE
+ 0DF9EH 0E46DH 004D0H S_UPATH_TEXT           CODE
+ 0E46EH 10A93H 02626H S_USERS_TEXT           CODE
+ 10A94H 11CA1H 0120EH S_UTIL_TEXT            CODE
+ 11CA2H 156E9H 03A48H _TEXT                  CODE
+ 156F0H 156F1H 00002H EMULATOR_TEXT          CODE
+ 156F2H 156F2H 00000H _FILE_TEXT             CODE
+ 156F2H 15889H 00198H ASKYN_TEXT             CODE
+ 1588AH 169F7H 0116EH BOXEDIT_TEXT           CODE
+ 169F8H 18057H 01660H EDITOR_TEXT            CODE
+ 18058H 184ADH 00456H ERROR_TEXT             CODE
+ 184AEH 18DCDH 00920H HELP_TEXT              CODE
+ 18DCEH 19509H 0073CH KEYUTIL_TEXT           CODE
+ 1950AH 19799H 00290H KEYREDEF_TEXT          CODE
+ 1979AH 19853H 000BAH PARSE_TEXT             CODE
+ 19854H 19C27H 003D4H POPMENU_TEXT           CODE
+ 19C28H 19DDBH 001B4H SOUND_TEXT             CODE
+ 19DDCH 1A0A5H 002CAH MOUSE_TEXT             CODE
+ 1A0A6H 1A0FFH 0005AH CLRBLK_TEXT            CODE
+ 1A100H 1A189H 0008AH CLS_TEXT               CODE
+ 1A18AH 1A23FH 000B6H CRSRTYPE_TEXT          CODE
+ 1A240H 1A37DH 0013EH DRAWBOX_TEXT           CODE
+ 1A37EH 1A3C7H 0004AH KEYBOARD_TEXT          CODE
+ 1A3C8H 1A5C5H 001FEH NORMAL_TEXT            CODE
+ 1A5C6H 1A641H 0007CH PHANTOM_TEXT           CODE
+ 1A642H 1A6A5H 00064H PRMOV_TEXT             CODE
+ 1A6A6H 1A6F7H 00052H PRNOMOV_TEXT           CODE
+ 1A6F8H 1A747H 00050H PRNOMOVF_TEXT          CODE
+ 1A748H 1A7A3H 0005CH PRNTCENT_TEXT          CODE
+ 1A7A4H 1A8D1H 0012EH SCRINIT_TEXT           CODE
+ 1A8D2H 1A925H 00054H SETCURSR_TEXT          CODE
+ 1A926H 1ABD7H 002B2H SHADOW_TEXT            CODE
+ 1ABD8H 1AC27H 00050H VCW_TEXT               CODE
+ 1AC28H 1AC9FH 00078H VSW_TEXT               CODE
+ 1ACA0H 1ACBBH 0001CH CURMODE_TEXT           CODE
+ 1ACBCH 1ACD7H 0001CH CURPOS_TEXT            CODE
+ 1ACD8H 1AD32H 0005BH GMVR_TEXT              CODE
+ 1AD34H 1AD51H 0001EH INT16_TEXT             CODE
+ 1AD52H 1AF07H 001B6H VBR_TEXT               CODE
+ 1AF08H 1AF08H 00000H C_ETEXT                ENDCODE
+ 1AF10H 1B596H 00687H SCONFIG5_DATA          FAR_DATA
+ 1B5A0H 1B77DH 001DEH S_APATH5_DATA          FAR_DATA
+ 1B780H 1B797H 00018H S_DATE5_DATA           FAR_DATA
+ 1B7A0H 1B896H 000F7H S_EVENT5_DATA          FAR_DATA
+ 1B8A0H 1C358H 00AB9H S_FEDIT5_DATA          FAR_DATA
+ 1C360H 1C61AH 002BBH S_FILE5_DATA           FAR_DATA
+ 1C620H 1C7F0H 001D1H S_FLIST5_DATA          FAR_DATA
+ 1C800H 1CC37H 00438H S_GEN5_DATA            FAR_DATA
+ 1CC40H 1CE2CH 001EDH S_GPATH5_DATA          FAR_DATA
+ 1CE30H 1D5F0H 007C1H S_MAIN5_DATA           FAR_DATA
+ 1D600H 1D672H 00073H S_MENU5_DATA           FAR_DATA
+ 1D680H 1D9AAH 0032BH S_MISC5_DATA           FAR_DATA
+ 1D9B0H 1DAAAH 000FBH S_MODEM5_DATA          FAR_DATA
+ 1DAB0H 1DEDEH 0042FH S_MSG5_DATA            FAR_DATA
+ 1DEE0H 1E03CH 0015DH S_NPATH5_DATA          FAR_DATA
+ 1E040H 1E20AH 001CBH S_UPATH5_DATA          FAR_DATA
+ 1E210H 1E521H 00312H S_USERS5_DATA          FAR_DATA
+ 1E530H 1E577H 00048H S_UTIL5_DATA           FAR_DATA
+ 1E580H 1E580H 00000H EMULATOR_DATA          FAR_DATA
+ 1E580H 1EE93H 00914H FAR_BSS                FAR_BSS
+ 1EEA0H 1EEE1H 00042H NULL                   BEGDATA
+ 1EEE2H 20C57H 01D76H _DATA                  DATA
+ 20C58H 20C59H 00002H XIQC                   DATA
+ 20C5AH 20C67H 0000EH DBDATA                 DATA
+ 20C68H 20C68H 00000H XPB                    DATA
+ 20C68H 20C6BH 00004H XP                     DATA
+ 20C6CH 20C6CH 00000H XPE                    DATA
+ 20C6CH 20C6FH 00004H EXEC                   DATA
+ 20C70H 20C7DH 0000EH CDATA                  DATA
+ 20C7EH 20C7EH 00000H XIFB                   DATA
+ 20C7EH 20C7EH 00000H XIF                    DATA
+ 20C7EH 20C7EH 00000H XIFE                   DATA
+ 20C7EH 20C7EH 00000H XIB                    DATA
+ 20C7EH 20C7EH 00000H XI                     DATA
+ 20C7EH 20C7EH 00000H XIE                    DATA
+ 20C7EH 20C7EH 00000H XCB                    DATA
+ 20C7EH 20C7EH 00000H XC                     DATA
+ 20C7EH 20C7EH 00000H XCE                    DATA
+ 20C7EH 20C7EH 00000H XCFB                   DATA
+ 20C7EH 20C7EH 00000H XCF                    DATA
+ 20C7EH 20C7EH 00000H XCFE                   DATA
+ 20C7EH 20D1BH 0009EH CONST                  CONST
+ 20D1CH 20D23H 00008H HDR                    MSG
+ 20D24H 20DF9H 000D6H MSG                    MSG
+ 20DFAH 20DFBH 00002H PAD                    MSG
+ 20DFCH 20DFCH 00001H EPAD                   MSG
+ 20DFEH 20E59H 0005CH _BSS                   BSS
+ 20E5AH 20E5AH 00000H XOB                    BSS
+ 20E5AH 20ED9H 00080H XO                     BSS
+ 20EDAH 20EDAH 00000H XOE                    BSS
+ 20EE0H 210DFH 00200H c_common               BSS
+ 210E0H 238DFH 02800H STACK                  STACK
+
+ Origin   Group
+ 1EEA:0   DGROUP
+
+  Address         Publics by Name
+
+ 1EEA:1228       STKHQQ
+ 11CA:3412       _access
+ 156F:0002       _askyn
+ 11CA:2716       _atexit
+ 0197:014C       _atodate
+ 11CA:1B90       _atoi
+ 11CA:1B94       _atol
+ 1D68:01C2       _background
+ 1D9B:0099       _baud
+ 1CE3:0150       _bbsinfo_choices
+ 0800:0100       _bbsinfo_menu
+ 19C2:019C       _beep
+ 02C9:024E       _blank_fedit_entry
+ 1DAB:00A7       _board_type
+ 1588:06AC       _box_edit
+ 1588:04E0       _box_fill
+ 11CA:22EC       _calloc
+ 1E58:0008       _cfg
+ 1E58:080A       _cfgfd
+ 1E58:080E       _cfgpath
+ 1EEA:1D96       _cga_here
+ 0197:0034       _check_date
+ 11CA:1F9A       _chsize
+ 0000:0000       _cleanup
+ 11CA:12F8       _close
+ 184A:08C0       _close_help
+ 156F:0188       _close_message
+ 1A92:01F4       _close_shadow_window
+ 1A3C:0136       _close_window
+ 1A0A:0006       _clrblk
+ 1EEA:0070       _color
+ 1E58:0804       _color_change_flag
+ 1805:01AE       _critical_error
+ 1EEA:1DA6       _cur_ega
+ 1EEA:0064       _cur_evts
+ 1EEA:005C       _cur_files
+ 1EEA:0054       _cur_msgs
+ 1EEA:006C       _cur_usrs
+ 0197:0282       _datetoa
+ 184A:02C2       _deregister_help
+ 1950:0120       _deregister_key
+ 1A24:0000       _drawbox
+ 014A:0002       _draw_archiver_paths
+ 01C3:0002       _draw_event
+ 04B7:0004       _draw_farea
+ 02C9:0006       _draw_fedit
+ 05B7:03DE       _draw_file_list
+ 065D:000A       _draw_general_info
+ 07AC:000E       _draw_general_paths
+ 08B6:0006       _draw_miscellaneous_info
+ 0A80:000A       _draw_modem_info
+ 0BCB:05AA       _draw_msgarea
+ 0BCB:03E0       _draw_msg_list
+ 0DA4:000E       _draw_network_paths
+ 0DF9:000E       _draw_unarchiver_paths
+ 0E46:04B6       _draw_user
+ 0E46:177C       _draw_user_list
+ 1EEA:1F5E       _edata
+ 014A:02AE       _edit_archiver_paths
+ 10A9:05EE       _edit_date
+ 01C3:05D0       _edit_events
+ 04B7:032C       _edit_farea
+ 169F:0008       _edit_field
+ 04B7:0834       _edit_file_boards
+ 05B7:051C       _edit_file_lists
+ 10A9:0078       _edit_flags
+ 02C9:082A       _edit_flist_entry
+ 065D:045C       _edit_general_info
+ 07AC:02F4       _edit_general_paths
+ 08B6:0AD0       _edit_miscellaneous_info
+ 0A80:09D0       _edit_modem_info
+ 0BCB:0B44       _edit_msgarea
+ 0BCB:149A       _edit_msg_boards
+ 0DA4:02D4       _edit_network_paths
+ 10A9:077C       _edit_number
+ 0DF9:02BA       _edit_unarchiver_paths
+ 0E46:0E06       _edit_user
+ 0E46:18D4       _edit_user_list
+ 1EEA:1D9C       _ega43flag
+ 1EEA:1D9A       _ega_active
+ 1EEA:1D94       _ega_here
+ 1EEA:1DA4       _ega_mono_card
+ 1EEA:2240       _end
+ 1EEA:14C5       _environ
+ 1EEA:147E       _errno
+ 1805:0008       _error
+ 1E58:0004       _evtfd
+ 1EEA:0060       _evts
+ 1950:0220       _execute_key
+ 11CA:3701       _exit
+ 11CA:04AE       _fclose
+ 02C9:15E4       _fedit_list
+ 11CA:0CDC       _fflush
+ 1E58:0910       _filefd
+ 1CE3:03F7       _fileinfo_choices
+ 0800:0158       _fileinfo_menu
+ 11CA:2112       _filelength
+ 1EEA:0058       _files
+ 10A9:0BD2       _file_comp
+ 014A:0208       _fill_archiver_paths
+ 10A9:05B2       _fill_date
+ 01C3:0354       _fill_event
+ 04B7:0220       _fill_farea
+ 02C9:036C       _fill_fedit_entry
+ 10A9:0004       _fill_flags
+ 065D:02BE       _fill_general_info
+ 07AC:024E       _fill_general_paths
+ 08B6:06BA       _fill_miscellaneous_info
+ 0A80:05F4       _fill_modem_info
+ 0BCB:08E0       _fill_msgarea
+ 0DA4:020C       _fill_network_paths
+ 0DF9:0214       _fill_unarchiver_paths
+ 0E46:0A84       _fill_user
+ 02C9:11A2       _find_fedit_list
+ 05B7:0002       _find_file_list
+ 0BCB:0004       _find_msgarea_list
+ 0E46:000E       _find_user_list
+ 11CA:0D5C       _flushall
+ 11CA:05A8       _fopen
+ 1D68:01DB       _foreground
+ 11CA:05C4       _fprintf
+ 11CA:0604       _fread
+ 11CA:17D6       _free
+ 11CA:1D12       _fseek
+ 11CA:1D94       _ftell
+ 11CA:0776       _fwrite
+ 11CA:1CBE       _getch
+ 11CA:1CBA       _getche
+ 11CA:3458       _getcwd
+ 11CA:1C2C       _getenv
+ 10A9:1132       _get_anychar
+ 10A9:0C02       _get_anychar_first
+ 0197:0002       _get_cdate
+ 19C2:0008       _get_cpu_time
+ 08B6:063C       _get_field
+ 10A9:0E4C       _get_fileext
+ 10A9:0CCC       _get_filename
+ 08B6:0676       _get_menu
+ 10A9:0FC4       _get_pathname
+ 08B6:05F8       _get_status
+ 18DC:0042       _get_time
+ 11CA:390A       _inp
+ 11CA:37C4       _int86
+ 11CA:38B8       _intdos
+ 11CA:2340       _intdosx
+ 1EEA:1CF6       _in_help
+ 11CA:1BEE       _itoa
+ 1B78:0000       _legit
+ 11CA:3950       _longjmp
+ 11CA:1318       _lseek
+ 0000:0242       _main
+ 0800:0184       _main_menu
+ 1CE3:073F       _main_menu_choices
+ 11CA:17D0       _malloc
+ 1EEA:004E       _master_change
+ 1EEA:0066       _max_evts
+ 1EEA:005E       _max_files
+ 1EEA:0056       _max_msgs
+ 1EEA:006E       _max_usrs
+ 1EEA:1DA2       _max_vrt_chrs
+ 11CA:259A       _memcpy
+ 11CA:24D0       _memmove
+ 11CA:25F8       _memset
+ 1EEA:1D98       _mono_here
+ 19DD:0176       _mouse_bpress
+ 19DD:01D2       _mouse_brelease
+ 19DD:00CE       _mouse_deinit
+ 19DD:00E8       _mouse_hide
+ 19DD:022E       _mouse_hlimit
+ 19DD:0062       _mouse_init
+ 19DD:014C       _mouse_place
+ 19DD:0282       _mouse_setspeed
+ 19DD:02AC       _mouse_settext
+ 19DD:00D0       _mouse_show
+ 19DD:0100       _mouse_status
+ 19DD:0258       _mouse_vlimit
+ 1E58:0000       _msgfd
+ 1EEA:0050       _msgs
+ 10A9:0BEA       _msg_comp
+ 1EEA:0D0C       _msg_type
+ 19C2:0048       _nap
+ 02C9:1454       _next_fedit_list
+ 05B7:027C       _next_file_list
+ 0BCB:027E       _next_msgarea_list
+ 0E46:02F0       _next_user_list
+ 1DAB:00BB       _nodes
+ 11CA:271E       _onexit
+ 11CA:13AC       _open
+ 184A:000E       _open_help
+ 156F:00F6       _open_message
+ 1A92:0006       _open_shadow_window
+ 1A3C:0008       _open_window
+ 11CA:3918       _outp
+ 1979:000A       _parse_entry
+ 1CE3:0306       _pathinfo_choices
+ 0800:012C       _pathinfo_menu
+ 1A5C:0006       _phantom
+ 19C2:00AA       _play
+ 184A:07DA       _pop_help
+ 1985:0004       _pop_menu
+ 1D9B:0071       _port
+ 1A18:000A       _prepare_cursor_types
+ 0831:01DE       _print_help
+ 0831:021C       _print_menu_line
+ 1A74:0008       _prntcenter
+ 1A64:0002       _prntmov
+ 1A6A:0006       _prntnomov
+ 1A6F:0008       _prntnomovf
+ 0831:02CC       _push_menu
+ 11CA:2748       _qsort
+ 184A:02C8       _query_help_topic
+ 1950:01BC       _query_key
+ 11CA:155E       _read
+ 18DC:0422       _read_keyboard
+ 18DC:0582       _read_mouse_keyboard
+ 11CA:221E       _realloc
+ 184A:0296       _register_help
+ 1950:000A       _register_key
+ 11CA:3576       _remove
+ 0831:011C       _restore_screen
+ 0831:000A       _save_screen
+ 18DC:00A0       _screen_save
+ 1A7A:0004       _scr_init
+ 11CA:3926       _setjmp
+ 1805:044C       _set_critical_error
+ 1A18:00AA       _set_cursor_type
+ 184A:0270       _set_help_colors
+ 184A:089E       _set_help_key
+ 18DC:003A       _set_jump_off
+ 18DC:000E       _set_jump_on
+ 1A8D:0002       _set_new_cursor
+ 0800:0008       _shell
+ 18DC:02F8       _show_time
+ 11CA:2964       _signal
+ 1EEA:1D9E       _snow_flag
+ 11CA:1392       _sopen
+ 11CA:2F4E       _spawnlp
+ 11CA:302A       _spawnve
+ 11CA:31F8       _spawnvp
+ 11CA:322E       _spawnvpe
+ 11CA:1F2E       _sprintf
+ 11CA:17BC       _stackavail
+ 1EEA:0F9A       _status
+ 11CA:1A96       _strcat
+ 11CA:23A2       _strchr
+ 11CA:23D0       _strcmpi
+ 11CA:1ADC       _strcpy
+ 11CA:23D0       _stricmp
+ 11CA:1B12       _strlen
+ 11CA:1B54       _strncmp
+ 11CA:1B2A       _strncpy
+ 11CA:2416       _strrchr
+ 11CA:2468       _strstr
+ 11CA:2444       _strupr
+ 11CA:1C16       _toupper
+ 11CA:3576       _unlink
+ 02C9:0570       _unphantom
+ 18DC:0392       _update_time
+ 1E58:0806       _userfd
+ 1EEA:0068       _usrs
+ 1EEA:1D92       _vga_here
+ 11CA:384E       _vsprintf
+ 11CA:165C       _write
+ 1EEA:083A       _yn
+ 1EEA:1224       __aaltstkovr
+ 1EEA:1462       __acfinfo
+ 0000:9876  Abs  __acrtmsg
+ 0000:9876  Abs  __acrtused
+ 0000:D6D6  Abs  __aDBdoswp
+ 1EEA:1220       __adbgmsg
+ 1EEA:1204       __aexit_rtn
+ 11CA:1CE6       __aFahdiff
+ 11CA:013A       __aFchkstk
+ 11CA:35A2       __aFldiv
+ 11CA:3A18       __aFlmul
+ 11CA:3A18       __aFulmul
+ 0000:1000  Abs  __AHINCR
+ 0000:000C  Abs  __AHSHIFT
+ 1EEA:1470       __aintdiv
+ 1EEA:12C6       __amblksiz
+ 11CA:00ED       __amsg_exit
+ 1EEA:0042       __anullsize
+ 1EEA:121C       __aseghi
+ 1EEA:121E       __aseglo
+ 1EEA:1206       __asizds
+ 1EEA:12E4       __asizeC
+ 1EEA:12E5       __asizeD
+ 11CA:0012       __astart
+ 1EEA:1202       __atopsp
+ 1EEA:2040       __bufin
+ 11CA:1B98       __catox
+ 11CA:2AF6       __cenvarg
+ 11CA:3710       __cexit
+ 1EEA:12C8       __cfltcvt_tab
+ 1EEA:1246       __cflush
+ 1EEA:13E8       __chbuf
+ 11CA:343C       __chdrive
+ 1EEA:14CE       __child
+ 11CA:013A       __chkstk
+ 11CA:363C       __cinit
+ 11CA:00DD       __cintDIV
+ 1A10:0000       __cls
+ 11CA:2640       __cltoasub
+ 1EEA:13EC       __csigtab0
+ 11CA:3784       __ctermsub
+ 1EEA:12E6       __ctype
+ 1EEA:12E6       __ctype_
+ 1EEA:1D46       __cur_keys
+ 11CA:154D       __cXENIXtoDOSmode
+ 11CA:264D       __cxtoa
+ 11CA:371A       __c_exit
+ 11CA:010F       __dataseg
+ 1EEA:1489       __doserrno
+ 11CA:2E60       __dospawn
+ 11CA:0458       __dosret0
+ 11CA:046D       __dosretax
+ 11CA:0460       __dosreturn
+ 1EEA:1486       __dosvermajor
+ 1EEA:1487       __dosverminor
+ 11CA:3586       __dos_getdate
+ 156F:0000       __EmDataSeg
+ 11CA:33FC       __execload
+ 11CA:3708       __exit
+ 1EEA:1474       __fac
+ 11CA:17DC       __ffree
+ 11CA:0112       __FF_MSGBANNER
+ 1EEA:12B8       __fheap
+ 11CA:090E       __filbuf
+ 1EEA:140C       __fileinfo
+ 11CA:1A32       __findlast
+ 11CA:231A       __findseg
+ 11CA:09AA       __flsbuf
+ 11CA:17EF       __fmalloc
+ 1EEA:12B6       __fmode
+ 1EEA:1DD2       __fpinit
+ 11CA:0134       __fptrap
+ 11CA:2198       __frealloc
+ 11CA:0A96       __freebuf
+ 11CA:0574       __fsopen
+ 11CA:0C93       __ftbuf
+ 11CA:0ACE       __getbuf
+ 11CA:3470       __getdcwd
+ 11CA:3434       __getdrive
+ 11CA:26A4       __getpath
+ 11CA:12AA       __getstream
+ 1A37:004A       __get_shift_status
+ 1ACD:0008       __gmvr
+ 11CA:1952       __growseg
+ 11CA:397A       __harderr
+ 11CA:39C9       __hardresume
+ 11CA:39D2       __hardretn
+ 11CA:39BD       __hardretn_return
+ 11CA:19E1       __incseg
+ 11CA:186C       __initseg
+ 1AD3:0004       __int16h
+ 1EEA:14D1       __intno
+ 1EEA:14D6       __iob
+ 1EEA:172E       __iob2
+ 1EEA:12B6       __iomode
+ 1EEA:1D40       __keys
+ 1EEA:1986       __lastiob
+ 11CA:18A0       __linkseg
+ 11CA:047A       __maperror
+ 1EEA:1D44       __max_keys
+ 11CA:0432       __myalloc
+ 11CA:1A52       __newseg
+ 1EEA:148B       __nfile
+ 1EEA:1208       __nheap_desc
+ 11CA:03D0       __NMSG_TEXT
+ 11CA:03FB       __NMSG_WRITE
+ 11CA:015E       __nullcheck
+ 1EEA:1DAE       __oldsp
+ 11CA:0B1A       __openfile
+ 1EEA:1489       __oserr
+ 1EEA:148D       __osfile
+ 1EEA:1486       __osmajor
+ 1EEA:1487       __osminor
+ 1EEA:1488       __osmode
+ 1EEA:1486       __osversion
+ 11CA:0DC0       __output
+ 1EEA:14D0       __ovlflag
+ 1EEA:14D2       __ovlvec
+ 1EEA:14C9       __pgmptr
+ 1EEA:1484       __psp
+ 1EEA:1482       __pspadr
+ 1A37:000E       __read_keyboard
+ 11CA:2224       __resize
+ 1A37:003C       __scan_keyboard
+ 11CA:18D6       __searchseg
+ 11CA:0182       __setargv
+ 1ACA:0000       __setcurmode
+ 1ACB:000C       __setcurpos
+ 11CA:0330       __setenvp
+ 11CA:2A12       __sigentry
+ 1EEA:12E2       __sigintoff
+ 1EEA:12E0       __sigintseg
+ 11CA:0C12       __stbuf
+ 11CA:1C0A       __toupper
+ 1EEA:1480       __umaskval
+ 1AD5:0137       __vbr
+ 1AD5:00FF       __vbw
+ 1ABD:0008       __vcw
+ 1AC2:0008       __vsw
+ 1EEA:1DC0       ___aDBexit
+ 1EEA:1DC6       ___aDBptrchk
+ 1EEA:1DBE       ___aDBrterr
+ 1EEA:1DBC       ___aDBswpchk
+ 1EEA:1DBA       ___aDBswpflg
+ 1EEA:14BF       ___argc
+ 1EEA:14C1       ___argv
+ 1EEA:1A3C       ___error_color
+ 1EEA:1DB8       ___qczrinit
+ 1EEA:1DA0       ___screen_length
+
+  Address         Publics by Value
+
+ 0000:0000       _cleanup
+ 0000:000C  Abs  __AHSHIFT
+ 0000:0242       _main
+ 0000:1000  Abs  __AHINCR
+ 014A:0002       _draw_archiver_paths
+ 014A:0208       _fill_archiver_paths
+ 014A:02AE       _edit_archiver_paths
+ 0197:0002       _get_cdate
+ 0197:0034       _check_date
+ 0197:014C       _atodate
+ 0197:0282       _datetoa
+ 01C3:0002       _draw_event
+ 01C3:0354       _fill_event
+ 01C3:05D0       _edit_events
+ 02C9:0006       _draw_fedit
+ 02C9:024E       _blank_fedit_entry
+ 02C9:036C       _fill_fedit_entry
+ 02C9:0570       _unphantom
+ 02C9:082A       _edit_flist_entry
+ 02C9:11A2       _find_fedit_list
+ 02C9:1454       _next_fedit_list
+ 02C9:15E4       _fedit_list
+ 04B7:0004       _draw_farea
+ 04B7:0220       _fill_farea
+ 04B7:032C       _edit_farea
+ 04B7:0834       _edit_file_boards
+ 05B7:0002       _find_file_list
+ 05B7:027C       _next_file_list
+ 05B7:03DE       _draw_file_list
+ 05B7:051C       _edit_file_lists
+ 065D:000A       _draw_general_info
+ 065D:02BE       _fill_general_info
+ 065D:045C       _edit_general_info
+ 07AC:000E       _draw_general_paths
+ 07AC:024E       _fill_general_paths
+ 07AC:02F4       _edit_general_paths
+ 0800:0008       _shell
+ 0800:0100       _bbsinfo_menu
+ 0800:012C       _pathinfo_menu
+ 0800:0158       _fileinfo_menu
+ 0800:0184       _main_menu
+ 0831:000A       _save_screen
+ 0831:011C       _restore_screen
+ 0831:01DE       _print_help
+ 0831:021C       _print_menu_line
+ 0831:02CC       _push_menu
+ 08B6:0006       _draw_miscellaneous_info
+ 08B6:05F8       _get_status
+ 08B6:063C       _get_field
+ 08B6:0676       _get_menu
+ 08B6:06BA       _fill_miscellaneous_info
+ 08B6:0AD0       _edit_miscellaneous_info
+ 0000:9876  Abs  __acrtused
+ 0000:9876  Abs  __acrtmsg
+ 0A80:000A       _draw_modem_info
+ 0A80:05F4       _fill_modem_info
+ 0A80:09D0       _edit_modem_info
+ 0BCB:0004       _find_msgarea_list
+ 0BCB:027E       _next_msgarea_list
+ 0BCB:03E0       _draw_msg_list
+ 0BCB:05AA       _draw_msgarea
+ 0BCB:08E0       _fill_msgarea
+ 0BCB:0B44       _edit_msgarea
+ 0BCB:149A       _edit_msg_boards
+ 0000:D6D6  Abs  __aDBdoswp
+ 0DA4:000E       _draw_network_paths
+ 0DA4:020C       _fill_network_paths
+ 0DA4:02D4       _edit_network_paths
+ 0DF9:000E       _draw_unarchiver_paths
+ 0DF9:0214       _fill_unarchiver_paths
+ 0DF9:02BA       _edit_unarchiver_paths
+ 0E46:000E       _find_user_list
+ 0E46:02F0       _next_user_list
+ 0E46:04B6       _draw_user
+ 0E46:0A84       _fill_user
+ 0E46:0E06       _edit_user
+ 0E46:177C       _draw_user_list
+ 0E46:18D4       _edit_user_list
+ 10A9:0004       _fill_flags
+ 10A9:0078       _edit_flags
+ 10A9:05B2       _fill_date
+ 10A9:05EE       _edit_date
+ 10A9:077C       _edit_number
+ 10A9:0BD2       _file_comp
+ 10A9:0BEA       _msg_comp
+ 10A9:0C02       _get_anychar_first
+ 10A9:0CCC       _get_filename
+ 10A9:0E4C       _get_fileext
+ 10A9:0FC4       _get_pathname
+ 10A9:1132       _get_anychar
+ 11CA:0012       __astart
+ 11CA:00DD       __cintDIV
+ 11CA:00ED       __amsg_exit
+ 11CA:010F       __dataseg
+ 11CA:0112       __FF_MSGBANNER
+ 11CA:0134       __fptrap
+ 11CA:013A       __chkstk
+ 11CA:013A       __aFchkstk
+ 11CA:015E       __nullcheck
+ 11CA:0182       __setargv
+ 11CA:0330       __setenvp
+ 11CA:03D0       __NMSG_TEXT
+ 11CA:03FB       __NMSG_WRITE
+ 11CA:0432       __myalloc
+ 11CA:0458       __dosret0
+ 11CA:0460       __dosreturn
+ 11CA:046D       __dosretax
+ 11CA:047A       __maperror
+ 11CA:04AE       _fclose
+ 11CA:0574       __fsopen
+ 11CA:05A8       _fopen
+ 11CA:05C4       _fprintf
+ 11CA:0604       _fread
+ 11CA:0776       _fwrite
+ 11CA:090E       __filbuf
+ 11CA:09AA       __flsbuf
+ 11CA:0A96       __freebuf
+ 11CA:0ACE       __getbuf
+ 11CA:0B1A       __openfile
+ 11CA:0C12       __stbuf
+ 11CA:0C93       __ftbuf
+ 11CA:0CDC       _fflush
+ 11CA:0D5C       _flushall
+ 11CA:0DC0       __output
+ 11CA:12AA       __getstream
+ 11CA:12F8       _close
+ 11CA:1318       _lseek
+ 11CA:1392       _sopen
+ 11CA:13AC       _open
+ 11CA:154D       __cXENIXtoDOSmode
+ 11CA:155E       _read
+ 11CA:165C       _write
+ 11CA:17BC       _stackavail
+ 11CA:17D0       _malloc
+ 11CA:17D6       _free
+ 11CA:17DC       __ffree
+ 11CA:17EF       __fmalloc
+ 11CA:186C       __initseg
+ 11CA:18A0       __linkseg
+ 11CA:18D6       __searchseg
+ 11CA:1952       __growseg
+ 11CA:19E1       __incseg
+ 11CA:1A32       __findlast
+ 11CA:1A52       __newseg
+ 11CA:1A96       _strcat
+ 11CA:1ADC       _strcpy
+ 11CA:1B12       _strlen
+ 11CA:1B2A       _strncpy
+ 11CA:1B54       _strncmp
+ 11CA:1B90       _atoi
+ 11CA:1B94       _atol
+ 11CA:1B98       __catox
+ 11CA:1BEE       _itoa
+ 11CA:1C0A       __toupper
+ 11CA:1C16       _toupper
+ 11CA:1C2C       _getenv
+ 11CA:1CBA       _getche
+ 11CA:1CBE       _getch
+ 11CA:1CE6       __aFahdiff
+ 11CA:1D12       _fseek
+ 11CA:1D94       _ftell
+ 11CA:1F2E       _sprintf
+ 11CA:1F9A       _chsize
+ 11CA:2112       _filelength
+ 11CA:2198       __frealloc
+ 11CA:221E       _realloc
+ 11CA:2224       __resize
+ 11CA:22EC       _calloc
+ 11CA:231A       __findseg
+ 11CA:2340       _intdosx
+ 11CA:23A2       _strchr
+ 11CA:23D0       _stricmp
+ 11CA:23D0       _strcmpi
+ 11CA:2416       _strrchr
+ 11CA:2444       _strupr
+ 11CA:2468       _strstr
+ 11CA:24D0       _memmove
+ 11CA:259A       _memcpy
+ 11CA:25F8       _memset
+ 11CA:2640       __cltoasub
+ 11CA:264D       __cxtoa
+ 11CA:26A4       __getpath
+ 11CA:2716       _atexit
+ 11CA:271E       _onexit
+ 11CA:2748       _qsort
+ 11CA:2964       _signal
+ 11CA:2A12       __sigentry
+ 11CA:2AF6       __cenvarg
+ 11CA:2E60       __dospawn
+ 11CA:2F4E       _spawnlp
+ 11CA:302A       _spawnve
+ 11CA:31F8       _spawnvp
+ 11CA:322E       _spawnvpe
+ 11CA:33FC       __execload
+ 11CA:3412       _access
+ 11CA:3434       __getdrive
+ 11CA:343C       __chdrive
+ 11CA:3458       _getcwd
+ 11CA:3470       __getdcwd
+ 11CA:3576       _remove
+ 11CA:3576       _unlink
+ 11CA:3586       __dos_getdate
+ 11CA:35A2       __aFldiv
+ 11CA:363C       __cinit
+ 11CA:3701       _exit
+ 11CA:3708       __exit
+ 11CA:3710       __cexit
+ 11CA:371A       __c_exit
+ 11CA:3784       __ctermsub
+ 11CA:37C4       _int86
+ 11CA:384E       _vsprintf
+ 11CA:38B8       _intdos
+ 11CA:390A       _inp
+ 11CA:3918       _outp
+ 11CA:3926       _setjmp
+ 11CA:3950       _longjmp
+ 11CA:397A       __harderr
+ 11CA:39BD       __hardretn_return
+ 11CA:39C9       __hardresume
+ 11CA:39D2       __hardretn
+ 11CA:3A18       __aFlmul
+ 11CA:3A18       __aFulmul
+ 156F:0000       __EmDataSeg
+ 156F:0002       _askyn
+ 156F:00F6       _open_message
+ 156F:0188       _close_message
+ 1588:04E0       _box_fill
+ 1588:06AC       _box_edit
+ 169F:0008       _edit_field
+ 1805:0008       _error
+ 1805:01AE       _critical_error
+ 1805:044C       _set_critical_error
+ 184A:000E       _open_help
+ 184A:0270       _set_help_colors
+ 184A:0296       _register_help
+ 184A:02C2       _deregister_help
+ 184A:02C8       _query_help_topic
+ 184A:07DA       _pop_help
+ 184A:089E       _set_help_key
+ 184A:08C0       _close_help
+ 18DC:000E       _set_jump_on
+ 18DC:003A       _set_jump_off
+ 18DC:0042       _get_time
+ 18DC:00A0       _screen_save
+ 18DC:02F8       _show_time
+ 18DC:0392       _update_time
+ 18DC:0422       _read_keyboard
+ 18DC:0582       _read_mouse_keyboard
+ 1950:000A       _register_key
+ 1950:0120       _deregister_key
+ 1950:01BC       _query_key
+ 1950:0220       _execute_key
+ 1979:000A       _parse_entry
+ 1985:0004       _pop_menu
+ 19C2:0008       _get_cpu_time
+ 19C2:0048       _nap
+ 19C2:00AA       _play
+ 19C2:019C       _beep
+ 19DD:0062       _mouse_init
+ 19DD:00CE       _mouse_deinit
+ 19DD:00D0       _mouse_show
+ 19DD:00E8       _mouse_hide
+ 19DD:0100       _mouse_status
+ 19DD:014C       _mouse_place
+ 19DD:0176       _mouse_bpress
+ 19DD:01D2       _mouse_brelease
+ 19DD:022E       _mouse_hlimit
+ 19DD:0258       _mouse_vlimit
+ 19DD:0282       _mouse_setspeed
+ 19DD:02AC       _mouse_settext
+ 1A0A:0006       _clrblk
+ 1A10:0000       __cls
+ 1A18:000A       _prepare_cursor_types
+ 1A18:00AA       _set_cursor_type
+ 1A24:0000       _drawbox
+ 1A37:000E       __read_keyboard
+ 1A37:003C       __scan_keyboard
+ 1A37:004A       __get_shift_status
+ 1A3C:0008       _open_window
+ 1A3C:0136       _close_window
+ 1A5C:0006       _phantom
+ 1A64:0002       _prntmov
+ 1A6A:0006       _prntnomov
+ 1A6F:0008       _prntnomovf
+ 1A74:0008       _prntcenter
+ 1A7A:0004       _scr_init
+ 1A8D:0002       _set_new_cursor
+ 1A92:0006       _open_shadow_window
+ 1A92:01F4       _close_shadow_window
+ 1ABD:0008       __vcw
+ 1AC2:0008       __vsw
+ 1ACA:0000       __setcurmode
+ 1ACB:000C       __setcurpos
+ 1ACD:0008       __gmvr
+ 1AD3:0004       __int16h
+ 1AD5:00FF       __vbw
+ 1AD5:0137       __vbr
+ 1B78:0000       _legit
+ 1CE3:0150       _bbsinfo_choices
+ 1CE3:0306       _pathinfo_choices
+ 1CE3:03F7       _fileinfo_choices
+ 1CE3:073F       _main_menu_choices
+ 1D68:01C2       _background
+ 1D68:01DB       _foreground
+ 1D9B:0071       _port
+ 1D9B:0099       _baud
+ 1DAB:00A7       _board_type
+ 1DAB:00BB       _nodes
+ 1E58:0000       _msgfd
+ 1E58:0004       _evtfd
+ 1E58:0008       _cfg
+ 1E58:0804       _color_change_flag
+ 1E58:0806       _userfd
+ 1E58:080A       _cfgfd
+ 1E58:080E       _cfgpath
+ 1E58:0910       _filefd
+ 1EEA:0042       __anullsize
+ 1EEA:004E       _master_change
+ 1EEA:0050       _msgs
+ 1EEA:0054       _cur_msgs
+ 1EEA:0056       _max_msgs
+ 1EEA:0058       _files
+ 1EEA:005C       _cur_files
+ 1EEA:005E       _max_files
+ 1EEA:0060       _evts
+ 1EEA:0064       _cur_evts
+ 1EEA:0066       _max_evts
+ 1EEA:0068       _usrs
+ 1EEA:006C       _cur_usrs
+ 1EEA:006E       _max_usrs
+ 1EEA:0070       _color
+ 1EEA:083A       _yn
+ 1EEA:0D0C       _msg_type
+ 1EEA:0F9A       _status
+ 1EEA:1202       __atopsp
+ 1EEA:1204       __aexit_rtn
+ 1EEA:1206       __asizds
+ 1EEA:1208       __nheap_desc
+ 1EEA:121C       __aseghi
+ 1EEA:121E       __aseglo
+ 1EEA:1220       __adbgmsg
+ 1EEA:1224       __aaltstkovr
+ 1EEA:1228       STKHQQ
+ 1EEA:1246       __cflush
+ 1EEA:12B6       __iomode
+ 1EEA:12B6       __fmode
+ 1EEA:12B8       __fheap
+ 1EEA:12C6       __amblksiz
+ 1EEA:12C8       __cfltcvt_tab
+ 1EEA:12E0       __sigintseg
+ 1EEA:12E2       __sigintoff
+ 1EEA:12E4       __asizeC
+ 1EEA:12E5       __asizeD
+ 1EEA:12E6       __ctype
+ 1EEA:12E6       __ctype_
+ 1EEA:13E8       __chbuf
+ 1EEA:13EC       __csigtab0
+ 1EEA:140C       __fileinfo
+ 1EEA:1462       __acfinfo
+ 1EEA:1470       __aintdiv
+ 1EEA:1474       __fac
+ 1EEA:147E       _errno
+ 1EEA:1480       __umaskval
+ 1EEA:1482       __pspadr
+ 1EEA:1484       __psp
+ 1EEA:1486       __dosvermajor
+ 1EEA:1486       __osversion
+ 1EEA:1486       __osmajor
+ 1EEA:1487       __dosverminor
+ 1EEA:1487       __osminor
+ 1EEA:1488       __osmode
+ 1EEA:1489       __oserr
+ 1EEA:1489       __doserrno
+ 1EEA:148B       __nfile
+ 1EEA:148D       __osfile
+ 1EEA:14BF       ___argc
+ 1EEA:14C1       ___argv
+ 1EEA:14C5       _environ
+ 1EEA:14C9       __pgmptr
+ 1EEA:14CE       __child
+ 1EEA:14D0       __ovlflag
+ 1EEA:14D1       __intno
+ 1EEA:14D2       __ovlvec
+ 1EEA:14D6       __iob
+ 1EEA:172E       __iob2
+ 1EEA:1986       __lastiob
+ 1EEA:1A3C       ___error_color
+ 1EEA:1CF6       _in_help
+ 1EEA:1D40       __keys
+ 1EEA:1D44       __max_keys
+ 1EEA:1D46       __cur_keys
+ 1EEA:1D92       _vga_here
+ 1EEA:1D94       _ega_here
+ 1EEA:1D96       _cga_here
+ 1EEA:1D98       _mono_here
+ 1EEA:1D9A       _ega_active
+ 1EEA:1D9C       _ega43flag
+ 1EEA:1D9E       _snow_flag
+ 1EEA:1DA0       ___screen_length
+ 1EEA:1DA2       _max_vrt_chrs
+ 1EEA:1DA4       _ega_mono_card
+ 1EEA:1DA6       _cur_ega
+ 1EEA:1DAE       __oldsp
+ 1EEA:1DB8       ___qczrinit
+ 1EEA:1DBA       ___aDBswpflg
+ 1EEA:1DBC       ___aDBswpchk
+ 1EEA:1DBE       ___aDBrterr
+ 1EEA:1DC0       ___aDBexit
+ 1EEA:1DC6       ___aDBptrchk
+ 1EEA:1DD2       __fpinit
+ 1EEA:1F5E       _edata
+ 1EEA:2040       __bufin
+ 1EEA:2240       _end
+
+Program entry point at 11CA:0012

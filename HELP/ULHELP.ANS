@@ -1,0 +1,20 @@
+`0[0;31;1mHelp for the [0;32;1mUpload Menu [0;35;1m------------------
+
+[0;33;1m<1> Xmodem       [0;36m- This is the most common protocol and is found in most
+                   communications programs.  It is not the best choice if you
+                   have one of the others.
+[0;33;1m<2> Xmodem-1k    [0;36m- Same thing except it sends information at 1024 bytes
+                   in one block instead of 128 bytes like Xmodem.  This makes
+                   it a little faster.
+[0;33;1m<3> Ymodem-Bat   [0;36m- Batch Ymodem.  This protocol is similar to Xmodem-1K
+                   but also sends filenames, sizes, and dates.  This means 
+                   that you can send multiple files at the same time.
+[0;33;1m<4> Ymodem-G     [0;36m- This is similar to Batch Ymodem except it has no error
+                   correction.  Use this ONLY if your modem handles MNP error
+                   correction.
+[0;33;1m<5> Zmodem       [0;36m- The fastest one of all if you do not have an MNP modem.
+                   It has automatic download startup, automatic resume, and
+                   other features which make it a great all-round protocol.
+[0;33;1m<X> Exit         [0;36m- Exits to the previous menu.
+
+[0;36;1mPress [0;31;1m[5mENTER [0;36;1mto continue....`4

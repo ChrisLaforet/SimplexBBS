@@ -1,0 +1,9 @@
+/NOI /ST:10240 sconfig s_apath s_date +
+s_event s_fedit s_file s_flist s_gen +
+s_gpath s_main s_medit s_menu s_misc s_modem +
+s_msel s_msg s_npath s_upath s_users s_util,
+sconfig,
+/MAP;
+
+
+

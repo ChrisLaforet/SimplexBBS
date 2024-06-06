@@ -1,0 +1,32 @@
+# Makefile
+#
+# For SMAIL - Simplex net mail manager
+
+smail.obj : smail.c smail.h
+	ztc -mc -a1 -b -s -S -c smail.c > smail.err
+	type smail.err
+
+s_areas.obj : s_areas.c smail.h
+	ztc -mc -a1 -b -s -S -c s_areas.c > s_areas.err
+	type s_areas.err
+
+s_badmsg.obj : s_badmsg.c smail.h
+	ztc -mc -a1 -b -s -S -c s_badmsg.c > s_badmsg.err
+	type s_badmsg.err
+
+s_export.obj : s_export.c smail.h
+	ztc -mc -a1 -b -s -S -c s_export.c > s_export.err
+	type s_export.err
+
+s_import.obj : s_import.c smail.h
+	ztc -mc -a1 -b -s -S -c s_import.c > s_import.err
+	type s_import.err
+
+s_unarc.obj : s_unarc.c smail.h
+	ztc -mc -a1 -b -s -S -c s_unarc.c > s_unarc.err
+	type s_unarc.err
+
+smail.exe : smail.obj s_areas.obj s_badmsg.obj s_export.obj s_import.obj \
+	s_unarc.obj
+	blink smail s_areas s_badmsg s_export s_import s_unarc,smail,/MAP;
+

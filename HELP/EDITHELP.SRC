@@ -1,0 +1,23 @@
+{moreoff lightred}Help for the {lightgreen}Line Edit Menu {lightmagenta}------------------
+
+{yellow}<C> Continue Msg  {cyan}- This option allows you to continue typing your message
+                    on the last line of your message.
+{yellow}<E> Edit Line     {cyan}- This option allows you to edit a specified line.  You
+                    can replace a certain character string in the line.
+{yellow}<D> Delete Line   {cyan}- This option allows you to delete a full line in your
+                    message.
+{yellow}<I> Insert Line   {cyan}- This option allows you to insert a line somewhere in
+                    your message.
+{yellow}<R> Replace Line  {cyan}- This option erases a specified line and lets you
+                    retype the WHOLE line.
+{yellow}<<> Left-justify  {cyan}- This option will left-justify a line flush left.
+{yellow}<^> Center line   {cyan}- This option will center a line.
+{yellow}<>> Right-justify {cyan}- This option will right-justify a line flush right.
+{yellow}<L> List Message  {cyan}- This option displays the full message that you have
+                    typed in.
+{yellow}<S> Save Message  {cyan}- This option saves the message you have typed and then
+                    exits the message editor.
+{yellow}<A> Abort Message {cyan}- This aborts and exits the message you are typing
+                    WITHOUT saving it.
+
+{lightcyan}Press {lightred blink}ENTER {lightcyan}to continue....{enter}

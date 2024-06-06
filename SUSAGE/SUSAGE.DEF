@@ -1,0 +1,6 @@
+NAME 		SUSAGE WINDOWCOMPAT
+STACKSIZE 	4096
+HEAPSIZE	8192
+DESCRIPTION 	'SUSAGE -- Simplex Active Usage Chart Generator. Copyright (c) 1990, Christopher Laforet'
+EXETYPE		OS2
+

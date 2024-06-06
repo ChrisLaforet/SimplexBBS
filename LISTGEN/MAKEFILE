@@ -1,0 +1,7 @@
+listgen.exe : listgen.obj
+	link /ST:4096 listgen;
+
+listgen.obj : listgen.c listgen.h
+	cl -AC -Ocglnt -Zp1 -Gs Zp1 -c listgen.c > listgen.err
+
+

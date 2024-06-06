@@ -1,0 +1,56 @@
+/* Decompilation of menu file ads.mnu
+**
+** Achieved by SMC (v 0.01)
+*/
+
+
+menu "ads"
+
+  prompt "[^$r min^] What is your choice?"
+  	color 15	hilite 14
+
+  /* Line 1> Type: Show menu line */
+  line "[ ^For Sale Area Advertising Menu^ >---------------------------"
+  	type 0	expert
+  	priv 0	color 13	hilite 14
+
+  /* Line 2> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 3> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 4> Type: Enter an advertisement in ad area */
+  line "<^E^> Enter an Advertisemnt               $c"
+  	type 80
+  	key "E"	data "for_sale /R=3 /D=60"
+  	priv 0	color 11	hilite 14
+
+  /* Line 5> Type: Read advertisements in ad area */
+  line "<^R^> Read Advertisements"
+  	type 81
+  	key "R"	data "for_sale /R=3"
+  	priv 0	color 11	hilite 14
+
+  /* Line 6> Type: Scan advertisements in ad area */
+  line "<^S^> Scan Advertisements"
+  	type 82
+  	key "S"	data "for_sale"
+  	priv 0	color 10	hilite 14
+
+  /* Line 7> Type: Return to previous menu */
+  line "<^M^> Return to the main menu"
+  	type 3
+  	key "M"
+  	priv 0	color 12	hilite 14
+
+  /* Line 8> Type: Call new menu - Add to return stack */
+  line "<^G^> Goodbye! Log off!!"
+  	type 1
+  	key "G"	data "logoff"
+  	priv 0	color 13	hilite 14
+

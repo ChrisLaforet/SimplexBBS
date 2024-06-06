@@ -1,0 +1,8 @@
+name supack.exe
+format dos
+option dosseg
+option stack=4096
+option caseexact
+option map
+library clibc.lib
+file supack.obj

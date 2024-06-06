@@ -1,0 +1,18 @@
+`0[0;31;1mHelp for the [0;32;1mScan Menu [0;35;1m------------------
+
+[0;32;1mEvery option will ask you if you want to "Mark" messages for later 
+retrival.  If you mark them, you can read them using <R>ead <M>arked.
+
+[0;33;1m<F> Scan Forward  [0;36m- Perform a Scan of messages in forward order starting
+                    at a specified message number.
+[0;33;1m<R> Scan Reverse  [0;36m- Perform a Scan of messages in reverse order starting
+                    at a specified message number.
+[0;33;1m<N> Scan New      [0;36m- Perform a Scan of new messages since the last time
+                    you read messages.
+[0;33;1m<S> Scan Search   [0;36m- Perform a Search of messages in the fields:  To Name,
+                    From Name, or Subject.  You will be prompted for which 
+                    field you want to search on.
+[0;33;1m<C> Cancel Marks  [0;36m- Deletes all marks and allows you to start from scratch.
+[0;33;1m<X> Exit          [0;36m- Exit to the previous menu.
+
+[0;36;1mPress [0;31;1m[5mENTER [0;36;1mto continue....`4

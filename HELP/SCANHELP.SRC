@@ -1,0 +1,18 @@
+{moreoff lightred}Help for the {lightgreen}Scan Menu {lightmagenta}------------------
+
+{lightgreen}Every option will ask you if you want to "Mark" messages for later 
+retrival.  If you mark them, you can read them using <R>ead <M>arked.
+
+{yellow}<F> Scan Forward  {cyan}- Perform a Scan of messages in forward order starting
+                    at a specified message number.
+{yellow}<R> Scan Reverse  {cyan}- Perform a Scan of messages in reverse order starting
+                    at a specified message number.
+{yellow}<N> Scan New      {cyan}- Perform a Scan of new messages since the last time
+                    you read messages.
+{yellow}<S> Scan Search   {cyan}- Perform a Search of messages in the fields:  To Name,
+                    From Name, or Subject.  You will be prompted for which 
+                    field you want to search on.
+{yellow}<C> Cancel Marks  {cyan}- Deletes all marks and allows you to start from scratch.
+{yellow}<X> Exit          {cyan}- Exit to the previous menu.
+
+{lightcyan}Press {lightred blink}ENTER {lightcyan}to continue....{enter}

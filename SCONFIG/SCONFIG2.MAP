@@ -1,0 +1,986 @@
+WATCOM Linker Version 10.0
+Copyright by WATCOM International Corp. 1985, 1994. All rights reserved.
+Created on:       94/10/07 03:50:35
+Executable Image: sconfig2.exe
+creating an OS/2 executable
+
+
+                        +------------+
+                        |   Groups   |
+                        +------------+
+
+Group                           Address              Size
+=====                           =======              ====
+
+DGROUP                          0005:0000            00004990
+
+
+
+                        +--------------+
+                        |   Segments   |
+                        +--------------+
+
+Segment                Class          Group          Address         Size
+=======                =====          =====          =======         ====
+
+SCONFIG_TEXT           CODE                          0001:0000       00001493
+S_APATH_TEXT           CODE                          0001:14a0       0000033b
+S_CFG_TEXT             CODE                          0001:17e0       000009d2
+S_DATE_TEXT            CODE                          0001:21c0       000002a4
+S_EVENT_TEXT           CODE                          0001:2470       00000d7b
+S_FEDIT_TEXT           CODE                          0001:31f0       00001a79
+S_FILE_TEXT            CODE                          0001:4c70       00000d3a
+S_FLIST_TEXT           CODE                          0001:59b0       00000910
+S_GEN_TEXT             CODE                          0001:62c0       00000e0c
+S_GPATH_TEXT           CODE                          0001:70d0       0000037d
+S_MAIN_TEXT            CODE                          0001:7450       00000240
+S_MEDIT_TEXT           CODE                          0001:7690       00001b1b
+S_MENU_TEXT            CODE                          0001:91b0       00000736
+S_MISC_TEXT            CODE                          0001:98f0       000014df
+S_MODEM_TEXT           CODE                          0001:add0       00000e24
+S_MSEL_TEXT            CODE                          0001:bc00       00001476
+S_MSG_TEXT             CODE                          0001:d080       00001878
+S_NPATH_TEXT           CODE                          0001:e900       00000384
+S_TIMES_TEXT           CODE                          0001:ec90       0000097d
+S_UPATH_TEXT           CODE                          0001:f610       0000033b
+S_USERS_TEXT           CODE                          0002:0000       00002444
+S_UTIL_TEXT            CODE                          0002:2450       00001703
+_TEXT                  CODE                          0002:3b60       0000898f
+CLS_TEXT               CODE                          0002:c4f0       00000030
+CLRBLK_TEXT            CODE                          0002:c520       00000034
+PRNOMOVF_TEXT          CODE                          0002:c560       00000055
+PRNOMOV_TEXT           CODE                          0002:c5c0       0000004e
+CRSRTYPE_TEXT          CODE                          0002:c610       0000009e
+SETCURSR_TEXT          CODE                          0002:c6b0       0000008e
+SCRINIT_TEXT           CODE                          0002:c740       00000062
+HELP_TEXT              CODE                          0002:c7b0       00000908
+ASKYN_TEXT             CODE                          0002:d0c0       00000180
+CSTRTO16_TEXT          CODE                          0002:d240       00000000
+CMODEL_TEXT            CODE                          0002:d240       00000000
+ARGCV086_TEXT          CODE                          0002:d240       00000000
+VCW_TEXT               CODE                          0002:d240       0000002d
+DRAWBOX_TEXT           CODE                          0002:d270       00000150
+PRNTCENT_TEXT          CODE                          0002:d3c0       00000050
+NORMAL_TEXT            CODE                          0002:d410       000001df
+EDITOR_TEXT            CODE                          0002:d5f0       00001998
+ERROR_TEXT             CODE                          0002:ef90       0000015f
+VBR_TEXT               CODE                          0002:f0f0       0000002b
+KEYUTIL_TEXT           CODE                          0002:f120       000006ad
+VBW_TEXT               CODE                          0002:f7d0       00000023
+SOUND_TEXT             CODE                          0002:f800       00000050
+SHADOW_TEXT            CODE                          0002:f850       0000028b
+POPMENU_TEXT           CODE                          0002:fae0       000002fe
+PHANTOM_TEXT           CODE                          0002:fde0       0000002e
+BOXEDIT_TEXT           CODE                          0003:0000       000010cb
+I4M_TEXT               CODE                          0003:10cb       00000000
+I4D_TEXT               CODE                          0003:10cb       00000000
+SELMENU_TEXT           CODE                          0003:10d0       00000432
+SCROLLUP_TEXT          CODE                          0003:1510       00000075
+PRMOV_TEXT             CODE                          0003:1590       0000005e
+GETCURSR_TEXT          CODE                          0003:15f0       00000060
+STINIT_TEXT            CODE                          0003:1650       00000000
+MEMALLOC_TEXT          CODE                          0003:1650       00000000
+VSW_TEXT               CODE                          0003:1650       00000044
+ENVIRON_TEXT           CODE                          0003:1694       00000000
+KEYREDEF_TEXT          CODE                          0003:16a0       0000024b
+SEG086_TEXT            CODE                          0003:18eb       00000000
+PARSE_TEXT             CODE                          0003:18f0       000000d0
+MOUSE_TEXT             CODE                          0003:19c0       00000901
+KEYBOARD_TEXT          CODE                          0003:22d0       00000096
+STJMP086_TEXT          CODE                          0003:2366       00000000
+STKO16_TEXT            CODE                          0003:2366       00000000
+INIRT086_TEXT          CODE                          0003:2366       00000000
+FPE87_TEXT             CODE                          0003:2366       00000000
+_GETDS_TEXT            CODE                          0003:2366       00000000
+_8087086_TEXT          CODE                          0003:2366       00000000
+INI87086_TEXT          CODE                          0003:2366       00000000
+SCONFIG11_DATA         FAR_DATA                      0004:0000       0000097a
+SCONFIG12_DATA         FAR_DATA                      0004:0980       00000788
+S_APATH11_DATA         FAR_DATA                      0004:1108       00000000
+S_APATH12_DATA         FAR_DATA                      0004:1110       000001cd
+S_CFG11_DATA           FAR_DATA                      0004:12dd       00000000
+S_CFG12_DATA           FAR_DATA                      0004:12e0       000000ee
+S_DATE11_DATA          FAR_DATA                      0004:13d0       00000018
+S_EVENT11_DATA         FAR_DATA                      0004:13e8       00000000
+S_EVENT12_DATA         FAR_DATA                      0004:13f0       000000e7
+S_FEDIT11_DATA         FAR_DATA                      0004:14e0       00000795
+S_FEDIT12_DATA         FAR_DATA                      0004:1c80       000002f7
+S_FILE11_DATA          FAR_DATA                      0004:1f80       00000015
+S_FILE12_DATA          FAR_DATA                      0004:1fa0       0000025b
+S_FLIST11_DATA         FAR_DATA                      0004:2200       00000015
+S_FLIST12_DATA         FAR_DATA                      0004:2220       00000184
+S_GEN11_DATA           FAR_DATA                      0004:23a4       00000000
+S_GEN12_DATA           FAR_DATA                      0004:23b0       00000417
+S_GPATH11_DATA         FAR_DATA                      0004:27c7       00000000
+S_GPATH12_DATA         FAR_DATA                      0004:27d0       000001df
+S_MAIN11_DATA          FAR_DATA                      0004:29b0       00000130
+S_MAIN12_DATA          FAR_DATA                      0004:2ae0       000006ee
+S_MEDIT11_DATA         FAR_DATA                      0004:31d0       00000451
+S_MEDIT12_DATA         FAR_DATA                      0004:3630       0000117e
+S_MENU11_DATA          FAR_DATA                      0004:47ae       00000000
+S_MENU12_DATA          FAR_DATA                      0004:47b0       00000073
+S_MISC11_DATA          FAR_DATA                      0004:4830       00000035
+S_MISC12_DATA          FAR_DATA                      0004:4870       000002bd
+S_MODEM11_DATA         FAR_DATA                      0004:4b30       0000004b
+S_MODEM12_DATA         FAR_DATA                      0004:4b80       00000089
+S_MSEL11_DATA          FAR_DATA                      0004:4c09       00000000
+S_MSEL12_DATA          FAR_DATA                      0004:4c10       000003c7
+S_MSG11_DATA           FAR_DATA                      0004:4fe0       00000093
+S_MSG12_DATA           FAR_DATA                      0004:5080       0000038f
+S_NPATH11_DATA         FAR_DATA                      0004:540f       00000000
+S_NPATH12_DATA         FAR_DATA                      0004:5410       0000014b
+S_TIMES11_DATA         FAR_DATA                      0004:555b       00000000
+S_TIMES12_DATA         FAR_DATA                      0004:5560       000001eb
+S_UPATH11_DATA         FAR_DATA                      0004:574b       00000000
+S_UPATH12_DATA         FAR_DATA                      0004:5750       000001df
+S_USERS11_DATA         FAR_DATA                      0004:5930       00000015
+S_USERS12_DATA         FAR_DATA                      0004:5950       00000268
+S_UTIL11_DATA          FAR_DATA                      0004:5bc0       0000001f
+S_UTIL12_DATA          FAR_DATA                      0004:5be0       000000cc
+_NULL                  BEGDATA        DGROUP         0005:0000       00000020
+_AFTERNULL             BEGDATA        DGROUP         0005:0020       00000002
+CONST                  DATA           DGROUP         0005:0022       000017cc
+CONST2                 DATA           DGROUP         0005:17ee       00000102
+_DATA                  DATA           DGROUP         0005:18f0       000004c6
+XIB                    DATA           DGROUP         0005:1db6       00000000
+XI                     DATA           DGROUP         0005:1db6       00000024
+XIE                    DATA           DGROUP         0005:1dda       00000000
+YIB                    DATA           DGROUP         0005:1dda       00000000
+YI                     DATA           DGROUP         0005:1dda       0000000c
+YIE                    DATA           DGROUP         0005:1de6       00000000
+STRINGS                DATA           DGROUP         0005:1de6       00000000
+_EMU_INIT_START        EMU            DGROUP         0005:1de6       00000000
+_EMU_INIT_END          EMU            DGROUP         0005:1de6       00000000
+_BSS                   BSS            DGROUP         0005:1df0       00000b96
+STACK                  STACK          DGROUP         0005:2990       00002000
+
+
+                        +----------------+
+                        |   Memory Map   |
+                        +----------------+
+
+* = unreferenced symbol
++ = symbol only referenced locally
+
+Address        Symbol
+=======        ======
+
+Module: os2\sconfig.obj(G:\SIMPLEX\sconfig\SCONFIG.C)
+0005:18f0      _master_change
+0005:18f4      _msgs
+0005:18f8      _cur_msgs
+0005:18fa      _max_msgs
+0005:18fc      _files
+0005:1900      _cur_files
+0005:1902      _max_files
+0005:1904      _evts
+0005:1908      _cur_evts
+0005:190a      _max_evts
+0005:190c      _usrs
+0005:1910      _cur_usrs
+0005:1912      _max_usrs
+0005:1914      _uts
+0005:1918      _cur_uts
+0005:191a      _max_uts
+0001:0000+     cleanup_
+0001:01ee+     signal_trap_
+0001:01f0      main_
+0005:191c      _color
+0005:1df0+     _evtfd
+0005:1df4      _ccfgfd
+0005:1df8+     _filefd
+0005:1dfc      _userfd
+0005:1e00+     _cfgfd
+0005:1e04+     _msgfd
+0004:0000      _cfg
+0004:0879+     _cfgpath
+Module: os2\s_apath.obj(G:\SIMPLEX\sconfig\S_APATH.C)
+0001:14a0+     draw_archiver_paths_
+0001:1600+     fill_archiver_paths_
+0001:167e      edit_archiver_paths_
+Module: os2\s_cfg.obj(G:\SIMPLEX\sconfig\S_CFG.C)
+0001:17e0+     cfg_color_
+0001:1b44+     draw_config_
+0001:1c9c+     fill_config_
+0001:1d46      configure_colors_
+0005:1e10      _ccfg
+Module: os2\s_date.obj(G:\SIMPLEX\sconfig\S_DATE.C)
+0001:21c0      get_cdate_
+0001:220c      check_date_
+0001:2312      atodate_
+0001:242a      datetoa_
+0004:13d0*     _legit
+Module: os2\s_event.obj(G:\SIMPLEX\sconfig\S_EVENT.C)
+0001:2470+     draw_event_
+0001:26b2+     fill_event_
+0001:28c8      edit_events_
+Module: os2\s_fedit.obj(G:\SIMPLEX\sconfig\S_FEDIT.C)
+0001:31f0+     draw_fedit_
+0001:337e+     blank_fedit_entry_
+0001:3478+     fill_fedit_entry_
+0001:362a+     unphantom_
+0001:37fe+     edit_flist_entry_
+0001:3f90+     find_fedit_list_
+0001:4190+     next_fedit_list_
+0001:42c6      fedit_list_
+Module: os2\s_file.obj(G:\SIMPLEX\sconfig\S_FILE.C)
+0001:4c70+     draw_farea_
+0001:4dde+     fill_farea_
+0001:4eb2+     edit_farea_
+0001:52f4      edit_file_boards_
+Module: os2\s_flist.obj(G:\SIMPLEX\sconfig\S_FLIST.C)
+0001:59b0      find_file_list_
+0001:5bb6      next_file_list_
+0001:5ce0      draw_file_list_
+0001:5dce      edit_file_lists_
+Module: os2\s_gen.obj(G:\SIMPLEX\sconfig\S_GEN.C)
+0001:62c0+     draw_general_info_
+0001:64c0+     fill_general_info_
+0001:6616      edit_general_info_
+Module: os2\s_gpath.obj(G:\SIMPLEX\sconfig\S_GPATH.C)
+0001:70d0+     draw_general_paths_
+0001:7256+     fill_general_paths_
+0001:72d4+     edit_general_paths_
+Module: os2\s_main.obj(G:\SIMPLEX\sconfig\S_MAIN.C)
+0001:7450+     shell_
+0001:751a+     bbsinfo_menu_
+0001:753e+     pathinfo_menu_
+0001:7562+     fileinfo_menu_
+0001:7586      main_menu_
+0005:1e30      _color_change_flag
+0004:29b0+     _bbsinfo_choices
+0004:29d8+     _pathinfo_choices
+0004:2a1c+     _fileinfo_choices
+0004:2a44+     _main_menu_choices
+Module: os2\s_medit.obj(G:\SIMPLEX\sconfig\S_MEDIT.C)
+0001:7690+     menu_comp_
+0001:76aa+     draw_menu_
+0001:789e+     fill_menu_
+0001:7a80+     edit_menu_
+0001:84d4+     draw_menu_screen_
+0001:8684      load_menu_
+0001:8cd0+     show_screen_
+0005:1930+     _menu
+0005:1934+     _max_menu
+0005:1936+     _cur_menu
+0005:1938+     _view_level
+0005:193a+     _view_flags
+0004:31d0+     _mtypelines
+0004:3324+     _menutype
+Module: os2\s_menu.obj(G:\SIMPLEX\sconfig\S_MENU.C)
+0001:91b0+     save_screen_
+0001:92a6+     restore_screen_
+0001:934c+     print_help_
+0001:937e+     print_menu_line_
+0001:941a      push_menu_
+Module: os2\s_misc.obj(G:\SIMPLEX\sconfig\S_MISC.C)
+0001:98f0+     draw_miscellaneous_info_
+0001:9caa+     get_status_
+0001:9cde+     get_field_
+0001:9d10+     get_menu_
+0001:9d3c+     fill_miscellaneous_info_
+0001:a07e      edit_miscellaneous_info_
+0005:1940      _yn
+0004:4830+     _background
+0004:484c+     _foreground
+Module: os2\s_modem.obj(G:\SIMPLEX\sconfig\S_MODEM.C)
+0001:add0+     draw_modem_info_
+0001:b1d2+     fill_modem_info_
+0001:b4f6      edit_modem_info_
+0004:4b30+     _port
+0004:4b58+     _baud
+Module: os2\s_msel.obj(G:\SIMPLEX\sconfig\S_MSEL.C)
+0001:bc00+     fname_sort_
+0001:bc1e+     draw_menu_select_
+0001:bcc2      edit_menufile_
+0005:1950+     _menus
+0005:1954+     _max_menus
+0005:1956+     _cur_menus
+Module: os2\s_msg.obj(G:\SIMPLEX\sconfig\S_MSG.C)
+0004:4fe0+     _nodeid
+0004:5040+     _nodes
+0001:d080+     find_msgarea_list_
+0001:d286+     next_msgarea_list_
+0001:d3b0+     draw_msg_list_
+0001:d522+     draw_msgarea_
+0001:d758+     fill_msgarea_
+0001:d96a+     edit_msgarea_
+0001:e114      edit_msg_boards_
+0005:1960+     _board_type
+0005:1974+     _msg_type
+Module: os2\s_npath.obj(G:\SIMPLEX\sconfig\S_NPATH.C)
+0001:e900+     draw_network_paths_
+0001:ea5c+     fill_network_paths_
+0001:eaf2      edit_network_paths_
+Module: os2\s_times.obj(G:\SIMPLEX\sconfig\S_TIMES.C)
+0001:ec90+     draw_times_
+0001:edc4+     comp_priv_
+0001:ede0+     fill_times_
+0001:ef36+     edit_uts_
+0001:f188      edit_times_
+Module: os2\s_upath.obj(G:\SIMPLEX\sconfig\S_UPATH.C)
+0001:f610+     draw_unarchiver_paths_
+0001:f770+     fill_unarchiver_paths_
+0001:f7ee      edit_unarchiver_paths_
+Module: os2\s_users.obj(G:\SIMPLEX\sconfig\S_USERS.C)
+0002:0000+     find_user_list_
+0002:025c+     next_user_list_
+0002:03de+     draw_user_
+0002:0928+     fill_user_
+0002:0d3e+     edit_user_
+0002:17f0+     draw_user_list_
+0002:18f2      edit_user_list_
+Module: os2\s_util.obj(G:\SIMPLEX\sconfig\S_UTIL.C)
+0002:2450      fill_flags_
+0002:24aa      edit_flags_
+0002:2a54      fill_date_
+0002:2a82      edit_date_
+0002:2c20      edit_number_
+0002:309a      file_comp_
+0002:30b4      msg_comp_
+0002:30ce      get_anychar_first_
+0002:3190      get_filename_
+0002:32da      get_fileext_
+0002:3420      get_pathname_
+0002:3560      get_anychar_
+0002:3662      parse_color_
+0002:37f0      select_color_
+Module: f:\watcom\lib286\os2\clibl.lib(fclose)
+0002:3b60      fclose_
+0002:3bad      __shutdown_stream_
+0002:3bd3+     __MkTmpFile_
+0002:3c40      __doclose_
+Module: f:\watcom\lib286\os2\clibl.lib(ffree)
+0002:3cdc      _ffree_
+0002:3cdc      free_
+Module: f:\watcom\lib286\LSCREENP.LIB(H:\LIBS\SCRNLIB\CLS.C)
+0002:c4f0      _cls_
+Module: f:\watcom\lib286\LSCREENP.LIB(H:\LIBS\SCRNLIB\CLRBLK.C)
+0002:c520      clrblk_
+Module: f:\watcom\lib286\LSCREENP.LIB(H:\LIBS\SCRNLIB\PRNOMOVF.C)
+0002:c560      prntnomovf_
+Module: f:\watcom\lib286\LSCREENP.LIB(H:\LIBS\SCRNLIB\PRNOMOV.C)
+0002:c5c0      prntnomov_
+Module: f:\watcom\lib286\LSCREENP.LIB(H:\LIBS\SCRNLIB\CRSRTYPE.C)
+0002:c61a      set_cursor_type_
+Module: f:\watcom\lib286\LSCREENP.LIB(H:\LIBS\SCRNLIB\SETCURSR.C)
+0002:c6b0      set_new_cursor_
+0002:c6ec      _setcurpos_
+0002:c70c      _setcurmode_
+Module: f:\watcom\lib286\os2\clibl.lib(iob)
+0005:1984      ___iob
+0005:1aec*     ___tmpfnext
+0005:1aed      __fmode
+0005:1e40      ___ClosedStreams
+Module: f:\watcom\lib286\os2\clibl.lib(setbuf)
+0002:3d2c      setbuf_
+Module: f:\watcom\lib286\os2\clibl.lib(fprintf)
+0002:3d46      fprintf_
+Module: f:\watcom\lib286\LSCREENP.LIB(H:\LIBS\SCRNLIB\SCRINIT.C)
+0002:c748      scr_init_
+0005:1af4+     _vga_here
+0005:1af6+     _ega_here
+0005:1af8+     _cga_here
+0005:1afa      _mono_here
+0005:1afc*     _ega_active
+0005:1afe*     _ega43flag
+Module: f:\watcom\lib286\os2\clibl.lib(getenv)
+0002:3d73      getenv_
+Module: f:\watcom\lib286\os2\clibl.lib(gtcwdos2)
+0002:3e0b      getcwd_
+Module: f:\watcom\lib286\os2\clibl.lib(signlo16)
+0002:3eb3+     __sigabort_
+0002:3eb9      __sigfpe_handler_
+0002:3f94      signal_
+0002:407d+     raise_
+Module: f:\watcom\lib286\os2\clibl.lib(sprintf)
+0002:413d      sprintf_
+Module: f:\watcom\lib286\os2\clibl.lib(fopen)
+0002:417c+     __open_flags_
+0002:430e+     _fsopen_
+0002:4343      fopen_
+0002:441c*     freopen_
+Module: f:\watcom\lib286\os2\clibl.lib(fwrite)
+0002:448f      fwrite_
+Module: f:\watcom\lib286\os2\clibl.lib(fflush)
+0002:4647      fflush_
+Module: f:\watcom\lib286\os2\clibl.lib(fread)
+0002:465c      fread_
+Module: f:\watcom\lib286\LEDITORP.LIB(H:\LIBS\EDITOR\HELP.C)
+0002:c7b0      open_help_
+0002:ca5e      set_help_colors_
+0002:ca8a      register_help_
+0002:cac0      deregister_help_
+0002:cad0      query_help_topic_
+0002:cf64+     pop_help_
+0002:d020+     set_help_key_
+0002:d046*     close_help_
+Module: f:\watcom\lib286\os2\clibl.lib(getchos2)
+0002:481e      getch_
+Module: f:\watcom\lib286\os2\clibl.lib(toupper)
+0002:48a7      toupper_
+0002:48a7*     _toupper_
+Module: f:\watcom\lib286\os2\clibl.lib(atexit)
+0002:48b5+     _Full_at_exit_rtn_
+0002:48fc      atexit_
+0005:1e62+     __ExitList
+0005:1ee2+     __ExitCount
+Module: f:\watcom\lib286\os2\clibl.lib(frealloc)
+0002:493c*     _frealloc_
+0002:493c      realloc_
+Module: f:\watcom\lib286\os2\clibl.lib(exit)
+0002:4a1c      __null_int23_exit_
+0002:4a1d      exit_
+0002:4a37+     _exit_
+0005:1bcc      ___atexit
+0005:1bd0      ___int23_exit
+0005:1bd4      ___FPE_handler_exit
+Module: f:\watcom\lib286\os2\clibl.lib(fmalloc)
+0002:4a63      _fmalloc_
+0002:4a63      malloc_
+0005:1bd8+     ___fheap
+0005:1bda      ___fheapRover
+0005:1bdc      ___LargestSizeB4Rover
+0005:1db6*     ___fmalloc_force_nheapgrow
+Module: f:\watcom\lib286\os2\clibl.lib(qsort)
+0002:4c09      qsort_
+Module: f:\watcom\lib286\LEDITORP.LIB(H:\LIBS\EDITOR\ASKYN.C)
+0002:d0c0      askyn_
+0002:d1a4      open_message_
+0002:d22a      close_message_
+Module: f:\watcom\lib286\os2\clibl.lib(fseek)
+0002:5102      fseek_
+Module: f:\watcom\lib286\os2\clibl.lib(chsizos2)
+0002:5227      chsize_
+Module: f:\watcom\lib286\os2\clibl.lib(cstrto16)
+0005:0000*     __nullarea
+0002:5240      _cstart_
+0002:5240*     __DLLstart_
+Module: f:\watcom\lib286\os2\clibl.lib(cmodel)
+0002:52e0      _big_code_
+0002:52e0*     CodeModelMismatch
+Module: f:\watcom\lib286\os2\clibl.lib(argcv086)
+0005:1bde      __argc
+0005:1be0      __argv
+Module: f:\watcom\lib286\LSCREENP.LIB(H:\LIBS\SCRNLIB\VCW.C)
+0002:d240      _vcw_
+Module: f:\watcom\lib286\LSCREENP.LIB(H:\LIBS\SCRNLIB\DRAWBOX.C)
+0002:d270      drawbox_
+Module: f:\watcom\lib286\LSCREENP.LIB(H:\LIBS\SCRNLIB\PRNTCENT.C)
+0002:d3c0      prntcenter_
+Module: f:\watcom\lib286\LSCREENP.LIB(H:\LIBS\SCRNLIB\NORMAL.C)
+0002:d410      open_window_
+0002:d53e      close_window_
+Module: f:\watcom\lib286\LEDITORP.LIB(H:\LIBS\EDITOR\EDITOR.C)
+0002:d5f0      edit_field_
+Module: f:\watcom\lib286\LEDITORP.LIB(H:\LIBS\EDITOR\ERROR.C)
+0002:ef90      error_
+0002:f0e6*     set_critical_error_
+0005:1c0c+     ___error_color
+Module: f:\watcom\lib286\LSCREENP.LIB(H:\LIBS\SCRNLIB\VBR.C)
+0002:f0f0      _vbr_
+Module: f:\watcom\lib286\LEDITORP.LIB(H:\LIBS\EDITOR\KEYUTIL.C)
+0002:f120*     set_jump_on_
+0002:f158*     set_jump_off_
+0002:f168+     get_time_
+0002:f1d6+     screen_save_
+0002:f3ce+     show_time_
+0002:f498*     update_time_
+0002:f4c8      read_keyboard_
+0002:f616*     read_mouse_keyboard_
+0005:1c4e      _in_help
+Module: f:\watcom\lib286\LSCREENP.LIB(H:\LIBS\SCRNLIB\VBW.C)
+0002:f7d0      _vbw_
+Module: f:\watcom\lib286\LEDITORP.LIB(H:\LIBS\EDITOR\SOUND.C)
+0002:f800+     play_
+0002:f818      nap_
+0002:f830      beep_
+Module: f:\watcom\lib286\LSCREENP.LIB(H:\LIBS\SCRNLIB\SHADOW.C)
+0002:f850      open_shadow_window_
+0002:fa26      close_shadow_window_
+Module: f:\watcom\lib286\LEDITORP.LIB(H:\LIBS\EDITOR\POPMENU.C)
+0002:fae0      pop_menu_
+Module: f:\watcom\lib286\os2\clibl.lib(strncpy)
+0002:52e0      strncpy_
+Module: f:\watcom\lib286\os2\clibl.lib(atoi)
+0002:5316      atoi_
+Module: f:\watcom\lib286\os2\clibl.lib(calloc)
+0002:5384      calloc_
+Module: f:\watcom\lib286\LSCREENP.LIB(H:\LIBS\SCRNLIB\PHANTOM.C)
+0002:fde0      phantom_
+Module: f:\watcom\lib286\LEDITORP.LIB(H:\LIBS\EDITOR\BOXEDIT.C)
+0003:04d2      box_fill_
+0003:0652      box_edit_
+Module: f:\watcom\lib286\os2\clibl.lib(strupr)
+0002:53c9      strupr_
+0002:53c9*     _strupr_
+Module: f:\watcom\lib286\os2\clibl.lib(strstr)
+0002:53eb      strstr_
+Module: f:\watcom\lib286\os2\clibl.lib(i4m)
+0002:54b0      __I4M
+0002:54b0      __U4M
+Module: f:\watcom\lib286\os2\clibl.lib(filelen)
+0002:54c8      filelength_
+Module: f:\watcom\lib286\os2\clibl.lib(i4d)
+0002:5530      __I4D
+0002:5585*     __U4D
+Module: f:\watcom\lib286\os2\clibl.lib(unlnkos2)
+0002:5613      unlink_
+Module: f:\watcom\lib286\os2\clibl.lib(atol)
+0002:562e      atol_
+Module: f:\watcom\lib286\os2\clibl.lib(splp)
+0002:56ab      spawnlp_
+Module: f:\watcom\lib286\LEDITORP.LIB(H:\LIBS\EDITOR\SELMENU.C)
+0003:10d0      select_menu_
+Module: f:\watcom\lib286\os2\clibl.lib(tolower)
+0002:56c9      tolower_
+0002:56c9*     _tolower_
+Module: f:\watcom\lib286\LSCREENP.LIB(H:\LIBS\SCRNLIB\SCROLLUP.C)
+0003:1510      scroll_up_
+Module: f:\watcom\lib286\LSCREENP.LIB(H:\LIBS\SCRNLIB\PRMOV.C)
+0003:1590      prntmov_
+Module: f:\watcom\lib286\LSCREENP.LIB(H:\LIBS\SCRNLIB\GETCURSR.C)
+0003:15f0      _getcurpos_
+0003:161c      get_cursor_type_
+Module: f:\watcom\lib286\os2\clibl.lib(stricmp)
+0002:56d7      stricmp_
+0002:56d7*     _stricmp_
+0002:56d7*     strcmpi_
+Module: f:\watcom\lib286\os2\clibl.lib(memmove)
+0002:5718      memmove_
+Module: f:\watcom\lib286\os2\clibl.lib(renamos2)
+0002:5773      rename_
+Module: f:\watcom\lib286\os2\clibl.lib(read)
+0002:578c      read_
+Module: f:\watcom\lib286\os2\clibl.lib(write)
+0002:58da      write_
+Module: f:\watcom\lib286\os2\clibl.lib(istable)
+0005:17ee      __IsTable
+Module: f:\watcom\lib286\os2\clibl.lib(stinit)
+0005:1f20      ___OpenStreams
+Module: f:\watcom\lib286\os2\clibl.lib(allocfp)
+0002:5b90      __allocfp_
+0002:5ca0      __freefp_
+0002:5d17      __purgefp_
+Module: f:\watcom\lib286\os2\clibl.lib(gtpidos2)
+0002:5d5a      getpid_
+Module: f:\watcom\lib286\os2\clibl.lib(flush)
+0002:5d77      __flush_
+Module: f:\watcom\lib286\os2\clibl.lib(ftell)
+0002:5e2d      ftell_
+Module: f:\watcom\lib286\os2\clibl.lib(lseekos2)
+0002:5e83      lseek_
+0002:5e83*     _lseek_
+Module: f:\watcom\lib286\os2\clibl.lib(_clseos2)
+0002:5eba      __close_
+Module: f:\watcom\lib286\os2\clibl.lib(remove)
+0002:5f1b      remove_
+Module: f:\watcom\lib286\os2\clibl.lib(nmalloc)
+0002:5f20      _nmalloc_
+0005:1c50      ___nheapbeg
+0005:1c52      ___MiniHeapRover
+0005:1c54      ___LargestSizeB4MiniHeapRover
+Module: f:\watcom\lib286\os2\clibl.lib(nfree)
+0002:5fec      _nfree_
+Module: f:\watcom\lib286\os2\clibl.lib(memalloc)
+0002:6050      __MemAllocator
+0002:60f4      __MemFree
+Module: f:\watcom\lib286\os2\clibl.lib(heapmod)
+0005:1f24      ___fheap_clean
+0005:1f25+     ___nheap_clean
+Module: f:\watcom\lib286\os2\clibl.lib(vsprintf)
+0002:621a      vsprintf_
+Module: f:\watcom\lib286\LSCREENP.LIB(H:\LIBS\SCRNLIB\VSW.C)
+0003:1650      _vsw_
+Module: f:\watcom\lib286\os2\clibl.lib(setvbuf)
+0002:6243      setvbuf_
+Module: f:\watcom\lib286\os2\clibl.lib(fprtf)
+0002:62d9      __fprtf_
+Module: f:\watcom\lib286\os2\clibl.lib(environ)
+0005:1c56      _environ
+0005:1c5a      ___env_mask
+Module: f:\watcom\lib286\os2\clibl.lib(strnicmp)
+0002:6360      strnicmp_
+Module: f:\watcom\lib286\os2\clibl.lib(dosret)
+0002:63b5*     _dosret0_
+0002:63bc*     _dosretax_
+0002:63c1      __set_errno_dos_
+Module: f:\watcom\lib286\os2\clibl.lib(seterrno)
+0002:6410*     __set_EDOM_
+0002:6413      __set_errno_
+0002:6429*     __set_ERANGE_
+0002:642e*     __set_EINVAL_
+0002:6439      __set_doserrno_
+0002:6446*     __FPE_exception_
+Module: f:\watcom\lib286\os2\clibl.lib(abort)
+0002:646b*     abort_
+0002:647b      __terminate_
+0005:1c72      ___abort
+Module: f:\watcom\lib286\math87l.lib(grabfpe)
+0002:648d      __grab_fpe_
+Module: f:\watcom\lib286\os2\clibl.lib(prtf)
+0002:6499      __prtf_
+Module: f:\watcom\lib286\os2\clibl.lib(openos2)
+0002:6f2d*     open_
+0002:6f63      sopen_
+Module: f:\watcom\lib286\os2\clibl.lib(chktty)
+0002:70f3      __chktty_
+Module: f:\watcom\lib286\os2\clibl.lib(winrtns)
+0005:1c76      __WindowsIsWindowedHandle
+0005:1c7a      __WindowsRemoveWindowedHandle
+0005:1c7e      __WindowsNewWindow
+0005:1c82      __WindowsCloseWindow
+0005:1c86*     __WindowsSetAbout
+0005:1c8a*     __WindowsSetAppTitle
+0005:1c8e*     __WindowsSetConTitle
+0005:1c92*     __WindowsDestroyOnClose
+0005:1c96*     __WindowsYieldControl
+0005:1c9a*     __WindowsShutDown
+0005:1c9e      __WindowsStdin
+0005:1ca2      __WindowsStdout
+0005:1ca6*     __WindowsKbhit
+0005:1caa      __WindowsGetch
+0005:1cae*     __WindowsGetche
+0005:1cb2      __WindowsPutch
+0005:1cb6      __WindowExitRtn
+Module: f:\watcom\lib286\os2\clibl.lib(ioalloc)
+0002:711c      __ioalloc_
+Module: f:\watcom\lib286\os2\clibl.lib(fputc)
+0002:7194      fputc_
+Module: f:\watcom\lib286\os2\clibl.lib(flushall)
+0002:723e      flushall_
+0002:7241+     __flushall_
+Module: f:\watcom\lib286\os2\clibl.lib(qread)
+0002:729c      __qread_
+Module: f:\watcom\lib286\os2\clibl.lib(fgetc)
+0002:72f5*     fgetc_
+0002:7366+     __filbuf_
+0002:7388      __fill_buffer_
+Module: f:\watcom\lib286\LEDITORP.LIB(H:\LIBS\EDITOR\KEYREDEF.C)
+0003:16a0      register_key_
+0003:17ba      deregister_key_
+0003:1836*     query_key_
+0003:187a      execute_key_
+0005:1cc0+     __keys
+0005:1cc4+     __max_keys
+0005:1cc6+     __cur_keys
+Module: f:\watcom\lib286\os2\clibl.lib(maino16)
+0002:744c+     __null_FPE_handler_
+0002:744d      __OS2Main
+0002:7521*     _Not_Enough_Memory_
+0002:7533      __exit_
+0005:1cc8      ___FPE_handler
+0005:1f30      __LpCmdLine
+0005:1f34      __LpPgmName
+0005:1f38+     __HShift
+0005:1f3a      __STACKTOP
+0005:1f3c      __STACKLOW
+0005:1f3e      __curbrk
+0005:1f40      __cbyte2
+0005:1f42      __cbyte
+0005:1f44+     __dynend
+0005:1f46+     __osminor
+0005:1f47+     __osmajor
+0005:1f48      __osmode
+Module: f:\watcom\lib286\os2\clibl.lib(fmsize)
+0002:7550      _fmsize_
+0002:7550*     _msize_
+Module: f:\watcom\lib286\os2\clibl.lib(nexpand)
+0002:7561      __HeapManager_expand_
+0002:76ed      _nexpand_
+Module: f:\watcom\lib286\os2\clibl.lib(fexpand)
+0002:773e      _fexpand_
+0002:773e*     _expand_
+Module: f:\watcom\lib286\os2\clibl.lib(hpgrw086)
+0002:7773      __CMain_nheapgrow_
+Module: f:\watcom\lib286\os2\clibl.lib(allocseg)
+0002:7778      __AllocSeg_
+Module: f:\watcom\lib286\os2\clibl.lib(growseg)
+0002:7824      __GrowSeg_
+Module: f:\watcom\lib286\os2\clibl.lib(fmemneed)
+0002:7925      __fmemneed_
+Module: f:\watcom\lib286\os2\clibl.lib(tellos2)
+0002:7928      tell_
+Module: f:\watcom\lib286\os2\clibl.lib(seg086)
+0002:7960      __DOSseg__
+Module: f:\watcom\lib286\os2\clibl.lib(initargv)
+0002:7961      __Init_Argv_
+Module: f:\watcom\lib286\LEDITORP.LIB(H:\LIBS\EDITOR\PARSE.C)
+0003:18f0      parse_entry_
+Module: f:\watcom\lib286\LMOUSEP.LIB(H:\LIBS\MOUSE\MOUSE.C)
+0005:1f50+     __mouse_stack
+0005:2750+     __gptr
+0005:1cd0+     __mouse_sem
+0005:1cd4+     __mouse_thread
+0003:19c0+     _monitor_mouse_
+0003:1b6e*     mouse_init_
+0003:1c80*     mouse_deinit_
+0003:1cba      mouse_show_
+0003:1cd4      mouse_hide_
+0003:1d20      mouse_status_
+0003:1e4c      mouse_place_
+0003:1e72*     mouse_bpress_
+0003:1f9c*     mouse_brelease_
+0003:20c6*     mouse_hlimit_
+0003:21ac*     mouse_vlimit_
+0003:2292*     mouse_setspeed_
+0003:22b8*     mouse_settext_
+0005:276a+     __mouse_handle
+0005:276c+     __mouse_tid
+Module: f:\watcom\lib286\LSCREENP.LIB(H:\LIBS\SCRNLIB\KEYBOARD.C)
+0003:22d0      _read_keyboard_
+0003:2316      _scan_keyboard_
+0003:2342      _get_shift_status_
+Module: f:\watcom\lib286\os2\clibl.lib(stjmp086)
+0002:7b70*     _setjmp_
+0002:7ba6      longjmp_
+Module: f:\watcom\lib286\os2\clibl.lib(spvp)
+0002:7bea      spawnvp_
+Module: f:\watcom\lib286\os2\clibl.lib(iomode)
+0002:7c0d      __IOMode_
+0002:7c6d      __SetIOMode_
+0005:1cea      ___NFiles
+0005:1cec      ___init_mode
+0005:1d14      __iomode
+Module: f:\watcom\lib286\os2\clibl.lib(stack086)
+0002:7c88      stackavail_
+Module: f:\watcom\lib286\os2\clibl.lib(stko16)
+0002:7ca2      __STK
+0002:7cb9      __STKOVERFLOW_
+Module: f:\watcom\lib286\os2\clibl.lib(initfile)
+0002:7cfe      __InitFiles_
+Module: f:\watcom\lib286\os2\clibl.lib(ioexit)
+0002:7da5      __full_io_exit_
+0002:7daf*     fcloseall_
+Module: f:\watcom\lib286\os2\clibl.lib(qwrit)
+0002:7e36      __qwrite_
+Module: f:\watcom\lib286\os2\clibl.lib(grownear)
+0002:7f4f      __LastFree_
+0002:7f7b      __ExpandDGROUP_
+Module: f:\watcom\lib286\os2\clibl.lib(nmemneed)
+0002:80c4      __nmemneed_
+Module: f:\watcom\lib286\os2\clibl.lib(setenvp)
+0002:80c7      __setenvp_
+Module: f:\watcom\lib286\os2\clibl.lib(errno)
+0002:81ea      __get_errno_ptr_
+0002:81f1      __get_doserrno_ptr_
+0005:2770+     __doserrno
+0005:2772+     _errno
+Module: f:\watcom\lib286\os2\clibl.lib(xmsgo16)
+0002:81f8+     __exit_with_msg_
+0002:822e      __fatal_runtime_error_
+Module: f:\watcom\lib286\os2\clibl.lib(grabfp87)
+0002:8248      __GrabFP87_
+Module: f:\watcom\lib286\os2\clibl.lib(itoa)
+0002:82ab+     utoa_
+0002:8302      itoa_
+0002:8302*     _itoa_
+Module: f:\watcom\lib286\os2\clibl.lib(noefgfmt)
+0005:1d18      ___EFG_printf
+0005:1d1c*     ___EFG_scanf
+Module: f:\watcom\lib286\os2\clibl.lib(ltoa)
+0002:837d      ultoa_
+0002:83e6      ltoa_
+0002:8413*     _ltoa_
+Module: f:\watcom\lib286\os2\clibl.lib(isattos2)
+0002:8421      isatty_
+Module: f:\watcom\lib286\os2\clibl.lib(gtcheos2)
+0002:844e      getche_
+Module: f:\watcom\lib286\os2\clibl.lib(growiomd)
+0002:8479      __grow_iomode_
+Module: f:\watcom\lib286\os2\clibl.lib(inirt086)
+0002:8580      __InitRtns
+0002:859e      __FiniRtns
+0002:85b7*     __FInitRtns
+0002:85bd*     __FFiniRtns
+Module: f:\watcom\lib286\os2\clibl.lib(cmain086)
+0002:85c3      __CMain
+Module: f:\watcom\lib286\os2\clibl.lib(bfree)
+0002:85f0      _bfree_
+Module: f:\watcom\lib286\os2\clibl.lib(bexpand)
+0002:8612      _bexpand_
+Module: f:\watcom\lib286\os2\clibl.lib(heapgrow)
+0002:8669*     _heapgrow_
+0002:8669*     _fheapgrow_
+0002:866a      _nheapgrow_
+Module: f:\watcom\lib286\os2\clibl.lib(heapen)
+0002:86c7*     _heapenable_
+0005:1d20      ___heap_enabled
+Module: f:\watcom\lib286\os2\clibl.lib(amblksiz)
+0005:1d22      __amblksiz
+Module: f:\watcom\lib286\os2\clibl.lib(___argc)
+0005:2774      ____Argv
+0005:2778      ____Argc
+Module: f:\watcom\lib286\os2\clibl.lib(ljmphdl)
+0005:1d24      ___longjmp_handler
+Module: f:\watcom\lib286\os2\clibl.lib(spvpe)
+0002:86e0      spawnvpe_
+Module: f:\watcom\lib286\os2\clibl.lib(sbrk)
+0002:8844*     sbrk_
+0002:8856      __brk_
+Module: f:\watcom\lib286\os2\clibl.lib(enterdb)
+0002:88ab      __EnterWVIDEO_
+0005:1d28+     ___WD_Present
+Module: f:\watcom\lib286\os2\clibl.lib(hookfpe)
+0002:88d7      __Init_FPE_handler_
+0002:8920      __Fini_FPE_handler_
+Module: f:\watcom\lib286\os2\clibl.lib(fpe87)
+0002:8950      __Enable_FPE_
+0002:896b      __FPEHandler
+Module: f:\watcom\lib286\os2\clibl.lib(putchos2)
+0002:8c0d      putch_
+Module: f:\watcom\lib286\os2\clibl.lib(_getds)
+0002:8c60      __GETDS
+Module: f:\watcom\lib286\os2\clibl.lib(spve)
+0002:8c90+     __Slash_C_
+0002:8cd1      spawnve_
+Module: f:\watcom\lib286\os2\clibl.lib(strlen)
+0002:9080      strlen_
+Module: f:\watcom\lib286\os2\clibl.lib(strchr)
+0002:9097      strchr_
+Module: f:\watcom\lib286\os2\clibl.lib(memcpy)
+0002:90d1      memcpy_
+Module: f:\watcom\lib286\os2\clibl.lib(_8087086)
+0005:1d40      __8087
+0005:1d41      __real87
+Module: f:\watcom\lib286\os2\emu87.lib(initemu2.asm)
+0000:0000*     FIARQQ
+0000:0000*     FJARQQ
+0000:0000*     FICRQQ
+0000:0000*     FJCRQQ
+0000:0000      FIDRQQ
+0000:0000      FIERQQ
+0000:0000*     FISRQQ
+0000:0000*     FJSRQQ
+0000:0000      FIWRQQ
+0002:9107*     __fini_87_emulator
+0002:90f6*     __init_87_emulator
+Module: f:\watcom\lib286\os2\clibl.lib(accssos2)
+0002:910d      access_
+0002:910d*     _access_
+Module: f:\watcom\lib286\os2\clibl.lib(cenvarg)
+0002:9169      __cenvarg_
+0002:930b      __ccmdline_
+Module: f:\watcom\lib286\os2\clibl.lib(split2)
+0002:93e2      _splitpath2_
+Module: f:\watcom\lib286\os2\clibl.lib(save8087)
+0005:1d42      ___Save8087
+0005:1d46      ___Rest8087
+Module: f:\watcom\lib286\os2\clibl.lib(makepath)
+0002:94f2      _makepath_
+Module: f:\watcom\lib286\os2\clibl.lib(dospnos2)
+0002:962f      __dospawn
+Module: f:\watcom\lib286\os2\clibl.lib(spl)
+0002:98f5      spawnl_
+Module: f:\watcom\lib286\os2\clibl.lib(chk8087)
+0002:993e      __init_8087_
+0002:9972*     _fpreset_
+0002:9985      __chk8087_
+Module: f:\watcom\lib286\os2\clibl.lib(hk87o16)
+0002:99d7      __hook8087_
+0002:9a2e      __unhook8087_
+Module: f:\watcom\lib286\os2\clibl.lib(ini87086)
+0002:9a5e      __init_8087_emu
+0002:9a64      __init_80x87
+Module: f:\watcom\lib286\os2\clibl.lib(strcpy)
+0002:9a99      strcpy_
+Module: f:\watcom\lib286\os2\clibl.lib(8087cw)
+0005:1d4a      __8087cw
+Module: f:\watcom\lib286\os2\emu87.lib(emu8087.ASM)
+0002:9b90      __int7
+0002:9baa*     __DPMI_int7
+
+
+                        +----------------------+
+                        |   Imported Symbols   |
+                        +----------------------+
+
+Symbol                              Module
+======                              ======
+
+DOSGETDATETIME                      DOSCALLS
+DOSFINDFIRST                        DOSCALLS
+DOSFINDNEXT                         DOSCALLS
+VIOSCROLLUP                         VIOCALLS
+VIOGETMODE                          VIOCALLS
+VIOGETCURTYPE                       VIOCALLS
+VIOSETCURTYPE                       VIOCALLS
+VIOSETCURPOS                        VIOCALLS
+VIOGETCONFIG                        VIOCALLS
+DOSQCURDIR                          DOSCALLS
+DOSQCURDISK                         DOSCALLS
+DOSSETSIGHANDLER                    DOSCALLS
+KBDCHARIN                           KBDCALLS
+DOSNEWSIZE                          DOSCALLS
+VIOWRTNCELL                         VIOCALLS
+VIOREADCELLSTR                      VIOCALLS
+VIOWRTCELLSTR                       VIOCALLS
+DOSBEEP                             DOSCALLS
+DOSSLEEP                            DOSCALLS
+VIOWRTNATTR                         VIOCALLS
+DOSDELETE                           DOSCALLS
+VIOGETCURPOS                        VIOCALLS
+DOSMOVE                             DOSCALLS
+DOSREAD                             DOSCALLS
+DOSCHGFILEPTR                       DOSCALLS
+DOSWRITE                            DOSCALLS
+DOSGETPID                           DOSCALLS
+DOSCLOSE                            DOSCALLS
+VIOWRTCHARSTRATT                    VIOCALLS
+DOSOPEN                             DOSCALLS
+DOSGETHUGESHIFT                     DOSCALLS
+DOSGETMACHINEMODE                   DOSCALLS
+DOSGETVERSION                       DOSCALLS
+DOSEXIT                             DOSCALLS
+DOSALLOCSEG                         DOSCALLS
+DOSREALLOCSEG                       DOSCALLS
+DOSSETPRTY                          DOSCALLS
+MOUREADEVENTQUE                     MOUCALLS
+DOSSEMREQUEST                       DOSCALLS
+MOUSETPTRPOS                        MOUCALLS
+DOSSEMCLEAR                         DOSCALLS
+MOUOPEN                             MOUCALLS
+MOUSETEVENTMASK                     MOUCALLS
+MOUSETDEVSTATUS                     MOUCALLS
+DOSCREATETHREAD                     DOSCALLS
+MOUCLOSE                            MOUCALLS
+DOSGETINFOSEG                       DOSCALLS
+MOUDRAWPTR                          MOUCALLS
+MOUREMOVEPTR                        MOUCALLS
+MOUGETPTRPOS                        MOUCALLS
+MOUSETSCALEFACT                     MOUCALLS
+KBDPEEK                             KBDCALLS
+KBDGETSTATUS                        KBDCALLS
+DOSGETENV                           DOSCALLS
+VIOWRTTTY                           VIOCALLS
+DOSQHANDTYPE                        DOSCALLS
+DOSDEVCONFIG                        DOSCALLS
+DOSSETVEC                           DOSCALLS
+DOSQFILEMODE                        DOSCALLS
+DOSQAPPTYPE                         DOSCALLS
+DOSEXECPGM                          DOSCALLS
+DOSCREATEQUEUE                      QUECALLS
+DOSSTARTSESSION                     SESMGR
+DOSREADQUEUE                        QUECALLS
+
+
+                        +--------------------+
+                        |   Libraries Used   |
+                        +--------------------+
+
+f:\watcom\lib286\os2\clibl.lib
+e:\lib\os2.lib
+f:\watcom\lib286\math87l.lib
+f:\watcom\lib286\os2\emu87.lib
+f:\watcom\lib286\LEDITORP.LIB
+f:\watcom\lib286\LMOUSEP.LIB
+f:\watcom\lib286\LSCREENP.LIB
+
+
+                        +-----------------------+
+                        |   Linker Statistics   |
+                        +-----------------------+
+
+Stack size:  2000 (8192.)
+Memory size:  0002c0fb (180475.)
+Entry point address: 0002:5240

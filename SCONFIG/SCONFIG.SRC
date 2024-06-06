@@ -1,0 +1,265 @@
+%rem% Help for SCONFIG, A Simplex BBS Configuration Editor.
+%rem%
+
+
+%title% Help for SCONFIG, A Simplex BBS Configuration Editor.
+%page% Introduction
+
+%center%ฺฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฟ
+%center%ณ   Help for SCONFIG, A Simplex BBS Configuration Editor   ณ
+%center%ภฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤู
+
+%center%This program is Copyright (c) 1989-92 by Chris Laforet Software and  
+%center%Chris Laforet.  Should you encounter any difficulties or inconsistencies 
+%center%("bugs") in the program, please contact Chris Laforet at any of the
+%center%following addresses:
+ 
+    Programmer's Oasis BBS, USA .... 919/226-6984
+    Programmer's Oasis 2 BBS, USA .. 919/226-7136
+    Fidonet Email .................. Chris Laforet @ 1:3644/1 or 1:3644/2
+    Compuserve Email ............... User ID: 76120,110
+
+%center%The system was developed using Watcom C 9.0 under OS/2 and DOS.  The 
+%center%screen, editor, database, and help libraries are all 
+%center%Copyright (c) Chris Laforet Software.
+
+%center%%Index to Help%Index%      %Using the Help System%Help%
+%page% Help
+
+
+
+%center%ฺฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฟ
+%center%ณ Using The Help System ณ
+%center%ภฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤู
+
+
+%center%To use this help system, you may use PgUp and PgDn keys to page though
+%center%the different help screens.  Also, a help page might have "hot links"
+%center%to other help screens.  These will be shown by having certain key words
+%center%and phrases in highlighted lettering.  There will be also a "light bar"
+%center%which you can move (using , , , , Tab, Shift-Tab, or Spacebar) to
+%center%highlight the hot link of your choice at which point you may press Enter
+%center%to jump to that help screen.
+
+
+%center%%Index to Help%Index%
+%page% Index
+
+
+%center%ฺฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฟ
+%center%ณ   Index to SCONFIG Help System   ณ
+%center%ภฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤู
+
+%center%ฺฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฟ
+%center%ณ          %Introduction%introduction%          ณ
+%center%ณ     %Using the Help System%help%      ณ
+%center%ณ        %Menu Keystrokes%Menus%         ณ
+%center%ณ    %Field Editor Keystrokes%Field Editor%     ณ
+%center%ณ     %Box Editor Keystrokes%Box Editor%      ณ
+%center%ณ %Selection Bar Menu Keystrokes%Selection Menu%  ณ
+%center%ณ%Selection Bar Editor Keystrokes%Select Edit% ณ
+%center%ณ     %Pop-Up Menu Keystrokes%Popup Menu%     ณ
+%center%ณ     %Scrolling Entry Editor%Scrolling Entry%     ณ
+%center%ณ      %Color Selection Menu%Color Menu%      ณ
+%center%ภฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤู
+
+%center%Copyright (c) 1989-92, Chris Laforet Software.  All Rights Reserved.
+%page% Menus
+%title% Menu Keystrokes
+
+
+When within the menu structure of this program, the following keys are
+active:
+
+ีอออออออออออออออออัอออออออออออออออออออออออออออออออออออออออออออออออออออออธ
+ณ Keystroke       ณ Action                                              ณ
+ฦอออออออออออออออออุอออออออออออออออออออออออออออออออออออออออออออออออออออออต
+ณ Enter           ณ Select the currently highlighted menu choice        ณ
+ณ Esc or X        ณ Exit from the current menu to the previous menu     ณ
+ณ                ณ Move to the previous menu choice                    ณ
+ณ                ณ Move to the next menu choice                        ณ
+ิอออออออออออออออออฯอออออออออออออออออออออออออออออออออออออออออออออออออออออพ
+
+Of course, you may also use the "short-cut" keys to jump to menu choices.
+To do this, simply press the highlighted letter corresponding to the
+menu choice.
+
+
+%center%%Index to Help%Index%
+%page% Field Editor
+%title% Field Editor Keystrokes
+
+The following keystrokes are active when you are in an editing field:
+
+ีอออออออออออออออออัอออออออออออออออออออออออออออออออออออออออออออออออออออออธ
+ณ Keystroke       ณ Action                                              ณ
+ฦอออออออออออออออออุอออออออออออออออออออออออออออออออออออออออออออออออออออออต
+ณ Enter           ณ Save changes on this field and go to next field     ณ
+ณ Esc/Alt-Q       ณ Abort editing and quit without saving changes       ณ
+ณ Ctrl-End/Alt-X  ณ Exit and save changes                               ณ
+ณ Tab             ณ Go to next field                                    ณ
+ณ Shift-Tab       ณ Go to previous field                                ณ
+ณ Backspace       ณ Delete the character left of the cursor             ณ
+ณ Del             ณ Delete the character under the cursor               ณ
+ณ Ins             ณ Toggle insert mode on (big cursor) or off (small)   ณ
+ณ Alt-C           ณ Clear a field completely                            ณ
+ณ                ณ Go right by one "space"                             ณ
+ณ                ณ Go left by one "space"                              ณ
+ณ Ctrl-          ณ Go to end of field                                  ณ
+ณ Ctrl-          ณ Go to start of field                                ณ
+ิอออออออออออออออออฯอออออออออออออออออออออออออออออออออออออออออออออออออออออพ
+%center%%Index to Help%Index%
+%page% Box Editor
+%title% Box Editor Keystrokes
+
+The following keystrokes are active when you are in an box editing field:
+
+ีอออออออออออออออออัอออออออออออออออออออออออออออออออออออออออออออออออออออออธ
+ณ Keystroke       ณ Action                                              ณ
+ฦอออออออออออออออออุอออออออออออออออออออออออออออออออออออออออออออออออออออออต
+ณ Enter           ณ Save changes on this field and go to next field     ณ
+ณ Esc/Alt-Q       ณ Abort editing and quit without saving changes       ณ
+ณ Ctrl-End/Alt-X  ณ Exit and save changes                               ณ
+ณ Tab             ณ Go to next field                                    ณ
+ณ Shift-Tab       ณ Go to previous field                                ณ
+ณ Backspace       ณ Delete the character left of the cursor             ณ
+ณ Del             ณ Delete the character under the cursor               ณ
+ณ Ins             ณ Toggle insert mode on (big cursor) or off (small)   ณ
+ณ Alt-C           ณ Clear the field completely                          ณ
+ณ             ณ Go right/left/up/down                               ณ
+ณ Ctrl-  Ctrl-  ณ Go to end/beginning of line                         ณ
+ณ Home  End       ณ Go to top/bottom of text block                      ณ
+ิอออออออออออออออออฯอออออออออออออออออออออออออออออออออออออออออออออออออออออพ
+%center%%Index to Help%Index%
+%page% selection menu
+%title% Selection-Bar Menu Keystrokes
+
+
+A selection bar menu has a series of choices which you can select by 
+moving a "light bar" to highlight the one that you desire.
+
+ีอออออออออออออออออัอออออออออออออออออออออออออออออออออออออออออออออออออออออธ
+ณ Keystroke       ณ Action                                              ณ
+ฦอออออออออออออออออุอออออออออออออออออออออออออออออออออออออออออออออออออออออต
+ณ Enter           ณ Select hi-lighted choice and go to next field       ณ
+ณ Esc/Alt-Q       ณ Abort editing and quit without saving changes       ณ
+ณ Ctrl-End/Alt-X  ณ Exit and save changes                               ณ
+ณ Tab             ณ Go to next field                                    ณ
+ณ Shift-Tab       ณ Go to previous field                                ณ
+ณ                ณ Move "light bar" up by one choice                   ณ
+ณ                ณ Move "light bar" down by one choice                 ณ
+ณ Ctrl-PgUp       ณ Move up by one screenful of choices                 ณ
+ณ Ctrl-PgDn       ณ Move down by one screenful of choices               ณ
+ณ Home            ณ Move to top of list of choices                      ณ
+ณ End             ณ Move to bottom of list of choices                   ณ
+ิอออออออออออออออออฯอออออออออออออออออออออออออออออออออออออออออออออออออออออพ
+%center%%Index to Help%Index%
+%page% Popup Menu
+%title% Pop-Up Menu Keystrokes
+
+
+A pop-up menu is distinctive by the fact that it pops up on the screen
+and has a series of letter and/or number choices with descriptions
+of each choice.  To use this kind of menu, press the letter or number
+that is next to the choice that you want, or:  
+
+ีอออออออออออออออออัอออออออออออออออออออออออออออออออออออออออออออออออออออออธ
+ณ Keystroke       ณ Action                                              ณ
+ฦอออออออออออออออออุอออออออออออออออออออออออออออออออออออออออออออออออออออออต
+ณ Enter           ณ Go to next field                                    ณ
+ณ Esc/Alt-Q       ณ Abort editing and quit without saving changes       ณ
+ณ Ctrl-End/Alt-X  ณ Exit and save changes                               ณ
+ณ Tab             ณ Go to next field                                    ณ
+ณ Shift-Tab       ณ Go to previous field                                ณ
+ิอออออออออออออออออฯอออออออออออออออออออออออออออออออออออออออออออออออออออออพ
+
+
+%center%%Index to Help%Index%
+%page% Scrolling Entry
+%title% Scrolling Entry Editor
+
+This menu system permits you to select the record that you wish to 
+edit simply by moving the highlight bar up and down until it rests 
+on the record and then pressing Enter.  To add a new record, move 
+the highlight bar to the first empty slot and press Enter.
+
+ีอออออออออออออออออัอออออออออออออออออออออออออออออออออออออออออออออออออออออธ
+ณ Keystroke       ณ Action                                              ณ
+ฦอออออออออออออออออุอออออออออออออออออออออออออออออออออออออออออออออออออออออต
+ณ Enter           ณ Select the highlighted entry for editing            ณ
+ณ Del             ณ Delete the highlighted entry                        ณ
+ณ Esc/Alt-Q       ณ Exit this screen/menu                               ณ
+ณ Ctrl-End/Alt-X  ณ Exit this screen/menu                               ณ
+ณ                ณ Move up to previous record                          ณ
+ณ                ณ Move down to next record                            ณ
+ณ PgUp            ณ Move up by one screen page                          ณ
+ณ PgDn            ณ Move down by one screen page                        ณ
+ณ Home            ณ Move to the first record                            ณ
+ณ End             ณ Move to the last record (blank record)              ณ
+ิอออออออออออออออออฯอออออออออออออออออออออออออออออออออออออออออออออออออออออพ
+%center%%Index to Help%Index%
+%page% Item Select
+%title% Item Selection Menu
+
+
+This menu exists so that you can select an item to use in addition or
+editing.  The following keys are active:
+
+ีอออออออออออออออออัอออออออออออออออออออออออออออออออออออออออออออออออออออออธ
+ณ Keystroke       ณ Action                                              ณ
+ฦอออออออออออออออออุอออออออออออออออออออออออออออออออออออออออออออออออออออออต
+ณ Enter           ณ Select hi-lighted choice for editing                ณ
+ณ Esc             ณ Exit back to main menu                              ณ
+ณ               ณ Move "light bar" up or down by one choice           ณ
+ณ PgUp  PgDn      ณ Move up/down by one screenful of choices            ณ
+ณ Home  End       ณ Move to top/bottom of list of choices               ณ
+ณ F5              ณ Search for a string from beginning of list          ณ
+ณ F6              ณ Continue a search for a string                      ณ
+ิอออออออออออออออออฯอออออออออออออออออออออออออออออออออออออออออออออออออออออพ
+
+
+%center%%Index to Help%Index%
+%page% Select Edit
+%title% Item Selection/Edit Menu
+
+
+This menu exists so that you can select an item to use in addition, 
+editing or removal.  The following keys are active:
+
+ีอออออออออออออออออัอออออออออออออออออออออออออออออออออออออออออออออออออออออธ
+ณ Keystroke       ณ Action                                              ณ
+ฦอออออออออออออออออุอออออออออออออออออออออออออออออออออออออออออออออออออออออต
+ณ Enter           ณ Select hi-lighted choice for editing                ณ
+ณ Del             ณ Select hi-lighted choice for deletion               ณ
+ณ Esc             ณ Exit back to main menu                              ณ
+ณ               ณ Move "light bar" up or down by one choice           ณ
+ณ PgUp  PgDn      ณ Move up/down by one screenful of choices            ณ
+ณ Home  End       ณ Move to top/bottom of list of choices               ณ
+ณ F5              ณ Search for a string from beginning of list          ณ
+ณ F6              ณ Continue a search for a string                      ณ
+ิอออออออออออออออออฯอออออออออออออออออออออออออออออออออออออออออออออออออออออพ
+
+%center%%Index to Help%Index%
+%page% Color Menu
+%title% Color Selection Menu
+
+
+
+This menu allows you to select a color for your configuration by moving 
+the square box to the desired color.  
+
+ีอออออออออออออออออัอออออออออออออออออออออออออออออออออออออออออออออออออออออธ
+ณ Keystroke       ณ Action                                              ณ
+ฦอออออออออออออออออุอออออออออออออออออออออออออออออออออออออออออออออออออออออต
+ณ Enter           ณ Select the boxed color                              ณ
+ณ Esc             ณ Return keeping the original color                   ณ
+ณ                ณ Move right by one color block                       ณ
+ณ                ณ Move left by one color block                        ณ
+ณ                ณ Move up by one color block                          ณ
+ณ                ณ Move down by one color block                        ณ
+ิอออออออออออออออออฯอออออออออออออออออออออออออออออออออออออออออออออออออออออพ
+
+
+%center%%Index to Help%Index%
+
+

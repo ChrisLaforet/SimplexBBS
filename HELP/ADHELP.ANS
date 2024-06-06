@@ -1,0 +1,15 @@
+`0[0;31;1mHelp for the [0;32;1mRead Ads Menu [0;35;1m------------------
+
+[0;33;1m<F> Read Forward    [0;36m- Read ads in forward order starting with a
+                      specified message number.
+[0;33;1m<R> Read Reverse    [0;36m- Read ads in reverse order starting with a
+                      specified message number.
+[0;33;1m<I> Read Individual [0;36m- Read an individual message.  If you choose this
+                      option, you will be prompted for which message
+                      number to read.
+[0;33;1m<S> Read Search     [0;36m- Read ads in the fields:  To name, From name,
+                      or Subject.  You will be prompted which field you want to
+                      search on.
+[0;33;1m<X> Exit            [0;36m- Exit to the previous menu.
+
+[0;36;1mPress [0;31;1m[5mENTER [0;36;1mto continue....`4

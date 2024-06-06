@@ -1,0 +1,12 @@
+{moreoff lightred}Help for the {lightgreen}Nodelist Search {lightmagenta}------------------
+
+{yellow}<N> Search by Net   {cyan}- This will search the entire nodelist for a NET number
+                      that you specify and display ALL BBS nodes with that 
+                      Net number.
+{yellow}<B> Search by BBS   {cyan}- This will search all BBS names in the nodelist
+                      and look for the string that you specify.  
+{yellow}<C> Search by City  {cyan}- This will search the nodelist for a city that 
+                      you specify.
+{yellow}<X> Exit            {cyan}- Exits to the previous menu.
+
+{lightcyan}Press {lightred blink}ENTER {lightcyan}to continue....{enter}

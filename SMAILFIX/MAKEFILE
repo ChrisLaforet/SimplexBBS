@@ -1,0 +1,7 @@
+smailfix.exe : smailfix.obj
+	wlink @makefile.lst
+	bind smailfix.exe e:\lib\os2.lib 
+
+smailfix.obj : smailfix.c smailfix.h
+	wcl -mc -ox -0 -s -zp1 -w4 -dBOUND -c smailfix.c > smailfix.err
+	type smailfix.err

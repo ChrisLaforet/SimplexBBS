@@ -1,0 +1,9 @@
+name slink.exe
+format dos
+option dosseg
+option stack=8192
+option caseexact
+option map
+library clibc.lib
+file slink
+file s_build

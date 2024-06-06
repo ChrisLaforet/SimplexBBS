@@ -1,0 +1,12 @@
+sansi.exe : sansi.obj s_compil.obj
+	wlink @makefile.lst
+	bind sansi.exe e:\lib\os2.lib 
+
+sansi.obj : sansi.c sansi.h
+	wcl -ms -ox -0 -s -zp1 -w4 -c sansi.c > sansi.err
+	type sansi.err
+
+s_compil.obj : s_compil.c sansi.h
+	wcl -ms -ox -0 -s -zp1 -w4 -c s_compil.c > s_compil.err
+	type s_compil.err
+

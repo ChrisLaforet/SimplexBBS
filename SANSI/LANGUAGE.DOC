@@ -1,0 +1,115 @@
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³						       ³
+³ LANGUAGE.DOC					       ³
+³						       ³
+³ This is a specification of the command language      ³
+³ as implemented in Simplex BBS.  This specification   ³
+³ is copyrighted (c) 1989-90 by Christopher Laforet.   ³
+³ All Rights are Reserved by the copyright holder      ³
+³ who controls administration of this specification.   ³
+³						       ³
+³ Version 1.00 - Jan 4, 1990			       ³
+³						       ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+The following metacodes can be embedded in any .ASC or .ANS files which are
+shown by Simplex.  Whenever the codes are encountered, they are substituted
+with their representations.  Unknown codes are simply skipped.  The escape 
+character for the codes is ASCII 96 decimal (60 hex or `).  Should you need 
+to reproduce this character, this may be done by typing two of them in
+succession like this: ``.  This will be passed on as a single `.
+
+Unlike other BBS systems which use control characters as prefixes (escape
+characters), Simplex uses all-printable characters to simplify typing the
+codes in using any type of editor.  Of course, the ideal solution to this 
+is for the Sysop to use a special high-level language compiler to produce
+screens.  This compiler is called SANSI.
+
+
+1) User's Personal Information:
+
+Code            Representation				     SANSI Keyword
+--------------- -------------------------------------------- ---------------
+`A		User's Full Name			     name
+`B		User's First Name			     first
+`C		User's Last Name			     last
+`D		User's City-State			     citystate
+`E		User's Home Number			     homephone
+`F		User's Work/Data Number			     dataphone
+`G		User's Password 			     password
+`H		User's Privilege Level (1 to 255)	     priv
+`@		User's Alias #1				     alias1
+`#		User's Alias #2				     alias2
+`%		User's Alias #3				     alias3
+`&		User's Alias #4				     alias4
+
+
+2) User's BBS Settings:
+
+Code            Representation				     SANSI Keyword
+--------------- -------------------------------------------- ---------------
+`M		User's Baud Rate (300 -> 19200 or Local)     baud
+`N		User's Ansi Setting (On or Off)		     ansi
+`O		User's More Setting (On or Off)		     more
+`P		User's Clearscreen Setting (On or Off)	     clear
+`Q		User's Editor Setting (Line or Ansi)	     editor
+`R		User's Expert-mode Setting (On or Off)	     expert
+`S		Length of User's Screen Page (for More)      pagelen
+`T		User's Netmail Credit ($x.xx)		     credit
+
+
+LANGUAGE.DOC                            Simplex BBS Metacode Implementation
+                                                                     Page 2
+---------------------------------------------------------------------------
+
+3) User's Time/File Information:
+
+Code            Representation				     SANSI Keyword
+--------------- -------------------------------------------- ---------------
+`a		Date of User's First Call (MM/DD/YY)	     firstdate
+`b		Date of User's Last Call (MM/DD/YY)	     lastdate
+`c		Time of User's Last Call (HH:MM)	     lasttime
+`d		User's Total Daily Time (M mins S secs)	     totaltime
+`e		Total Time Used Today (M mins S secs)	     timeused
+`f		Time Remaining for Today (M mins S secs)     timeleft
+`g		Time Used During This Call (M mins S secs)   timeon
+`h		User's Total Uploads (Number of Files)	     ul
+`i		User's Total Uploaded Bytes (Kilobytes)	     ulkb
+`j		User's Total Downloads (Number of Files)     dl
+`k		User's Total Downloaded Bytes (Kilobytes)    dlkb
+`l		Number of User's Calls to System	     calls
+
+
+4) System Information:
+
+Code            Representation				     SANSI Keyword
+--------------- -------------------------------------------- ---------------
+`p		Day of Week (Monday, Tuesday, ... Sunday)    day
+`q		Short Day of Week (Mon, Tue, ... Sun)	     shortday
+`r		Date (MM/DD/YY)				     date
+`s		Time (HH:MM:SS)				     time
+`t		Number of Times User Yelled for Chat	     yells
+`u		Total Number of Users on System		     users
+`v		Last User on System		 	     lastuser
+`U		Minimum baud rate for logon		     minbaud
+`V		Minimum baud rate for Ansi		     ansibaud
+`W		Yell start time				     yellstart
+`X		Yell stop time				     yellstop
+`Y		Download start time			     dlstart
+`Z		Download stop time			     dlstop
+
+
+5) System Control:
+
+Code            Representation				     SANSI Keyword
+--------------- -------------------------------------------- ---------------
+`0		Turn [More] Off				     moreoff
+`1		Turn [More] On (If User Allows It)	     moreon
+`2		Turn [Stop] Off				     stopoff
+`3		Turn [Stop] On				     stopon
+`4		Pause and Wait for [Enter] to be Pressed     enter
+`5		Clearscreen code (FF character)		     cls
+`6		Bell					     bell
+`7		Backspace				     bs
+
+		

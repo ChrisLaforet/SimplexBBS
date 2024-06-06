@@ -1,0 +1,6 @@
+NAME 		SRECENT WINDOWCOMPAT
+STACKSIZE 	4096
+HEAPSIZE	8192
+DESCRIPTION 	'SRECENT -- A Recent Callers Screen Generator for Simplex. Copyright (c) 1989-90, Christopher Laforet'
+EXETYPE		OS2
+

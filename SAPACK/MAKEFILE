@@ -1,0 +1,8 @@
+sapack.exe : sapack.obj
+	wlink @makefile.lst
+	bind sapack.exe e:\lib\os2.lib 
+
+sapack.obj : sapack.c sapack.h
+	wcl -ms -ox -0 -s -zp1 -w4 -dBOUND -c sapack.c > sapack.err
+	type sapack.err
+

@@ -1,0 +1,84 @@
+
+
+Sample Simplex Menus
+--------------------
+
+
+Here are some sample Simplex menus which should help you to build your
+own.  They demonstrate the use of the privilege levels of menu options 
+to limit access to certain features.  In our sample, the following
+privilege levels are in effect:
+
+  New user --------- 1
+  Confirmed user --- 100
+  Sysop ------------ 200
+
+The basic precept is that a new user can look at screens and
+information files, can yell for the Sysop, can change his/her
+configuration, but cannot access file or message areas.
+
+A normal user can access message areas (except for the Sysop's message
+area) and can access file areas, including one entitled "Files for
+Sysop's Eyes Only" where he/she may upload files, but cannot see the
+contents of the file area, nor download anything from there.  The
+normal user cannot do a Raw Directory, Move Files, or Kill Files in any
+file area either.
+
+The Sysop, of course, has access to everything, including his/her
+passworded (second line of protection) message area (the password is
+"password").  The Sysop also has the capability of generating file
+requests in the Fidonet mail area (for a system which is on the
+network).
+
+The structure of the menus presented here are as follows:
+
+
+     +----------------+----- main.mnu ----+---------------+
+     |                |                   |               |    
+ msgarea.mnu      change.mnu           info.mnu      filearea.mnu
+     |                                                    |
+     +-- ad.mnu                               files.mnu --+
+     |                                                    |
+     +-- msgsysop.mnu                         sysop.mnu --+
+     |                                                    |
+     +-- msgfido.mnu                                      |
+     |                                                    |
+     +-- msglocal.mnu                                     |
+     |                                                    |
+     +-------------------- fattach.mnu -------------------+
+
+and each menu can call logoff.mnu.
+
+These menus require the following message areas:
+
+  1.  Messages to the Sysop  -- Local area -- Private messages only
+  2.  Local Messages ---------- Local Area -- Public/Private messages
+  3.  Local Fileattach -------- Fileattach -- Private messages only
+  4.  Fidonet Mail ------------ Netmail ----- Public/Private messages
+
+and the following file areas:
+
+  1.  General File Area  ------ Access priv level 100
+  2.  Files for Sysop's Eyes -- Access priv level 200
+ 
+
+Sample Simplex Menus                                                   Page 2
+-----------------------------------------------------------------------------
+
+You should acquire a familiarity with the use of the various menu
+options described in SIMPLEX.DOC before you look at the menus.  Each
+one has been set up to call the others as diagrammed above.  Notice the
+use of the actual view priv levels to keep users out of options that
+they are not allowed to access!  For example, a user below 100 will
+neither see the option to go to the file areas nor be able to access
+it.  This means that options in the file area menu do not all have to
+be set to priv level 100, but can remain at level 0.  Why?  Well, it
+saves you a lot of trouble if you decide later to make level 50 access
+file areas.  Only place you will have to change will be the option on
+the main menu, giving people with a level of 50 or higher the option to
+get to the file areas.  Since folks cannot get there in any other way,
+the file area menus are safe being left with view privilege level 0.
+
+
+
+

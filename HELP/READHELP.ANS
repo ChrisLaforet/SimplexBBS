@@ -1,0 +1,21 @@
+`0[0;31;1mHelp for the [0;32;1mRead Menu [0;35;1m------------------
+
+[0;33;1m<F> Read Forward    [0;36m- Read messages in forward order starting with a
+                      specified message number.
+[0;33;1m<R> Read Reverse    [0;36m- Read messages in reverse order starting with a
+                      specified message number.
+[0;33;1m<N> Read New        [0;36m- Read new messages starting from the last message
+                      you read.
+[0;33;1m<I> Read Individual [0;36m- Read an individual message.  If you choose this
+                      option, you will be prompted for which message
+                      number to read.
+[0;33;1m<M> Read Marked     [0;36m- Read messages that were marked by the system if
+                      you didn't read messages addressed to you at login, or 
+                      messages you marked manually using Scan/Mark option.
+[0;33;1m<S> Read Search     [0;36m- Read messages in the fields:  To name, From name,
+                      or Subject.  You will be prompted which field you want to
+                      search on.
+[0;33;1m<T> Read Topics     [0;36m- This lets you read messages organized by subject.
+[0;33;1m<X> Exit            [0;36m- Exit to the previous menu.
+
+[0;36;1mPress [0;31;1m[5mENTER [0;36;1mto continue....`4

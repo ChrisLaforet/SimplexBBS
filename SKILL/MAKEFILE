@@ -1,0 +1,22 @@
+# SKILL - File Cleaning for Simplex
+
+
+skill.exe : skill.obj s_date.obj s_filfnd.obj s_kill.obj
+	wlink @makefile.lst
+
+skill.obj : skill.c skill.h
+	wcl -mc -ox -s -zp1 -w4 -c skill.c > skill.err
+	type skill.err
+
+s_date.obj : s_date.c skill.h
+	wcl -mc -ox -s -zp1 -w4 -c s_date.c > s_date.err
+	type s_date.err
+
+s_filfnd.obj : s_filfnd.c skill.h
+	wcl -mc -ox -s -zp1 -w4 -c s_filfnd.c > s_filfnd.err
+	type s_filfnd.err
+
+s_kill.obj : s_kill.c skill.h
+	wcl -mc -ox -s -zp1 -w4 -c s_kill.c > s_kill.err
+	type s_kill.err
+

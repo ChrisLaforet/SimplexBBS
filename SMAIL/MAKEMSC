@@ -1,0 +1,53 @@
+# Makefile for NMAKE
+#
+# For SMAIL - Simplex net mail manager
+
+smail.exe : smail.obj s_areas.obj s_badmsg.obj s_date.obj s_export.obj \
+	s_file.obj s_impmsg.obj s_import.obj s_sig.obj s_toss.obj s_unarc.obj
+	link /ST:10240 /MAP /F smail s_areas s_badmsg s_date s_export s_file s_impmsg s_import s_sig s_toss s_unarc,smail;
+
+smail.obj : smail.c smail.h
+	cl -AL -Ocglnt -Zp1 -FPi -Gs -c smail.c > smail.err
+	type smail.err
+
+s_areas.obj : s_areas.c smail.h
+	cl -AL -Ocglnt -Zp1 -FPi -Gs -c s_areas.c > s_areas.err
+	type s_areas.err
+
+s_badmsg.obj : s_badmsg.c smail.h
+	cl -AL -Ocglnt -Zp1 -FPi -Gs -c s_badmsg.c > s_badmsg.err
+	type s_badmsg.err
+
+s_date.obj : s_date.c smail.h
+	cl -AL -Ocglnt -Zp1 -FPi -Gs -c s_date.c > s_date.err
+	type s_date.err
+
+s_export.obj : s_export.c smail.h
+	cl -AL -Ocglnt -Zp1 -FPi -Gs -c s_export.c > s_export.err
+	type s_export.err
+
+s_file.obj : s_file.c smail.h
+	cl -AL -Ocglnt -Zp1 -FPi -Gs -c s_file.c > s_file.err
+	type s_file.err
+
+s_impmsg.obj : s_impmsg.c smail.h
+	cl -AL -Ocglnt -Zp1 -FPi -Gs -c s_impmsg.c > s_impmsg.err
+	type s_impmsg.err
+
+s_import.obj : s_import.c smail.h
+	cl -AL -Ocglnt -Zp1 -FPi -Gs -c s_import.c > s_import.err
+	type s_import.err
+
+s_sig.obj : s_sig.c smail.h
+	cl -AL -Ocglnt -Zp1 -FPi -Gs -c s_sig.c > s_sig.err
+	type s_sig.err
+
+s_toss.obj : s_toss.c smail.h
+	cl -AL -Ocglnt -Zp1 -FPi -Gs -c s_toss.c > s_toss.err
+	type s_toss.err
+
+s_unarc.obj : s_unarc.c smail.h
+	cl -AL -Ocglnt -Zp1 -FPi -Gs -c s_unarc.c > s_unarc.err
+	type s_unarc.err
+
+

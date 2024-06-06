@@ -1,0 +1,3 @@
+srecent : srecent.o srecent.c
+	cc -o srecent srecent.c
+

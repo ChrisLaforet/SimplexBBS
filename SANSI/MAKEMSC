@@ -1,0 +1,12 @@
+sansi.exe : sansi.obj s_compil.obj
+	link sansi s_compil,sansi,,/NOD:SLIBCE SLIBCEP,nul
+	bind sansi.exe os2.lib 
+
+sansi.obj : sansi.c sansi.h
+	cl -AS -Zp1 -Oailnt -c sansi.c > sansi.err
+	type sansi.err
+
+s_compil.obj : s_compil.c sansi.h
+	cl -AS -Zp1 -Oailnt -c s_compil.c > s_compil.err
+	type s_compil.err
+

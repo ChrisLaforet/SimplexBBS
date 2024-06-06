@@ -1,0 +1,12 @@
+`0[0;31;1mHelp for the [0;32;1mCombined Configuration Menu [0;35;1m------------------
+
+[0;33;1m<C> Change x -> y     [0;36m- Toggle from ASCII mail downloading to QWK mail
+                        downloading or vice-versa.
+[0;33;1m<A> Set Archiver Type [0;36m- This leads to a sub menu which permits you to 
+                        set a default archiver for archiving your mail.
+[0;33;1m<I> Set Includes      [0;36m- Toggle which files are included with the QWK
+                        mail packet.
+[0;33;1m<S> Show Settings     [0;36m- Show your current configuration settings.
+[0;33;1m<X> Exit              [0;36m- Exit to the previous menu.
+
+[0;36;1mPress [0;31;1m[5mENTER [0;36;1mto continue....`4

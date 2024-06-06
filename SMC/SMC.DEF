@@ -1,0 +1,5 @@
+NAME		SMC WINDOWCOMPAT
+STACKSIZE 	8192
+HEAPSIZE	0
+DESCRIPTION 	'SMC -- Simplex Menu Compiler/Decompiler. Copyright (c) 1990, Christopher Laforet'
+EXETYPE		OS2

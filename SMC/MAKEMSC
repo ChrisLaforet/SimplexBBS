@@ -1,0 +1,31 @@
+# Makefile for SMC -- Simplex Mail Compiler
+
+smc.exe : smc.obj s_define.obj s_decomp.obj s_error.obj s_parse.obj \
+	s_token.obj
+	link smc s_decomp s_define s_error s_parse s_token,smc,/MAP,/NOD:clibce clibcep os2,smc.def
+	bind smc.exe e:\lib\os2.lib 
+
+smc.obj : smc.c smc.h
+	cl -AC -Lp -Zp1 -Ocgilnt -Gs -c smc.c > smc.err
+	type smc.err
+
+s_decomp.obj : s_decomp.c smc.h
+	cl -AC -Lp -Zp1 -Ocgilnt -Gs -c s_decomp.c > s_decomp.err
+	type s_decomp.err
+
+s_define.obj : s_define.c smc.h
+	cl -AC -Lp -Zp1 -Ocgilnt -Gs -c s_define.c > s_define.err
+	type s_define.err
+
+s_error.obj : s_error.c smc.h
+	cl -AC -Lp -Zp1 -Ocgilnt -Gs -c s_error.c > s_error.err
+	type s_error.err
+
+s_parse.obj : s_parse.c smc.h
+	cl -AC -Lp -Zp1 -Ocgilnt -Gs -c s_parse.c > s_parse.err
+	type s_parse.err
+
+s_token.obj : s_token.c smc.h
+	cl -AC -Lp -Zp1 -Ocgilnt -Gs -c s_token.c > s_token.err
+	type s_token.err
+

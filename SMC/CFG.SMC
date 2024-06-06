@@ -1,0 +1,98 @@
+/* Decompilation of menu file cfgmenu.mnu
+**
+** Achieved by SMC (v 0.01)
+*/
+
+
+menu "cfgmenu"
+
+  prompt "[^$r min^] What is your choice?"
+  	color 15	hilite 14
+
+  /* Line 1> Type: Show menu line */
+  line "[ ^Change Configuration Menu^ >-------------------------------"
+  	type 0	expert
+  	priv 0	color 13	hilite 14
+
+  /* Line 2> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 3> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 4> Type: Change user's home phone number */
+  line "<^H^> Change your Home number             $c"
+  	type 72
+  	key "H"
+  	priv 0	color 12	hilite 14
+
+  /* Line 5> Type: Change user's data/work phone number */
+  line "<^D^> Change your Data/Work number"
+  	type 73
+  	key "D"
+  	priv 0	color 12	hilite 14
+
+  /* Line 6> Type: Change user's city/state */
+  line "<^C^> Change city and state               $c"
+  	type 64
+  	key "C"
+  	priv 0	color 11	hilite 14
+
+  /* Line 7> Type: Change user's password */
+  line "<^P^> Change your password"
+  	type 65
+  	key "P"
+  	priv 0	color 11	hilite 14
+
+  /* Line 8> Type: Change user's screen length */
+  line "<^L^> Change screen length                $c"
+  	type 68
+  	key "L"
+  	priv 0	color 10	hilite 14
+
+  /* Line 9> Type: Change user's MORE status */
+  line "<^*^> Change page pausing status"
+  	type 67
+  	key "*"
+  	priv 0	color 10	hilite 14
+
+  /* Line 10> Type: Change user's ANSI status */
+  line "<^A^> Change your ANSI status             $c"
+  	type 69
+  	key "A"
+  	priv 0	color 12	hilite 14
+
+  /* Line 11> Type: Change user's clearscreen status */
+  line "<^S^> Change clearscreen status"
+  	type 66
+  	key "S"
+  	priv 0	color 12	hilite 14
+
+  /* Line 12> Type: Change user's default editor status */
+  line "<^E^> Change editor type                  $c"
+  	type 70
+  	key "E"
+  	priv 0	color 13	hilite 14
+
+  /* Line 13> Type: Change user's novice/expert mode */
+  line "<^X^> Toggle novice/expert menus"
+  	type 71
+  	key "X"
+  	priv 0	color 13	hilite 14
+
+  /* Line 14> Type: Call new menu - Add to return stack */
+  line "<^G^> Goodbye! Log Off!!"
+  	type 1
+  	key "G"	data "logoff"
+  	priv 0	color 15	hilite 14
+
+  /* Line 15> Type: Return to previous menu */
+  line "<^M^> Return to the main menu"
+  	type 3
+  	key "M"
+  	priv 0	color 11	hilite 14
+

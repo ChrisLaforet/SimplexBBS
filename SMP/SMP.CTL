@@ -1,0 +1,13 @@
+; OMMM Control - Programmer's Oasis BBS 2
+;
+; 5-23-90
+;
+
+ArcCM 1:151/401 1:151/401
+ZIPCM 1:151/402 1:151/402
+ArcCM 1:151/403 1:151/403
+ArcCM 1:151/404 1:151/404 1:151/405
+POLL 1:151/1000
+
+sched c
+poll 1:151/1000

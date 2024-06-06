@@ -1,0 +1,91 @@
+/* Decompilation of menu file msg7.mnu
+**
+** Achieved by SMC (v 0.01)
+*/
+
+
+menu "msg7"
+
+  prompt "[^$r min^] What is your choice?"
+  	color 15	hilite 14
+
+  /* Line 1> Type: Show menu line */
+  line "[ ^Area 7: Fidonet Mail Area^ >-------------------------------"
+  	type 0	expert
+  	priv 0	color 13	hilite 14
+
+  /* Line 2> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 3> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 4> Type: Read messages on board */
+  line "<^R^> Read Messages                       $c"
+  	type 17
+  	key "R"	data "27"
+  	priv 0	color 10	hilite 14
+
+  /* Line 5> Type: Enter a message on board */
+  line "<^E^> Enter a Message"
+  	type 16
+  	key "E"	data "27"
+  	priv 0	color 10	hilite 14
+
+  /* Line 6> Type: Scan messages on board */
+  line "<^S^> Scan Messages                       $c"
+  	type 18
+  	key "S"	data "27"
+  	priv 0	color 11	hilite 14
+
+  /* Line 7> Type: Quickscan messages on board */
+  line "<^Q^> Quickscan Messages"
+  	type 19
+  	key "Q"	data "27"
+  	priv 0	color 11	hilite 14
+
+  /* Line 8> Type: Search userlist */
+  line "<^U^> Search for Users                    $c"
+  	type 20
+  	key "U"
+  	priv 0	color 12	hilite 14
+
+  /* Line 9> Type: Search for Fidonet address */
+  line "<^F^> Search for Fidonet Nodes"
+  	type 21
+  	key "F"
+  	priv 0	color 12	hilite 14
+
+  /* Line 10> Type: Generate FREQ to Fidonet address */
+  line "<^$$^> Generate File Requests"
+  	type 22
+  	key "$"
+  	priv 250	color 11	hilite 14
+
+  /* Line 11> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 12> Type: Return to previous menu */
+  line "<^A^> Change message group"
+  	type 3
+  	key "A"
+  	priv 0	color 13	hilite 14
+
+  /* Line 13> Type: Goto new menu - Clear return stack */
+  line "<^M^> Return to the main menu"
+  	type 2
+  	key "M"	data "main"
+  	priv 0	color 15	hilite 14
+
+  /* Line 14> Type: Call new menu - Add to return stack */
+  line "<^G^> Goodbye! Log Off!!"
+  	type 1
+  	key "G"	data "logoff"
+  	priv 0	color 10	hilite 14
+

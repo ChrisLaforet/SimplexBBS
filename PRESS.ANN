@@ -1,0 +1,61 @@
+E(s3t10H&a4L
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³                                                                        ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+(s4t2q0s1p3b12V&a-2R&a1080HS I M P L E X    A N D    M U L T I P L E X    B B S    P A C K A G E S
+
+
+(s4t0b8V
+Simplex and Multiplex are both BBS packages produced by Chris Laforet Software.  They are both OS/2 2.xx compatible (Multiplex
+is a 2.xx-only program, Simplex is a 1.xx/2.xx package).
+(s4t3b10V
+Simplex BBS:
+(s4t0b8V
+Simplex is a single-user BBS package that makes it easy for someone to start their own BBS or host system.  Simplex is simple
+to configure, and a cinch to maintain.  It supports Fidonet mail completely (Simplex is a registered Fidonet application).
+
+Simplex supports up to 9,999 file areas and 9,999 message areas.  Menus are completely configurable by the Sysop.  QWK-
+compatible offline readers are fully supported.
+
+Simplex has been in active use on systems around the world for over two years.  It has proven to be a very robust and dependable
+package.  Companies have purchased its source code to use Simplex as a stable platform for their communciations.  Simplex's
+structures are public domain so that software authors can develop utilities to supplement Simplex as a BBS.
+
+Since Simplex is free, it is available for download from the BBSes listed below or from Compuserve's IBMBBS forum.
+(s4t3b10V
+Multiplex BBS:
+(s4t0b8V
+Multiplex contains all of the features of Simplex.  It is a multi-user BBS package that utilizes a client-server architecture based
+on named-pipes.  This permits nodes to be scattered over a network, if necessary.  Multiplex is currently under development
+and testing.  Targeted release date is sometime during first quarter of 1993.
+
+The message-passing architecture will be public domain (as are Simplex's structures) to encourage the development of utilities
+and alternate client processes (for example, an X.25 interface).  You may call the number below for more information on Multiplex.
+(s4t3b10V
+Source Code:
+(s4t0b8V
+One of the strengths of Simplex is the availablity of source code.  Multiplex will also have this desirable trait.  Sysops who wish
+to customize their BBS package, incorporate new features, or who simply want to have the code so they can fix problems that
+might crop up, can easily order the code.  Companies developing communications platforms can negotiate with Chris Laforet
+Software for reasonable royalty agreements.
+(s4t3b10V
+Cost:
+(s4t0b8V
+Simplex is available free of charge for individuals and for companies.  Multiplex is targeted to sell between $350 and $400 for an
+unlimited node license.  Simplex's source code is available for $175 with a signed license form.  Multiplex's source code is
+targeted to be sold between $400 and $500.
+(s4t3b10V
+Contact Information:
+(s4t0b8V
+You may contact Chris Laforet Software by any of the following means:
+
+	(s3BU. S. Mail: (s0B&a1260HChris Laforet Software
+&a1260H511-D Poplar St
+&a1260HGraham, NC  27253
+	(s3BVoice: (s0B&a1260H919/226-6957 (No free Simplex support by voice)
+
+	(s3BBBSes: (s0B&a1260HThe Programmer's Oasis BBS&a2700H919/226-6984
+&a1260HThe Programmer's Oasis 2 BBS&a2700H919/226-7136
+	(s3BFidonet Mail: (s0B&a1260H1:3644/1 or 1:3644/2
+	(s3BCompuserve: (s0B&a1260HID# 76120,110

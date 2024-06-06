@@ -1,0 +1,28 @@
+# Makefile
+#
+# SCLEAN - Mail Cleaning for Simplex
+
+
+sclean.exe : sclean.obj s_all.obj s_date.obj s_num.obj s_recv.obj
+	link /ST:10240 sclean s_all s_date s_num s_recv,sclean;
+
+sclean.obj : sclean.c sclean.h
+	cl -AC -Ocgilnt -Gs -Zp1 -FPi -W3 -c sclean.c > sclean.err
+	type sclean.err
+
+s_all.obj : s_all.c sclean.h
+	cl -AC -Ocgilnt -Gs -Zp1 -FPi -W3 -c s_all.c > s_all.err
+	type s_all.err
+
+s_date.obj : s_date.c sclean.h
+	cl -AC -Ocgilnt -Gs -Zp1 -FPi -W3 -c s_date.c > s_date.err
+	type s_date.err
+
+s_num.obj : s_num.c sclean.h
+	cl -AC -Ocgilnt -Gs -Zp1 -FPi -W3 -c s_num.c > s_num.err
+	type s_num.err
+
+s_recv.obj : s_recv.c sclean.h
+	cl -AC -Ocgilnt -Gs -Zp1 -FPi -W3 -c s_recv.c > s_recv.err
+	type s_recv.err
+

@@ -1,0 +1,644 @@
+/* Decompilation of menu file msg6.mnu
+**
+** Achieved by SMC (v 0.01)
+*/
+
+
+menu "msg6"
+
+  prompt "[^$r min^] What is your choice?"
+  	color 15	hilite 14
+
+  /* Line 1> Type: Show menu line */
+  line "[ ^Group 6: Professional Echomail Areas^ >--------------------"
+  	type 0	expert
+  	priv 0	color 13	hilite 14
+
+  /* Line 2> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 3> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 4> Type: Call new menu - Add to return stack */
+  line "<^1^> Science Echomail Area               $c"
+  	type 1
+  	key "1"	data "msg6_1"
+  	priv 0	color 10	hilite 14
+
+  /* Line 5> Type: Call new menu - Add to return stack */
+  line "<^2^> Medical Echomail Area"
+  	type 1
+  	key "2"	data "msg6_2"
+  	priv 0	color 10	hilite 14
+
+  /* Line 6> Type: Call new menu - Add to return stack */
+  line "<^3^> Law Echomail Area                   $c"
+  	type 1
+  	key "3"	data "msg6_3"
+  	priv 0	color 11	hilite 14
+
+  /* Line 7> Type: Call new menu - Add to return stack */
+  line "<^4^> Physics Echomail Area"
+  	type 1
+  	key "4"	data "msg6_4"
+  	priv 0	color 11	hilite 14
+
+  /* Line 8> Type: Call new menu - Add to return stack */
+  line "<^5^> Stock Market Echomail Area          $c"
+  	type 1
+  	key "5"	data "msg6_5"
+  	priv 0	color 12	hilite 14
+
+  /* Line 9> Type: Call new menu - Add to return stack */
+  line "<^6^> Mental Health Echomail Area"
+  	type 1
+  	key "6"	data "msg6_6"
+  	priv 0	color 12	hilite 14
+
+  /* Line 10> Type: Call new menu - Add to return stack */
+  line "<^7^> Public Psychology Echomail Area"
+  	type 1
+  	key "7"	data "msg6_7"
+  	priv 0	color 11	hilite 14
+
+  /* Line 11> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 12> Type: Return to previous menu */
+  line "<^A^> Change message group"
+  	type 3
+  	key "A"
+  	priv 0	color 13	hilite 14
+
+  /* Line 13> Type: Goto new menu - Clear return stack */
+  line "<^M^> Return to the main menu"
+  	type 2
+  	key "M"	data "main"
+  	priv 0	color 15	hilite 14
+
+  /* Line 14> Type: Call new menu - Add to return stack */
+  line "<^G^> Goodbye! Log Off!!"
+  	type 1
+  	key "G"	data "logoff"
+  	priv 0	color 10	hilite 14
+
+/* Decompilation of menu file msg6_1.mnu
+**
+** Achieved by SMC (v 0.01)
+*/
+
+
+menu "msg6_1"
+
+  prompt "[^$r min^] What is your choice?"
+  	color 15	hilite 14
+
+  /* Line 1> Type: Show menu line */
+  line "[ ^Area 6-1: Science Echomail Area^ >-------------------------"
+  	type 0	expert
+  	priv 0	color 13	hilite 14
+
+  /* Line 2> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 3> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 4> Type: Read messages on board */
+  line "<^R^> Read Messages                       $c"
+  	type 17
+  	key "R"	data "22"
+  	priv 0	color 10	hilite 14
+
+  /* Line 5> Type: Enter a message on board */
+  line "<^E^> Enter a Message"
+  	type 16
+  	key "E"	data "22"
+  	priv 0	color 10	hilite 14
+
+  /* Line 6> Type: Scan messages on board */
+  line "<^S^> Scan Messages                       $c"
+  	type 18
+  	key "S"	data "22"
+  	priv 0	color 11	hilite 14
+
+  /* Line 7> Type: Quickscan messages on board */
+  line "<^Q^> Quickscan Messages"
+  	type 19
+  	key "Q"	data "22"
+  	priv 0	color 11	hilite 14
+
+  /* Line 8> Type: Search userlist */
+  line "<^U^> Search for Users"
+  	type 20
+  	key "U"
+  	priv 0	color 12	hilite 14
+
+  /* Line 9> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 10> Type: Return to previous menu */
+  line "<^A^> Change message area"
+  	type 3
+  	key "A"
+  	priv 0	color 13	hilite 14
+
+  /* Line 11> Type: Goto new menu - Clear return stack */
+  line "<^M^> Return to the main menu"
+  	type 2
+  	key "M"	data "main"
+  	priv 0	color 15	hilite 14
+
+  /* Line 12> Type: Call new menu - Add to return stack */
+  line "<^G^> Goodbye! Log Off!!"
+  	type 1
+  	key "G"	data "logoff"
+  	priv 0	color 10	hilite 14
+
+/* Decompilation of menu file msg6_2.mnu
+**
+** Achieved by SMC (v 0.01)
+*/
+
+
+menu "msg6_2"
+
+  prompt "[^$r min^] What is your choice?"
+  	color 15	hilite 14
+
+  /* Line 1> Type: Show menu line */
+  line "[ ^Area 6-2: Medical Echomail Area^ >-------------------------"
+  	type 0	expert
+  	priv 0	color 13	hilite 14
+
+  /* Line 2> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 3> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 4> Type: Read messages on board */
+  line "<^R^> Read Messages                       $c"
+  	type 17
+  	key "R"	data "23"
+  	priv 0	color 10	hilite 14
+
+  /* Line 5> Type: Enter a message on board */
+  line "<^E^> Enter a Message"
+  	type 16
+  	key "E"	data "23"
+  	priv 0	color 10	hilite 14
+
+  /* Line 6> Type: Scan messages on board */
+  line "<^S^> Scan Messages                       $c"
+  	type 18
+  	key "S"	data "23"
+  	priv 0	color 11	hilite 14
+
+  /* Line 7> Type: Quickscan messages on board */
+  line "<^Q^> Quickscan Messages"
+  	type 19
+  	key "Q"	data "23"
+  	priv 0	color 11	hilite 14
+
+  /* Line 8> Type: Search userlist */
+  line "<^U^> Search for Users"
+  	type 20
+  	key "U"
+  	priv 0	color 12	hilite 14
+
+  /* Line 9> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 10> Type: Return to previous menu */
+  line "<^A^> Change message area"
+  	type 3
+  	key "A"
+  	priv 0	color 13	hilite 14
+
+  /* Line 11> Type: Goto new menu - Clear return stack */
+  line "<^M^> Return to the main menu"
+  	type 2
+  	key "M"	data "main"
+  	priv 0	color 15	hilite 14
+
+  /* Line 12> Type: Call new menu - Add to return stack */
+  line "<^G^> Goodbye! Log Off!!"
+  	type 1
+  	key "G"	data "logoff"
+  	priv 0	color 10	hilite 14
+
+/* Decompilation of menu file msg6_3.mnu
+**
+** Achieved by SMC (v 0.01)
+*/
+
+
+menu "msg6_3"
+
+  prompt "[^$r min^] What is your choice?"
+  	color 15	hilite 14
+
+  /* Line 1> Type: Show menu line */
+  line "[ ^Area 6-3: Law Echomail Area^ >-----------------------------"
+  	type 0	expert
+  	priv 0	color 13	hilite 14
+
+  /* Line 2> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 3> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 4> Type: Read messages on board */
+  line "<^R^> Read Messages                       $c"
+  	type 17
+  	key "R"	data "24"
+  	priv 0	color 10	hilite 14
+
+  /* Line 5> Type: Enter a message on board */
+  line "<^E^> Enter a Message"
+  	type 16
+  	key "E"	data "24"
+  	priv 0	color 10	hilite 14
+
+  /* Line 6> Type: Scan messages on board */
+  line "<^S^> Scan Messages                       $c"
+  	type 18
+  	key "S"	data "24"
+  	priv 0	color 11	hilite 14
+
+  /* Line 7> Type: Quickscan messages on board */
+  line "<^Q^> Quickscan Messages"
+  	type 19
+  	key "Q"	data "24"
+  	priv 0	color 11	hilite 14
+
+  /* Line 8> Type: Search userlist */
+  line "<^U^> Search for Users"
+  	type 20
+  	key "U"
+  	priv 0	color 12	hilite 14
+
+  /* Line 9> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 10> Type: Return to previous menu */
+  line "<^A^> Change message area"
+  	type 3
+  	key "A"
+  	priv 0	color 13	hilite 14
+
+  /* Line 11> Type: Goto new menu - Clear return stack */
+  line "<^M^> Return to the main menu"
+  	type 2
+  	key "M"	data "main"
+  	priv 0	color 15	hilite 14
+
+  /* Line 12> Type: Call new menu - Add to return stack */
+  line "<^G^> Goodbye! Log Off!!"
+  	type 1
+  	key "G"	data "logoff"
+  	priv 0	color 10	hilite 14
+
+/* Decompilation of menu file msg6_4.mnu
+**
+** Achieved by SMC (v 0.01)
+*/
+
+
+menu "msg6_4"
+
+  prompt "[^$r min^] What is your choice?"
+  	color 15	hilite 14
+
+  /* Line 1> Type: Show menu line */
+  line "[ ^Area 6-4: Physics Echomail Area^ >-------------------------"
+  	type 0	expert
+  	priv 0	color 13	hilite 14
+
+  /* Line 2> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 3> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 4> Type: Read messages on board */
+  line "<^R^> Read Messages                       $c"
+  	type 17
+  	key "R"	data "25"
+  	priv 0	color 10	hilite 14
+
+  /* Line 5> Type: Enter a message on board */
+  line "<^E^> Enter a Message"
+  	type 16
+  	key "E"	data "25"
+  	priv 0	color 10	hilite 14
+
+  /* Line 6> Type: Scan messages on board */
+  line "<^S^> Scan Messages                       $c"
+  	type 18
+  	key "S"	data "25"
+  	priv 0	color 11	hilite 14
+
+  /* Line 7> Type: Quickscan messages on board */
+  line "<^Q^> Quickscan Messages"
+  	type 19
+  	key "Q"	data "25"
+  	priv 0	color 11	hilite 14
+
+  /* Line 8> Type: Search userlist */
+  line "<^U^> Search for Users"
+  	type 20
+  	key "U"
+  	priv 0	color 12	hilite 14
+
+  /* Line 9> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 10> Type: Return to previous menu */
+  line "<^A^> Change message area"
+  	type 3
+  	key "A"
+  	priv 0	color 13	hilite 14
+
+  /* Line 11> Type: Goto new menu - Clear return stack */
+  line "<^M^> Return to the main menu"
+  	type 2
+  	key "M"	data "main"
+  	priv 0	color 15	hilite 14
+
+  /* Line 12> Type: Call new menu - Add to return stack */
+  line "<^G^> Goodbye! Log Off!!"
+  	type 1
+  	key "G"	data "logoff"
+  	priv 0	color 10	hilite 14
+
+/* Decompilation of menu file msg6_5.mnu
+**
+** Achieved by SMC (v 0.01)
+*/
+
+
+menu "msg6_5"
+
+  prompt "[^$r min^] What is your choice?"
+  	color 15	hilite 14
+
+  /* Line 1> Type: Show menu line */
+  line "[ ^Area 6-5: Stock Market Echomail Area^ >--------------------"
+  	type 0	expert
+  	priv 0	color 13	hilite 14
+
+  /* Line 2> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 3> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 4> Type: Read messages on board */
+  line "<^R^> Read Messages                       $c"
+  	type 17
+  	key "R"	data "26"
+  	priv 0	color 10	hilite 14
+
+  /* Line 5> Type: Enter a message on board */
+  line "<^E^> Enter a Message"
+  	type 16
+  	key "E"	data "26"
+  	priv 0	color 10	hilite 14
+
+  /* Line 6> Type: Scan messages on board */
+  line "<^S^> Scan Messages                       $c"
+  	type 18
+  	key "S"	data "26"
+  	priv 0	color 11	hilite 14
+
+  /* Line 7> Type: Quickscan messages on board */
+  line "<^Q^> Quickscan Messages"
+  	type 19
+  	key "Q"	data "26"
+  	priv 0	color 11	hilite 14
+
+  /* Line 8> Type: Search userlist */
+  line "<^U^> Search for Users"
+  	type 20
+  	key "U"
+  	priv 0	color 12	hilite 14
+
+  /* Line 9> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 10> Type: Return to previous menu */
+  line "<^A^> Change message area"
+  	type 3
+  	key "A"
+  	priv 0	color 13	hilite 14
+
+  /* Line 11> Type: Goto new menu - Clear return stack */
+  line "<^M^> Return to the main menu"
+  	type 2
+  	key "M"	data "main"
+  	priv 0	color 15	hilite 14
+
+  /* Line 12> Type: Call new menu - Add to return stack */
+  line "<^G^> Goodbye! Log Off!!"
+  	type 1
+  	key "G"	data "logoff"
+  	priv 0	color 10	hilite 14
+
+/* Decompilation of menu file msg6_6.mnu
+**
+** Achieved by SMC (v 0.01)
+*/
+
+
+menu "msg6_6"
+
+  prompt "[^$r min^] What is your choice?"
+  	color 15	hilite 14
+
+  /* Line 1> Type: Show menu line */
+  line "[ ^Area 6-6: Mental Health Echomail Area^ >--------------------"
+  	type 0	expert
+  	priv 0	color 13	hilite 14
+
+  /* Line 2> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 3> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 4> Type: Read messages on board */
+  line "<^R^> Read Messages                       $c"
+  	type 17
+  	key "R"	data "45"
+  	priv 0	color 10	hilite 14
+
+  /* Line 5> Type: Enter a message on board */
+  line "<^E^> Enter a Message"
+  	type 16
+  	key "E"	data "45"
+  	priv 0	color 10	hilite 14
+
+  /* Line 6> Type: Scan messages on board */
+  line "<^S^> Scan Messages                       $c"
+  	type 18
+  	key "S"	data "45"
+  	priv 0	color 11	hilite 14
+
+  /* Line 7> Type: Quickscan messages on board */
+  line "<^Q^> Quickscan Messages"
+  	type 19
+  	key "Q"	data "45"
+  	priv 0	color 11	hilite 14
+
+  /* Line 8> Type: Search userlist */
+  line "<^U^> Search for Users"
+  	type 20
+  	key "U"
+  	priv 0	color 12	hilite 14
+
+  /* Line 9> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 10> Type: Return to previous menu */
+  line "<^A^> Change message area"
+  	type 3
+  	key "A"
+  	priv 0	color 13	hilite 14
+
+  /* Line 11> Type: Goto new menu - Clear return stack */
+  line "<^M^> Return to the main menu"
+  	type 2
+  	key "M"	data "main"
+  	priv 0	color 15	hilite 14
+
+  /* Line 12> Type: Call new menu - Add to return stack */
+  line "<^G^> Goodbye! Log Off!!"
+  	type 1
+  	key "G"	data "logoff"
+  	priv 0	color 10	hilite 14
+
+/* Decompilation of menu file msg6_7.mnu
+**
+** Achieved by SMC (v 0.01)
+*/
+
+
+menu "msg6_7"
+
+  prompt "[^$r min^] What is your choice?"
+  	color 15	hilite 14
+
+  /* Line 1> Type: Show menu line */
+  line "[ ^Area 6-7: Public Psychology Echomail Area^ >----------------"
+  	type 0	expert
+  	priv 0	color 13	hilite 14
+
+  /* Line 2> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 3> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 4> Type: Read messages on board */
+  line "<^R^> Read Messages                       $c"
+  	type 17
+  	key "R"	data "47"
+  	priv 0	color 10	hilite 14
+
+  /* Line 5> Type: Enter a message on board */
+  line "<^E^> Enter a Message"
+  	type 16
+  	key "E"	data "47"
+  	priv 0	color 10	hilite 14
+
+  /* Line 6> Type: Scan messages on board */
+  line "<^S^> Scan Messages                       $c"
+  	type 18
+  	key "S"	data "47"
+  	priv 0	color 11	hilite 14
+
+  /* Line 7> Type: Quickscan messages on board */
+  line "<^Q^> Quickscan Messages"
+  	type 19
+  	key "Q"	data "47"
+  	priv 0	color 11	hilite 14
+
+  /* Line 8> Type: Search userlist */
+  line "<^U^> Search for Users"
+  	type 20
+  	key "U"
+  	priv 0	color 12	hilite 14
+
+  /* Line 9> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 10> Type: Return to previous menu */
+  line "<^A^> Change message area"
+  	type 3
+  	key "A"
+  	priv 0	color 13	hilite 14
+
+  /* Line 11> Type: Goto new menu - Clear return stack */
+  line "<^M^> Return to the main menu"
+  	type 2
+  	key "M"	data "main"
+  	priv 0	color 15	hilite 14
+
+  /* Line 12> Type: Call new menu - Add to return stack */
+  line "<^G^> Goodbye! Log Off!!"
+  	type 1
+  	key "G"	data "logoff"
+  	priv 0	color 10	hilite 14
+

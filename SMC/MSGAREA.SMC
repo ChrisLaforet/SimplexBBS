@@ -1,0 +1,90 @@
+/* Decompilation of menu file msgarea.mnu
+**
+** Achieved by SMC (v 0.01)
+*/
+
+
+menu "msgarea"
+
+  prompt "[^$r min^] What is your choice?"
+  	color 15	hilite 14
+
+  /* Line 1> Type: Show menu line */
+  line "[ ^Message and Echomail Areas^ >------------------------------"
+  	type 0	expert
+  	priv 0	color 13	hilite 14
+
+  /* Line 2> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 3> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 4> Type: Call new menu - Add to return stack */
+  line "<^1^> Local Message Areas"
+  	type 1
+  	key "1"	data "msg1"
+  	priv 0	color 11	hilite 14
+
+  /* Line 5> Type: Call new menu - Add to return stack */
+  line "  <^2^> Ham Radio Echomail Areas"
+  	type 1
+  	key "2"	data "msg2"
+  	priv 0	color 10	hilite 14
+
+  /* Line 6> Type: Call new menu - Add to return stack */
+  line "    <^3^> Programming Echomail Areas"
+  	type 1
+  	key "3"	data "msg3"
+  	priv 0	color 12	hilite 14
+
+  /* Line 7> Type: Call new menu - Add to return stack */
+  line "      <^4^> Operating Systems Echomail Areas"
+  	type 1
+  	key "4"	data "msg4"
+  	priv 0	color 15	hilite 14
+
+  /* Line 8> Type: Call new menu - Add to return stack */
+  line "    <^5^> Leisure Echomail Areas"
+  	type 1
+  	key "5"	data "msg5"
+  	priv 0	color 11	hilite 14
+
+  /* Line 9> Type: Call new menu - Add to return stack */
+  line "  <^6^> Professional Echomail Areas"
+  	type 1
+  	key "6"	data "msg6"
+  	priv 0	color 13	hilite 14
+
+  /* Line 10> Type: Call new menu - Add to return stack */
+  line "<^7^> Fidonet Mail Area"
+  	type 1
+  	key "7"	data "msg7"
+  	priv 0	color 10	hilite 14
+
+  /* Line 11> Type: Call new menu - Add to return stack */
+  line "  <^S^> Sysop's Message Areas"
+  	type 1
+  	key "S"	data "msg0"
+  	priv 250	color 12	hilite 14
+
+  /* Line 12> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 13> Type: Goto new menu - Clear return stack */
+  line "<^M^> Return to the main menu"
+  	type 2
+  	key "M"	data "main"
+  	priv 0	color 15	hilite 14
+
+  /* Line 14> Type: Call new menu - Add to return stack */
+  line "<^G^> Goodbye! Log Off!!"
+  	type 1
+  	key "G"	data "logoff"
+  	priv 0	color 10	hilite 14

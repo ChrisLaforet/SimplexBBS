@@ -1,0 +1,23 @@
+`0[0;31;1mHelp for the [0;32;1mLine Edit Menu [0;35;1m------------------
+
+[0;33;1m<C> Continue Msg  [0;36m- This option allows you to continue typing your message
+                    on the last line of your message.
+[0;33;1m<E> Edit Line     [0;36m- This option allows you to edit a specified line.  You
+                    can replace a certain character string in the line.
+[0;33;1m<D> Delete Line   [0;36m- This option allows you to delete a full line in your
+                    message.
+[0;33;1m<I> Insert Line   [0;36m- This option allows you to insert a line somewhere in
+                    your message.
+[0;33;1m<R> Replace Line  [0;36m- This option erases a specified line and lets you
+                    retype the WHOLE line.
+[0;33;1m<<> Left-justify  [0;36m- This option will left-justify a line flush left.
+[0;33;1m<^> Center line   [0;36m- This option will center a line.
+[0;33;1m<>> Right-justify [0;36m- This option will right-justify a line flush right.
+[0;33;1m<L> List Message  [0;36m- This option displays the full message that you have
+                    typed in.
+[0;33;1m<S> Save Message  [0;36m- This option saves the message you have typed and then
+                    exits the message editor.
+[0;33;1m<A> Abort Message [0;36m- This aborts and exits the message you are typing
+                    WITHOUT saving it.
+
+[0;36;1mPress [0;31;1m[5mENTER [0;36;1mto continue....`4

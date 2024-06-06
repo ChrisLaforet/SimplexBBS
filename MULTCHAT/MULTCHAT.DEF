@@ -1,0 +1,8 @@
+NAME 		MULTCHAT WINDOWCOMPAT
+PROTMODE
+STACKSIZE 	8192
+HEAPSIZE	8192
+DESCRIPTION 	'MultiChat, A Simplex BBS Cross-Chat Utility.  Copyright (c) 1991, Chris Laforet Software.'
+EXETYPE		OS2
+
+

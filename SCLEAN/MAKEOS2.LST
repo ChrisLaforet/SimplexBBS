@@ -1,0 +1,15 @@
+name sclean2.exe
+format os2 pmcompatible
+option protmode
+option packcode=64k
+option caseexact
+option map
+option stack=10240
+option heapsize=8192
+library clibc.lib
+library os2.lib
+file os2\sclean
+file os2\s_all
+file os2\s_date
+file os2\s_num
+file os2\s_recv

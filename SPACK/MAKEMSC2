@@ -1,0 +1,21 @@
+# Makefile
+#
+# SPACK/2 - Mail packing for Simplex/2
+
+
+spack2.exe : os2\spack.obj os2\s_analys.obj os2\s_pack.obj
+	link os2\spack os2\s_analys os2\s_pack,spack2,/MAP,/NOD:clibce clibcep doscalls,spack2.def
+
+os2\spack.obj : spack.c spack.h
+	cl -AC -Ocgilnt -G2s -Zp1 -FPi -W3 -DPROTECTED -Foos2\ -c spack.c > spack.err
+	type spack.err
+
+os2\s_analys.obj : s_analys.c spack.h
+	cl -AC -Ocgilnt -G2s -Zp1 -FPi -W3 -DPROTECTED -Foos2\ -c s_analys.c > s_analys.err
+	type s_analys.err
+
+os2\s_pack.obj : s_pack.c spack.h
+	cl -AC -Ocgilnt -G2s -Zp1 -FPi -W3 -DPROTECTED -Foos2\ -c s_pack.c > s_pack.err
+	type s_pack.err
+
+

@@ -1,0 +1,103 @@
+/* Decompilation of menu file filearea.mnu
+**
+** Achieved by SMC (v 0.01)
+*/
+
+
+menu "filearea"
+
+  prompt "[^$r min^] What is your choice?"
+  	color 15	hilite 14
+
+  /* Line 1> Type: Show menu line */
+  line "[ ^File and SDS Areas^ >--------------------------------------"
+  	type 0
+  	priv 0	color 13	hilite 14
+
+  /* Line 2> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 3> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 4> Type: Call new menu - Add to return stack */
+  line "<^1^> BBS Related File Areas"
+  	type 1
+  	key "1"	data "file1"
+  	priv 0	color 10	hilite 14
+
+  /* Line 5> Type: Call new menu - Add to return stack */
+  line "  <^2^> MS-DOS and PC-DOS File Areas"
+  	type 1
+  	key "2"	data "file2"
+  	priv 0	color 11	hilite 14
+
+  /* Line 6> Type: Call new menu - Add to return stack */
+  line "    <^3^> Programming Related File Areas"
+  	type 1
+  	key "3"	data "file3"
+  	priv 0	color 12	hilite 14
+
+  /* Line 7> Type: Call new menu - Add to return stack */
+  line "      <^4^> OS/2 and Windows File Areas"
+  	type 1
+  	key "4"	data "file4"
+  	priv 0	color 15	hilite 14
+
+  /* Line 8> Type: Call new menu - Add to return stack */
+  line "    <^5^> SDS NC General File Area"
+  	type 1
+  	key "5"	data "file5"
+  	priv 0	color 11	hilite 14
+
+  /* Line 9> Type: Call new menu - Add to return stack */
+  line "  <^6^> SDS NC Ham File Area"
+  	type 1
+  	key "6"	data "file6"
+  	priv 0	color 10	hilite 14
+
+  /* Line 10> Type: Call new menu - Add to return stack */
+  line "<^7^> SDS Newsletter File Area"
+  	type 1
+  	key "7"	data "file7"
+  	priv 0	color 12	hilite 14
+
+  /* Line 11> Type: Call new menu - Add to return stack */
+  line "  <^8^> User Groups File Areas"
+  	type 1
+  	key "8"	data "file8"
+  	priv 0	color 13	hilite 14
+
+  /* Line 12> Type: Call new menu - Add to return stack */
+  line "    <^X^> Personal File Exchange"
+  	type 1
+  	key "X"	data "exchange"
+  	priv 0	color 15	hilite 14
+
+  /* Line 13> Type: Call new menu - Add to return stack */
+  line "  <^S^> Files for Sysop's Eyes Only!"
+  	type 1
+  	key "S"	data "file0"
+  	priv 0	color 11	hilite 14
+
+  /* Line 14> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 15> Type: Return to previous menu */
+  line "<^M^> Return to the main menu"
+  	type 3
+  	key "M"
+  	priv 0	color 10	hilite 14
+
+  /* Line 16> Type: Call new menu - Add to return stack */
+  line "<^G^> Goodbye!  Log Off!!"
+  	type 1
+  	key "G"	data "logoff"
+  	priv 0	color 13	hilite 14
+

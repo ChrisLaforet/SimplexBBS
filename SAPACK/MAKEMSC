@@ -1,0 +1,8 @@
+sapack.exe : sapack.obj
+	link sapack,,,/NOD:llibce llibcep os2,sapack.def
+	bind sapack.exe e:\lib\os2.lib 
+
+sapack.obj : sapack.c sapack.h
+	cl -AL -FPi -Zp1 -Ocgilnt -W3 -DBOUND -Gs -c sapack.c > sapack.err
+	type sapack.err
+

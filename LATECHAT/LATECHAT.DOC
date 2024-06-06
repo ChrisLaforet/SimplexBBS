@@ -1,0 +1,166 @@
+
+
+ LateChat -- A split screen chat program.  By Chris Laforet and Kelly Hughes
+
+
+ Purpose:
+--------------------
+
+        This program is an alternate chat program that can be run from
+        a BBS.  Unlike many other external chat programs, this one
+        splits the screen and keeps the sysop's typing in the top half
+        and the user's typing in the bottom.  By keeping typing
+        separated, the sysop and user may type at the same time without
+        confusion!
+
+        LateChat provides automatic word-wrap, and provides keys to
+        redraw screen (remotely or locally), shell to the operating
+        system (locally), as well as a quick-hangup key for the sysop.
+
+
+ Requirements:
+--------------------
+
+        The OS/2 version does not require anything except normal OS/2.
+        Under DOS, a FOSSIL driver (e.g. Ray Gwinn's X00.SYS) is required.
+        This fossil provides interrupt driven input and output and enables
+        automatic watching of the carrier detect signal on the modem.
+        By providing CD watching, it is not necessary to run LateChat
+        from a batch file.
+
+        Most DOS bulletin board software is written to be used with the
+        fossil, and source code written for the fossil is easily ported
+        to other systems for which a fossil exists.
+
+        LateChat depends on ANSI escape sequences to control the screen,
+        so it must be active for a user that is going to use it. By
+        passing the ANSI status in the call from the board, you will
+        automatically prevent someone from accidentally using LateChat
+        with their graphics flag turned off.  LateChat will give the
+        user a message if this happens.
+
+
+ Summary screen:
+--------------------
+
+ If you run LateChat with no parameters, you get a screenload of
+ explanation.  Here is a breakdown...
+
+ Usage DOS:  LateChat port baud secs ansi firstname lastname [string to show]
+ Usage OS/2: LateCht2 port baud secs ansi firstname lastname [string to show]
+
+            port  =  DOS: com port being used  (1=com1 2=com2 etc)
+
+                    Notice that the port number differs from those of
+                    the fossil.  LateChat wants a 1 for Com1, 2 for Com2,
+                    0 for local test, etc.  The fossil expects 0 for Com1,
+                    1 for Com2, etc.  Keep this in mind if you use a batch
+                    file to run latechat that diddles with the fossil.
+                   
+            port  =  OS/2: com port handle
+
+                    In OS/2 you pass the opened handle to the comm
+                    port, not the actual port number.
+
+
+            baud  =  baud rate of caller as passed from board
+
+                    As of version 1.01, 0 is passed to indicate that
+                    the port is locked and LateChat should not attempt
+                    to set the baudrate.  Otherwise, the board should
+                    pass the regular values, such as 2400, 1200, 300, etc.
+
+            seconds  =  time to give sysop to hit a key
+
+                    This is how long the sysop thinks is the longest
+                    time it would take him to get to the keyboard if he
+                    is home when the user calls for a chat.
+
+            ansi status  =  non-zero value if ansi active
+
+                    This is the flag for ANSI from the BBS.  A zero
+                    indicates no ANSI enabled for the caller, and
+                    makes LateChat give the user a message. Usually a 1
+                    means ANSI is enabled, though any non-zero will be
+                    interpreted as ANSI turned on.
+
+            [string to show]  =  string to display during paging
+
+                    This parameter is optional.  If no string is given,
+                    LateChat will provide "Paging Sysop ...".  If you
+                    desire, any other string can be used, and is just
+                    rolled out as entered on the command line.
+
+
+
+
+ Keystrokes:
+--------------------
+
+    During chatting, the following keystrokes perform special functions.
+
+        ctrl-R : Redraws screen, including the existing typing.
+        ctrl-G : Bell.
+        alt-J  : Jump to DOS (if memory permits).
+        alt-H  : Hang up on caller.
+
+    Alt keys are not passed over modems, so they are not available to the
+    remote, but the ctrl key functions are available to the caller.
+
+
+
+ Example calls:
+--------------------
+
+    (notice the fossil is left "hot" during shell by *H param)
+
+    Sample Qbbs call for Com1 (type 7) and 12 second page:
+        *H c:\qbbs\latechat.exe 1 *B 12 *G *F *L Hollering for sysop...
+
+    Sample Qbbs call for Com2 and 14 second page with custom page message:
+        *H c:\qbbs\latechat.exe 2 *B 12 *G *F *L Calling Joe Schmoe ...
+
+    Sample Simplex call with auto port-picking and 15 sec page (type 240) :
+        $* latechat $p $b 15 $a $f $l Paging Sysop...
+
+
+
+ Miscellaneous Info:
+---------------------
+
+    You might recognize Chris's name as the person who wrote SIMPLEX BBS
+    software for both DOS and OS/2, as well as several other goodies
+    floating around in OS/2 utility file areas on BBSes.
+
+    LateChat was originally conceived and written by Kelly Hughes for a
+    BBS program that never got released.  The chat section was rewritten
+    from the ground up to use the fossil, and we added the word-wrapping
+    and special keystroke functions, and the result is LateChat.
+
+    LateChat is released to the public domain and is free for anyone to
+    use who finds it of interest. If you have questions, comments,
+    postcards of praise, donations for releasing such a robust piece of
+    interesting code to the public domain, or just want to say thanks,
+    you may reach us at the following locations.  Any new versions of
+    LateChat will be found on the boards we run.
+
+
+        Chris Laforet                     Kelly Hughes, KB4UAO
+        511-D Poplar St                   1217 Teakwood Place
+        Graham, NC 27253                  Raleigh, NC 27606
+
+        BBS:  Programmer's Oasis          BBS: BedSide Manor
+              919-226-6984                     919-233-8566
+              9600 HST,2400,1200,300           2400,1200,300
+
+              Programmer's Oasis II
+              919-226-7136
+              9600 HST,2400,1200,300
+
+
+
+Version Changes:
+---------------------
+
+Version 1.01: CML: Added support for locked baudrates.
+

@@ -1,0 +1,8 @@
+srecent.exe : srecent.obj
+	link srecent,,,/NOD:slibce slibcep doscalls,srecent.def
+	bind srecent.exe e:\lib\os2.lib 
+
+srecent.obj : srecent.c srecent.h
+	cl -AS -FPi -Zp1 -Oit -W3 -Gs -c srecent.c > srecent.err
+	type srecent.err
+	

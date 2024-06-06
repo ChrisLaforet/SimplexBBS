@@ -1,0 +1,41 @@
+`0[0;36;1mÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ [0;33;1mBasic Cursor Movements [0;36;1m³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+[0;37;1mCommand                             Wordstar(r)           VT-100(r)
+[0;32;1m--------------------------------------------------------------------
+[0;36;1mCursor Up                              ^E                 Up Arrow
+Cursor Down                            ^X                Down Arrow
+Cursor Left                            ^D                Left Arrow
+Cursor Right                           ^S                Right Arrow
+
+Move to Start of Line               ^Q then S               Home
+Move to End of Line                 ^Q then D               End
+Word Left                              ^A
+Word Right                             ^F
+
+Page Up                                ^R
+Page Down                              ^C
+
+[0;35;1mPress [0;31;1mENTER [0;35;1mto continue...`4
+`5[0;36;1mÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ [0;33;1mEditing Commands [0;36;1m³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+[0;37;1mCommand                             Wordstar(r)           VT-100(r)
+[0;32;1m--------------------------------------------------------------------
+[0;36;1mToggle Insert Mode On and Off          ^V
+Insert Line                            ^N
+Delete Current Line                    ^Y
+Right-Justify Line                  ^K then F
+Center Line                         ^K then C
+
+Toggle Quote Mode On/Off       ^K then Q or ^Q then Q
+
+Redraw/Repaint Screen               ^K then R
+Save Message and Exit             ^K then S or D             ^Z 
+Abort Message and Exit              ^K then A              ESC ESC   
+
+Get This Help Screen                ^K then ?
+
+[0;31;1mEnd of Help.....

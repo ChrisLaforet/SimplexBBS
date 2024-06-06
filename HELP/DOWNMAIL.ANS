@@ -1,0 +1,13 @@
+`0[0;31;1mHelp for the [0;32;1mMail Download Menu [0;35;1m------------------
+
+[0;33;1m<A> Download All      [0;36m- Download all messages contained in the selected
+                        combined boards.   The method of the mail download
+                        will be either QWK or ASCII depending on the 
+                        combined board configuration.
+[0;33;1m<N> Download New      [0;36m- Download only new messages contained in the   
+                        selected combined boards.  The method of the mail
+                        download will be either QWK or ASCII depending on the
+                        combined board configuration.
+[0;33;1m<X> Exit              [0;36m- Exit to the previous menu.
+
+[0;36;1mPress [0;31;1m[5mENTER [0;36;1mto continue....`4

@@ -1,0 +1,7 @@
+NAME 		SLINK2 WINDOWCOMPAT
+PROTMODE
+STACKSIZE 	8192
+HEAPSIZE	8192
+DESCRIPTION 	'Slink/2 -- Build Echomail Reply Links. Copyright (c) 1990, Christopher Laforet'
+EXETYPE		OS2
+

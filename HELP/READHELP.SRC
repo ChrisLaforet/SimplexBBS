@@ -1,0 +1,21 @@
+{moreoff lightred}Help for the {lightgreen}Read Menu {lightmagenta}------------------
+
+{yellow}<F> Read Forward    {cyan}- Read messages in forward order starting with a
+                      specified message number.
+{yellow}<R> Read Reverse    {cyan}- Read messages in reverse order starting with a
+                      specified message number.
+{yellow}<N> Read New        {cyan}- Read new messages starting from the last message
+                      you read.
+{yellow}<I> Read Individual {cyan}- Read an individual message.  If you choose this
+                      option, you will be prompted for which message
+                      number to read.
+{yellow}<M> Read Marked     {cyan}- Read messages that were marked by the system if
+                      you didn't read messages addressed to you at login, or 
+                      messages you marked manually using Scan/Mark option.
+{yellow}<S> Read Search     {cyan}- Read messages in the fields:  To name, From name,
+                      or Subject.  You will be prompted which field you want to
+                      search on.
+{yellow}<T> Read Topics     {cyan}- This lets you read messages organized by subject.
+{yellow}<X> Exit            {cyan}- Exit to the previous menu.
+
+{lightcyan}Press {lightred blink}ENTER {lightcyan}to continue....{enter}

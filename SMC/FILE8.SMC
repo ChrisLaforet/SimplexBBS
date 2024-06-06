@@ -1,0 +1,279 @@
+/* Decompilation of menu file file8.mnu
+**
+** Achieved by SMC (v 0.01)
+*/
+
+
+menu "file8"
+
+  prompt "[^$r min^] What is your choice?"
+  	color 15	hilite 14
+
+  /* Line 1> Type: Show menu line */
+  line "[ ^Group 8: Computer User Groups Areas^ >---------------------"
+  	type 0	expert
+  	priv 0	color 13	hilite 14
+
+  /* Line 2> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 3> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 4> Type: Call new menu - Add to return stack */
+  line "<^1^> Burlington PC Users' Group          $c"
+  	type 1
+  	key "1"	data "file8_1"
+  	priv 0	color 10	hilite 14
+
+  /* Line 5> Type: Call new menu - Add to return stack */
+  line "<^2^> Commodore Users Group"
+  	type 1
+  	key "2"	data "file8_2"
+  	priv 0	color 10	hilite 14
+
+  /* Line 6> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 7> Type: Return to previous menu */
+  line "<^A^> Change file group"
+  	type 3
+  	key "A"
+  	priv 0	color 13	hilite 14
+
+  /* Line 8> Type: Goto new menu - Clear return stack */
+  line "<^M^> Return to the main menu"
+  	type 2
+  	key "M"	data "main"
+  	priv 0	color 15	hilite 14
+
+  /* Line 9> Type: Call new menu - Add to return stack */
+  line "<^G^> Goodbye! Log Off!!"
+  	type 1
+  	key "G"	data "logoff"
+  	priv 0	color 10	hilite 14
+
+/* Decompilation of menu file file8_1.mnu
+**
+** Achieved by SMC (v 0.01)
+*/
+
+
+menu "file8_1"
+
+  prompt "[^$r min^] What is your choice?"
+  	color 15	hilite 14
+
+  /* Line 1> Type: Show menu line */
+  line "[ ^Area 8-1: The Burlington Users' Group File Area^ >---------"
+  	type 0
+  	priv 0	color 13	hilite 14
+
+  /* Line 2> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 3> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 4> Type: List files on file board */
+  line "<^L^> List files for downloading          $c"
+  	type 32
+  	key "L"	data "100"
+  	priv 0	color 10	hilite 14
+
+  /* Line 5> Type: Show new files across file boards */
+  line "<^N^> Show newly uploaded files"
+  	type 37
+  	key "N"	data "100"
+  	priv 0	color 10	hilite 14
+
+  /* Line 6> Type: Download file from file board */
+  line "<^D^> Download files (to you)             $c"
+  	type 34
+  	key "D"	data "100"
+  	priv 0	color 11	hilite 14
+
+  /* Line 7> Type: Upload file to file board */
+  line "<^U^> Upload files (from you)"
+  	type 33
+  	key "U"	data "100"
+  	priv 0	color 11	hilite 14
+
+  /* Line 8> Type: Contents of archive on file board */
+  line "<^C^> Show Contents of archived files     $c"
+  	type 36
+  	key "C"	data "100"
+  	priv 0	color 12	hilite 14
+
+  /* Line 9> Type: Read a text file on file board */
+  line "<^T^> Type (read) a text file"
+  	type 41
+  	key "T"	data "100"
+  	priv 0	color 12	hilite 14
+
+  /* Line 10> Type: Search for filename across file boards */
+  line "<^F^> Find a file by NAME                 $c"
+  	type 38
+  	key "F"	data "100"
+  	priv 0	color 11	hilite 14
+
+  /* Line 11> Type: Search for keyword across file boards */
+  line "<^S^> Search for a file by KEYWORD"
+  	type 39
+  	key "S"	data "100"
+  	priv 0	color 11	hilite 14
+
+  /* Line 12> Type: Raw directory list of file board */
+  line "<^R^> Raw directory listing               $c"
+  	type 35
+  	key "R"	data "100"
+  	priv 250	color 15	hilite 14
+
+  /* Line 13> Type: Delete file on file board */
+  line "<^K^> Kill (delete) files"
+  	type 40
+  	key "K"	data "100"
+  	priv 250	color 15	hilite 14
+
+  /* Line 14> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 15> Type: Return to previous menu */
+  line "<^A^> Change File Area"
+  	type 3
+  	key "A"
+  	priv 0	color 10	hilite 14
+
+  /* Line 16> Type: Goto new menu - Clear return stack */
+  line "<^M^> Return to the main menu"
+  	type 2
+  	key "M"	data "main"
+  	priv 0	color 15	hilite 14
+
+  /* Line 17> Type: Call new menu - Add to return stack */
+  line "<^G^> Goodbye!  Log Off!!"
+  	type 1
+  	key "G"	data "logoff"
+  	priv 0	color 13	hilite 14
+
+/* Decompilation of menu file file8_2.mnu
+**
+** Achieved by SMC (v 0.01)
+*/
+
+
+menu "file8_2"
+
+  prompt "[^$r min^] What is your choice?"
+  	color 15	hilite 14
+
+  /* Line 1> Type: Show menu line */
+  line "[ ^Area 8-2: The Commodore Users' Group File Area^ >----------"
+  	type 0
+  	priv 0	color 13	hilite 14
+
+  /* Line 2> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 3> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 4> Type: List files on file board */
+  line "<^L^> List files for downloading          $c"
+  	type 32
+  	key "L"	data "101"
+  	priv 0	color 10	hilite 14
+
+  /* Line 5> Type: Show new files across file boards */
+  line "<^N^> Show newly uploaded files"
+  	type 37
+  	key "N"	data "101"
+  	priv 0	color 10	hilite 14
+
+  /* Line 6> Type: Download file from file board */
+  line "<^D^> Download files (to you)             $c"
+  	type 34
+  	key "D"	data "101"
+  	priv 0	color 11	hilite 14
+
+  /* Line 7> Type: Upload file to file board */
+  line "<^U^> Upload files (from you)"
+  	type 33
+  	key "U"	data "101"
+  	priv 0	color 11	hilite 14
+
+  /* Line 8> Type: Contents of archive on file board */
+  line "<^C^> Show Contents of archived files     $c"
+  	type 36
+  	key "C"	data "101"
+  	priv 0	color 12	hilite 14
+
+  /* Line 9> Type: Read a text file on file board */
+  line "<^T^> Type (read) a text file"
+  	type 41
+  	key "T"	data "101"
+  	priv 0	color 12	hilite 14
+
+  /* Line 10> Type: Search for filename across file boards */
+  line "<^F^> Find a file by NAME                 $c"
+  	type 38
+  	key "F"	data "101"
+  	priv 0	color 11	hilite 14
+
+  /* Line 11> Type: Search for keyword across file boards */
+  line "<^S^> Search for a file by KEYWORD"
+  	type 39
+  	key "S"	data "101"
+  	priv 0	color 11	hilite 14
+
+  /* Line 12> Type: Raw directory list of file board */
+  line "<^R^> Raw directory listing               $c"
+  	type 35
+  	key "R"	data "101"
+  	priv 250	color 15	hilite 14
+
+  /* Line 13> Type: Delete file on file board */
+  line "<^K^> Kill (delete) files"
+  	type 40
+  	key "K"	data "101"
+  	priv 250	color 15	hilite 14
+
+  /* Line 14> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 15> Type: Return to previous menu */
+  line "<^A^> Change File Area"
+  	type 3
+  	key "A"
+  	priv 0	color 10	hilite 14
+
+  /* Line 16> Type: Goto new menu - Clear return stack */
+  line "<^M^> Return to the main menu"
+  	type 2
+  	key "M"	data "main"
+  	priv 0	color 15	hilite 14
+
+  /* Line 17> Type: Call new menu - Add to return stack */
+  line "<^G^> Goodbye!  Log Off!!"
+  	type 1
+  	key "G"	data "logoff"
+  	priv 0	color 13	hilite 14
+

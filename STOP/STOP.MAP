@@ -1,0 +1,469 @@
+
+ stop
+
+ Start     Length     Name                   Class
+ 0001:0000 046D6H     _TEXT                  CODE
+ 0001:46E0 00002H     EMULATOR_TEXT          CODE
+ 0001:46E2 00000H     C_ETEXT                ENDCODE
+ 0002:0000 00000H     EMULATOR_DATA          FAR_DATA
+ 0002:0000 00096H     FAR_BSS                FAR_BSS
+ 0003:0000 00042H     NULL                   BEGDATA
+ 0003:0042 01B4EH     _DATA                  DATA
+ 0003:1B90 00000H     XPB                    DATA
+ 0003:1B90 00002H     XP                     DATA
+ 0003:1B92 00000H     XPE                    DATA
+ 0003:1B92 0000EH     CDATA                  DATA
+ 0003:1BA0 00000H     XIFB                   DATA
+ 0003:1BA0 00000H     XIF                    DATA
+ 0003:1BA0 00000H     XIFE                   DATA
+ 0003:1BA0 00000H     XIB                    DATA
+ 0003:1BA0 00000H     XI                     DATA
+ 0003:1BA0 00000H     XIE                    DATA
+ 0003:1BA0 00000H     XCB                    DATA
+ 0003:1BA0 00000H     XC                     DATA
+ 0003:1BA0 00000H     XCE                    DATA
+ 0003:1BA0 00000H     XCFB                   DATA
+ 0003:1BA0 00000H     XCF                    DATA
+ 0003:1BA0 00000H     XCFE                   DATA
+ 0003:1BA0 00002H     CONST                  CONST
+ 0003:1BA2 00008H     HDR                    MSG
+ 0003:1BAA 00102H     MSG                    MSG
+ 0003:1CAC 00002H     PAD                    MSG
+ 0003:1CAE 00001H     EPAD                   MSG
+ 0003:1CB0 0000EH     _BSS                   BSS
+ 0003:1CBE 00000H     XOB                    BSS
+ 0003:1CBE 00000H     XO                     BSS
+ 0003:1CBE 00000H     XOE                    BSS
+ 0003:1CC0 00200H     c_common               BSS
+ 0003:1EC0 02000H     STACK                  STACK
+
+ Origin   Group
+ 0003:0   DGROUP
+
+  Address         Publics by Name
+
+ 0000:0000  Imp  DOSALLOCSEG          (DOSCALLS.34)
+ 0000:0000  Imp  DOSCHGFILEPTR        (DOSCALLS.58)
+ 0000:0000  Imp  DOSCLOSE             (DOSCALLS.59)
+ 0000:0000  Imp  DOSDELETE            (DOSCALLS.60)
+ 0000:0000  Imp  DOSEXIT              (DOSCALLS.5)
+ 0000:0000  Imp  DOSGETDATETIME       (DOSCALLS.33)
+ 0000:0000  Imp  DOSGETMACHINEMODE    (DOSCALLS.49)
+ 0000:0000  Imp  DOSGETVERSION        (DOSCALLS.92)
+ 0000:0000  Imp  DOSNEWSIZE           (DOSCALLS.68)
+ 0000:0000  Imp  DOSOPEN              (DOSCALLS.70)
+ 0000:0000  Imp  DOSQCURDIR           (DOSCALLS.71)
+ 0000:0000  Imp  DOSQCURDISK          (DOSCALLS.72)
+ 0000:0000  Imp  DOSQFILEMODE         (DOSCALLS.75)
+ 0000:0000  Imp  DOSQHANDTYPE         (DOSCALLS.77)
+ 0000:0000  Imp  DOSREAD              (DOSCALLS.137)
+ 0000:0000  Imp  DOSREALLOCSEG        (DOSCALLS.38)
+ 0000:0000  Imp  DOSSELECTDISK        (DOSCALLS.81)
+ 0000:0000  Imp  DOSSETVEC            (DOSCALLS.89)
+ 0000:0000  Imp  DOSWRITE             (DOSCALLS.138)
+ 0003:141A       STKHQQ
+ 0001:3626       _atoi
+ 0001:362A       _atol
+ 0001:3956       _calloc
+ 0001:2D72       _close
+ 0001:0010       _comp_callers
+ 0001:0080       _comp_dl
+ 0001:00DC       _comp_readers
+ 0001:0138       _comp_senders
+ 0001:0024       _comp_ul
+ 0003:00E0       _cur_unlisted
+ 0003:160C       _daylight
+ 0003:1CB0       _edata
+ 0003:1EC0       _end
+ 0003:16D1       _environ
+ 0003:165C       _errno
+ 0001:462A       _exit
+ 0001:2088       _fclose
+ 0001:272C       _fflush
+ 0001:3728       _fgets
+ 0001:27AA       _flushall
+ 0001:2172       _fopen
+ 0001:218C       _fprintf
+ 0001:2D4A       _fputc
+ 0001:2D42       _fputchar
+ 0001:21CA       _fread
+ 0001:329E       _free
+ 0001:4236       _getcwd
+ 0001:36A0       _getenv
+ 0001:39A8       _gmtime
+ 0001:1B2C       _help
+ 0001:3684       _itoa
+ 0001:3B60       _localtime
+ 0001:2D9C       _lseek
+ 0001:0194       _main
+ 0001:329A       _malloc
+ 0003:00E2       _max_unlisted
+ 0001:3F36       _memcpy
+ 0003:0098       _months
+ 0001:2DEB       _open
+ 0001:2338       _printf
+ 0001:2D4A       _putc
+ 0001:2D42       _putchar
+ 0001:3FF8       _qsort
+ 0001:2FA0       _read
+ 0001:388A       _realloc
+ 0001:432C       _remove
+ 0001:2DDA       _sopen
+ 0001:37A0       _sprintf
+ 0001:3288       _stackavail
+ 0002:0000       _stoppath
+ 0001:352C       _strcat
+ 0001:3ECC       _strcmpi
+ 0001:3572       _strcpy
+ 0001:3ECC       _stricmp
+ 0001:35A8       _strlen
+ 0001:35EA       _strncmp
+ 0001:35C0       _strncpy
+ 0001:3F12       _strupr
+ 0003:00C8       _tcallers
+ 0003:00D0       _tdl
+ 0001:3BDC       _time
+ 0003:1608       _timezone
+ 0003:00D4       _treader
+ 0003:00D8       _tsender
+ 0003:00CC       _tul
+ 0003:160E       _tzname
+ 0001:3C34       _tzset
+ 0001:432C       _unlink
+ 0003:00DC       _unlisted
+ 0001:30E2       _write
+ 0003:1418       __aaltstkovr
+ 0003:1400       __acfinfo
+ 0003:13E2       __acmdln
+ 0000:9876  Abs  __acrtmsg
+ 0000:9876  Abs  __acrtused
+ 0000:D6D6  Abs  __aDBdoswp
+ 0003:1416       __adbgmsg
+ 0000:D6D6  Abs  __aDBused
+ 0003:13E4       __aenvseg
+ 0003:13E8       __aexit_rtn
+ 0000:0000  Imp  __AHINCR             (DOSCALLS.136)
+ 0000:0000  Imp  __AHSHIFT            (DOSCALLS.135)
+ 0003:14A0       __amblksiz
+ 0001:1C85       __amsg_exit
+ 0001:1D0A       __aNchkstk
+ 0001:434A       __aNFalrem
+ 0001:436C       __aNldiv
+ 0001:4406       __aNlmul
+ 0001:4438       __aNlrem
+ 0001:44D8       __aNuldiv
+ 0003:0042       __anullsize
+ 0001:4406       __aNulmul
+ 0001:4538       __aNulrem
+ 0003:1410       __aseghi
+ 0003:140E       __aseglo
+ 0003:13EA       __asizds
+ 0003:14B2       __asizeC
+ 0003:14B3       __asizeD
+ 0001:1C0E       __astart
+ 0003:13E6       __atopsp
+ 0003:1CC0       __bufin
+ 0001:362E       __catox
+ 0001:4639       __cexit
+ 0003:14A2       __cfltcvt_tab
+ 0003:1424       __cflush
+ 0001:4221       __chdrive
+ 0003:16D9       __child
+ 0001:1D0A       __chkstk
+ 0001:45A2       __cinit
+ 0001:1C7B       __cintDIV
+ 0001:3F94       __cltoasub
+ 0001:46A5       __ctermsub
+ 0003:14B4       __ctype
+ 0003:14B4       __ctype_
+ 0001:2F8E       __cXENIXtoDOSmode
+ 0001:3FA1       __cxtoa
+ 0001:4643       __c_exit
+ 0001:1CE2       __dataseg
+ 0003:15D0       __days
+ 0003:1663       __doserrno
+ 0003:1662       __dosmode
+ 0001:204B       __dosret
+ 0001:203C       __dosretf
+ 0003:1660       __dosvermajor
+ 0003:1661       __dosverminor
+ 0001:3DD4       __dtoxtime
+ 0001:46E0       __EmDataSeg
+ 0001:4631       __exit
+ 0003:1652       __fac
+ 0001:32A2       __ffree
+ 0001:1CE4       __FF_MSGBANNER
+ 0003:1492       __fheap
+ 0001:237A       __filbuf
+ 0001:34DA       __findlast
+ 0001:3982       __findseg
+ 0001:2416       __flsbuf
+ 0001:32B5       __fmalloc
+ 0003:1490       __fmode
+ 0003:1B94       __fpinit
+ 0001:1D04       __fptrap
+ 0001:3808       __frealloc
+ 0001:24F8       __freebuf
+ 0001:2142       __fsopen
+ 0001:26E4       __ftbuf
+ 0001:252E       __getbuf
+ 0001:424C       __getdcwd
+ 0001:420C       __getdrive
+ 0001:2CF4       __getstream
+ 0001:3418       __growseg
+ 0001:34A7       __incseg
+ 0001:3332       __initseg
+ 0003:16DC       __iob
+ 0003:1934       __iob2
+ 0003:1490       __iomode
+ 0001:3CFA       __isindst
+ 0003:1B8C       __lastiob
+ 0001:3366       __linkseg
+ 0003:15B6       __lpdays
+ 0001:34FA       __newseg
+ 0003:1665       __nfile
+ 0003:13EC       __nheap_desc
+ 0001:1F6C       __NMSG_TEXT
+ 0001:1F9C       __NMSG_WRITE
+ 0001:1D22       __nullcheck
+ 0001:2578       __openfile
+ 0003:1663       __oserr
+ 0003:1667       __osfile
+ 0003:1660       __osmajor
+ 0003:1661       __osminor
+ 0003:1662       __osmode
+ 0003:1660       __osversion
+ 0001:280C       __output
+ 0003:16D5       __pgmptr
+ 0003:1699       __pipech
+ 0001:388E       __resize
+ 0001:339C       __searchseg
+ 0001:1D44       __setargv
+ 0001:1EC8       __setenvp
+ 0003:14B0       __sigintoff
+ 0003:14AE       __sigintseg
+ 0001:266E       __stbuf
+ 0001:1FD0       __stdalloc
+ 0003:165E       __umaskval
+ 0003:1414       ___aDBrterr
+ 0003:1412       ___aDBswpflg
+ 0003:16CB       ___argc
+ 0003:16CD       ___argv
+ 0003:1616       ___dnames
+ 0003:162C       ___mnames
+ 0001:3C24       ___tzset
+
+  Address         Publics by Value
+
+ 0000:0000  Imp  DOSQHANDTYPE         (DOSCALLS.77)
+ 0000:0000  Imp  DOSCHGFILEPTR        (DOSCALLS.58)
+ 0000:0000  Imp  DOSREAD              (DOSCALLS.137)
+ 0000:0000  Imp  DOSGETVERSION        (DOSCALLS.92)
+ 0000:0000  Imp  DOSDELETE            (DOSCALLS.60)
+ 0000:0000  Imp  __AHINCR             (DOSCALLS.136)
+ 0000:0000  Imp  DOSWRITE             (DOSCALLS.138)
+ 0000:0000  Imp  DOSSELECTDISK        (DOSCALLS.81)
+ 0000:0000  Imp  __AHSHIFT            (DOSCALLS.135)
+ 0000:0000  Imp  DOSSETVEC            (DOSCALLS.89)
+ 0000:0000  Imp  DOSOPEN              (DOSCALLS.70)
+ 0000:0000  Imp  DOSREALLOCSEG        (DOSCALLS.38)
+ 0000:0000  Imp  DOSALLOCSEG          (DOSCALLS.34)
+ 0000:0000  Imp  DOSNEWSIZE           (DOSCALLS.68)
+ 0000:0000  Imp  DOSCLOSE             (DOSCALLS.59)
+ 0000:0000  Imp  DOSQCURDIR           (DOSCALLS.71)
+ 0000:0000  Imp  DOSEXIT              (DOSCALLS.5)
+ 0000:0000  Imp  DOSGETMACHINEMODE    (DOSCALLS.49)
+ 0000:0000  Imp  DOSQFILEMODE         (DOSCALLS.75)
+ 0000:0000  Imp  DOSGETDATETIME       (DOSCALLS.33)
+ 0000:0000  Imp  DOSQCURDISK          (DOSCALLS.72)
+ 0000:9876  Abs  __acrtused
+ 0000:9876  Abs  __acrtmsg
+ 0000:D6D6  Abs  __aDBdoswp
+ 0000:D6D6  Abs  __aDBused
+ 0001:0010       _comp_callers
+ 0001:0024       _comp_ul
+ 0001:0080       _comp_dl
+ 0001:00DC       _comp_readers
+ 0001:0138       _comp_senders
+ 0001:0194       _main
+ 0001:1B2C       _help
+ 0001:1C0E       __astart
+ 0001:1C7B       __cintDIV
+ 0001:1C85       __amsg_exit
+ 0001:1CE2       __dataseg
+ 0001:1CE4       __FF_MSGBANNER
+ 0001:1D04       __fptrap
+ 0001:1D0A       __aNchkstk
+ 0001:1D0A       __chkstk
+ 0001:1D22       __nullcheck
+ 0001:1D44       __setargv
+ 0001:1EC8       __setenvp
+ 0001:1F6C       __NMSG_TEXT
+ 0001:1F9C       __NMSG_WRITE
+ 0001:1FD0       __stdalloc
+ 0001:203C       __dosretf
+ 0001:204B       __dosret
+ 0001:2088       _fclose
+ 0001:2142       __fsopen
+ 0001:2172       _fopen
+ 0001:218C       _fprintf
+ 0001:21CA       _fread
+ 0001:2338       _printf
+ 0001:237A       __filbuf
+ 0001:2416       __flsbuf
+ 0001:24F8       __freebuf
+ 0001:252E       __getbuf
+ 0001:2578       __openfile
+ 0001:266E       __stbuf
+ 0001:26E4       __ftbuf
+ 0001:272C       _fflush
+ 0001:27AA       _flushall
+ 0001:280C       __output
+ 0001:2CF4       __getstream
+ 0001:2D42       _putchar
+ 0001:2D42       _fputchar
+ 0001:2D4A       _putc
+ 0001:2D4A       _fputc
+ 0001:2D72       _close
+ 0001:2D9C       _lseek
+ 0001:2DDA       _sopen
+ 0001:2DEB       _open
+ 0001:2F8E       __cXENIXtoDOSmode
+ 0001:2FA0       _read
+ 0001:30E2       _write
+ 0001:3288       _stackavail
+ 0001:329A       _malloc
+ 0001:329E       _free
+ 0001:32A2       __ffree
+ 0001:32B5       __fmalloc
+ 0001:3332       __initseg
+ 0001:3366       __linkseg
+ 0001:339C       __searchseg
+ 0001:3418       __growseg
+ 0001:34A7       __incseg
+ 0001:34DA       __findlast
+ 0001:34FA       __newseg
+ 0001:352C       _strcat
+ 0001:3572       _strcpy
+ 0001:35A8       _strlen
+ 0001:35C0       _strncpy
+ 0001:35EA       _strncmp
+ 0001:3626       _atoi
+ 0001:362A       _atol
+ 0001:362E       __catox
+ 0001:3684       _itoa
+ 0001:36A0       _getenv
+ 0001:3728       _fgets
+ 0001:37A0       _sprintf
+ 0001:3808       __frealloc
+ 0001:388A       _realloc
+ 0001:388E       __resize
+ 0001:3956       _calloc
+ 0001:3982       __findseg
+ 0001:39A8       _gmtime
+ 0001:3B60       _localtime
+ 0001:3BDC       _time
+ 0001:3C24       ___tzset
+ 0001:3C34       _tzset
+ 0001:3CFA       __isindst
+ 0001:3DD4       __dtoxtime
+ 0001:3ECC       _stricmp
+ 0001:3ECC       _strcmpi
+ 0001:3F12       _strupr
+ 0001:3F36       _memcpy
+ 0001:3F94       __cltoasub
+ 0001:3FA1       __cxtoa
+ 0001:3FF8       _qsort
+ 0001:420C       __getdrive
+ 0001:4221       __chdrive
+ 0001:4236       _getcwd
+ 0001:424C       __getdcwd
+ 0001:432C       _unlink
+ 0001:432C       _remove
+ 0001:434A       __aNFalrem
+ 0001:436C       __aNldiv
+ 0001:4406       __aNlmul
+ 0001:4406       __aNulmul
+ 0001:4438       __aNlrem
+ 0001:44D8       __aNuldiv
+ 0001:4538       __aNulrem
+ 0001:45A2       __cinit
+ 0001:462A       _exit
+ 0001:4631       __exit
+ 0001:4639       __cexit
+ 0001:4643       __c_exit
+ 0001:46A5       __ctermsub
+ 0001:46E0       __EmDataSeg
+ 0002:0000       _stoppath
+ 0003:0042       __anullsize
+ 0003:0098       _months
+ 0003:00C8       _tcallers
+ 0003:00CC       _tul
+ 0003:00D0       _tdl
+ 0003:00D4       _treader
+ 0003:00D8       _tsender
+ 0003:00DC       _unlisted
+ 0003:00E0       _cur_unlisted
+ 0003:00E2       _max_unlisted
+ 0003:13E2       __acmdln
+ 0003:13E4       __aenvseg
+ 0003:13E6       __atopsp
+ 0003:13E8       __aexit_rtn
+ 0003:13EA       __asizds
+ 0003:13EC       __nheap_desc
+ 0003:1400       __acfinfo
+ 0003:140E       __aseglo
+ 0003:1410       __aseghi
+ 0003:1412       ___aDBswpflg
+ 0003:1414       ___aDBrterr
+ 0003:1416       __adbgmsg
+ 0003:1418       __aaltstkovr
+ 0003:141A       STKHQQ
+ 0003:1424       __cflush
+ 0003:1490       __iomode
+ 0003:1490       __fmode
+ 0003:1492       __fheap
+ 0003:14A0       __amblksiz
+ 0003:14A2       __cfltcvt_tab
+ 0003:14AE       __sigintseg
+ 0003:14B0       __sigintoff
+ 0003:14B2       __asizeC
+ 0003:14B3       __asizeD
+ 0003:14B4       __ctype
+ 0003:14B4       __ctype_
+ 0003:15B6       __lpdays
+ 0003:15D0       __days
+ 0003:1608       _timezone
+ 0003:160C       _daylight
+ 0003:160E       _tzname
+ 0003:1616       ___dnames
+ 0003:162C       ___mnames
+ 0003:1652       __fac
+ 0003:165C       _errno
+ 0003:165E       __umaskval
+ 0003:1660       __dosvermajor
+ 0003:1660       __osmajor
+ 0003:1660       __osversion
+ 0003:1661       __dosverminor
+ 0003:1661       __osminor
+ 0003:1662       __dosmode
+ 0003:1662       __osmode
+ 0003:1663       __doserrno
+ 0003:1663       __oserr
+ 0003:1665       __nfile
+ 0003:1667       __osfile
+ 0003:1699       __pipech
+ 0003:16CB       ___argc
+ 0003:16CD       ___argv
+ 0003:16D1       _environ
+ 0003:16D5       __pgmptr
+ 0003:16D9       __child
+ 0003:16DC       __iob
+ 0003:1934       __iob2
+ 0003:1B8C       __lastiob
+ 0003:1B94       __fpinit
+ 0003:1CB0       _edata
+ 0003:1CC0       __bufin
+ 0003:1EC0       _end
+
+Program entry point at 0001:1C0E

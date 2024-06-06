@@ -1,0 +1,44 @@
+/* Decompilation of menu file logoff.mnu
+**
+** Achieved by SMC (v 0.01)
+*/
+
+
+menu "logoff"
+
+  prompt "[^$r min^] What is your choice?"
+  	color 15	hilite 14
+
+  /* Line 1> Type: Show menu line */
+  line "[ ^Log Off Menu ^ >-------------------------------------------"
+  	type 0	expert
+  	priv 0	color 13	hilite 14
+
+  /* Line 2> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 3> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 4> Type: Logoff/hangup connection */
+  line "<^Y^> Yes, log me off right now!"
+  	type 255
+  	key "Y"
+  	priv 0	color 11	hilite 14
+
+  /* Line 5> Type: Return to previous menu */
+  line "<^N^> No, do not log me off!"
+  	type 3
+  	key "N"
+  	priv 0	color 10	hilite 14
+
+  /* Line 6> Type: Enter a message on board */
+  line "<^L^> Leave a message to Sysop and log off!"
+  	type 16
+  	key "L"	data "1 /T=Chris_Laforet /L"
+  	priv 0	color 12	hilite 14
+

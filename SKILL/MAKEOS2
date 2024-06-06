@@ -1,0 +1,22 @@
+# SKILL - File Cleaning for Simplex
+
+
+skill2.exe : os2\skill.obj os2\s_date.obj os2\s_filfnd.obj os2\s_kill.obj
+	wlink @makeos2.lst
+
+os2\skill.obj : skill.c skill.h
+	wcl -mc -ox -2 -s -zp1 -fo=os2\ -w4 -dPROTECTED -c skill.c > skill.err
+	type skill.err
+
+os2\s_date.obj : s_date.c skill.h
+	wcl -mc -ox -2 -s -zp1 -fo=os2\ -w4 -dPROTECTED -c s_date.c > s_date.err
+	type s_date.err
+
+os2\s_filfnd.obj : s_filfnd.c skill.h
+	wcl -mc -ox -2 -s -zp1 -fo=os2\ -w4 -dPROTECTED -c s_filfnd.c > s_filfnd.err
+	type s_filfnd.err
+
+os2\s_kill.obj : s_kill.c skill.h
+	wcl -mc -ox -2 -s -zp1 -fo=os2\ -w4 -dPROTECTED -c s_kill.c > s_kill.err
+	type s_kill.err
+

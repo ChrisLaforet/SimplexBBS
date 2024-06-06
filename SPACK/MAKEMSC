@@ -1,0 +1,20 @@
+# Makefile
+#
+# SPACK - Mail packing for Simplex
+
+
+spack.exe : spack.obj s_analys.obj s_pack.obj
+	link /ST:10240 spack s_analys s_pack;
+
+spack.obj : spack.c spack.h
+	cl -AC -Ocgilnt -Gs -Zp1 -FPi -W3 -c spack.c > spack.err
+	type spack.err
+
+s_analys.obj : s_analys.c spack.h
+	cl -AC -Ocgilnt -Gs -Zp1 -FPi -W3 -c s_analys.c > s_analys.err
+	type s_analys.err
+
+s_pack.obj : s_pack.c spack.h
+	cl -AC -Ocgilnt -Gs -Zp1 -FPi -W3 -c s_pack.c > s_pack.err
+	type s_pack.err
+

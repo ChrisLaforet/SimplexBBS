@@ -1,0 +1,7 @@
+NAME 		FFORWARD WINDOWCOMPAT
+PROTMODE
+STACKSIZE 	8192
+HEAPSIZE	8192
+DESCRIPTION 	'FFORWARD -- A FidoNet File Forwarding Utility.  Copyright (c) 1989-90, Chris Laforet Software'
+EXETYPE		OS2
+

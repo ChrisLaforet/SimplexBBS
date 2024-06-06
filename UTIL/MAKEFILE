@@ -1,0 +1,10 @@
+fforward.obj : fforward.c fforward.h
+	cl -AL -FPa -Ocglnt -Gs -Zp1 -c fforward.c > fforward.err
+	type fforward.err
+
+f_config.obj : f_config.c fforward.h
+	cl -AL -FPa -Ocglnt -Gs -Zp1 -c f_config.c > f_config.err
+	type f_config.err
+
+fforward.exe : fforward.obj f_config.obj
+	link /ST:8192 fforward f_config;

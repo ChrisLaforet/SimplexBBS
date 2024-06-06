@@ -1,0 +1,11 @@
+slink2.exe : os2\slink.obj os2\s_build.obj
+	link os2\slink os2\s_build,slink2,/MAP,/NOD:clibce clibcep doscalls,slink2.def;
+
+os2\slink.obj : slink.c slink.h
+	cl -AC -Ocgilnt -Zp1 -FPi -W3 -G2s -DPROTECTED -Foos2\ -c slink.c > slink.err
+	type slink.err
+	
+os2\s_build.obj : s_build.c slink.h
+	cl -AC -Ocgilnt -Zp1 -FPi -W3 -G2s -DPROTECTED -Foos2\ -c s_build.c > s_build.err
+	type s_build.err
+	

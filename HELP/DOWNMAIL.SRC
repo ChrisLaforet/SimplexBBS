@@ -1,0 +1,13 @@
+{moreoff lightred}Help for the {lightgreen}Mail Download Menu {lightmagenta}------------------
+
+{yellow}<A> Download All      {cyan}- Download all messages contained in the selected
+                        combined boards.   The method of the mail download
+                        will be either QWK or ASCII depending on the 
+                        combined board configuration.
+{yellow}<N> Download New      {cyan}- Download only new messages contained in the   
+                        selected combined boards.  The method of the mail
+                        download will be either QWK or ASCII depending on the
+                        combined board configuration.
+{yellow}<X> Exit              {cyan}- Exit to the previous menu.
+
+{lightcyan}Press {lightred blink}ENTER {lightcyan}to continue....{enter}

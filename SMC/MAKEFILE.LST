@@ -1,0 +1,15 @@
+name smc.exe
+format os2 pmcompatible
+option packcode=64k
+option caseexact
+option map
+option stack=4096
+option heapsize=1024
+library clibc
+library os2
+file smc.obj
+file s_decomp.obj
+file s_define.obj
+file s_error.obj
+file s_parse.obj
+file s_token.obj

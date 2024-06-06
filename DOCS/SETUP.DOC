@@ -1,0 +1,3575 @@
+
+
+
+
+
+
+           ÚÄÄÄÄÄÄÄ¿ ÚÄ¿ ÚÄÄÄÄÄÄÄÄÄ¿ ÚÄÄÄÄÄÄ¿ ÚÄ¿      ÚÄÄÄÄÄÄ¿ ÚÄ¿   ÚÄ¿           ÚÄÄÄÄÄÄÄ¿ ÚÄ¿ ÚÄÄÄÄÄÄÄÄÄ¿ ÚÄÄÄÄÄÄ¿ ÚÄ¿      ÚÄÄÄÄÄÄ¿ ÚÄ¿   ÚÄ¿
+           ³ ÚÄÄÄÄÄÙ ³ ³ ³ ÚÄ¿ ÚÄ¿ ³ ³ ÚÄÄ¿ ³ ³ ³      ³ ÚÄÄÄÄÙ À¿À¿ ÚÙÚÙ           ³ ÚÄÄÄÄÄÙ ³ ³ ³ ÚÄ¿ ÚÄ¿ ³ ³ ÚÄÄ¿ ³ ³ ³      ³ ÚÄÄÄÄÙ À¿À¿ ÚÙÚÙ
+           ³ ÀÄÄÄÄÄ¿ ³ ³ ³ ³ ³ ³ ³ ³ ³ ÀÄÄÙ ³ ³ ³      ³ ÀÄÄ¿    À¿ÀÄÙÚÙ           ³ ÀÄÄÄÄÄ¿ ³ ³ ³ ³ ³ ³ ³ ³ ³ ÀÄÄÙ ³ ³ ³      ³ ÀÄÄ¿    À¿ÀÄÙÚÙ
+           ÀÄÄÄÄÄ¿ ³ ³ ³ ³ ³ ÀÄÙ ³ ³ ³ ÚÄÄÄÄÙ ³ ³      ³ ÚÄÄÙ    ÚÙÚÄ¿À¿           ÀÄÄÄÄÄ¿ ³ ³ ³ ³ ³ ÀÄÙ ³ ³ ³ ÚÄÄÄÄÙ ³ ³      ³ ÚÄÄÙ    ÚÙÚÄ¿À¿
+           ÚÄÄÄÄÄÙ ³ ³ ³ ³ ³     ³ ³ ³ ³      ³ ÀÄÄÄÄ¿ ³ ÀÄÄÄÄ¿ ÚÙÚÙ À¿À¿           ÚÄÄÄÄÄÙ ³ ³ ³ ³ ³     ³ ³ ³ ³      ³ ÀÄÄÄÄ¿ ³ ÀÄÄÄÄ¿ ÚÙÚÙ À¿À¿
+           ÀÄÄÄÄÄÄÄÙ ÀÄÙ ÀÄÙ     ÀÄÙ ÀÄÙ      ÀÄÄÄÄÄÄÙ ÀÄÄÄÄÄÄÙ ÀÄÙ   ÀÄÙ           ÀÄÄÄÄÄÄÄÙ ÀÄÙ ÀÄÙ     ÀÄÙ ÀÄÙ      ÀÄÄÄÄÄÄÙ ÀÄÄÄÄÄÄÙ ÀÄÙ   ÀÄÙ
+
+                    ÚÄÄÄÄÄÄ¿ ÚÄÄÄÄÄÄ¿ ÚÄÄÄÄÄÄÄ¿ ÚÄ¿  ÚÄ¿ ÚÄÄÄÄÄÄ¿                    ÚÄÄÄÄÄÄ¿ ÚÄÄÄÄÄÄ¿ ÚÄÄÄÄÄÄÄ¿ ÚÄ¿  ÚÄ¿ ÚÄÄÄÄÄÄ¿
+                    ³ ÚÄÄÄÄÙ ³ ÚÄÄÄÄÙ ÀÄÄ¿ ÚÄÄÙ ³ ³  ³ ³ ³ ÚÄÄ¿ ³                    ³ ÚÄÄÄÄÙ ³ ÚÄÄÄÄÙ ÀÄÄ¿ ÚÄÄÙ ³ ³  ³ ³ ³ ÚÄÄ¿ ³
+                    ³ ÀÄÄÄÄ¿ ³ ÀÄÄ¿      ³ ³    ³ ³  ³ ³ ³ ÀÄÄÙ ³                    ³ ÀÄÄÄÄ¿ ³ ÀÄÄ¿      ³ ³    ³ ³  ³ ³ ³ ÀÄÄÙ ³
+                    ÀÄÄÄÄ¿ ³ ³ ÚÄÄÙ      ³ ³    ³ ³  ³ ³ ³ ÚÄÄÄÄÙ                    ÀÄÄÄÄ¿ ³ ³ ÚÄÄÙ      ³ ³    ³ ³  ³ ³ ³ ÚÄÄÄÄÙ
+                    ÚÄÄÄÄÙ ³ ³ ÀÄÄÄÄ¿    ³ ³    ³ ÀÄÄÙ ³ ³ ³                    ÚÄÄÄÄÙ ³ ³ ÀÄÄÄÄ¿    ³ ³    ³ ÀÄÄÙ ³ ³ ³
+                    ÀÄÄÄÄÄÄÙ ÀÄÄÄÄÄÄÙ    ÀÄÙ    ÀÄÄÄÄÄÄÙ ÀÄÙ                    ÀÄÄÄÄÄÄÙ ÀÄÄÄÄÄÄÙ    ÀÄÙ    ÀÄÄÄÄÄÄÙ ÀÄÙ
+
+
+
+
+                              Simplex BBS - (c) 1989-92
+                      Chris Laforet Software/Christopher Laforet
+                                All Rights Reserved.
+
+
+
+
+
+
+
+
+
+                         Chris Laforet can be contacted at:
+
+               The Programmer's Oasis BBS - Graham, NC - 919/226-6984
+              The Programmer's Oasis 2 BBS - Graham, NC - 919/226-7136
+                 FidoNet Mail 1:3644/1 or 1:3644/2 as Chris Laforet
+                        CompuServe Email - User ID: 76120,110
+                            BIX Email - User ID: laforet
+
+
+
+
+
+                            Programming by Chris Laforet
+                       Unauthorized Selling/Renting Prohibited
+               Documentation Title Page/Help Files/Etc by Robbie Foust
+
+
+
+
+
+
+
+
+
+
+
+
+                                      Chapter 1                                      Chapter 1
+
+                Legalistic Mumbo-Jumbo (i.e. Better Read This Stuff)                Legalistic Mumbo-Jumbo (i.e. Better Read This Stuff)
+
+
+          Simplex is copyright (c) 1989-92, Chris Laforet Software and/or
+          Christopher Laforet.  This copyright is waived for the
+          distribution of the executable files for Simplex.  This means
+          that you are free to distribute the Simplex executables as you
+          wish as long as they are contained in the original form in which
+          you received them.
+
+          Simplex executables as released by Chris Laforet Software are
+          absolutely free of charge to individuals and corporations.  Sale
+          of any of these executables is in violation of this agreement and
+          is subject to court action.  The only exception to this is
+          shareware and freeware software distribution houses are allowed
+          to charge for distribution materials (e.g. diskettes).  Even
+          though it is free for use, if you want to send a contribution to
+          Chris Laforet Software, be assured that it will be cheerfully
+          accepted!
+
+          The source code for Simplex is available for purchase from Chris
+          Laforet Software.  When you purchase this code, you are granted
+          an exclusive license to modify it for your own use.  The
+          executables that you produce must never be distributed in place
+          of the original executables as compiled and distributed from
+          Chris Laforet Software unless you arrange a royalty system with
+          Chris Laforet Software.  During the course of your modifications,
+          should you develop a feature which you believe should be a part
+          of the distributed Simplex executables, you may submit the code
+          to Chris Laforet Software for review and for possible
+          incorporation into Simplex, as long as such incorporation does
+          not place Chris Laforet Software and/or Christopher Laforet under
+          any monetary obligations.  Your submitted code must include a
+          cover letter indicating that you are freely granting permission
+          to Chris Laforet Software for the incorporation of your code into
+          Simplex.
+
+          Should you wish to purchase Simplex for use as a platform for
+          another product, or wish to convert Simplex to another language
+          (French, Japanese, Swahili) or to another operating system (Atari
+          ST, VAX, AX-400), and wish to market the resultant product,
+          contact Chris Laforet Software and a royalty agreement can be
+          developed.  Royalties generally range somewhere between 10% and
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                        Page 2                                        Page 2
+
+
+
+
+
+
+          15% of the sales price of the product, but each case is different
+          and merits discussion.
+
+          There are no warranties of any kind, explicit or implied, on the
+          Simplex software.  Simplex's executables are provided on an "AS
+          IS" basis.  What this means is that if you decide to use Simplex,
+          it is at your own risk.  In plain English, this means that if you
+          use Simplex and your machine blows up, the developers and
+          distributors of Simplex are not responsible in any fashion.  If
+          you use Simplex and it loses all of the files on your disk, once
+          again the developers and distributors of Simplex are not to be
+          held accountable.  While these scenarios are rather extreme in
+          nature, they serve to indicate that Chris Laforet Software and/or
+          Christopher Laforet does not warrant, guarantee, or make any
+          other representations regarding the use, or results of use, of
+          Simplex or its documentation in terms of accuracy, reliability,
+          correctness, currentness, or otherwise.
+
+          Simplex has been developed and tested on a 386-20 and 386-25
+          running OS/2 1.xx and 2.xx.  Two copies of Simplex using US
+          Robotics Courier HST/v32bis 14.4 Kbaud Dual-Standard baud modems
+          have run simultaneously 24 hours/day on these setups.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                        Page 3                                        Page 3
+
+
+
+
+
+
+
+
+
+
+
+
+                                      Chapter 2                                      Chapter 2
+
+                               Basic Setup Information                               Basic Setup Information
+
+
+
+                          2.1  Setting Up Simplex BBS Paths                          2.1  Setting Up Simplex BBS Paths
+
+
+          Simplex should have a special directory for its configuration,
+          message, and userlist files.  This directory can be shared with
+          other programs if so desired (for example, with the front-end
+          mailer's configuration files).
+
+          Simplex also requires a directory for its menu files, a directory
+          which should be used exclusively for these files.
+
+          Screen files need to be placed into their own directory also.
+          Here is where the regular ansi (ANS) and ascii (ASC) files are
+          kept, in addition to the quote of the moment files (CQ) and the
+          questionnaire files (QF).
+
+          It is advisable to create 3 subdirectories, say \SIMPLEX (for the
+          configuration, message, and userlist files), \SIMPLEX\MENUS (for
+          the menu files), and \SIMPLEX\SCREENS (for the screen files).
+
+          Simplex and its utility programs respond to a SIMPLEX environment
+          variable (SET SIMPLEX=path of Simplex configuration file).  It is
+          advisable to place this set statement in your autoexec.bat file
+          (in DOS) or in your config.sys (in OS/2) so that Simplex and its
+          utilities can always find their home directory.
+
+          If you are planning to run a Network node with Simplex, you also
+          need an inbound directory where your front-end mailer places
+          files coming to your node.  There also needs to be an outbound
+          directory in which your Simplex system will place files for your
+          front-end mailer to send to other nodes.  These could be called
+          \SIMPLEX\INBOUND and \SIMPLEX\OUTBOUND and must be set up in both
+          Simplex's configuration as well as your front-end mailer's
+          configuration.
+
+          Simplex requires two other directories to handle its normal
+          Network mail duties.  These are a matrix directory where it
+          tosses mail as standard FSC-0001 message files during
+          exportation/forwarding, and a packet directory which it uses as a
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                        Page 4                                        Page 4
+
+
+
+
+
+
+          scratch area while unpacking inbound mail.  These could be called
+          \SIMPLEX\MATRIX and \SIMPLEX\PACKET.  Please notice that Simplex
+          maintains its packet directory and thus it should only be used by
+          Simplex itself.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                        Page 5                                        Page 5
+
+
+
+
+
+
+
+
+
+
+
+
+                                      Chapter 3                                      Chapter 3
+
+                      SCONFIG: Simplex's Configuration Utility                      SCONFIG: Simplex's Configuration Utility
+
+
+          The crux of handling Simplex properly is in understanding SCONFIG
+          (SCONFIG2 for OS/2).  This program permits the Sysop to create a
+          BBS tailored to their wishes.
+
+          To run SCONFIG, you must either be in your BBS directory or have
+          the SIMPLEX variable set to point at your BBS directory.  To
+          start SCONFIG, type:
+
+                  SCONFIG
+
+          or for OS/2 users, do:
+
+                  SCONFIG2
+
+          DOS users who have an old CGA card who experience snow using
+          SCONFIG can use the -S flag on the command line to turn on snow
+          checking.
+
+          DOS and OS/2 users who have monochrome screens (mono or
+          monochrome VGA) can select a mono color set by using the -M flag
+          on the command line.
+
+          Upon entering SCONFIG, you will be confronted with the main menu.
+          This uses a point-and-shoot interface.  You can move the light-
+          bar to the desired choice and then hit ENTER to engage it.  To
+          get help on keystrokes, use the F1 key.  To back out of a choice,
+          press ESC.
+
+
+
+                            3.1  Field Editing Keystrokes                            3.1  Field Editing Keystrokes
+
+
+          To feel completely comfortable with using SCONFIG, it is
+          necessary to gain an understanding of the field editor.  One of
+          the philosophies in SCONFIG is that a field is not completed
+          until ENTER has been hit.  If a field has been changed, those
+          changes are not kept if anything other than ENTER is pressed.
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                        Page 6                                        Page 6
+
+
+
+
+
+
+          While you are in the field editor, the following keystrokes move
+          you around:
+
+            Keystroke         Action
+            ----------------- ---------------------------------------------------
+            Enter             Save changes on this field and go to next
+            field
+            Esc/Alt-Q         Abort editing and quit without saving changes
+            Ctrl-End/Alt-X    Exit and save changes
+            Tab               Go to next field
+            Shift-Tab         Go to previous field
+            Backspace         Delete the character left of the cursor
+            Del               Delete the character under the cursor
+            Ins               Toggle insert mode on (big cursor) or off
+            (small)
+            Alt-C             Clear a field completely
+            RightArrow        Go right by one "space"
+            LeftArrow         Go left by one "space"
+            Ctrl-RightArrow   Go to end of field
+            Ctrl-LeftArrow    Go to start of field
+
+
+
+                             3.2  Box Editing Keystrokes                             3.2  Box Editing Keystrokes
+
+
+          The box editor is a special field editor which allows editing a
+          block of text.  It is used, for example, in editing file
+          descriptions (which can be up to 256 characters long).  The
+          biggest feature of the box editor is that it will handle lines of
+          text and correctly word-wrap text when it overflows any one line.
+
+          While you are in the box editor, the following keystrokes move
+          you around:
+
+            Keystroke         Action
+            ----------------- ---------------------------------------------------
+            Enter             Save changes on this field and go to next
+            field
+            Esc/Alt-Q         Abort editing and quit without saving changes
+            Ctrl-End/Alt-X    Exit and save changes
+            Tab               Go to next field
+            Shift-Tab         Go to previous field
+            Backspace         Delete the character left of the cursor
+            Del               Delete the character under the cursor
+            Ins               Toggle insert mode on (big cursor) or off
+            (small)
+            Alt-C             Clear the field completely
+            Arrow Keys        Go right/left/up/down
+            Ctrl-LeftArrow    Go to beginning of line
+            Ctrl-RightArrow   Go to end of line
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                        Page 7                                        Page 7
+
+
+
+
+
+
+            Home              Go to top of text block
+            End               Go to bottom of text block
+
+
+
+                        3.3  BBS Info: Edit General BBS Info                        3.3  BBS Info: Edit General BBS Info
+
+
+          This option is SCONFIG allows the Sysop to configure some general
+          purpose information about his/her system.  Items handled in this
+          section include the name of the BBS and the name of the sysop
+          (the same name as the Sysop's login since messages addressed to
+          "Sysop" are translated to this name).
+
+          If the BBS will handle QWK mail, then the SYSOP can select the
+          base name for the QWK packets (like an eight character
+          representation of the BBS name).  If this is not set, QWK packets
+          are assigned a name of SIMPLEX.QWK.
+
+          Network BBSes will also use this option to set up their network
+          address(es).  If the BBS will be handling echomail, then a Sysop
+          can also set up a default origin line that is appended to
+          outbound echomail.
+
+
+
+                       3.4  BBS Info: Edit Miscellaneous Info                       3.4  BBS Info: Edit Miscellaneous Info
+
+
+          Selection of this option in SCONFIG will bring the Sysop to a
+          point where he/she can personalize Simplex.  Some of the colors
+          used by Simplex can be set here.  DOS users can select if they
+          wish direct screen writes and if so, then they can enable snow
+          checking if they use an old CGA video card (These features
+          currently have no effect on Simplex - it still uses BIOS writes
+          only).
+
+          Setting preregistered BBS use only creates a private BBS wherein
+          only users who have been added by the Sysop are granted access.
+          Disabling the local keyboard might be needed in those
+          circumstances where keys might be inadvertently pressed (This can
+          be overridden by the Alt-K command when the BBS is running).
+
+          A new user who has just logged in for the first time has to be
+          granted a privilege level and flags.  These are set to whatever
+          values the Sysop specifies in this section of SCONFIG.  If the
+          BBS handles netmail, the user can be granted a certain amount of
+          netmail credit (default=0!).  The amount of time a user has to
+          complete registering for the BBS and reading the NEWUSER?.A??
+          screens is defined by the "time for new user" option.
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                        Page 8                                        Page 8
+
+
+
+
+
+
+          While a user is registering for use of the BBS, they can be asked
+          to provide a home telephone number, a data/work phone number, and
+          a complete address.  Control over this aspect of Simplex is
+          controlled from this section of SCONFIG.  For security purposes,
+          a Sysop can limit the numbers of tries to enter a password to any
+          number between 1 and 9 (3 is a reasonable default).
+
+          The amount of times a user is permitted to yell for a chat with
+          the Sysop per session can be set here also.  The duration of the
+          tune to attract the Sysop's attention is also configurable.  The
+          time pseriod between which yelling is permitted can also be set
+          here.
+
+          The "inactive time before logoff" option indicates the period of
+          time that a user can sit idle before being booted off of the
+          system.
+
+          Finally, the Sysop can permit downloading to occur only between
+          specific hours.  This way, the board can be held open certain
+          hours exclusively for users who are calling to pick up mail.
+
+          Please note that the time ranges for yelling and for downloading
+          can wrap around midnight (e.g. start at 23:00 and end at 07:00).
+
+
+
+                             3.5  Edit Modem Information                             3.5  Edit Modem Information
+
+
+          This option permits the Sysop to configure Simplex to handle the
+          modem attached to it.  Most of these options should be simple to
+          setup (with judicious reference to the modem's manual!).  Notice
+          that there are two metacharacters used in setting up modem
+          strings.  These are the tilde (~) which means pause for 0.5
+          seconds, and the vertical bar (|) which means send a carraige
+          return character (CR=ASCII 13).
+
+          The minimum baud is used to prevent users calling in at a speed
+          slower than specified from being able to log on.  They are shown
+          the files TOOSLOW.ASC and then logged off.
+
+          The minimum ANSI baud is a Sysop-settable option which limits the
+          sending of ANSI color sequences to any baud greater or equal to
+          the specified number.  Users below this speed will not be able to
+          get ANSI color.
+
+          Locked baud is for use with modems which allow DCE-DTE rates to
+          be locked at a specific rate at all times.  The modem itself
+          converts the actual connection baud to the locked rate.  If you
+          don't understand this concept and have one of these modems, then
+          you need to read the modem's manual.
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                        Page 9                                        Page 9
+
+
+
+
+
+
+          The "modem slow" flag is used when it appears as if your modem is
+          not "catching" the command strings being sent by Simplex.  This
+          will make Simplex insert small delays between each character to
+          allow the modem to read the incoming strings correctly.
+
+          The modem init string is what is needed to set your modem up
+          correctly to answer the phone.  *NOTICE*  This does NOT mean that
+          your modem must be set up to pick up the phone when it rings
+          (e.g. on Hayes modems "AT S0=1"); your modem must be set to NEVER
+          answer the phone on its own, only to pass back the "ring" string
+          to Simplex (i.e. on Hayes modems "AT S0=0").
+
+          The ok response string is what your modem uses to acknowledge
+          commands sent to it (e.g. on Hayes modems "OK").
+
+          The dialing prefix and postfix strings are included in SCONFIG so
+          that utility writers who need to access dialing capabilities
+          (e.g. call-back verifiers) can get all of the modem options from
+          one place.  On a Hayes modem, these might be "ATDT" for the
+          prefix and "|" for the postfix.
+
+          The connect strings are used by Simplex to determine what baud
+          connection it should set up for.  These strings are searched in
+          reverse order (38400->300 baud) when the modem sends a string
+          back to Simplex until a match is found.  The Sysop only needs to
+          specify the MINIMUM amount of information to differentiate one
+          baud from another.  There are two strings for each baud rate
+          since some modems have bauds between regular baud rates (e.g.
+          Courier HST-DSv32bis can have "CONNECT 14400" and "CONNECT 12000"
+          which can be considered 19200 baud).
+
+          The ring string is that which the modem sends when it detects
+          that the phone is ringing.  The answer string is that which
+          Simplex should then send to the modem to tell it to pick up the
+          phone (e.g. on a Hayes modem, "ATA|").  The hangup string is sent
+          to the modem IF dropping DTR fails to hang up the phone.
+          Finally, the busy string is sent before Simplex exits if a Sysop
+          wishes the BBS to appear busy when it is offline.
+
+
+
+                   3.6  Path/Archiver Info: Edit General BBS Paths                   3.6  Path/Archiver Info: Edit General BBS Paths
+
+
+          This section of SCONFIG permits the Sysop to set Simplex's path
+          to its menus and its path to its screens.  It the BBS will be
+          handling QWK mail and/or it will allow local fileattaches, then
+          the "local f/attach and QWK dir" needs to be set to point at a
+          special private directory.
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 10                                       Page 10
+
+
+
+
+
+
+          The welcome program option allows Simplex to call a special
+          program after a person logs in but before the main menu is
+          reached.  The virus checker option allows Simplex to call a
+          Simplex-compatible virus checker program after uploading.  For
+          more information on this, see the section on the Virus Checker
+          Interface in SIMPLEX.DOC.
+
+
+
+                   3.7  Path/Archiver Info: Edit Network BBS Paths                   3.7  Path/Archiver Info: Edit Network BBS Paths
+
+
+          This section permits a Sysop who is operating within a BBS
+          network to set paths for mail handling.
+
+          The nodelist path is essential since Simplex needs to have access
+          to a compiled version 6 nodelist in order to operate in Network
+          mode.
+
+          The matrix directory is where SMAIL tosses outbound messages in
+          *.MSG format.  The imbound directory is where SMAIL will look for
+          incoming message packets or archived mail bundles.  The outbound
+          directory is here SMP will packetize and/or bundle mail that is
+          headed for other nodes.  The packet directory is a private
+          directory which SMAIL uses for unarchiving packets.  See the
+          section on SMAIL in MAIL.DOC for more information on these
+          concepts.
+
+          The bad messsage directory is not currently used by SMAIL, but
+          will be eventually.
+
+
+
+                    3.8  Path/Archiver Info: Edit Archiver Paths                    3.8  Path/Archiver Info: Edit Archiver Paths
+
+
+          This section is used by Sysops who permit QWK mail and/or who are
+          in a Network.  All that is needed is each archiver that is
+          available for use on your system and a command line to archive
+          packets.  While setting up the command lines, you must provide a
+          %A to represent to name of the archived file, and a %F to
+          represent the name of the file to be archived.
+
+          Here is an example of an archiver line for LZH:
+
+                  lharc a %A %F /c/o
+
+          This indicates that to archive a file "test.doc" into
+          "c:\qwk\test.lzh" the command line would become:
+
+                  lharc a c:\qwk\test.lzh test.doc /c/o
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 11                                       Page 11
+
+
+
+
+
+
+          See how the substitution of filenames for the %A and %F happens?
+
+          *NOTICE*  The archiver MUST be capable of handling complete
+          pathnames for both the source file's name and the archived file's
+          name or Simplex cannot use it.
+
+          *NOTICE*  Unless both the %F and the %A options are on the
+          command line, Simplex will not use it.
+
+          *NOTICE*  Never use the file MOVE option in archivers otherwise
+          you will regret it.  Always use the file ADD option!
+
+
+
+                   3.9  Path/Archiver Info: Edit Unarchiver Paths                   3.9  Path/Archiver Info: Edit Unarchiver Paths
+
+
+          This section is used by Sysops who permit QWK mail and/or who are
+          in a Network.  All that is needed is each unarchiver that is
+          available for use on your system and a command line to unarchive
+          files to a specific directory.  While setting up the command
+          lines, you must provide a %S to represent to name of the archived
+          file, and a %D to represent the name of the destination
+          directory.  The %D will be a fully qualified path INCLUDING a
+          trailing backslash.
+
+          Here is an example of an unarchiver line for LZH unsing LH2 in
+          OS/2:
+
+                  lh2 X %S %D /i/o
+
+          Another example uses ARC:
+
+                  arc xo %S %D*.*
+
+          which would be translated in use to something like:
+
+                  arc xo D:\BBS\SIMPLEX.REP D:\TEMP\*.*
+
+          *NOTICE*  The archiver MUST be capable of handling complete
+          pathnames for the archived file's name and also extract to the
+          specified directory.
+
+          *NOTICE*  Unless both the %S and the %D options are on the
+          command line, Simplex will not use it.
+
+
+
+
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 12                                       Page 12
+
+
+
+
+
+
+                              3.10  Edit Message Boards                              3.10  Edit Message Boards
+
+
+          Choosing this menu item will provide the Sysop a scrolling list
+          of all of the current message boards on the system.  The Sysop
+          can use the light-bar to select the board to edit, or to select
+          the option at the end of the list entitled "Add a new message
+          area".
+
+          In either case, the screen changes to a message board editing
+          screen.  The Sysop can select a unique number to identify the
+          board (used in menus and by SCLEAN) for the message area.  The
+          next field allows the creation of a descriptive name for the
+          message area (shown at various places in Simplex).
+
+          The next options permit the Sysop to select the type of messages
+          allowed in the message area.  Messages can be local (confined to
+          that BBS), or Network (Netmail and Echomail).  In addition to
+          this, message posting can be limited to private messages only,
+          public messages only (required for Echomail), or both.  Finally,
+          the Sysop can permit the posting of messages using aliases (i.e.
+          the user can select a different name when sending a message).
+          This feature can lead to lots of fun if properly used, or to a
+          great pain if it is not!  Be wary about marking areas for alias
+          posting (most echomail areas PROHIBIT alias use, so check with
+          your echomail coordinator).
+
+          Then there are options for setting the various access privileges
+          needed for the message area.  There are three levels of access:
+          read access (privilege and flag combination to allow a user to
+          read messages), write access (privilege level and flag
+          combination to allow a user to leave a message in the area), and
+          Sysop access (privilege level that is considered to have complete
+          control over the area).  Be very careful and make absolutely sure
+          that these levels are correctly set to restrict users from areas
+          that they cannot access.  QWK and downloadable mail use the
+          read/write privileges and flags to decide which areas a user can
+          get.
+
+          The final options on the menu control Network information.
+          First, there is the ability to override the default origin line
+          if the area allows echomail.  This way, a Sysop can tailor each
+          echo area with an origin line that pertains to that area!
+          Second, there is the ability to select the Network address
+          applied to the area if it is marked as Netmail or echomail.  This
+          is handy for those Sysops who have multiple Network addresses.
+
+          There is an option to delete the message board.  The deletion
+          doesn't happen immediately, to allow the Sysop to change his/her
+          mind.  It takes effect when SCONFIG is exited.
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 13                                       Page 13
+
+
+
+
+
+
+          Pressing Alt-X after making the changes to the message board will
+          save the changes and return to the scrolling list.  Pressing ESC
+          will abort the changes and return to the list.
+
+          While in the scrolling list, a Sysop can search for a string in
+          message board names by pressing F5.  Pressing F6 will repeat a
+          search until a match is found, or the end of the list is reached.
+
+
+
+                    3.11  File Board Info Menu: Edit File Boards                    3.11  File Board Info Menu: Edit File Boards
+
+
+          Choosing this menu item will provide the Sysop a scrolling list
+          of all of the current file boards on the system.  The Sysop can
+          use the light-bar to select the board to edit, or to select the
+          option at the end of the list entitled "Add a new file area".
+
+          In either case, the screen changes to a file board editing
+          screen.  The Sysop can select a unique number to identify the
+          board for the file area (used in menus).  The next field allows
+          the creation of a descriptive name for the file area (shown
+          during cross-area searches).
+
+          The next options permit the Sysop to determine the access level
+          (privilege and flag combination) to allow a user to have basic
+          access to the file board.  Each file is tagged with a privilege
+          level and flags also, so even though a user might have access to
+          a file area, they might not have access to every file in that
+          area!  Bear in mind that when a user uploads to a file board, the
+          file is tagged with the default privilege and flags for that
+          area.
+
+          The file board path is used to tell Simplex where to look for the
+          files associated with this board.  Simplex will also use this
+          path to locate the file board's system files (FILEHEAD.BBS and
+          FILELIST.BBS) when it needs to UNLESS the next option is filled
+          out.  That option is really meant for users of CD-ROM devices
+          (read-only) to place the system files in directories on a hard
+          drive.  If it is provided, then it will override the board's
+          standard path when Simplex needs to access a system file.
+
+          There is an option to delete the file board.  The deletion
+          doesn't happen immediately, to allow the Sysop to change his/her
+          mind.  It takes effect when SCONFIG is exited.
+
+          Pressing Alt-X after making the changes to the file board will
+          save the changes and return to the scrolling list.  Pressing ESC
+          will abort the changes and return to the list.
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 14                                       Page 14
+
+
+
+
+
+
+          While in the scrolling list, a Sysop can search for a string in
+          file board names by pressing F5.  Pressing F6 will repeat a
+          search until a match is found, or the end of the list is reached.
+
+
+
+                   3.12  File Board Info Menu: Edit File Listings                   3.12  File Board Info Menu: Edit File Listings
+
+
+          Since version 1.06.00, Simplex uses a binary database format for
+          storing information about files in the file boards.  Unlike the
+          previous FILES.BBS format, Sysops cannot use a text editor to
+          make changes.  Hence, SCONFIG provides an editor to handle
+          FILELIST.BBS.  (For converting FILES.BBS into FILELIST.BBS
+          format, see the section on SFAC in SIMPLEX.DOC).
+
+          Choosing this menu item will provide the Sysop a scrolling list
+          of all of the current file boards on the system.  The Sysop can
+          use the light-bar to select the board to edit and then press
+          Enter.  Once this is done, a new scrolling list showing the files
+          in the fileboard will be shown.  Each entry provides basic
+          information about each file entry.  Once again, the Sysop can use
+          the light-bar to select a file entry to edit by pressing Enter.
+
+          Upon doing this, an editing window pops up containing all of the
+          information pertaining to that file entry.  Using normal field
+          editor keystrokes, the Sysop can move to any field and edit it.
+          The fields in the window allow editing of the file name, the
+          access privilege and flags for the file, the upload date and
+          uploader name, the download date and number of downloads, the
+          file area where the file is actually located, and the description
+          for the file.
+
+          Pressing Alt-X after making the changes to the file board will
+          save the changes and return to the scrolling list.  Pressing ESC
+          will abort the changes and return to the list.
+
+          While in the scrolling list of file boards, a Sysop can search
+          for a string in file board names by pressing F5.  Pressing F6
+          will repeat a search until a match is found, or the end of the
+          list is reached.  In the scrolling list of filenames, F5 and F6
+          will search for the string in the filename fields and in the
+          description fields.  Pressing DEL on a file entry will permit you
+          to delete the entry.
+
+
+
+
+
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 15                                       Page 15
+
+
+
+
+
+
+                              3.13  Edit Userlist Info                              3.13  Edit Userlist Info
+
+
+          Choosing this menu item will provide the Sysop a scrolling list
+          of all of the users on the system.  The Sysop can use the light-
+          bar to select the user to edit, or to select the option at the
+          end of the list entitled "Add a new user".
+
+          Once selected with Enter, a screen appears which allows the Sysop
+          to edit a user's information.  All of the fields are
+          straightforward and require no explanation here.
+
+          Pressing Alt-X after making the changes to the user's record will
+          save the changes and return to the scrolling list.  Pressing ESC
+          will abort the changes and return to the list.
+
+          While in the scrolling list, a Sysop can search for a string in
+          user names, addresses, and cities by pressing F5.  Pressing F6
+          will repeat a search until a match is found, or the end of the
+          list is reached.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 16                                       Page 16
+
+
+
+
+
+
+
+
+
+
+
+
+                                      Chapter 4                                      Chapter 4
+
+                                 Simplex Menu Types                                 Simplex Menu Types
+
+
+          This chapter gives a brief rundown of the types of menu options
+          available for menu development.  Some of these require
+          information in the additional data fields, while others do not
+          and merely ignore the contents of said field.  Options in square
+          brackets ([]) are optional.
+
+          Type 0 = Show menu line:
+               This option will merely show the contents of the menu line
+               and will not respond to any hotkeys.  Hence there is no need
+               for a key value for this kind of menu.  It is mostly used to
+               give menu titles and/or blank formatting lines.  Additional
+               Data: None
+
+          Type 1 = Call new menu - Add to return stack:
+               This option will show the contents of the menu line and if
+               its corresponding hotkey is triggered, it will attempt to
+               call the menu name specified in the data line.  The current
+               menu is pushed on a stack so that a subsequent call to menu
+               type 3 will return to the current menu.  If a password is
+               provided, then the user will be prompted for the password
+               prior to being given access to the new menu.  Additional
+               Data: Menuname [Password] [/ Menu Template Macros]
+
+          Type 2 = Goto new menu - Clear return stack:
+               This option will show the contents of the menu line and if
+               its corresponding hotkey is triggered, it will attempt to
+               call the menu name specified in the data line.  The return
+               stack is cleared and the new menu becomes the new base of
+               the stack.  If a password is provided, then the user will be
+               prompted for the password prior to being given access to the
+               new menu.  Additional Data: Menuname [Password] [/ Menu
+               Template Macros]
+
+          Type 3 = Return to previous menu:
+               This option pops the current menu off of the stack and
+               returns to the previous menu.  Additional Data: None
+
+          Type 4 = Replace current menu on return stack:
+               This option will show the contents of the menu line and if
+               its corresponding hotkey is triggered, it will attempt to
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 17                                       Page 17
+
+
+
+
+
+
+               call the menu name specified in the data line.  The new menu
+               is put on the stack and replaces the current menu so that a
+               subsequent call to menu type 3 will return to the current
+               menu's previous menu!  If a password is provided, then the
+               user will be prompted for the password prior to being given
+               access to the new menu.  Additional Data: Menuname
+               [Password] [/ Menu Template Macros]
+
+          Type 16 = Enter a message on board:
+               This option permits the user to enter a message on the
+               specified message board.  Optionally the user may be logged
+               off automatically after exiting the message editor by
+               specifying a /L on the data line.  THe logoff is exactly as
+               if a type 255 menu option was executed.  The message may be
+               forced to a specific user by using the optional /T=user_name
+               option.  Please note the "_" (underscore) between the user's
+               firat and last names.  This will be changed into a space
+               when the message is actually entered.  Additional Data:
+               board# [/L] [/T=user_name]
+
+          Type 17 = Read messages on board:
+               This option permits the user to read public messages or
+               private messages to him/her on a message board.  If the
+               user's privilege level is greater or equal to the message
+               board's sysop privilege, then he/she will be able to read
+               all messages in the area.  Additional Data: board#
+
+          Type 18 = Scan messages on board:
+               This option permits the user to see the headers for public
+               messages or private message to him/her on a message board.
+               If the user's privilege is greater or equal to the message
+               board's sysop privilege, then he/she will be able to see all
+               the headers in the area.  Additional Data: board#
+
+          Type 19 = Quickscan messages on board:
+               This option permits the user to see the basic headers for
+               public messages or private message to him/her on a message
+               board.  If the user's privilege is greater or equal to the
+               message board's sysop privilege, then he/she will be able to
+               see all the basic headers in the area.  Additional Data:
+               board#
+
+          Type 20 = Search userlist:
+               This option permits the user to search the userlist for a
+               user's name and/or list all users on the BBS.  Additional
+               Data: None
+
+          Type 21 = Search for Net address:
+               This option permits a user to search for a specific Net node
+               in the nodelist.  Additional Data: None
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 18                                       Page 18
+
+
+
+
+
+
+          Type 22 = Generate FREQ to Net address:
+               This option permits the user to generate network file-
+               requests (in *.REQ files) to a specific Net node.
+               Additional Data: None
+
+          Type 32 = List files on file board:
+               This option opens the file board's FILELIST.BBS and lists
+               the files that the user can access and that are available in
+               the area.  Additional Data: board#
+
+          Type 33 = Upload file to file board:
+               This option permits the user to upload files to the specific
+               file board.  In local mode, this option permits files to be
+               copied from another drive/directory into the file area.
+               Additional Data: board#
+
+          Type 34 = Download file from file board:
+               This option permits the user to download files that they can
+               access from the specified file board.  In local mode, this
+               option permits files from the file area to be copied to
+               another drive/directory.  Additional Data: board#
+
+          Type 35 = Raw directory list of file board:
+               This option permits the user to get a raw directory of the
+               files in the directory associated with the specified file
+               board.  Additional Data: board#
+
+          Type 36 = Contents of archive on file board:
+               This option permits the user to see the contents of .ARC,
+               .PAK, .ZIP, .LZH, and .ZOO files that they have access to
+               that are in the specified file board.  Additional Data:
+               board#
+
+          Type 37 = Show new files across file boards:
+               This option searches across file boards for files that the
+               user can access and that have file-datestamps or upload-
+               datestamps later then the user's last login or with dates
+               later than a user-defined date.  Additional Data: board#
+
+          Type 38 = Search for filename across file boards:
+               This option searches across file boards for a specified file
+               name and shows the user a list of files which they can
+               access and that match their search parameter.  Additional
+               Data: board#
+
+          Type 39 = Search for keyword across file boards:
+               This option searches across file boards for a specified
+               keyword in the descriptions and shows the user a list of
+               files which they can access and that match their search
+               parameter.  Additional Data: board#
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 19                                       Page 19
+
+
+
+
+
+
+          Type 40 = Delete file on file board:
+               This option permits the user to delete files and description
+               entries that they can access in the specified file area.
+               Additional Data: board#
+
+          Type 41 = Read a text file on file board:
+               This option permits a user to read the contents of a file
+               which they can access that is contained in the specified
+               file area.  Additional Data: board#
+
+          Type 42 = Download ONE special file from board:
+               This option permits a user to download a sysop-specified
+               file from a specified area.  Additional Data: board#
+               filename.ext
+
+          Type 43 = Move file(s) from one file board to another:
+               This option permits the user to move files and descriptions
+               to a different board.  Additional Data: source_board#
+
+          Type 44 = List files on a file board in reverse order:
+               This option works like the type 32 menu option except that
+               it lists the files in most recently added order.  Additional
+               Data: board#
+
+          Type 48 = Show ascii/ansi file:
+               This option shows the user the specified ansi or ascii file.
+               Do not include the extension, only the base filename.  The
+               file will not pause at the end.  Additional Data: filename
+
+          Type 49 = Show ascii/ansi file with hotkeys:
+               If this option is used as an automatic executing menu
+               option, the file indicated in the data line will be shown to
+               the user when its menu line is being shown however the
+               menu's hotkeys will still be active!  This permits you to
+               design free-form menus using an ANSI screen editor.  As with
+               a type 48 data line, do not include the extension, just the
+               base filename.  The file will not pause at the end, but will
+               continue showing any additional menu lines until the menu is
+               finished.  If someone actually provides a hotkey for this
+               menu type, it will behave exactly like a type 48 (i.e.
+               hotkeys are only active when it is an automatic executing
+               option with no hotkey).  Notice, this option will show
+               screens regardless of if the user has Expert mode on or off.
+               Type 53 works exactly like this option but only shows the
+               files if expert mode is off.  Additional Data: filename
+
+          Type 50 = Show ascii/ansi file with pause at end:
+               This option shows the user the specified ansi or ascii file.
+               Do not include the extension, only the base filename.  The
+               file will pause at the end and prompt the user for Enter.
+               Additional Data: filename
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 20                                       Page 20
+
+
+
+
+
+
+          Type 51 = Answer questionnaire file:
+               This option leads the user through a questionnaire file if
+               it is in the screens directory.  See below for more info on
+               Simplex's questionaire language.  Additional Data: filename
+
+          Type 52 = Show quote of the moment:
+               This option will look in the screens directory for a
+               compiled quote file.  If it exists, it will "randomly"
+               select a quote from it, show it to the user and pause for
+               the user to press Enter.  See the SQUOTE section for more
+               details on quote files.  Additional Data: filename
+
+          Type 53 = Show non-expert ascii/ansi menu with hotkeys:
+               This option is identical to the type 49 menu option.  The
+               only difference is that this is not shown if a user has
+               Expert mode on.  Additional Data: filename
+
+          Type 64 = Change user's city/state:
+               This option permits the user to change his/her city/state.
+               Additional Data: None
+
+          Type 65 = Change user's password:
+               This option permits the user to change his/her password.
+               Prior to changing the password, PASSWORD.A?? is shown (see
+               below).  Additional Data: None
+
+          Type 66 = Change user's clearscreen status:
+               This option allows the user to toggle on or off his/her
+               sending of clear-screen codes.  These are only sent is ANSI
+               status is on.  Additional Data: None
+
+          Type 67 = Change user's MORE status:
+               This option allows the user to toggle on or off his/her
+               screen pausing status.  These are only sent is ANSI status
+               is on.  Additional Data: None
+
+          Type 68 = Change user's screen length:
+               This option allows the user to toggle on or off his/her
+               sending of clear-screen codes.  These are only sent is ANSI
+               status is on.  Additional Data: None
+
+          Type 69 = Change user's ANSI status:
+               This option allows the user to toggle on or off his/her
+               sending of ANSI codes.  Additional Data: None
+
+          Type 70 = Change user's default editor status:
+               This option allows the user to toggle between using the line
+               editor and the full-screen ANSI editor.  The full-screen
+               editor is only entered if ANSI status is on.  Additional
+               Data: None
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 21                                       Page 21
+
+
+
+
+
+
+          Type 71 = Change user's novice/expert mode:
+               This option allows the user to toggle between normal menu
+               mode and expert mode (where only option letters are shown).
+               Additional Data: None
+
+          Type 72 = Change user's home phone number:
+               This option allows the user to change his/her home number.
+               Additional Data: None
+
+          Type 73 = Change user's data/work phone number:
+               This option allows the user to change his/her data or work
+               number.  Additional Data: None
+
+          Type 74 = Change user's full address line 1:
+               This option allows the user to change his/her address line
+               #1.  Additional Data: None
+
+          Type 75 = Change user's full address line 2:
+               This option allows the user to change his/her address line
+               #2.  Additional Data: None
+
+          Type 76 = Change user's city:
+               This option allows the user to change his/her city (only for
+               full addresses).  Additional Data: None
+
+          Type 77 = Change user's state:.
+               This option allows the user to change his/her state (only
+               for full addresses).  Additional Data: None
+
+          Type 78 = Change user's zipcode:
+               This option allows the user to change his/her zipcode (only
+               for full addresses).  Additional Data: None
+
+          Type 80 = Enter an advertisement in ad area:
+               This option permits a user to enter an advertisement or
+               user-posted bulletin in an "ad" area.  Ads are placed in a
+               special file which is indicated in the data line.  The days
+               argument indicates the maximum amount of time that the "ad"
+               can remain on the system.  The optional /R argument
+               indicates the message board number where replies to "ads"
+               will be posted.  If not provided, the user is not prompted
+               to permit replies.  Additional Data: filename /D=days
+               [/R=board#]
+
+          Type 81 = Read advertisements in ad area:
+               This option permits a user to read advertisements or user-
+               posted bulletins in an "ad" area.  The optional /R argument
+               indicates the message board number where replies to "ads"
+               will be posted.  Additional Data: filename [/R=board#]
+
+          Type 82 = Scan advertisements in ad area:
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 22                                       Page 22
+
+
+
+
+
+
+               This option permits a user to scan the headers of
+               advertisements or user-posted bulletins in an "ad" area.
+               Additional Data: filename
+
+          Type 96 = Set a user's privilege level:
+               This option sets the user's privilege level to the value in
+               the data line (1 through 255).  This privilege level is
+               written to the user's record and is permanent.  The user's
+               time online is adjusted to suit their new level.  It is the
+               equivalent of up or downgrading a user from the keyboard.
+               Additional Data: priv_level
+
+          Type 97 = Raise a user's time:
+               This option adds the number of minutes specified in the data
+               line to the user's online time.  Additional Data:
+               minutes_to_raise
+
+          Type 98 = Drop a user's time:
+               This option removes the number of minutes specified in the
+               data line from the user's online time.  Additional Data:
+               minutes_to_delete
+
+          Type 99 = Set flags in user's configuration:
+               This option sets the flags specified in the data line in the
+               user's flags configuration.  The flags are presented as a
+               string of letters corresponding to the flags to set.  There
+               are 16 flags ranging from A to P.  e.g. a data string of
+               "AMjp" will set the A. M, J, and P flags if they are not
+               already set.  Additional Data: flags_to_set
+
+          Type 100 = Delete flags from user's configuration:
+               This option unsets the flags specified in the data line in
+               the user's flags configuration.  The flags are presented as
+               a string of letters corresponding to the flags to set.
+               There are 16 flags ranging from A to P.  e.g. a data string
+               of "AMjp" will delete the A. M, J, and P flags if they are
+               set.  Additional Data: flags_to_delete
+
+          Type 101 = Set the time of a user to an absolute time:
+               This option sets the user's time online to the number of
+               minutes specified in the data line.  Additional Data:
+               minutes_to_set
+
+          Type 102 = Sysop-defined log entry:
+               This option will cause the data in the data line to be
+               logged as a log entry in SIMPLEX.LOG.  Additional Data:
+               message to log.  Additional Data: None
+
+          Type 103 = Beep tones to alert Sysop:
+               This option causes Simplex to generate a series of tones to
+               alert the Sysop for whatever reason.  If it is set as an
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 23                                       Page 23
+
+
+
+
+
+
+               auto-executing option, it can be used to inform the Sysop
+               that a user has entered a specific menu.  Additional Data:
+               None
+
+          Type 112 = Set up combined message boards:
+               This option allows a user to select the message boards that
+               he/she wants to use for combined message reading and
+               downloading.  These settings are saved until they are
+               changed.  The user can only select boards for which they
+               have read permission.  Additional Data: none
+
+          Type 113 = Read messages on combined message boards:
+               This option permits the user to read messages on the
+               selected combined message boards.  Additional Data: none
+
+          Type 114 = Scan messages on combined message boards:
+               This option permits the user to scan message headers that
+               are on the selected combined message boards.  Additional
+               Data: none
+
+          Type 115 = Quickscan messages on combined message boards:
+               This option permits the user to quickscan message headers
+               that are on the selected combined message boards.
+               Additional Data: none
+
+          Type 116 = Download messages from combined message boards:
+               This option permits the user to download all or only new
+               messages in the selected combined message boards.  If
+               archivers are specified in option 5 of SCONFIG, the user can
+               then optionally elect to archive the mail before downloading
+               it with a protocol.  This option also requires that the
+               file-attach path be set in SCONFIG.  This path is used for
+               the preparation of downloadable mail.  Additional Data: none
+
+          Type 117 = Configure combined boards:
+               This option permits a user of combined boards to configure
+               their options.  These options include selecting QWK mail or
+               ASCII download, and which files to include in the QWK
+               packets.  Additional Data: none
+
+          Type 118 = Upload messages in QWK reply format:
+               This option permits a user to send a QWK mail reply (REP)
+               packet back to Simplex.  The mail is then split out of the
+               packet and imported into the areas where the user has
+               permission.  Additional Data: none
+
+          Type 128 = Send files using Xmodem:
+               This option permits users to create their own download menu.
+               The option will call the Xmodem sending routines to request
+               the files the user wants and then to send them.  Additional
+               Data: board #
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 24                                       Page 24
+
+
+
+
+
+
+          Type 129 = Send files using Xmodem-1K:
+               This option permits users to create their own download menu.
+               The option will call the Xmodem-1K sending routines to
+               request the files the user wants and then to send them.
+               Additional Data: board #
+
+          Type 130 = Send files using Ymodem:
+               This option permits users to create their own download menu.
+               The option will call the Ymodem sending routines to request
+               the files the user wants and then to send them.  Additional
+               Data: board #
+
+          Type 131 = Send files using Ymodem-G:
+               This option permits users to create their own download menu.
+               The option will call the Ymodem-G sending routines to
+               request the files the user wants and then to send them.
+               Additional Data: board #
+
+          Type 132 = Send files using Zmodem:
+               This option permits users to create their own download menu.
+               The option will call the Zmodem sending routines to request
+               the files the user wants and then to send them.  Additional
+               Data: board #
+
+          Type 144 = Receive files using Xmodem:
+               This option permits users to create their own upload menu.
+               The option will call the Xmodem receiving routines to
+               request the files the user wants to send and then to receive
+               them.  Additional Data: board #
+
+          Type 145 = Receive files using Xmodem-1K:
+               This option permits users to create their own upload menu.
+               The option will call the Xmodem-1K receiving routines to
+               request the files the user wants to send and then to receive
+               them.  Additional Data: board #
+
+          Type 146 = Receive files using Ymodem:
+               This option permits users to create their own upload menu.
+               The option will call the Ymodem receiving routines to
+               receive the files.   Additional Data: board #
+
+          Type 147 = Receive files using Ymodem-G:
+               This option permits users to create their own upload menu.
+               The option will call the Ymodem-G receiving routines to
+               receive the files.  Additional Data: board #
+
+          Type 148 = Receive files using Zmodem:
+               This option permits users to create their own upload menu.
+               The option will call the Zmodem receiving routines to
+               receive the files.  Additional Data: board #
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 25                                       Page 25
+
+
+
+
+
+
+          Type 240 = Run a program from within SIMPLEX:
+               This option permits a user to run an external program.  The
+               data line contains the command line to be passed to the
+               command spawn function.  This function searches the path for
+               the program to run.  There are certain $-escaped meta-
+               commands which can be used to pass data.  These meta-
+               commands MUST BE IN LOWERCASE.  The following meta-commands
+               can be used as arguments to the program:
+
+                 $r  = user's time left in minutes
+                 $d  = current date as mm/dd/yy
+                 $t  = current time as hh:mm
+                 $f  = user's first name
+                 $l  = user's last name
+                 $a  = user's ansi flag (ascii 1 if on or ascii 0 if off)
+                 $p  = In DOS: comm port number (ascii 1 for com1). In
+                       OS/2: comm file handle as a decimal ascii string
+                 $u  = user's number in userlist as ascii decimal string (0
+                       is first)
+                 $b  = connect baud rate as ascii decimal string (0 is
+                       local keyboard)
+                 $k  = Keep the user's time unaltered upon return from the
+                       external program (except for recalculating time due
+                       to a pending forced event).  This behaves like
+                       suspending the user's time while in chat mode.
+                 $*  = DOS only: leave fossil hot (do not deinitialize)
+                       before calling program (not considered an argument
+                       to the program)
+                 $e  = stop and wait for Enter after running program (not
+                       considered an argument to the program)
+                 $## = Passes the pathname for the file board specified by
+                       ##.  For example, if file board 100 has its path as
+                       d:\files\editors, then using $100 would substitute
+                       d:\files\editors.  Notice that the path name is
+                       NEVER backslash-terminated.  If the file board
+                       specified by ## does not exist, then a blank
+                       argument is passed (i.e. a nul-string).
+
+               When the external program returns to Simplex, the user's
+               record is reread and any changes to fields such as
+               privilege, or flags (anything other than date/time info) is
+               incorporated into the data held by Simplex.  This allows
+               external programs to modify a user's access.  If the user
+               has less than two minutes left online upon return, their
+               time is reset to two minutes so they can exit in an orderly
+               fashion.  Additional Data: program.exe [options]
+
+               Notice that if you want to run a batch file (.BAT in DOS or
+               .CMD in OS/2), you MUST specify the command interpreter as
+               the program to run (COMMAND.COM for DOS or CMD.EXE for OS/2)
+               with the batch file as an option.  Remember that batch files
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 26                                       Page 26
+
+
+
+
+
+
+               are interpreted by command interpreters (e.g. command.com /k
+               mybatch).
+
+          Type 242 = Show version/copyright information:
+               This option shows the user information about Simplex BBS.
+               Additional Data: None
+
+          Type 243 = Show user's usage statistics:
+               This option shows the user some information about his/her
+               first connect date, the last connect date and time, upload
+               and download statistics, and time information for this call.
+               Additional Data: None
+
+          Type 244 = Yell (limited) for chat with Sysop:
+               This option permits the user to summon the sysop for a chat
+               if the current time is within the configured yell time
+               specified under option 3 in SCONFIG.  Additional Data: None
+
+          Type 245 = Show current time of day:
+               This option shows the current date and time until the user
+               presses Enter.  This is provided for systems with access to
+               exact time.  Additional Data: None
+
+          Type 246 = Check for mail:
+               This option checks for unreceived mail addressed to the
+               user.  It marks mail for later reading and gives them the
+               option of reading mail immediately.  Additional Data: None
+
+          Type 247 = Sysop's user-upgrade option:
+               This option permits the user to access/modify userlist
+               records.  It is not meant for anyone other than Sysops.  The
+               user must have ANSI enabled to access this option.
+               Additional Data: None
+
+          Type 248 = Yell (unlimited) for chat with Sysop:
+               This option permits the user to summon the sysop for a chat
+               regardless of the time of day versus the configured yell
+               time specified under option 3 in SCONFIG.  Additional Data:
+               None
+
+          Type 249 = Check for duplicate phone numbers & send message to
+               Sysop if match:
+               This option will scan through the users and check the
+               current user's phone numbers against them.  If any matches
+               are found, a private message is dispatched to the sysop in
+               the file area specified informing him/her of the situation.
+               The area number specified MUST be a local message area (not
+               echo or net).  The Sysop's name is retrieved from SCONFIG.
+               If flags are provided and matches are located, the flags are
+               applied to the user.  If some flags are uppercased (ABC),
+               then the corresponding flags are set in the user's record.
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 27                                       Page 27
+
+
+
+
+
+
+               If some flags are lowercased (abc), then the corresponding
+               flags are cleared in the user's record.  For example, a flag
+               string of AcfP will set A and P flags and clear C and F
+               flags IF the user's phone numbers match another user's.
+               Additional Data: Msg_board# [flags]
+
+          Type 255 = Logoff/hangup connection:
+               This option logs the user off of the system.  Additional
+               Data: None
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 28                                       Page 28
+
+
+
+
+
+
+
+
+
+
+
+
+                                      Chapter 5                                      Chapter 5
+
+                                   Menu Templates                                   Menu Templates
+
+
+          In order to support multiple menus which are similar, Simplex
+          supports a menu template structure.  This feature is activated by
+          using the / after the name of the menu (and password if one is
+          present) in type 1 (Call new menu) and type 2 (Goto new menu)
+          menu types, and then following this slash with macros
+          assignments.
+
+
+
+                         5.1  Assigning Menu Template Macros                         5.1  Assigning Menu Template Macros
+
+
+          Macros can be assigned to any letter from uppercase A to
+          uppercase Z.  The assignments look like this:
+
+                  A=1  B=Messages_to_the_Sysop
+
+          Where A is assigned the string "1" and B is assigned the string
+          "Messages to the Sysop".  There can be NO SPACES between the
+          macro letter, the equals, and the beginning of the assignment.
+          Since a space signifies the end of the macro assignment, you must
+          use an underscore to represent a space (as in macro B above).
+          Sorry, there is no way to represent an underscore character in an
+          assignment string!
+
+          A complete data line for a menu which calls a template menu would
+          look similar to the following:
+
+                  msgs password / A=1 B=Messages_to_the_Sysop C=24
+
+          if there is a password for the area or like:
+
+                  msgs / A=1 B=Messages_to_the_Sysop C=24
+
+          if there is not a password.  MSGS is the name of the template
+          menu to which to apply the macros.
+
+          Macros assigned in this fashion will only be applied to the menu
+          in question, thus the same letters can be reused within a
+          template menu to call another template menu.
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 29                                       Page 29
+
+
+
+
+
+
+                        5.2  Using Template Macro Assignments                        5.2  Using Template Macro Assignments
+
+
+          A template menu is not very different from a regular menu.  The
+          difference mainly is in the use of $-escaped UPPERCASE letters to
+          represent macro substitutions in the prompt and data lines.  For
+          example, $A will substitute the value of macro A for that
+          specific template menu.
+
+          Since a picture is worth a thousand words, I suspect that an
+          example is worth ten thousand, so here is an example!  In the
+          previous section we called a menu "MSGS" with three macro
+          assignments, A, B and C.  Here is how MSGS can use the macros.
+          Assume that the first prompt line is the name of the message
+          area:
+
+                  --- Message Area $A: ^$B^
+
+          This will print the following when called using the syntax of the
+          previous section:
+
+                  --- Message Area 1: Messages to the Sysop                                      Messages to the Sysop
+
+          when $A and $B are assigned the values assigned to A and B.
+
+          Ok, the prompt line works fine, but how does this affect data
+          lines?  The same way.  Here are sample menu prompt and data lines
+          from the same menu:
+
+                  prompt: "<^$$^> Scan messages"
+                    data: "$C"
+
+          This will actually become the following when the menu is actually
+          called:
+
+                  prompt: <$> Scan messages                           $
+                    data: 24
+
+          which will pass the number 24 to the Scan function (we assume
+          this was a type 18 menu and that message board 24 is where sysop
+          messages are!).  The $$ is interpreted as representing a single
+          dollar sign ($).
+
+
+
+
+
+
+
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 30                                       Page 30
+
+
+
+
+
+
+
+
+
+
+
+
+                                      Chapter 6                                      Chapter 6
+
+                        Setting up Downloadable and QWK Mail                        Setting up Downloadable and QWK Mail
+
+
+          As of version 1.04, Simplex handles downloadable mail.  This
+          permits users who keep track of large message bases to be able to
+          download their mail (optionally in compressed form) using a
+          protocol, and then using an ASCII file reader/browser (such as
+          LIST in DOS or LSTPM in OS/2) to read their mail offline.
+
+          In order to implement the downloadable feature, you must define a
+          fileattach directory in SCONFIG.  You must ensure that there are
+          a few megabytes of space free on the drive you specify at any
+          time depending upon the total amount of mail most users would
+          download).
+
+          If you are not running Net mail and wish users of the
+          downloadable mail to have access to the different archivers, you
+          must set up archivers in SCONFIG.  Whatever archivers that you
+          provide command line templates for will be presented to the user
+          as options.  To set up an archiver, find the respective line
+          corresponding to the archiver (ARC, ZIP, LZH, or ZOO) under
+          option 5 and enter a template line as follows:
+
+                  [path]archiver [options] %A %F
+
+          where %A is the name of the archive-file that will be generated
+          by Simplex and %F is the name of the file that will be inserted
+          into the archive.  Simplex will look along the path for the
+          archiver before running.  Here are some examples of some command
+          lines:
+
+                  ARC Command: arc a5 %A %F
+                  ZIP Command: pkzip -a %A %F
+                  LZH Command: lh2 A %A %F /i /c /o
+
+          While Simplex is diligent about deleting the files it creates, it
+          might not be a bad idea to add a cleanup routine to the batch
+          file that runs your BBS like this:
+
+                  del d:\files\fattach\mail*.dl > NUL
+                  del d:\files\fattach\mail*.arc > NUL
+                  del d:\files\fattach\mail*.zip > NUL
+                  del d:\files\fattach\mail*.lzh > NUL
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 31                                       Page 31
+
+
+
+
+
+
+                  del d:\files\fattach\mail*.zoo > NUL
+
+          which would ensure that the area is kept clean.
+
+          QWK mail support was added in version 1.05.02.  This type of mail
+          permits users to download their messages, read them offline with
+          an offline mail reader, reply to them, and then upload the
+          replies.  QWK mail replies are only accepted for areas for which
+          the user has write permission.  QWK netmail is handled by having
+          the first line in the reply equal to FROM: [zone:]net/node
+          followed by a newline.  The [zone:] is optional.  If the user has
+          enough credit, it is sent direct.  If not, it is sent routed.  If
+          the address doesn't exist, then it is marked hold.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 32                                       Page 32
+
+
+
+
+
+
+
+
+
+
+
+
+                                      Chapter 7                                      Chapter 7
+
+                               Simplex Ancillary Files                               Simplex Ancillary Files
+
+
+          Simplex BBS requires a number of files to be provided by the user
+          in order to do its normal work and to present a helpful and
+          friendly interface to the user.  The following sections outline
+          the files that Simplex looks for under various conditions.  These
+          files are named with extensions for users who are using ANSI and
+          those who are not.
+
+          If the user is running ANSI, then the user is presented with the
+          contents of filename.ANS.  If this file cannot be found, or if
+          the user has ANSI off, the contents of filename.ASC are shown.
+          This means that you can include as many ANSI sequences as you
+          wish in the .ANS file but leave them out of the .ASC.  If you use
+          the SANSI compiler, it will automatically prepare the two
+          distinct files for you.
+
+
+
+                                 7.1  Files for Help                                 7.1  Files for Help
+
+
+          The files that present help screens should attempt to be very
+          helpful yet concise at the same time.  No user appreciates being
+          swamped with information when they ask for help!  These files
+          must be in the configured screen path.
+
+          DLHELP.A??     This file presents help on the download protocols
+                         available on your Simplex system.  It is accessed
+                         by pressing H at the Download Menu.
+
+          ULHELP.A??     This file presents help on the upload protocols
+                         available on your Simplex system.  It is accessed
+                         by pressing H at the Upload Menu.
+
+          NODEHELP.A??   This file presents help on the choices in the
+                         Search Nodelist Menu.
+
+          READHELP.A??   This file presents help on the choices available
+                         in the Read Messages Menu.
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 33                                       Page 33
+
+
+
+
+
+
+          TOPICHLP.A??   This file is shown when a user presses H in the
+                         Read Topics Menu.
+
+          EDITHELP.A??   This file is invoked by requesting help from the
+                         Line Editor Menu.  It should describe the options
+                         available to the user of the Line Editor.
+
+          ANSIHELP.A??   This file presents help when the user of the Full
+                         Screen Editor presses ^K ?.  It should present a
+                         list of the options available in that editor.
+
+          QSHELP.A??     This file presents the user with help for using
+                         the QuickScan option in a message area.
+
+          SCANHELP.A??   This file is shown when a user requests help in
+                         the Scan Menu of a message area.
+
+          ADHELP.A??     This file is shown when in read mode while in an
+                         Ad/User Bulletin area.
+
+          DOWNMAIL.A??   This file is shown when in the Combined Boards
+                         Download mail menu.
+
+          COMBCFG.A??    This file is shown when in the Combined Boards
+                         Configuration menu.
+
+
+
+                                 7.2  General Files                                 7.2  General Files
+
+
+          These files are called upon in certain specific situations during
+          the running of Simplex.  They are almost essential for providing
+          a friendly interface between your BBS and the user.  These files
+          must be in the configured screen path.
+
+          TOOSLOW.ASC    This file does not have an ANSI flavor since the
+                         user's ANSI preference is not known at the time it
+                         is shown.  It is shown when a user has logged on
+                         with a modem slower than your minimum baud rate
+                         configured in SCONFIG.
+
+          LOGO.ASC       This file is shown before the user is asked for
+                         his/her name.  Since the user's ANSI preference is
+                         not yet known, there is no ANSI flavor of this
+                         file.  It is not wise to embed ANSI codes in it
+                         since it might cause undesirable side-effects on
+                         the user's terminal.
+
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 34                                       Page 34
+
+
+
+
+
+
+          NOTFOUND.ASC   This file is shown after a user enters a name that
+                         is not in the userlist, and before the user is
+                         prompted if they entered the correct name.
+
+          PRIVATE.ASC    This file is shown only if the user's name is not
+                         in the userlist and the BBS is configured for
+                         preregistered operation.
+
+          NONGRATA.ASC   This file is shown after a user has confirmed that
+                         their name is correct, and their name is found in
+                         the NONGRATA.BBS file.
+
+          ANSI.ASC       This file is shown after a user has indicated that
+                         their name was spelled correctly and it was not in
+                         the userlist.  It is wise to indicate to the user
+                         that they will be asked a few questions which will
+                         help to configure the system to their liking, and
+                         maybe to explain the meaning of ANSI to them.
+
+          PASSWORD.A??   This file is sent before the new user enters
+                         his/her password into the system, or when a user
+                         opts to change his/her password.  It should
+                         indicate that they must choose a password of at
+                         least 4 characters and that it should be easy to
+                         remember yet difficult for close friends to guess.
+
+          NEWUSER.A??    This file is shown to a user after they have
+                         finished filling out the new-user questions and
+                         provided a password.  This is before they are
+                         provided with the welcome screen (or any of the
+                         other files below).  It is a good idea to welcome
+                         them to your system and maybe to explain some of
+                         the rules of conduct.
+
+          NEWUSER.QF     This is a questionaire file that is shown to the
+                         user one time.  It is shown between NEWUSER.A??
+                         and NEWUSER2.A?? if the user has never answered
+                         the questionaire.  Upon completion of the file,
+                         USER_ANSWERED flag is set in the user's flags.
+
+          NEWUSER2.A??   This file is shown to users who have called less
+                         than 5 times.  It is a good idea to use it to give
+                         a few pointers on the use of your system.
+
+          WELCOME.A??    This file is shown to a user after logging in, or
+                         to a new user after NEWUSER2.A??.  It precedes the
+                         automatic mail check.  This is the place to put a
+                         splashy logo screen since Simplex knows at this
+                         point if the user runs ANSI or not!
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 35                                       Page 35
+
+
+
+
+
+
+          DAYQUOTE.CQ    This is a compiled quote file (see SQUOTE in
+                         SIMPLEX.DOC) which is searched for a "random"
+                         quote for the day.  A quote from this file will be
+                         shown after WELCOME.A?? and before checking for
+                         mail.
+
+          BULLETIN.A??   This file shows the latest news on the system to a
+                         user logging in.  It is shown after the
+                         WELCOME.A?? and the mail check.
+
+          DAYQUOT2.CQ    This is a second compiled quote file (see SQUOTE
+                         in SIMPLEX.DOC) which is searched for a "random"
+                         quote for the day.  A quote from this file will be
+                         shown after BULLETIN.A??.
+
+          INFO.A??       This file is shown after the bulletin file.  It
+                         can be used for anything the Sysop desires.
+
+          INFO2.A??      This file is shown after the bulletin and info
+                         files.  It can be used for anything that the Sysop
+                         desires.
+
+          NOANSWER.A??   This file is shown after a user has yelled and the
+                         Sysop did not answer immediately.  It should
+                         explain to the user that the Sysop is unavailable
+                         and that he/she might break in and chat while they
+                         continue using the board normally.
+
+          TOOMANY.A??    This file is shown after a user has attempted to
+                         yell but does not have any remaining yells (as set
+                         in SCONFIG).
+
+          NOYELL.A??     This file is shown when the user attempts to yell
+                         but it is outside of the yell hours configured in
+                         SCONFIG.  It should indicate to the user that they
+                         should leave the Sysop a message instead.
+
+          GOODBYE.A??    This is the last file that the user sees after
+                         logging off of your BBS.  It is shown before the
+                         modem is told to hang-up.
+
+
+
+                            7.3  Files Created by SCONFIG                            7.3  Files Created by SCONFIG
+
+
+          The following files are normal in the Simplex home directory and
+          are created by SCONFIG.  They are not meant to be deleted or
+          edited by any means other than with SCONFIG.
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 36                                       Page 36
+
+
+
+
+
+
+          CONFIG.BBS     This file contains the configuration information
+                         needed by Simplex and its utilities.  This
+                         information includes the BBS name, the Sysop name,
+                         the paths to different directories, and Net
+                         addresses.
+
+          EVENTS.BBS     This file contains the event information used by
+                         Simplex.
+
+          FILEAREA.BBS   This file contains the path and file area name
+                         information referenced by menus.
+
+          MSGAREA.BBS    This file contains the message area information
+                         which is referenced by menus.
+
+
+
+                            7.4  Files Needed by Simplex                            7.4  Files Needed by Simplex
+
+
+          The following files are absolutely essential for Simplex's
+          operations and must be in the Simplex home directory.  Notice,
+          Ctrl-Z cannot appear as the End-of-file marker.  This rules out
+          using editors like EDLIN.  If your editor uses Ctrl-Z for EOF,
+          you must use a program that strips Ctrl-Z's to remove them.  Most
+          good editors allow you to write files without Ctrl-Z at the end.
+
+          TIMES.BBS      This file contains in ascending priority order,
+                         the maximum amount of time in minutes per day that
+                         allowed for each privilege level.  The maximum
+                         amount is 1440 minutes (24 hours).  The file is
+                         plain ASCII text organized like this:
+
+                         <level> <time>
+
+                         as in the following:
+
+                         1 30
+                         100 60
+                         200 120
+                         255 180
+
+                         This means that any user with level 1 through 99
+                         has 30 minutes on the system.  Any user with level
+                         100 through 199 has 60 minutes on the system.  Any
+                         user with level 200 through 254 has 120 minutes on
+                         the system, and any user with level 255 has 180
+                         minutes on the system.
+
+          USERLIST.BBS   This file contains the user records.  It is
+                         maintained by using the USERLIST program or by
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 37                                       Page 37
+
+
+
+
+
+
+                         using the Sysop user-editor from within Simplex
+                         itself.
+
+          NONGRATA.BBS   This optional file contains the names of all users
+                         that you want locked out of your system.  The
+                         format of the file is as follows:
+
+                         firstname lastname
+                         firstname lastname
+
+                         for each user that you want to restrict.  If the
+                         name is found in this list when a user logs in,
+                         they are shown the NONGRATA.ASC file.
+
+          FILELIST.BBS   Each file directory needs a FILELIST.BBS.  It can
+                         be created using SCONFIG or by using a plain text
+                         editor to create a file called FILES.BBS then
+                         compiling it with SFAC (see SIMPLEX.DOC).
+                         FILES.BBS contains the names of the files along
+                         with a description line as follows:
+
+                         <filename> <description>
+
+                         The filename should be in all caps and any amount
+                         of spaces or tabs may separate it from the
+                         description.  The maximum length of a description
+                         is 256 characters.  For example:
+
+                         FILENAME.DOC  A description of this file area for
+                         my users.
+                         SIMPLEX.ZIP   The latest Simplex programs.
+                         ANOTHER.LZH Yet another file in this area.
+
+
+
+                            7.5  Files Created by Simplex                            7.5  Files Created by Simplex
+
+
+          The following files are found in the Simplex home directory and
+          are created and maintained by Simplex and its utilities.  They
+          are best left alone by the user.
+
+          MSGHEAD.BBS    This file contains the header information (such as
+                         to, from, subject) for each message in the Simplex
+                         system.  It contains an offset pointer to the
+                         relevant text in MSGBODY.BBS.
+
+          MSGBODY.BBS    This file contains the text of messages in the
+                         Simplex system.
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 38                                       Page 38
+
+
+
+
+
+
+          MSGLINK.BBS    This file contains abbreviated information about
+                         each message in the Simplex system and is used for
+                         quick searching.
+
+          MSGDATA.BBS    This file contains information about the total
+                         number of messages in Simplex and in each message
+                         area.
+
+          MSGREAD.BBS    This file contains the last-message-read pointers
+                         for each user for each message area in the Simplex
+                         system.
+
+          MSGCOMB.BBS    This file contains the combined message board
+                         information for each user.
+
+          USERINFO.BBS   This file contains information about the
+                         last/current user for external utilities to use
+                         (such as SRECENT).
+
+          DORINFO#.DEF   This file is created by Simplex before running
+                         external programs and contains information used by
+                         certain games and utilities.  The # is replaced by
+                         the node number (e.g. 1 if Simplex is on COM1, 2
+                         if on COM2, etc).
+
+          ????????.AD    These .AD files are created in the Simplex
+                         directory when the Sysop has permitted the use of
+                         Advertising areas.  The root name of the .AD file
+                         will be that specified in the menu options for
+                         handling the areas.  Simplex will create and
+                         manipulate them.  To pack them (purge deleted
+                         ads), use the SAPACK utility which is described in
+                         SIMPLEX.DOC.
+
+
+
+                        7.6  Files used by Simplex Utilities                        7.6  Files used by Simplex Utilities
+
+
+          The following files may be found in the Simplex home directory.
+          They are files that are needed by external Simplex utilities and
+          must be edited with a pure-ASCII text editor.
+
+          AREAS.BBS      See the accompanying MAIL.DOC for a description of
+                         this file.  It contains a list of all echomail
+                         areas handled by a Network node.  If the BBS
+                         doesn't handle echomail, it is not required.
+
+          SMP.CTL        See the accompanying MAIL.DOC for a description of
+                         this file.  It contains the action verbs for
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 39                                       Page 39
+
+
+
+
+
+
+                         packing and archiving mail.  If the BBS is not in
+                         a Network, then this file is not required.
+
+          SRECENT.CFG    This file contains the login names off all people
+                         that you wish to restrict from a recent callers
+                         list.  See the relevant section on SRECENT in
+                         SIMPLEX.DOC for more information.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 40                                       Page 40
+
+
+
+
+
+
+
+
+
+
+
+
+                                      Chapter 8                                      Chapter 8
+
+                        Using Simplex's Questionaire Language                        Using Simplex's Questionaire Language
+
+
+          Simplex has a rather simple but powerful questionaire language.
+          A questionaire file is an ascii file with a .QF extension which
+          is placed in the screen files directory.  This file can be
+          created using a flat-ASCII text editor.
+
+          The answer file is placed in the same directory and has the same
+          base name as the questionaire file, however it sports an .AF
+          extension.
+
+          The following is an alphabetical list of questionaire commands.
+          Commands are case-insensitive.  Strings are included in double
+          quotes like this "string".
+
+            ASK (variable) (len)
+                  This will accept up to the maximum length specified of a
+                  user's input and store it in the variable specified.
+                  After hitting Enter, the system will go to the next line.
+
+            CHOOSE (variable) (choices)
+                  This will load the variable specified with the choice
+                  letter selected from the list of choices.
+
+            CLS
+                  Clears the screen to the current color.
+
+            COLOR (foreground) [(background)]
+                  Sets the current color to the specified
+                  foreground/background (optional) color.  See section
+                  below on SMC for a description of color values.
+
+            EXIT
+                  Immediately exits the questionnaire file.
+
+            GOTO (labelname)
+                  Jumps to the label specified.  If label is not found, it
+                  will exit.
+
+            HANGUP
+                  Causes Simplex to hangup on the user immediately.
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 41                                       Page 41
+
+
+
+
+
+
+            IF (variable) = ("string")    **or**
+            IF (variable) != ("string")   **or**
+            IF (variable) = (variable)    **or**
+            IF (variable) != (variable)
+            ENDIF
+                  If the case is true, the questionnaire will fall into the
+                  if-endif.  If it is not true, it will skip over it.
+                  *Warning* Do not "nest" ifs!  The != indicates "not equal
+                  to".
+
+            LABEL (labelname)
+                  Sets the labelname as a point to which the GOTO will
+                  jump.  If a label is reused, then it will replace the
+                  previous use.
+
+            LEAVEMESSAGE (area #) ("user_name")
+                  Permits the user to leave a message to the specified
+                  username in the area.  Notice that you MUST separate
+                  first and last name with an underscore ("_") and NOT a
+                  space.
+
+            LOGENTRY ("string")   **or**
+            LOGENTRY (variable)
+                  This will stick the string into the Simplex sysop log.
+
+            PRINT ("string")      **or**
+            PRINT (variable)
+                  Shows a string of contents of a variable on the screen.
+                  Does not go to the next line.
+
+            PRINTLINE ("string")  **or**
+            PRINTLINE (variable)
+                  Shows a string of contents of a variable on the screen.
+                  This will then go to the next line.
+
+            SET (variable) = ("string")   **or**
+            SET (variable) = (variable)
+                  Sets a variable to a string value or to the value of
+                  another variable.
+
+            SETFLAG ("string")
+                  Turns on or sets the user's flags corresponding to the
+                  letters contained in the string (A through P, 16 flags)
+                  and updates the user's record.
+
+            SETPRIV (priv)
+                  Sets the user's priv level to the specified level if it
+                  is a legal value (1 - 255).
+
+            SHOW ("filename")
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 42                                       Page 42
+
+
+
+
+
+
+                  Shows a file (filename.ans if ansi is on, otherwise
+                  filename.asc if it is not.
+
+            UNSETFLAG ("string")
+                  Turns off or resets the user's flags corresponding to the
+                  letters contained in the string (A through P, 16 flags)
+                  and updates the user's record.
+
+            WRITEINFO
+                  Writes the user's name, time and date, and other info to
+                  the questionnaire answer file.
+
+            WRITE ("string")      **or**
+            WRITE (variable)
+                  Writes the string or variable to the questionnaire answer
+                  file.  This does not add a CR-LF pair at the end.
+
+            WRITELINE ("string")  **or**
+            WRITELINE (variable)
+                  Writes the string or variable to the questionnaire answer
+                  file.  This adds a CR-LF pair at the end.
+
+          Here is a sample questionnaire file to demonstrate the use of the
+          language:
+
+            color 14 0
+            cls
+            printline "Welcome to the Programmer's Oasis 2 BBS
+            Questionnaire!"
+            printline ""
+            printline ""
+            color 10 0
+            print "Do you want to take the time to answer this
+            questionnaire right now? "
+            choose yn "YN"
+            if yn = "N"
+              exit
+            endif
+            color 12 0
+            printline ""
+            printline "Thank you for choosing to answer our little
+            questionnaire."
+            printline ""
+
+            writeinfo
+            color 11 0
+
+            set prompt = "  1.  How old are you? "
+            print prompt
+            ask answer 3
+            write prompt
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 43                                       Page 43
+
+
+
+
+
+
+            writeline answer
+
+            set prompt = "  2.  How long have you called BBSes? "
+            print prompt
+            ask answer 10
+            write prompt
+            writeline answer
+
+            printline "  3.  Please let us know what BBSes and services you
+            call: "
+
+            set prompt = "    3a.  Do you use the CompuServe service? "
+            print prompt
+            choose answer "YN"
+            write prompt
+            writeline answer
+
+            set prompt = "    3b.  Do you use the GEnie service? "
+            print prompt
+            choose answer "YN"
+            write prompt
+            writeline answer
+
+            set prompt = "  4.  Do you read messages in our message areas?
+            "
+            print prompt
+            choose answer "YN"
+            write prompt
+            writeline answer
+
+            if answer = "N"
+              set prompt = "    4a.  Can you tell us why you don't read
+            messages here? "
+              printline prompt
+              ask answer1 75
+              writeline prompt
+              writeline answer1
+            endif
+            if answer = "N"
+              goto exit1
+            endif
+
+            printline "    4a.  Can you tell us some of your favorite
+            message areas (5 choices):"
+
+            set prompt = "      4a.1.  Favorite Area 1? "
+            print prompt
+            ask answer 30
+            if answer == ""
+              goto exit1
+            endif
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 44                                       Page 44
+
+
+
+
+
+
+            write prompt
+            writeline answer
+
+            set prompt = "      4a.2.  Favorite Area 2? "
+            print prompt
+            ask answer 30
+            if answer == ""
+              goto exit1
+            endif
+            write prompt
+            writeline answer
+
+            set prompt = "      4a.3.  Favorite Area 3? "
+            print prompt
+            ask answer 30
+            if answer == ""
+              goto exit1
+            endif
+            write prompt
+            writeline answer
+
+            set prompt = "      4a.4.  Favorite Area 4? "
+            print prompt
+            ask answer 30
+            if answer == ""
+              goto exit1
+            endif
+            write prompt
+            writeline answer
+
+            set prompt = "      4a.5.  Favorite Area 5? "
+            print prompt
+            ask answer 30
+            if answer == ""
+              goto exit1
+            endif
+            write prompt
+            writeline answer
+
+
+            label exit1
+
+            set prompt = "  5.  Do you like using this BBS software
+            (Simplex BBS)? "
+            print prompt
+            choose answer "YN"
+            write prompt
+            writeline answer
+
+            if answer = "N"
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 45                                       Page 45
+
+
+
+
+
+
+              set prompt = "    7a.  Can you tell us why you don't like
+            using Simplex? "
+              printline prompt
+              ask answer1 75
+              writeline prompt
+              writeline answer1
+            endif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 46                                       Page 46
+
+
+
+
+
+
+
+
+
+
+
+
+                                      Chapter 9                                      Chapter 9
+
+                             Using SANSI's Ansi Language                             Using SANSI's Ansi Language
+
+
+          SANSI is a high level language for generating Simplex's ANSI and
+          ASCII files.  The description of SANSI is in SIMPLEX.DOC.
+
+          To use SANSI, a source file must be created using a plain text
+          editor.  The special SANSI keywords are encoded using curly
+          braces as in {sequence}.  Any number of SANSI keywords may be
+          included in the curly braces separated by spaces (like {stopoff
+          cls bell}).  To encode an true opening curly brace, simply type
+          two in a row like this {{.  Following is a list of SANSI keywords
+          and codes.
+
+
+
+                       9.1  SANSI User's Personal Information                       9.1  SANSI User's Personal Information
+
+
+            SANSI keyword  Code    Representation
+            -------------- ------- ------------------------------------
+            name           `A      User's Full Name
+            first          `B      User's First Name
+            last           `C      User's Last Name
+            citystate      `D      User's City-State
+            homephone      `E      User's Home Number
+            dataphone      `F      User's Work/Data Number
+            password       `G      User's Password
+            priv           `H      User's Privilege Level (1 to 255)
+            flags          `I      User's Flags
+
+
+
+                           9.2  SANSI User's BBS Settings                           9.2  SANSI User's BBS Settings
+
+
+            SANSI keyword  Code    Representation
+            -------------- ------- ------------------------------------
+            baud           `M      User's Baud Rate (300 -> 19200 or Local)
+            ansi           `N      User's Ansi Setting (On or Off)
+            more           `O      User's More Setting (On or Off)
+            clear          `P      User's Clearscreen Setting (On or Off)
+            editor         `Q      User's Editor Setting (Line or Ansi)
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 47                                       Page 47
+
+
+
+
+
+
+            expert         `R      User's Expert-mode Setting (On or Off)
+            pagelen        `S      Length of User's Screen Page (for More)
+            credit         `T      User's Netmail Credit ($x.xx)
+            minbaud        `U      Minimum Baud Allowed to Log In
+            ansibaud       `V      Minimum Baud Allowed to have ANSI
+            yellstart      `W      Starting Time for Yell Period
+            yellstop       `X      Ending Time for Yell Period
+            dlstart        `Y      Starting Time for Allowing DL's
+            dlstop         `Z      Ending Time for Allowing DL's
+
+
+
+                       9.3  SANSI User's Time/File Information                       9.3  SANSI User's Time/File Information
+
+
+            SANSI keyword  Code    Representation
+            -------------- ------- ------------------------------------
+            firstdate      `a      Date of User's First Call (MM/DD/YY)
+            lastdate       `b      Date of User's Last Call (MM/DD/YY)
+            lasttime       `c      Time of User's Last Call (HH:MM)
+            totaltime      `d      User's Total Daily Time (M mins S secs)
+            timeused       `e      Total Time Used Today (M mins S secs)
+            timeleft       `f      Time Remaining for Today (M mins S secs)
+            timeon         `g      Time Used During This Call (M mins S
+            secs)
+            ul             `h      User's Total Uploads (Number of Files)
+            ulkb           `i      User's Total Uploaded Bytes (Kilobytes)
+            dl             `j      User's Total Downloads (Number of Files)
+            dlkb           `k      User's Total Downloaded Bytes
+            (Kilobytes)
+            calls          `l      Number of User's Calls to System
+            msgsread       `m      User's Total Messages Read
+            msgsent        `n      User's Total Messages Sent
+
+
+
+                            9.4  SANSI System Information                            9.4  SANSI System Information
+
+
+            SANSI keyword  Code    Representation
+            -------------- ------- ------------------------------------
+            day            `p      Day of Week (Monday,...Sunday)
+            shortday       `q      Short Day of Week (Mon,... Sun)
+            date           `r      Date (MM/DD/YY)
+            time           `s      Time (HH:MM:SS)
+            yells          `t      Number of Times User Yelled for Chat
+            users          `u      Total Number of Users on System
+            lastuser       `v      Last User on System
+            bbsname        `w      BBS's Name
+            sysopname      `x      Sysop's Name
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 48                                       Page 48
+
+
+
+
+
+
+                              9.5  SANSI System Control                              9.5  SANSI System Control
+
+
+            SANSI keyword  Code    Representation
+            -------------- ------- ------------------------------------
+            moreoff        `0      Turn [More] Off
+            moreon         `1      Turn [More] back On (If user allows it)
+            stopoff        `2      Turn [Stop] Off
+            stopon         `3      Turn [Stop] On
+            enter          `4      Pause and Wait for [Enter] to be Pressed
+            cls            `5      Clearscreen code (FF character)
+            bell           `6      Bell
+            bs             `7      Backspace
+
+
+
+                              9.6  SANSI ANSI Sequences                              9.6  SANSI ANSI Sequences
+
+
+            SANSI keyword  Representation
+            -------------- ------------------------------------
+            black          Set black foreground
+            red            Set red foreground
+            green          Set green foreground
+            brown          Set brown foreground
+            blue           Set blue foreground
+            magenta        Set magenta foreground
+            cyan           Set cyan foreground
+            white *or*
+            lightgray      Set white foreground
+            gray *or*
+            lightblack     Set gray foreground
+            lightred       Set light red foreground
+            lightgreen     Set light green foreground
+            yellow *or*
+            lightbrown     Set yellow foreground
+            lightblue      Set light blue foreground
+            lightmagenta   Set light magenta foreground
+            lightcyan      Set light cyan foreground
+            lightwhite     Set bright white foreground
+            onblack        Set black background
+            onred          Set red background
+            ongreen        Set green background
+            onbrown        Set brown background
+            onblue         Set blue background
+            onmagenta      Set magenta background
+            oncyan         Set cyan background
+            onwhite        Set white background
+            blink          Set blinking characters
+            erasetoeol     Erase to End of Line
+            erasetoeos     Erase to End of Screen
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 49                                       Page 49
+
+
+
+
+
+
+            erasefromtos   Erase to cursor from top of screen
+            erasescreen    Erase screen
+            cursorup       Move cursor up one line
+            cursordown     Move cursor down one line
+            cursorleft     Move cursor left one character
+            cursorright    Move cursor right one character
+            home           Home cursor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 50                                       Page 50
+
+
+
+
+
+
+
+
+
+
+
+
+                                     Chapter 10                                     Chapter 10
+
+                        Using SMC, the Simplex Menu Compiler                        Using SMC, the Simplex Menu Compiler
+
+
+          In order to speed up development of menus on big Simplex
+          applications, it might be easier to use SMC, the Simplex Menu
+          Compiler.  This allows you to use a text editor to build menu
+          source files, and thus be able to use the block-copy and
+          find/replace facilities of the editor to ease the burden of menu
+          development.  For more information on SMC, read the respective
+          section in SIMPLEX.DOC.
+
+          SMC keywords are the following:
+
+            menu "STRING"
+                  This sets the name of the menu file and resets the line
+                  number counter.  Maximum length of string is 8
+                  characters.
+                          e.g.  menu "main"
+
+            prompt "STRING"
+                  Sets the string as the prompt and all subsequent
+                  information before the next "menu" or "line" keywords
+                  will refer to the prompt.  Maximum length for string is
+                  70 characters.
+                          e.g.  prompt "[^$r min^] What is your choice? "
+
+            line "STRING"
+                  Sets the string as a menu line and all subsequent
+                  information before the next "menu", "prompt", or "line"
+                  keywords will refer to the new line.
+                          e.g.  line "<^M^> Go to Message Areas"
+
+            define DEFINITION NUMBER      **or**
+            define DEFINITION "string"
+                  Allows the definition of a constant value, either numeric
+                  or string.  Later use of the definitions will be
+                  substitued for the representative number or string by the
+                  compiler.
+                          e.g. define WHITE 15
+                          e.g. define RETURN "<^M^> Return to main menu"
+
+            type NUMBER
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 51                                       Page 51
+
+
+
+
+
+
+                  This is only valid in a "line" clause and sets the type
+                  of the menu item to the specified value.  For a list of
+                  menu types see above or type SMC without parameters.
+                          e.g.  type 0  /* show a menu line */
+
+            priv VALUE
+                  This is only valid in a "line" clause and sets the user
+                  privilege needed to see/access the menu item.  This value
+                  may be between 0 and 255.
+                          e.g.  priv 255
+
+            flags "flag_vals"
+                  This is only valid in a "line" clause and sets the user
+                  flags needed to see/access the menu item.  Flags are
+                  lettered from A to P (16 flags).
+                          e.g.  flags "ABJMP"
+
+            color VALUE
+                  This is valid in a "line" clause or a "prompt" clause.
+                  It sets the non-highlighted color for either the current
+                  line or the current prompt.  The value is a normal IBM
+                  color value from 0 to 255.  See below for a list of color
+                  values.
+                          e.g.  color 10
+
+            hilite VALUE
+                  This is valid in a "line" clause or a "prompt" clause.
+                  It sets the hilighted color for either the current line
+                  or the current prompt.  The value is a normal IBM color
+                  value from 0 to 255.  See below for a list of color
+                  values.
+                          e.g.  hilite 14
+
+            key "CHARACTER"
+                  This is valid only in a "line" clause and it sets the
+                  value of the hotkey to trigger the option for that menu
+                  line.  A character is any value >= ASCII 32 decimal.  To
+                  specify a non-keyed line, use key "" with nothing between
+                  the quotes.  The character may be upper or lowercase,
+                  however when a character is receieved by the menu
+                  handler, it is case does not matter (i.e. there is no
+                  difference between key "A" and key "a").
+                          e.g.  key "A"
+
+            auto
+                  This is valid only in a "line" clause and indicates that
+                  the menu item autoexecutes when its line is being shown.
+                  See menu type 49 above for an example of using
+                  autoexecution.
+                          e.g.  auto
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 52                                       Page 52
+
+
+
+
+
+
+            expert
+                  This is valid only in a "line" clause and indicates that
+                  the menu item is shown even if a user has expert mode
+                  toggled on.  At least menu titles should be qualified
+                  with the expert keyword so that a user can know where
+                  they are on your system.
+                          e.g.  expert
+
+            data "STRING"
+                  This is valid only in a "line" clause.  It is used to
+                  provide the additional data line needed by various menu
+                  types (see above).  Maximum length of string is 70
+                  characters.
+                          e.g.  data "logoff password"
+
+          Color values in the IBM machine consist of an 8 bit number which
+          is broken up as follows:
+
+                  High   | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |   Low
+                           ^ | Background| ^ | Foreground|
+                         Blink          Hilight
+
+          The background and foreground colors range from 0 to 7 and
+          represent the following:
+
+                  0  Black                4  Red
+                  1  Blue                 5  Magenta
+                  2  Green                6  Brown (Dark Yellow)
+                  3  Cyan                 7  Light Gray (Dark White)
+
+          The highlight bit refers to the foreground color so that
+          essentially the following color numbers in the lower 4 bits
+          indicate the following colors:
+
+                  8  Dark Gray            12 Light Red
+                  9  Light Blue           13 Light Magenta
+                  10 Light Green          14 Yellow
+                  11 Light Cyan           15 White
+
+          The blink bit will make the foreground color blink.  Here is a
+          list of all of the possible combinations using a black
+          foreground:
+
+                  0   Black on black      128 Blink black on black
+                  16  Black on blue       144 Blink black on blue
+                  32  Black on green      160 Blink black on green
+                  48  Black on cyan       176 Blink black on cyan
+                  64  Black on red        192 Blink black on red
+                  80  Black on magenta    208 Blink black on magenta
+                  96  Black on brown      224 Blink black on brown
+                  112 Black on white      240 Blink black on white
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 53                                       Page 53
+
+
+
+
+
+
+          Using this table, merely add your desired foreground color to the
+          base value given, and you will have the number for that color.
+          For example, light red on white is 12 + 112 = 124!
+
+          In strings, to encode a literal " (double quote), use the
+          sequence \".  For example, "this is a \"string\"" will become:
+
+                  this is a "string"
+
+          after it is compiled.
+
+          In menu lines and menu data lines, the following meta commands
+          are recognized and are substituted accordingly:
+
+                  $$  Dollar sign         $r  Time left for call (mins)
+                  $f  User's first name   $l  User's last name
+                  $d  Current date        $t  Current time
+                  $a  User's ANSI flag    $u  User's number on system
+                  $b  User's baud rate    $## File board's directory
+
+          In menu lines the following have special significance:
+
+                  $c  As the final two chars of a line means "continue"
+                      next menu line without going to next line.
+                  ^   Indicates a change of color from normal to hilight or
+                      vice versa.
+                  ^^  Means show a caret (^) mark.
+
+          In data lines the following have special significance:
+
+                  $*  Shell with hot fossil (DOS only).  Do not
+                      deinitialize fossil driver before executing program.
+                      Note that this option is not passed as a parameter to
+                      the program in a type 240 menu option.
+                  $e  After executing program, pause and wait for Enter
+                      before continuing.  Note that this option is not
+                      passed as a parameter to the program in a type 240
+                      menu option.
+
+          Here is a sample fragment of an SMC script for a menu:
+
+            /* Comments are done like this and can span
+            ** multiple lines. */
+
+
+            menu "logoff"   /* this begins the menu called logoff */
+              prompt "[^$r min^] What is your choice?"
+                color 15    hilite 14
+
+              line "[ ^Log Off Menu ^ >----------------------"
+                type 0  expert  priv 0  color 13  hilite 14
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 54                                       Page 54
+
+
+
+
+
+
+              line "" /* blank "space holder" line */
+                type 0  priv 0  color 7  hilite 15
+
+              line ""
+                type 0  priv 0  color 7  hilite 15
+
+              line "<^Y^> Yes, log me off right now!"
+                type 255  key "Y"  priv 0  color 11  hilite 14
+
+              line "<^N^> No, do not log me off!"
+                type 3  key "N"  priv 0  color 10  hilite 14
+
+              line "<^L^> Leave a message to Sysop and log off!"
+                type 16  key "L"  data "1 /T=Chris_Laforet /L"
+                priv 0  color 12  hilite 14
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                          Setup Manual          Simplex BBS                                          Setup Manual
+                                       Page 55                                       Page 55
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Contents                                    Contents
+
+
+
+               Chapter 1  Legalistic Mumbo-Jumbo (i.e. Better Read
+                          This Stuff)                                2
+
+               Chapter 2  Basic Setup Information                    4
+                  2.1  Setting Up Simplex BBS Paths  . . . . . . . . 4
+
+               Chapter 3  SCONFIG: Simplex's Configuration Utility   6
+                  3.1  Field Editing Keystrokes  . . . . . . . . . . 6
+                  3.2  Box Editing Keystrokes  . . . . . . . . . . . 7
+                  3.3  BBS Info: Edit General BBS Info . . . . . . . 8
+                  3.4  BBS Info: Edit Miscellaneous Info . . . . . . 8
+                  3.5  Edit Modem Information  . . . . . . . . . . . 9
+                  3.6  Path/Archiver Info: Edit General BBS Paths . 10
+                  3.7  Path/Archiver Info: Edit Network BBS Paths . 11
+                  3.8  Path/Archiver Info: Edit Archiver Paths . .  11
+                  3.9  Path/Archiver Info: Edit Unarchiver Paths .  12
+                  3.10  Edit Message Boards  . . . . . . . . . . .  13
+                  3.11  File Board Info Menu: Edit File Boards . .  14
+                  3.12  File Board Info Menu: Edit File Listings .  15
+                  3.13  Edit Userlist Info . . . . . . . . . . . .  16
+
+               Chapter 4  Simplex Menu Types                        17
+
+               Chapter 5  Menu Templates                            29
+                  5.1  Assigning Menu Template Macros  . . . . . .  29
+                  5.2  Using Template Macro Assignments  . . . . .  30
+
+               Chapter 6  Setting up Downloadable and QWK Mail      31
+
+               Chapter 7  Simplex Ancillary Files                   33
+                  7.1  Files for Help  . . . . . . . . . . . . . .  33
+                  7.2  General Files . . . . . . . . . . . . . . .  34
+                  7.3  Files Created by SCONFIG  . . . . . . . . .  36
+                  7.4  Files Needed by Simplex . . . . . . . . . .  37
+                  7.5  Files Created by Simplex  . . . . . . . . .  38
+                  7.6  Files used by Simplex Utilities . . . . . .  39
+
+               Chapter 8  Using Simplex's Questionaire Language     41
+
+               Chapter 9  Using SANSI's Ansi Language               47
+                  9.1  SANSI User's Personal Information . . . . .  47
+
+
+
+                                          i
+
+
+
+
+
+
+                  9.2  SANSI User's BBS Settings . . . . . . . . .  47
+                  9.3  SANSI User's Time/File Information  . . . .  48
+                  9.4  SANSI System Information  . . . . . . . . .  48
+                  9.5  SANSI System Control  . . . . . . . . . . .  49
+                  9.6  SANSI ANSI Sequences  . . . . . . . . . . .  49
+
+               Chapter 10  Using SMC, the Simplex Menu Compiler     51
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                         ii
+

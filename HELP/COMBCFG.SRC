@@ -1,0 +1,12 @@
+{moreoff lightred}Help for the {lightgreen}Combined Configuration Menu {lightmagenta}------------------
+
+{yellow}<C> Change x -> y     {cyan}- Toggle from ASCII mail downloading to QWK mail
+                        downloading or vice-versa.
+{yellow}<A> Set Archiver Type {cyan}- This leads to a sub menu which permits you to 
+                        set a default archiver for archiving your mail.
+{yellow}<I> Set Includes      {cyan}- Toggle which files are included with the QWK
+                        mail packet.
+{yellow}<S> Show Settings     {cyan}- Show your current configuration settings.
+{yellow}<X> Exit              {cyan}- Exit to the previous menu.
+
+{lightcyan}Press {lightred blink}ENTER {lightcyan}to continue....{enter}

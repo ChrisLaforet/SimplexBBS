@@ -1,0 +1,8 @@
+srecent.exe : srecent.obj
+	wlink @makefile.lst
+	bind srecent.exe e:\lib\os2.lib 
+
+srecent.obj : srecent.c srecent.h
+	wcl -ms -ox -0 -s -zp1 -w4 -c srecent.c > srecent.err
+	type srecent.err
+	

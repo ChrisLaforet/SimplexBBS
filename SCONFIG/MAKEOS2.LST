@@ -1,0 +1,33 @@
+name sconfig2.exe
+format os2 pmcompatible
+option protmode
+option packcode=64k
+option caseexact
+option map
+option stack=8192
+option heapsize=8192
+library clibl.lib
+library os2.lib
+file os2\sconfig.obj
+file os2\s_apath.obj
+file os2\s_cfg.obj
+file os2\s_date.obj
+file os2\s_event.obj 
+file os2\s_fedit.obj
+file os2\s_file.obj
+file os2\s_flist.obj
+file os2\s_gen.obj 
+file os2\s_gpath.obj
+file os2\s_main.obj
+file os2\s_medit.obj
+file os2\s_menu.obj
+file os2\s_misc.obj
+file os2\s_modem.obj
+file os2\s_msel.obj
+file os2\s_msg.obj
+file os2\s_npath.obj
+file os2\s_times.obj
+file os2\s_upath.obj
+file os2\s_users.obj
+file os2\s_util.obj
+

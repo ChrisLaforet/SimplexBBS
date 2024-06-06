@@ -1,0 +1,8 @@
+susage.exe : susage.obj
+	link susage,,,/NOD:slibce slibcep doscalls,susage.def
+	bind susage.exe e:\lib\os2.lib 
+
+susage.obj : susage.c susage.h
+	cl -AS -FPi -Zp1 -Oit -W3 -Gs -c susage.c > susage.err
+	type susage.err
+	

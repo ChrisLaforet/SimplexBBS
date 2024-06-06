@@ -1,0 +1,15 @@
+sfac.exe : sfac.obj s_date.obj s_flist.obj
+	link /ST:8192 sfac s_date s_flist;
+
+sfac.obj : sfac.c sfac.h
+	cl -AS -Ocgilnt -Gs -Zp1 -FPi -W3 -c sfac.c > sfac.err
+	type sfac.err
+
+s_date.obj : s_date.c sfac.h
+	cl -AS -Ocgilnt -Gs -Zp1 -FPi -W3 -c s_date.c > s_date.err
+	type s_date.err
+
+s_flist.obj : s_flist.c sfac.h
+	cl -AS -Ocgilnt -Gs -Zp1 -FPi -W3 -c s_flist.c > s_flist.err
+	type s_flist.err
+

@@ -1,0 +1,8 @@
+slink: slink.o s_build.o
+	ld -Ml -s -F2000 -o slink slink.o s_build.o
+
+slink.o: slink.c slink.h
+	cc -DXENIX -O -pack -W3 -Mle -s -c slink.c
+	
+s_build.o: s_build.c slink.h
+	cc -DXENIX -O -pack -W3 -Mle -s -c s_build.c

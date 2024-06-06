@@ -1,0 +1,43 @@
+This is version 1.07.00.  Among other things the following were done:
+
+ - Fixed problem with initialization going into endless loop.
+ - Made baud rate an unsigned so that 38400 baud will not be "less than"
+   minimum baudrate for ANSI.
+ - Added an option for ringback users so that they could pass in the number
+   of rings system arms on.
+ - Fixed editor line duplication bug.
+ - Fixed problem with FastLst processed nodelist not finding zone 1.
+ - Fixed OS/2 chat to not chirp when in chat mode while in a VIO window.
+ - Fixed the bug in QWK imports that prevented netmail to be handled
+   correctly.
+ - Fixed local QWKmail import/export errors.
+ - Added option to read only new messages in a topic thread.
+ - Added new pkzip 2.xx format handling to view archive option.
+(Beta release #1)
+
+ - Changed help keystroke to "?" instead of "h" on system menus.
+ - Simplified topical new message reading handling even more.
+ - Changed zmodem retries from 30 sec to 90 sec.
+ - Changed x and ymodem retries from 50 to 90 sec.
+ - Fixed bug in system-message handling that caused junk to be printed.
+ - Fixed problem in replying to messages while threading foreward/backward.
+ - Allowed message uploading into bulletin area.
+ - Made registered aliases.
+(Beta release #2)
+
+ - Added BADALIAS.BBS support.
+ - Made status line reflect "*YELL*" if user attempts to yell outside of
+   hours.
+(Beta release #3)
+
+ - Added SANSI support to show aliases in source files.
+ - Corrected oversight in netmail replies from echos not allowing aliases
+   *IF* the netmail area is marked aliases allowed.
+ - Fixed bug in netmail-reply from an alias echomail area.  Subject line was
+   being corrupted.
+ - Allowed /NU flag to suppress showing of uploader name and upload date in
+   file listing (forward/reverse) and search for file by date and keyword.
+ - Added topic-sorting option to Simplex QWK mail handling.
+ - Removed times.bbs.  Changed cfg structure to include list of times as well
+   as a version number.  This will permit an automated install program to
+   automatically update files.

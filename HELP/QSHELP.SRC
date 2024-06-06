@@ -1,0 +1,15 @@
+{moreoff lightred}Help for the {lightgreen}Quickscan Menu {lightmagenta}------------------
+
+{yellow}<F> Qscan Forward  {cyan}- Perform a Quick Scan of messages in forward order
+                     from a specified message number.
+{yellow}<R> Qscan Reverse  {cyan}- Perform a Quick Scan of messages in reverse order
+                     from a specified message number.
+{yellow}<N> Qscan New      {cyan}- Perform a Quick Scan of new messages from the last
+                     message that you read.
+{yellow}<S> Qscan Search   {cyan}- Perform a Quick Scan in the fields:  To Name, From
+                     Name, or Subject.  You will be prompted for the
+                     field of your choice.
+{yellow}<X> Exit           {cyan}- Exits to the previous menu.
+
+{lightcyan}Press {lightred blink}ENTER {lightcyan}to continue....{enter}
+

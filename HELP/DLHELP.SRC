@@ -1,0 +1,20 @@
+{moreoff lightred}Help for the {lightgreen}Download Menu {lightmagenta}------------------
+
+{yellow}<1> Xmodem       {cyan}- This is the most common protocol and is found in most
+                   communications programs.  It is not the best choice if you
+                   have one of the others.
+{yellow}<2> Xmodem-1k    {cyan}- Same thing except it sends information at 1024 bytes
+                   in one block instead of 128 bytes like Xmodem.  This makes
+                   it a little faster.
+{yellow}<3> Ymodem-Bat   {cyan}- Batch Ymodem.  This protocol is similar to Xmodem-1K
+                   but also sends filenames, sizes, and dates.  This means 
+                   that you can send multiple files at the same time.
+{yellow}<4> Ymodem-G     {cyan}- This is similar to Batch Ymodem except it has no error
+                   correction.  Use this ONLY if your modem handles MNP error
+                   correction.
+{yellow}<5> Zmodem       {cyan}- The fastest one of all if you do not have an MNP modem.
+                   It has automatic download startup, automatic resume, and
+                   other features which make it a great all-round protocol.
+{yellow}<X> Exit         {cyan}- Exits to the previous menu.
+
+{lightcyan}Press {lightred blink}ENTER {lightcyan}to continue....{enter}

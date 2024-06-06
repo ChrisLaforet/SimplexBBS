@@ -1,0 +1,12 @@
+name sansi.exe
+format os2 pmcompatible
+option packcode=64k
+option caseexact
+option map
+option stack=4096
+option heapsize=1024
+library clibs
+library os2
+file sansi.obj
+file s_compil.obj
+

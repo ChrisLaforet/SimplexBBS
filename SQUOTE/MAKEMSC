@@ -1,0 +1,4 @@
+squote.exe : squote.c
+	cl -AC -Zp1 -Ocgilnt -Fb -Lp squote.c > squote.err
+	type squote.err
+

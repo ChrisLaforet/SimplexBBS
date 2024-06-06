@@ -1,0 +1,21 @@
+# Makefile for Watcom C 9.0
+#
+# SPACK/2 - Mail packing for Simplex/2
+
+
+spack2.exe : os2\spack.obj os2\s_analys.obj os2\s_pack.obj
+	wlink @makeos2.lst
+
+os2\spack.obj : spack.c spack.h
+	wcl -mc -ox -2 -s -zp1 -fo=os2\ -w4 -dPROTECTED -c spack.c > spack.err
+	type spack.err
+
+os2\s_analys.obj : s_analys.c spack.h
+	wcl -mc -ox -2 -s -zp1 -fo=os2\ -w4 -dPROTECTED -c s_analys.c > s_analys.err
+	type s_analys.err
+
+os2\s_pack.obj : s_pack.c spack.h
+	wcl -mc -ox -2 -s -zp1 -fo=os2\ -w4 -dPROTECTED -c s_pack.c > s_pack.err
+	type s_pack.err
+
+

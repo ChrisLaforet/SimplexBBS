@@ -1,0 +1,5 @@
+NAME		LATECHAT2
+DESCRIPTION	'LateChat/2 -- A second chat option for Quickbbs and Simplex.'
+STACKSIZE 	4096
+EXETYPE		OS2
+PROTMODE

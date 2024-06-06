@@ -1,0 +1,8 @@
+smailfix.exe : smailfix.obj
+	link smailfix,,,/NOD:llibce llibcep doscalls,smailfix.def
+	bind smailfix.exe e:\lib\os2.lib 
+
+smailfix.obj : smailfix.c smailfix.h
+	cl -AL -FPi -Zp1 -Ocgilnt -W3 -DBOUND -Gs -c smailfix.c > smailfix.err
+	type smailfix.err
+	

@@ -1,0 +1,15 @@
+sfac.exe : sfac.obj s_date.obj s_flist.obj
+	wlink @makefile.lst
+
+sfac.obj : sfac.c sfac.h
+	wcl -mc -ox -s -zp1 -w4 -c sfac.c > sfac.err
+	type sfac.err
+
+s_date.obj : s_date.c sfac.h
+	wcl -mc -ox -s -zp1 -w4 -c s_date.c > s_date.err
+	type s_date.err
+
+s_flist.obj : s_flist.c sfac.h
+	wcl -mc -ox -s -zp1 -w4 -c s_flist.c > s_flist.err
+	type s_flist.err
+

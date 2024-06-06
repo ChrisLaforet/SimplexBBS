@@ -1,0 +1,7 @@
+NAME 		SMAIL2 WINDOWCOMPAT
+PROTMODE
+STACKSIZE 	10240
+HEAPSIZE	8192
+DESCRIPTION 	'SMail/2 -- Net mail utilities for Simplex BBS. Copyright (c) 1989-90, Christopher Laforet'
+EXETYPE		OS2
+

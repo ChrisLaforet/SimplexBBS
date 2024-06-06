@@ -1,0 +1,11 @@
+fforward.obj : fforward.c fforward.h
+	cl -AL -FPi -Ocglnt -G2s -Zp1 -DPROTECTED -c fforward.c > fforward.err
+	type fforward.err
+
+f_config.obj : f_config.c fforward.h
+	cl -AL -FPi -Ocglnt -G2s -Zp1 -DPROTECTED -c f_config.c > f_config.err
+	type f_config.err
+
+fforward.exe : fforward.obj f_config.obj
+	link fforward f_config,,,/NOD:LLIBCE LLIBCEP OS2,fforward.def
+

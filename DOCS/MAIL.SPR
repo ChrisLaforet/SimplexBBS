@@ -1,0 +1,356 @@
+STYLE LeftMargin 1 inch,RightMargin 1 inch,TopMargin 1 inch,BottomMargin 1.5 inch,WordSpacing 2,Spread 1 lines
+R 78,T 8 16 24 32
+FONT HELV10
+BEGIN FOOTER
+FONT HELV10--------------------------------------------------
+Simplex BBSFidonet Mail Manual
+Page PAGE, t="%d"ENDF
+END FOOTER
+
+
+
+
+
+
+
+
+
+FONT COURIER10SZ12
+BEGIN CENTER
+ÚÄÄÄÄÄÄÄ¿ ÚÄ¿ ÚÄÄÄÄÄÄÄÄÄ¿ ÚÄÄÄÄÄÄ¿ ÚÄ¿      ÚÄÄÄÄÄÄ¿ ÚÄ¿   ÚÄ¿
+³ ÚÄÄÄÄÄÙ ³ ³ ³ ÚÄ¿ ÚÄ¿ ³ ³ ÚÄÄ¿ ³ ³ ³      ³ ÚÄÄÄÄÙ À¿À¿ ÚÙÚÙ
+³ ÀÄÄÄÄÄ¿ ³ ³ ³ ³ ³ ³ ³ ³ ³ ÀÄÄÙ ³ ³ ³      ³ ÀÄÄ¿    À¿ÀÄÙÚÙ 
+ÀÄÄÄÄÄ¿ ³ ³ ³ ³ ³ ÀÄÙ ³ ³ ³ ÚÄÄÄÄÙ ³ ³      ³ ÚÄÄÙ    ÚÙÚÄ¿À¿ 
+ÚÄÄÄÄÄÙ ³ ³ ³ ³ ³     ³ ³ ³ ³      ³ ÀÄÄÄÄ¿ ³ ÀÄÄÄÄ¿ ÚÙÚÙ À¿À¿
+ÀÄÄÄÄÄÄÄÙ ÀÄÙ ÀÄÙ     ÀÄÙ ÀÄÙ      ÀÄÄÄÄÄÄÙ ÀÄÄÄÄÄÄÙ ÀÄÙ   ÀÄÙ
+
+ÚÄÄÄÄÄÄÄÄÄ¿ ÚÄÄÄÄÄÄ¿ ÚÄ¿ ÚÄ¿    
+³ ÚÄ¿ ÚÄ¿ ³ ³ ÚÄÄ¿ ³ ³ ³ ³ ³    
+³ ³ ³ ³ ³ ³ ³ ÀÄÄÙ ³ ³ ³ ³ ³    
+³ ³ ÀÄÙ ³ ³ ³ ÚÄÄ¿ ³ ³ ³ ³ ³    
+³ ³     ³ ³ ³ ³  ³ ³ ³ ³ ³ ÀÄÄÄ¿
+ÀÄÙ     ÀÄÙ ÀÄÙ  ÀÄÙ ÀÄÙ ÀÄÄÄÄÄÙ
+END CENTER
+ENDF
+
+
+
+INCLUDE title.spr
+
+R 78,T 8 16 24 32
+
+CHAPTER Legalistic Mumbo-Jumbo (i.e. Better Read This Stuff)
+
+
+INCLUDE disclaim.spr
+
+CHAPTER Basic Mail Utilities
+
+This chapter describes all of the basic external mail utilities for Simplex. These utilities are basically of two types, utilities to maintain Simplex'smessage base, and utilities to handle incoming and outgoing Net mail.  
+
+Simplex's message base is contained in a series of files contained in theSimplex root directory.  The message filenames are described in theaccompanying SIMPLEX.DOC file.
+
+SECTION SCLEAN: Simplex Mail Cleaning Utility
+
+SCLEAN.EXE (or SCLEAN2.EXE for OS/2) is a message base maintenance programwhich cleans out messages from message boards.  Messages can be cleaned outcompletely from message boards, deleted if received, or deleted if older thana specified number of days.  SCLEAN has the following options:
+
+	-q      Quiet....do not show message by message activity
+	-dxx	Sets maximum days for message killing to xx
+	-nxx    Sets maximum number of messages to keep on boards to xx
+	-knxx   Kill messages on board #xx keeping maximum number in area
+	-kaxx	Kill ALL messages on board #xx
+	-kdxx	Kill messages prior to maximum days on board #xx
+	-krxx	Kill all received messages on board #xx
+
+The quiet flag can be used to speed up SCLEAN considerably on slow machines.
+
+SCLEAN can be used to kill messages older than 10 days on message boards 1, 7and 12 and kill all received messages on board 8 with the following commandline:
+
+	sclean -d10 -kd1 -kd7 -kd12 -kr8
+
+The -ka option will normally be used to remove a defunct message board'smessages from the message base.  Notice that SCLEAN merely deletes messagesand does not actually remove them from the message base.
+
+
+SECTION SPACK: Simplex Message Base Deletion
+
+SPACK.EXE (or SPACK2.EXE for OS/2) is a message base compression program.  Itwill analyse the message base and determine how many messages have beendeleted, then check file space prior to packing.  Packing may optionally bedone in-place instead of in duplicate files if disk space is at a premium,however this method is frowned upon since it might be dangerous should a powerfailure occur.
+
+SPACK has the following command line options:
+
+	-q      Quiet....do not show message activity
+	-k	Kill unreasonably sized messages (>100K each)
+	-p	Pack message base
+	-w	Write message base files in place
+
+The quiet flag will speed up SPACK considerably and should be used on slowmachines!  
+
+In order to pack the message base, use the following command line:
+
+	spack -p
+
+Notice: While SPACK runs, if it finds messages larger than 100K, it willautomatically delete them under the presumption that if a message is thatlarge, it is most likely a corruption of the message base.
+
+
+SECTION SLINK: Simplex Message Thread Linker
+
+SLINK.EXE (or SLINK2.EXE for OS/2) is a message base thread linker programwhich will link messages by topic by message board.  What SLINK loads all themessage topics for a board, removes all RE's from the topic lines, then linksmatching message topics into threads.  
+
+By default, SLINK links ALL message boards, however if a file called SLINK.BBSis located in the root Simplex directory, only the board numbers contained inthat file are linked (SLINK.BBS is a series of 16-bit ints with each boardnumber to link).  This file is generally created by SMAIL when it is importingNet mail so that SLINK would not waste time uselessly relinking boards thatwere not imported.
+
+There are no options to SLINK.  To run it, merely type SLINK (or SLINK2) onthe command line and hit Enter.
+
+
+SECTION SMAILFIX: Simplex Mail Fixer
+
+Occasionally, systems crash and lock up.  That is almost a rule in the worldof computing.  Unfortunately, these crashes and lock-ups have a nasty habit ofoccurring at the worst possible moment, and in the case of Simplex, the worstpossible moment is when the message base is being manipulated!  Since themessage base files are so intertwined, any corruption to any of the filescould be quite disasterous.
+
+Hence the raison d'etre of SMAILFIX.  Should your message base appear to havebecome corrupted, SMAILFIX gives you a chance to attempt to restore/rebuildsome of the message files so that you can recover as much of the message baseas possible.  OS/2 users should ensure that no utilities are able tomanipulate the message files while SMAILFIX is running, and both DOS and OS/2users should ensure that their systems do not shut down or reboot beforeSMAILFIX is finished.
+
+To run SMAILFIX, just type it's name on the command line and hit Enter. Notice that you should be in your Simplex root directory when you do this. SMAILFIX will prompt you if you are sure that you want to run it.  Answer Yand it will begin attempting to recover your message base.  Once it isfinished it will inform you if you need to run SLINK and/or SPACK on themessage base.
+
+An option for SMAILFIX is the -DATE (or /DATE) option.  This makes SMAILFIXdelete any messages which have a date beyond today's date.
+
+
+CHAPTER Network Mail Utilities
+
+This chapter describes the special network mail utilities provided withSimplex.  SMAIL is used in importing and exporting Netmail and echomail, whileSMP is used to packetize the resultant exported and forwarded messages.
+
+Netmail is exported from the message base in standard FSC-0001 message format. Incoming Netmail may be either in standard FSC-0001 packed message packets orin archived format.  Outgoing Net mail is prepared in standard FSC-0001 packedmessage packets and then archived by SMP.
+
+
+SECTION SMAIL: Simplex Netmail Utility
+
+SMAIL.EXE (or SMAIL2.EXE for OS/2) is a Netmail importation and exportationutility.  SMAIL is used to export Netmail and Echomail to other systems aftermail has been entered, a situation which can be determined by Simplex's exiterrorlevel.  Incoming Net and echomail can be imported into the Simplexmessage base when your front-end mailer detects incoming mail packets.
+
+The command line options for SMAIL are the following:
+
+	-ua	unarc inbound mail packets
+	-it	import/toss net and echo mail
+	-ib	import/toss net and echo mail in bad messages area
+	-nx	export netmail to other systems
+	-ex	export echomail to other systems
+	-re	report on echomail passing through the system
+	-es	enable echo security
+	-k      keep seen-by and path kludge in imported messages
+	-r	export echomail as ROUTED (normal) instead of DIRECT (CM)
+	-s	disable conversion of "sysop" messages to sysop's name
+	-#xxx	limit number of .MSG files im matrix to xxx.
+	-c###	clean out signatures over ### days old
+
+SMAIL uses the unarchiver command lines specified in SCONFIG if you specifythe -ua flag.  It also uses the packet path from SCONFIG as the destinationdirectory for the contents of the archived mail.
+
+SMAIL handles Echomail signatures, which are files containing data frommessages which have passed through the system.  These are kept in order tostop duplicate messages from being passed along.  These signatures are kept inthe Simplex directory in files called SMAILxxx.SIG where where xxx is theJulian date of the year when the signature file is created.  These files canbe maintained by using the SMAIL -c command.  This deletes signature filesolder then the specified number of days.  A reasonable period to keepsignatures is between 3 and 10 days.  Too short a period might allowduplicates to slip through, and too long a period will slow the system downexcessively while loading the files.  The best time in your setting will bebest left to experimentation!
+
+The -RE flag reads in the signature files and generates an echomail trafficreport for each area contained in the AREAS.BBS file.
+
+Echomail is exported generally as DIRECT (Crash) by SMAIL.  Since most othermail processors normally toss it out as ROUTED, SMAIL allows you to select the-R flag if this is your preferred methodology.
+
+Since DOS has problems with large quantities of files in a directory on FATdrives, systems that handle lots of mail can use SMAIL to limit the actualnumber of files in a directory by using the -# option.  This option will notallow *.MSG files to exceed the number following the # (i.e. -#250 limits theMSG files to 250).  If mail still remains to be tossed because SMAIL reachedthis limit, it creates a file in the Simplex directory called SMAIL.LIM.  Yourbatch file can always check for the existence of this file and loop back tocatch the rest of the mail when SMP completes packing.  Here is an example:
+
+	:unpack
+	del smail.lim
+	smail -ua -it -#250
+	smp -p
+	if exist smail.lim goto unpack
+	
+
+SMAIL, by default, converts any messages addressed to "Sysop" over to messagesaddressed to the sysop's name as specified in SCONFIG.  This behavior might beconsidered annoying by some Sysops and therefore can be disabled using the -Sswitch on the command line.
+
+Here are some sample parts of a Netmail compatible system's batch file whichillustrate using SMAIL for exporting entered mail:
+
+	:runbbs
+	simplex -b%d -x
+	if errorlevel 6 goto runbbs
+	if errorlevel 5 goto echomatrix
+	if errorlevel 4 goto echo
+	if errorlevel 3 goto matrix
+	goto runbbs
+
+	:echomatrix
+	smail -nx -ex
+	smp -p
+	goto end
+
+	:echo
+	smail -ex
+	smp -p
+	goto end
+
+	:matrix
+	smail -nx
+	smp -p
+	goto end
+
+	:end
+
+Here is a sample of a front-end mailer's batch file, demonstrating the use ofSMAIL for importing and forwarding incoming mail.
+
+	:runmailer
+	mailer
+	if errorlevel 2 goto runmailer
+	if errorlevel 1 goto import
+	goto end
+
+	:import
+	smail -ua -it
+	smp -p
+	goto runmailer
+
+	:end
+
+The -ES flag enables echomail security.  This ensures that echomail for eacharea is only imported from nodes listed for that echo in the AREAS.BBS file.
+
+The -K flag activates SMAIL to keep the SEEN-BY and PATH information that iscontained in echomail messages as ^A kludge.  SMAIL's default is to discardthis information when importing messages since it tends to generate sizablemessge bodies.  When diagnosing network problems (such as duplicate messages),it might be helpful to switch on this option.  Once kludge is kept, anyonewith Sysop privilege in an echo area can use the <K> option while readingmessages to see the resulting extra information.
+
+SECTION Layout of AREAS.BBS
+
+The AREAS.BBS file must be created by the Sysop using a plain text editor.  Itis used by SMAIL to export and import echomail and it is organized as follows:
+
+	<msgarea number> <echo-areaname> <destination addresses> 
+
+The <msgarea number> is the Simplex message area number as defined in SCONFIG. The <echo-areaname> is the official echo "tag" for that echo.  The destinationaddresses are the addresses which your BBS "feeds".
+
+The special area "number" P is reserved for "pass through" echomail areas,that is areas which are not on your BBS but which you might be passing on toother BBSes.  
+	
+Comment lines in this file begin with a semicolon (;).  
+
+In order to support external mail handling by other packages (e.g. Areafix),there is the ability to specify a "toss" directory.  This is done in a commentline (to avoid confusing older packages), and it is formatted as:
+	
+	; T <"name"> <destination path>
+
+The quotes are essential for names with embedded spaces (e.g. "John Doe") butnot for single word names (e.g. Autoecho).
+
+Here is an example of an AREAS.BBS file:
+
+L 5,R 78,T 8 16 24 32
+BEGIN GROUP
+; This is a sample AREAS.BBS comment!
+;
+; Here are normal areas.  The mail is tossed into the
+; message base and forwarded if neccessary.
+;
+10 C_ECHO  1:151/401 1:151/403 1:151/404 1:151/1000
+11 SIMPLEX 1:151/401 1:151/404 1:151/1000
+12 LUNATIC 1:151/401
+;
+; Here is a pass-thru area - messages are not imported, 
+; just passed on to the respective addresses.
+;
+P  WRITING 1:151/404 1:151/1000
+P  AMIGA   1:151/403 1:151/1000
+;
+; Here is an example of a Toss area - messages are not
+; imported, just tossed as *.MSG files into the 
+; specified directory for later processing.
+;
+; T areafix g:\bbs\areafix
+; T "autoecho" g:\bbs\areafix
+END GROUP
+
+R 78,T 8 16 24 32
+C_ECHO, for example, is imported to area 10, and is forwarded to the otheraddresses listed.  On the other hand, AMIGA is not imported, but justforwarded to the listed nodes.  Note the full use of zone notation.  If youomit the zone and net they will default to the same as your zone and netnumber as configured in SCONFIG (e.g. 10 C_ECHO 401 403 404 1000 is the sameas above since my address is 1:151/402).  Messages to areafix or to autoechoare tossed into the g:\bbs\areafix directory as MSG files.
+
+**Urgent**  In AREAS.BBS, the FIRST line must contain a comment or anythingother than an echo area list.  This is for compatibility with older systems.
+
+SECTION SMP: Simplex Mail Packer
+
+SMP (or SMP2 for OS/2) is a Net compatible mail router/packer/archiver.  Ituses the archiver command lines configured in SCONFIG.  Essentially SMP readsthe messages in the matrix directory, and based on the rules in the SMP.CTLfile (see above), packs the messages in packets and optionally archives themto their ultimate destinations.
+
+SMP will delete truncated (i.e. 0-length) files in the outbound directoriesbefore it begins packing.  Notice that it will not delete truncated files forthe current day of the week, only for the other 6 days.  
+
+SMP's options are the following:
+
+	-p	Pack and route files in matrix and outbound areas
+	-s(tag)	Use information for sched (tag) in SMP.CTL where
+		(tag) is a letter from A to Z
+
+Use of SMP is demonstrated in the sample batch files under SMAIL above.
+
+
+SECTION Layout of SMP.CTL
+
+This file is used by SMP to export messages to other systems.  Prior toversion 1.04 Simplex, it was somewhat similar to oMMM's CTL file, but after1.04's release, the verbs changed radically to bring them in line with the newpolicy underlying Net mail as implemented in Simplex.  
+
+Routing verbs allow mail to be converted between states (Held <-> Routed <->Direct), moved out and into of the reach of mailers (Left <-> Send), and archived (Arc, Zip, Zoo, Lzh, Arj) to specific nodes.  Here is a listing ofthe various verbs:
+
+L 12,R 78,I 2
+HOLDTO <destination> <sources...>
+	This causes all held mail bound to sources to be held fordestination.  e.g. HOLDTO 151/402 151/400 151/401 151/402.  Thisholds all held mail for 151/400, 401 and 402 for 151/402.
+
+HOSTHOLD <destinations...>
+	This causes all held mail bound to destinations to be held fornetwork host (node 0 of one's net).  e.g.  HOSTHOLD 151/ALL120/ALL will cause all held mail for nets 151 and 120 to be heldfor 151/0 (from 151/401).
+
+ROUTETO <destination> <sources...>	
+	This causes all routed mail bound to sources to get routed todestination.  e.g. ROUTETO 151/402 151/ALL 120/ALL will route allrouted mail for nets 151 and 120 to 151/402.
+
+HOSTROUTE <destinations...>
+	This causes all routed mail bound to destinations to get routed tonetwork host (node 0 of one's net).  e.g. HOSTROUTE 151/ALL120/ALL will cause all routed mail for nets 151 and 120 to berouted to 151/0 (from 151/401).
+
+DIRECTTO <destination> <sources...>
+	This causes all direct mail bound to sources to get directed todestination.  e.g. DIRECTTO 151/402 151/ALL 120/ALL will directall directed mail for nets 151 and 120 to 151/402.
+
+HOSTDIRECT <destinations...>
+	This causes all direct mail bound to destinations to get directedto network host (node 0 of one's net).  e.g. HOSTDIRECT 151/ALL120/ALL will cause all routed mail for nets 151 and 120 to bedirected to 151/0 (from 151/401).
+
+ARCHOLD <destination> <sources...>
+ZIPHOLD <destination> <sources...>	
+LZHHOLD <destination> <sources...>	
+ARJHOLD <destination> <sources...>	
+ZOOHOLD <destination> <sources...>	
+	These options archive held mail for sources using the archiverspecified to the specified destination.  e.g. ZIPHOLD 151/402151/401 151/402 151/405 151/406 will archive all held mail to151/401, 402, 405 and 406 with ZIP and route it to 151/402.
+
+ARCROUTE <destination> <sources...>
+ZIPROUTE <destination> <sources...>
+LZHROUTE <destination> <sources...>
+ARJROUTE <destination> <sources...>
+ZOOROUTE <destination> <sources...>
+	These options archive routed mail for sources using the archiverspecified to the specified destination.  e.g. ZIPROUTE 151/402151/401 151/402 151/405 151/406 will archive all routed mail to151/401, 402, 405 and 406 with ZIP and route it to 151/402.
+
+ARCDIRECT <destination> <sources...>
+ZIPDIRECT <destination> <sources...>
+LZHDIRECT <destination> <sources...>
+ARJDIRECT <destination> <sources...>
+ZOODIRECT <destination> <sources...>
+	These options archive direct mail for sources using the archiverspecified to the specified destination.  e.g. ZIPDIRECT 151/402151/401 151/402 151/405 151/406 will archive all direct mail to151/401, 402, 405 and 406 with ZIP and route it to 151/402.
+
+HOLDROUTE <destinations...>
+	This option converts all held mail bound for destinations torouted mail (from HOLD to ROUTE).  e.g. HOLDROUTE 151/402 willconvert held mail for 151/402 to routed mail.
+
+HOLDDIRECT <destinations...>
+	This option converts all held mail bound for destinations todirected mail (from HOLD to DIRECT).  e.g. HOLDROUTE 151/402 willconvert held mail for 151/402 to directed mail.
+
+ROUTEHOLD <destinations...>
+	This option converts all routed mail bound for destinations toheld mail (from ROUTE to HOLD).  e.g. ROUTEHOLD 151/402 willconvert routed mail for 151/402 to held mail.
+
+ROUTEDIRECT <destinations...>
+	This option converts all routed mail bound for destinations todirected mail (from ROUTE to DIRECT).  e.g. ROUTEDIRECT 151/402will convert routed mail for 151/402 to directed mail.
+
+DIRECTHOLD <destinations...>
+	This option converts all direct mail bound for destinations toheld mail (from DIRECT to HOLD).  e.g. DIRECTHOLD 151/402 willconvert directed mail for 151/402 to held mail.
+
+DIRECTROUTE <destinations...>
+	This option converts all direct mail bound for destinations torouted mail (from DIRECT to ROUTE).  e.g. DIRECTROUTE 151/402 willconvert directed mail for 151/402 to routed mail.
+
+LEAVEHOLD <destinations...>
+	This option converts all held mail bound for destinations tonon-active held mail.
+
+LEAVEROUTE <destinations...>
+	This option converts all routed mail bound for destinations tonon-active routed mail.
+
+LEAVEDIRECT <destinations...>
+	This option converts all direct mail bound for destinations tonon-active direct mail.
+
+SENDHOLD <destinations...>
+	This option converts all non-active held mail bound fordestinations to regular held mail.
+
+SENDROUTE <destinations...>
+	This option converts all non-active routed mail bound fordestinations to regular routed mail.
+
+SENDDIRECT <destinations...>
+	This option converts all non-active direct mail bound fordestinations to regular direct mail.
+
+POLL <destinations...>			
+	This will create a blank .flo file to the destinations providingthere is not already direct mail addressed to the same address.
+
+R 78,T 8 16 24 32
+

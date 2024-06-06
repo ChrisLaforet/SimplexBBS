@@ -1,0 +1,1935 @@
+
+
+
+
+
+
+           ÚÄÄÄÄÄÄÄ¿ ÚÄ¿ ÚÄÄÄÄÄÄÄÄÄ¿ ÚÄÄÄÄÄÄ¿ ÚÄ¿      ÚÄÄÄÄÄÄ¿ ÚÄ¿   ÚÄ¿           ÚÄÄÄÄÄÄÄ¿ ÚÄ¿ ÚÄÄÄÄÄÄÄÄÄ¿ ÚÄÄÄÄÄÄ¿ ÚÄ¿      ÚÄÄÄÄÄÄ¿ ÚÄ¿   ÚÄ¿
+           ³ ÚÄÄÄÄÄÙ ³ ³ ³ ÚÄ¿ ÚÄ¿ ³ ³ ÚÄÄ¿ ³ ³ ³      ³ ÚÄÄÄÄÙ À¿À¿ ÚÙÚÙ           ³ ÚÄÄÄÄÄÙ ³ ³ ³ ÚÄ¿ ÚÄ¿ ³ ³ ÚÄÄ¿ ³ ³ ³      ³ ÚÄÄÄÄÙ À¿À¿ ÚÙÚÙ
+           ³ ÀÄÄÄÄÄ¿ ³ ³ ³ ³ ³ ³ ³ ³ ³ ÀÄÄÙ ³ ³ ³      ³ ÀÄÄ¿    À¿ÀÄÙÚÙ           ³ ÀÄÄÄÄÄ¿ ³ ³ ³ ³ ³ ³ ³ ³ ³ ÀÄÄÙ ³ ³ ³      ³ ÀÄÄ¿    À¿ÀÄÙÚÙ
+           ÀÄÄÄÄÄ¿ ³ ³ ³ ³ ³ ÀÄÙ ³ ³ ³ ÚÄÄÄÄÙ ³ ³      ³ ÚÄÄÙ    ÚÙÚÄ¿À¿           ÀÄÄÄÄÄ¿ ³ ³ ³ ³ ³ ÀÄÙ ³ ³ ³ ÚÄÄÄÄÙ ³ ³      ³ ÚÄÄÙ    ÚÙÚÄ¿À¿
+           ÚÄÄÄÄÄÙ ³ ³ ³ ³ ³     ³ ³ ³ ³      ³ ÀÄÄÄÄ¿ ³ ÀÄÄÄÄ¿ ÚÙÚÙ À¿À¿           ÚÄÄÄÄÄÙ ³ ³ ³ ³ ³     ³ ³ ³ ³      ³ ÀÄÄÄÄ¿ ³ ÀÄÄÄÄ¿ ÚÙÚÙ À¿À¿
+           ÀÄÄÄÄÄÄÄÙ ÀÄÙ ÀÄÙ     ÀÄÙ ÀÄÙ      ÀÄÄÄÄÄÄÙ ÀÄÄÄÄÄÄÙ ÀÄÙ   ÀÄÙ           ÀÄÄÄÄÄÄÄÙ ÀÄÙ ÀÄÙ     ÀÄÙ ÀÄÙ      ÀÄÄÄÄÄÄÙ ÀÄÄÄÄÄÄÙ ÀÄÙ   ÀÄÙ
+
+
+
+
+
+
+
+                              Simplex BBS - (c) 1989-92
+                      Chris Laforet Software/Christopher Laforet
+                                All Rights Reserved.
+
+
+
+
+
+
+
+
+
+                         Chris Laforet can be contacted at:
+
+               The Programmer's Oasis BBS - Graham, NC - 919/226-6984
+              The Programmer's Oasis 2 BBS - Graham, NC - 919/226-7136
+                 FidoNet Mail 1:3644/1 or 1:3644/2 as Chris Laforet
+                        CompuServe Email - User ID: 76120,110
+                            BIX Email - User ID: laforet
+
+
+
+
+
+                            Programming by Chris Laforet
+                       Unauthorized Selling/Renting Prohibited
+               Documentation Title Page/Help Files/Etc by Robbie Foust
+
+
+
+
+
+          _________________________________________________________________
+
+                                      Chapter 1                                      Chapter 1
+
+                Legalistic Mumbo-Jumbo (i.e. Better Read This Stuff)                Legalistic Mumbo-Jumbo (i.e. Better Read This Stuff)
+          _________________________________________________________________
+
+
+
+
+          Simplex is copyright (c) 1989-92, Chris Laforet Software and/or
+          Christopher Laforet.  This copyright is waived for the
+          distribution of the executable files for Simplex.  This means
+          that you are free to distribute the Simplex executables as you
+          wish as long as they are contained in the original form in which
+          you received them.
+
+          Simplex executables as released by Chris Laforet Software are
+          absolutely free of charge to individuals and corporations.  Sale
+          of any of these executables is in violation of this agreement and
+          is subject to court action.  The only exception to this is
+          shareware and freeware software distribution houses are allowed
+          to charge for distribution materials (e.g. diskettes).  Even
+          though it is free for use, if you want to send a contribution to
+          Chris Laforet Software, be assured that it will be cheerfully
+          accepted!
+
+          The source code for Simplex is available for purchase from Chris
+          Laforet Software.  When you purchase this code, you are granted
+          an exclusive license to modify it for your own use.  The
+          executables that you produce must never be distributed in place
+          of the original executables as compiled and distributed from
+          Chris Laforet Software unless you arrange a royalty system with
+          Chris Laforet Software.  During the course of your modifications,
+          should you develop a feature which you believe should be a part
+          of the distributed Simplex executables, you may submit the code
+          to Chris Laforet Software for review and for possible
+          incorporation into Simplex, as long as such incorporation does
+          not place Chris Laforet Software and/or Christopher Laforet under
+          any monetary obligations.  Your submitted code must include a
+          cover letter indicating that you are freely granting permission
+          to Chris Laforet Software for the incorporation of your code into
+          Simplex.
+
+          Should you wish to purchase Simplex for use as a platform for
+          another product, or wish to convert Simplex to another language
+          (French, Japanese, Swahili) or to another operating system (Atari
+          ST, VAX, AX-400), and wish to market the resultant product,
+          contact Chris Laforet Software and a royalty agreement can be
+          developed.  Royalties generally range somewhere between 10% and
+          15% of the sales price of the product, but each case is different
+          and merits discussion.
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       A User's Manual          Simplex BBS                                       A User's Manual
+                                        Page 2                                        Page 2
+
+
+
+
+
+
+          There are no warranties of any kind, explicit or implied, on the
+          Simplex software.  Simplex's executables are provided on an "AS
+          IS" basis.  What this means is that if you decide to use Simplex,
+          it is at your own risk.  In plain English, this means that if you
+          use Simplex and your machine blows up, the developers and
+          distributors of Simplex are not responsible in any fashion.  If
+          you use Simplex and it loses all of the files on your disk, once
+          again the developers and distributors of Simplex are not to be
+          held accountable.  While these scenarios are rather extreme in
+          nature, they serve to indicate that Chris Laforet Software and/or
+          Christopher Laforet does not warrant, guarantee, or make any
+          other representations regarding the use, or results of use, of
+          Simplex or its documentation in terms of accuracy, reliability,
+          correctness, currentness, or otherwise.
+
+          Simplex has been developed and tested on a 386-20 and 386-25
+          running OS/2 1.xx and 2.xx.  Two copies of Simplex using US
+          Robotics Courier HST/v32bis 14.4 Kbaud Dual-Standard baud modems
+          have run simultaneously 24 hours/day on these setups.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       A User's Manual          Simplex BBS                                       A User's Manual
+                                        Page 3                                        Page 3
+
+
+
+
+
+          _________________________________________________________________
+
+                                      Chapter 2                                      Chapter 2
+
+                               Introduction to Simplex                               Introduction to Simplex
+          _________________________________________________________________
+
+
+
+
+          Simplex is a package created for the running of a Bulletin Board
+          System (BBS).  The development of Simplex arose out of Chris'
+          personal gripes insofar as his inability to either fix bugs or
+          add features to other BBS packages.  From the outset, Simplex was
+          designed to be an easy-to-use BBS system, with C source code
+          available (at a reasonable price!) to anyone who might be
+          interested.  On the other hand, Simplex's executables are meant
+          to be distributed as public-domain material.  There are many good
+          BBSes out there, ones which have cost their SYSOPs (System
+          Operators) lots of money to purchase the necessary hardware.
+          There is no reason on earth why they also have to ante up lots of
+          money for their BBS software.
+
+          Simplex is somewhat based on the user interface of QuickBBS.  It
+          is said that imitation is the sincerest form of praise, and it is
+          in praise of QuickBBS' logical user interface (like P for Pause!)
+          that Simplex emulates certain of its characteristics.
+
+          Simplex is currently available for DOS or OS/2.  Simplex is going
+          to be produced in a multiuser version for OS/2 2.0 sometime in
+          the future.  There are no plans to make the DOS version
+          multiuser.  There has been some murmuring of porting Simplex to
+          UNIX, but this is not being done by Chris Laforet Software.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       A User's Manual          Simplex BBS                                       A User's Manual
+                                        Page 4                                        Page 4
+
+
+
+
+
+          _________________________________________________________________
+
+                                      Chapter 3                                      Chapter 3
+
+                                   Simplex Support                                   Simplex Support
+          _________________________________________________________________
+
+
+
+
+          Simplex problems may be addressed to me (Chris Laforet) at any of
+          the addresses listed above.  Additional support is available
+          through the SIMPLEX echo which is carried on some Fidonet or
+          Worldnet boards.
+
+          I do NOT provide voice support for Simplex unless you have
+          purchased Simplex's source code.  Business concerns who are
+          interested in using Simplex as part of a project may also contact
+          me via telephone.  Since Simplex is free to users, it is not fair
+          for you to also expect real-time voice support for it.  If you
+          encounter a major bug in Simplex, and contact me by mail or E-
+          mail, I might request a phone number from you so that I could
+          contact you voice to discuss it in greater depth.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       A User's Manual          Simplex BBS                                       A User's Manual
+                                        Page 5                                        Page 5
+
+
+
+
+
+          _________________________________________________________________
+
+                                      Chapter 4                                      Chapter 4
+
+                                 Installing Simplex                                 Installing Simplex
+          _________________________________________________________________
+
+
+
+
+          DOS users of Simplex will require a FOSSIL driver such as Ray
+          Gwinn's excellent X00 package.  FOSSILs are available on most
+          BBSes and services.  A FOSSIL driver is a special program which
+          provides an interface to communications ports.  OS/2 users do not
+          have to use a fossil since OS/2 already supports communications
+          ports with interrupt-driven drivers.
+
+          Please take careful note:  Simplex users must have a modem which          Please take careful note:
+          is capable of CTS-RTS handshaking (many 2400 baud modems control
+          this with &R1).  Also, Simplex requires that DTR controls the
+          on-line state of the modem (most 2400 baud modems control this
+          with &D2) and CD (carrier detect) must correctly follow the
+          remote's carrier (controlled with &C1 om many 2400 baud modems).
+          Without these criteria being met, Simplex probably will not work
+          on your system.
+
+          DOS users of Simplex must set up to have a sufficient number of
+          file handles available for Simplex to run.  This is done by
+          editing/creating a file called CONFIG.SYS which is found in the
+          root directory of the boot drive (A: or C:) and ensuring that
+          there is an entry that sets files greater than or equal to 30.
+          If it is there, but less than 30, change it to 30.  If it is not
+          there, add a line that says:
+
+                  files=30
+
+          and then save your changes.  The machine must then be rebooted to
+          install the changes.  OS/2 users of Simplex do not have to do
+          anything special to raise their file handles.
+
+          OS/2 users might want to play with their timeslice statement in
+          their CONFIG.SYS to achieve a smoother flow of the BBS.  On the
+          386-20 and 386-25 at Chris Laforet Software, a timeslice of 32,96
+          appears to achieve acceptable results.   The priority statement
+          should be set to dynamic and the maxwait should be 1 or 2.  The
+          memman statement should include swap and move, especially if your
+          system suffers from "RAM cram".  If you are planning to run your
+          machine as a dedicated BBS, then autofail should be set to yes so
+          that your system will handle fatal system errors and not hang
+          waiting for keyboard input.  Here is a sample from the OS/2
+          CONFIG.SYS that runs the Programmer's Oases BBSes:
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       A User's Manual          Simplex BBS                                       A User's Manual
+                                        Page 6                                        Page 6
+
+
+
+
+
+
+                  autofail=yes
+                  pauseonerror=no
+                  threads=96
+                  maxwait=1
+                  priority=dynamic
+                  timeslice=32,96
+                  memman=swap,move (OS/2 1.3) -or-
+                  memman=swap,protect (OS/2 2.0 only)
+
+          This works well for the both the OS/2 1.3 and the OS/2 2.0 setup.
+
+
+
+          4.1-Simplex and Answering the Phone          4.1-Simplex and Answering the Phone
+          _________________________________________________________________
+
+
+
+
+          Simplex will answer the phone by itself as long as your modem
+          returns string results (like Hayes).  In SCONFIG you can
+          configure your modem's strings for Simplex to monitor.  If you
+          are running a FidoNet or other network node, then you will
+          probably have a front-end mailer answer the phone for you.  See
+          below for more details of using a mailer.
+
+          If you are running Simplex as a simple host program, you might
+          want to use the ringback feature.  This feature permits you to
+          use your voice line for your host and not have to worry too much
+          about your modem answering the phone and surprising one of your
+          friends!  How this works is that a person wishing to call your
+          host rings the number and allows it to ring less than 4 times.
+          This will then arm the answer feature.  They can then call back
+          in less than 40 to 50 seconds and the modem will answer them.
+          After they hang up, the system will be back in an unarmed state.
+
+
+
+          4.2-Presumptions Underlying Simplex's Net Mail          4.2-Presumptions Underlying Simplex's Net Mail
+          _________________________________________________________________
+
+
+
+
+          Net mail has been implemented in Simplex 1.04 with a number of
+          underlying presumptions.  The first and foremost of these is that
+          all users should have access to Net mail.  The second of these is
+          that file attaching should be controllable by the Sysop and
+          access to this feature should be granted exclusively by him/her.
+          The third of these is that when Echomail discussions get off-
+          topic, they should be taken to netmail.
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       A User's Manual          Simplex BBS                                       A User's Manual
+                                        Page 7                                        Page 7
+
+
+
+
+
+
+          The first presumption is demonstrated when a user without mail
+          credit decides to enter a Net message.  They are permitted to
+          send the message, but can only choose to send it as Routed mail
+          or as Held mail.  If the user has sufficient credit, they can
+          send it as Direct mail or either of the previous two types.
+
+          Simplex looks at mail as a three-layered system.  These three
+          layers are as follows (compared with oMMM's mail extensions):
+
+                    Direct Mail                   oMMM's CM
+                    Routed Mail                   oMMM's Normal
+                    Held Mail                     oMMM's Held
+
+          Direct mail is mail that is intended to be sent DIRECTLY from
+          your node to the destination (whether this is indeed how it is
+          sent depends upon the Sysop!).  Routed mail is that which is
+          supposed to follow a routing path through the network.  Held mail
+          is that which is supposed to be held for pickup by another node
+          which polls yours at specific intervals.
+
+          Notice that the three-layered system is all theoretical.  For
+          example, none of my nodes sends Netmail bound for international
+          locations directly to them, regardless of if the message was
+          specified as being Direct.  It is much cheaper to send direct
+          mail to the specified Zone gates and let them be routed from
+          there.  On the other hand, if someone enters a message to a local
+          node and specifies that it is to be Held, it is transformed to
+          Direct mail and sent immediately (since the node is local, it
+          doesn't cost anything, right?).
+
+          The way that you implement the three-layered system is controlled
+          by your use of SMP (or SMP/2) to handles your specific routing
+          needs.  SMP's routing verbs are discussed later on in this file.
+
+          The second presumption in Simplex is that the option to Netmail
+          file-attaching is under control of the Sysop.  How this control
+          is exerted is by means of a flag in the user's record.  The Sysop
+          must be careful with who is granted the privilege of file-
+          attaching since a hacker can easily file-attach critical files
+          (like userlist.bbs?) to themselves at another node if they have
+          any idea how your system is laid out!!  Please notice that the
+          local file-attaching feature works differently.  Only files from
+          a specific sysop-specified directory can be attached to another
+          user on the same system.
+
+          The third presumption in Simplex is that Echomail discussions
+          should go over to Netmail when they start drifting off-topic.
+          This is implemented by a special option that appears while
+          reading Echomail messages which permits users to reply directly
+          to the message using Netmail.  Notice that the user can only
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       A User's Manual          Simplex BBS                                       A User's Manual
+                                        Page 8                                        Page 8
+
+
+
+
+
+
+          enter Routed or Held Netmail if they don't have enough/any
+          credit!
+
+
+
+          4.3-Installing a Network Node          4.3-Installing a Network Node
+          _________________________________________________________________
+
+
+
+
+          If you want to use Simplex as a Net node, you will need to use
+          some sort of a front-end mailer software such as BinkleyTerm or
+          FrontDoor.  This software is needed in order to handle mail
+          transactions between your node and other Net nodes.  Whatever
+          mailer you use must comply with oMMM message bundle formatting
+          (unless you choose to write a message handling interface between
+          your mailer and Simplex).
+
+          Simplex needs a special directory which it uses as an interface
+          to the front-end mailer.  Traditionally, this directory has been
+          named the MATRIX directory.  This directory is used during the
+          exportation/forwarding of messages from Simplex to other nodes.
+          The format of these messages is the standard FidoNet message
+          format as outlined in their FSC-0001 standard (1.MSG, 2.MSG,
+          etc.).  These messages are then taken by mail bundlers such as
+          oMMM or SMP and bundled for the front-end mailer.  It is
+          essential that this directory not be used for anything else.
+
+          Simplex also needs a special directory where inbound bundles and
+          message packets are placed.  Traditionally, this directory has
+          been called INBOUND.  The front-end mailer will place the inbound
+          bundles in message packets here once they have been successfully
+          received.  Simplex's mail utilities will scan this directory for
+          any unpacked bundles or packets which it would proceed to unpack.
+          It is not essential that this area be used exclusively for
+          inbound mail since Simplex searches for bundles and packets based
+          on their file extensions.
+
+          Simplex requires a special directory which can be used as a
+          "scratch" area.  This directory is essential and must be used
+          exclusively by Simplex.  It is suggested that you call this
+          directory PACKET since it is used to hold unarchived inbound mail
+          bundles.  This directory is essential because once the mail is
+          unarchived, the archives are deleted.  If the packets are not
+          unpacked for any reason, they will remain intact until Simplex's
+          mail utilities are run once again.  This directory along with the
+          inbound directory is searched for message packets every time
+          Simplex's mail utilities are run.
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       A User's Manual          Simplex BBS                                       A User's Manual
+                                        Page 9                                        Page 9
+
+
+
+
+
+
+          All members of a FidoNet compatible network are listed in a file
+          called a nodelist.  In order to be able to communicate with other
+          nodes, BBS and mailer software must have access to this nodelist.
+          Simplex is no exception to this rule.  It requires that the
+          nodelist be compiled using any Version 6 nodelist compiler
+          (Version 6 nodelists are used by BinkleyTerm, Opus, and many
+          other FidoNet utilities) such as ParseList.  Simplex must know
+          exactly where to find the compiled nodelist.
+
+          Simplex requires a Net node's address.  This address uniquely
+          identifies the node during communications with other Net nodes.
+          A FidoNet-compatible address consists of a Zone (read continent
+          or network), a Net, and a Node number such as 1:3644/1 which
+          identifies Simplex's "home" node as being in Zone 1 (Fidonet,
+          North America), Net 3644 (Burlington-Graham, NC), and Node 1 in
+          that net.  While use of the Zone number is not absolutely
+          essential at this time and it is perfectly acceptable to list
+          your Zone number as 0, such use should be frowned upon in a
+          network which is worldwide in nature!  Hence Simplex does
+          somewhat attempt to enforce the use of the Zone number.
+
+          Finally, Simplex needs a nodelist.  The nodelist must be compiled
+          with any nodelist compiler that produces a "Version 6" nodelist.
+          This is the same type of nodelist used by Opus<Tm> and
+          BinkleyTerm.  Nodelist compilers such as Parselst produce the
+          correct formatted nodelist files.
+
+
+
+          4.4-Setting up a non-Net BBS          4.4-Setting up a non-Net BBS
+          _________________________________________________________________
+
+
+
+
+          In order to run Simplex without Net support, a Sysop needs to
+          make sure that none of the following conditions are true:
+
+               1.  There is no path set pointing to the nodelist in section
+                   4 of SCONFIG.
+               2.  There is no node address in section 1 of SCONFIG.
+               3.  There are no message areas marked as being Netmail.
+
+          Once these conditions are checked, Simplex will not attempt to
+          start up with a nodelist.
+
+
+
+
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       A User's Manual          Simplex BBS                                       A User's Manual
+                                       Page 10                                       Page 10
+
+
+
+
+
+
+          4.5-Configuring Simplex          4.5-Configuring Simplex
+          _________________________________________________________________
+
+
+
+
+          Configuring Simplex is handled using the SCONFIG (in OS/2, the
+          SCONFIG2) program.  The details of handling SCONFIG is contained
+          in the manual called SETUP.DOC which should accompany this
+          documentation.  Please direct your attention to that file for
+          more information.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       A User's Manual          Simplex BBS                                       A User's Manual
+                                       Page 11                                       Page 11
+
+
+
+
+
+          _________________________________________________________________
+
+                                      Chapter 5                                      Chapter 5
+
+                                   Running Simplex                                   Running Simplex
+          _________________________________________________________________
+
+
+
+
+          Simplex may be started by merely typing Simplex on the command
+          line (OS/2 users use Simplex2) and pressing Enter in the assigned
+          Simplex directory.   However, it is doubtful that such simple use
+          would suffice for most applications of Simplex!  Hence Simplex
+          accepts a series of command line arguments that permit you to
+          call it under specified conditions, and it returns with specific
+          errorlevels to indicate that certain events have occurred.
+
+          The Simplex command line may include any of the following
+          options.  A list of these options might be obtained by typing
+          Simplex -? on the command line.  Most of these options are meant
+          to be used when spawning Simplex from a front-end Net mailer, but
+          some are even handy for use in simple host applications:
+
+             -Bxxxx Startup at the specified baud (User is online)
+             -D     Drop in to Simplex with user's info in simplex.usr
+             -H     Do not hangup before exiting
+             -L     Startup in local mode (same as -B0)
+             -Mxxxx Locked baud rate. Set port to baud and ignore connect
+                    strings
+             -O     DOS: Swap out to EMS or Disk when spawning external
+                    processes
+             -OD    DOS: Swap out to Disk when spawning external processes
+             -OE    DOS: Swap out to EMS when spawning external processes
+             -Pxxx  DOS: Use the specified comm port *or*
+             -Pxxx  OS/2: Use the specified comm handle
+             -R     Do ringback model of call answering
+             -S     DOS: Do not close stdout and reopen it to NUL
+             -Txxx  Set maximum time user is allowed on system
+             -X     Exit after carrier is lost or after logoff
+
+          The DOS version has the -S option because of the propensity of
+          some fossil drivers to "sign-on" with a message each time they
+          are initialized by Simplex (e.g. Ray Gwinn's x00.sys).  This
+          behavior has the tendency to kill Simplex's screen formatting
+          which is undesirable.  So, by default, Simplex closes the
+          standard output file handle (handle 1) and reopens it pointing to
+          NUL.  This is the equivalent of typing "simplex > nul" at the
+          command line!  If your fossil does not do this, or it causes
+          problems on your system, you may specify the -S flag to stop
+          Simplex from closing the handle.
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       A User's Manual          Simplex BBS                                       A User's Manual
+                                       Page 12                                       Page 12
+
+
+
+
+
+
+          The -M option enables a mailer program to actually pass a locked
+          baud rate as a separate entity from the actual baud rate.
+          Passing the correct connect baud is important for correctly
+          calculating transfer times for downloads.  Simplex NEVER sets the
+          baud rate when it is passed an open port with -P and -B.  Passing
+          the locked rate at this time doesn't achieve any real purpose if
+          there is a -X, but this might change in the future.
+
+          The -D option permits Simplex to be called as a door to another
+          program.  The other program must somehow create the login file
+          "simplex.usr" according to the following byte-packed C structure.
+          All strings are terminated with nul characters (0).
+
+          struct uf
+            {
+            char uf_name[41];  /* nul-terminated user name, first last */
+            char uf_password[16];   /* nul-terminated password */
+            char uf_city[31];  /* nul-terminated city, state */
+            char uf_home[15];  /* nul-terminated user's home number */
+            char uf_data[15];  /* nul-terminated user's data number */
+            char uf_screenlen;  /* length of users screen in lines */
+            int uf_flags;  /* bitmapped option flags, see URGENT.DOC */
+            };
+
+          The user is logged in and if they have never entered Simplex
+          before, their user record is created automatically.  The -D
+          option automatically sets the -X flag so that Simplex will exit
+          if the user drops carrier or logs off.
+
+          The -O option is for DOS users who run external programs.  The
+          Simplex program has been dynamically overlay linked, which will
+          allow it to fit into a smaller chunk of memory than a straight
+          linked version would.  The -O flag will swap as much of Simplex
+          to EMS or to disk as possible before spawning an external program
+          so that the external program will get a larger memory block.  The
+          -O will look first for EMS and swap to it if there is enough,
+          otherwise it will swap to disk.  If you have EMS and wish to
+          reserve it for an external program, use the -OD flag which will
+          force it to use the disk even if there is enough EMS.  The -OE
+          will force it to use EMS first (same as the -O flag).  Swapping
+          to disk will look for an environment variable TEMP.  If it is not
+          found, it will look for an environment variable TMP.  If this is
+          not found, it uses the current directory.  The TEMP/TMP variable
+          can contain one or a series of paths that are acceptable swapping
+          locations like this:
+
+                  set TEMP=h:\;g:\temp
+                  set TMP=d:\temp
+
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       A User's Manual          Simplex BBS                                       A User's Manual
+                                       Page 13                                       Page 13
+
+
+
+
+
+
+          It is wise to use your fastest drive (e.g. RAM drive) for
+          swapping, but you will need at least 600K free for swapping to be
+          successful.
+
+          A front-end mailer program might spawn Simplex with the following
+          command line in a batch file:
+
+                  simplex2 -B%1 -P%2 -X
+
+          or for a local session, it might use the following:
+
+                  simplex2 -L -X
+
+          In order to let batch files know what is causing Simplex to exit,
+          it returns different errorlevels.  The following errorlevels are
+          currently supported in Simplex.
+
+               0    Normal Simplex exit prompted by Alt-X keystroke.
+               1    Simplex had an internal error.
+               2    Normal Simplex exit after user was on and -X or (-D)
+                    was on command line.
+               3    Netmail was entered and Alt-X pressed or -X (-D) was on
+                    command line.
+               4    Echomail was entered and Alt-X pressed or -X (-D) was
+                    on command line.
+               5    Netmail and Echomail were entered and Alt-X pressed or
+                    -X (-D) was on command line.
+               6+   Errorlevel generated by an event exit.
+
+          Errorlevel 2 is especially created for simple Simplex host
+          applications which need to know if to run external utilities such
+          as SRECENT or SUSAGE (see below).  Obviously, if you have exited
+          from a waiting-state with Alt-X, there is no need to check to see
+          if the last user has been added to the database.  Hence you could
+          have a batch file similar to this:
+
+                  set simplex=d:\host
+                  :runhost
+                  d:
+                  cd \host
+                  simplex2 -x
+                  if errorlevel 3 goto runhost
+                  if errorlevel 1 goto recent
+                  if errorlevel 0 goto end
+
+                  :recent
+                  srecent 20
+                  susage -G -I
+                  goto runhost
+
+                  :end
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       A User's Manual          Simplex BBS                                       A User's Manual
+                                       Page 14                                       Page 14
+
+
+
+
+
+
+          A Network compatible BBS might have something like:
+
+                  :runbbs
+                  simplex -b%1 -x
+                  if errorlevel 6 goto recent
+                  if errorlevel 5 goto echomatrix
+                  if errorlevel 4 goto echo
+                  if errorlevel 3 goto matrix
+                  goto recent
+
+                  :echomatrix
+                  smail -nx -ex
+                  goto recent
+
+                  :echo
+                  smail -ex
+                  goto recent
+
+                  :matrix
+                  smail -nx
+
+                  :recent
+                  srecent 20
+                  susage -G -I
+                  goto runbbs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       A User's Manual          Simplex BBS                                       A User's Manual
+                                       Page 15                                       Page 15
+
+
+
+
+
+          _________________________________________________________________
+
+                                      Chapter 6                                      Chapter 6
+
+                                Simplex's File Areas                                Simplex's File Areas
+          _________________________________________________________________
+
+
+
+
+          As of version 1.06.00, Simplex changed its methods of handling
+          file areas.  Instead of continuing with the time honored
+          FILES.BBS format, Simplex branched into its own binary format.
+          The new file format is as follows:
+
+          struct fe       /* 384-byte file entry structure */
+            {
+            char fe_name[16];
+            int fe_location;      /* area number this file is located in */
+            char fe_descrip[257];
+            char fe_group[41];    /* grouping for this item */
+            char fe_uploader[41];
+            unsigned int fe_uldate;
+            unsigned int fe_dldate;       /* last date downloaded */
+            unsigned int fe_dl;           /* number of downloads */
+            unsigned int fe_priv;         /* min priv level to see/dl this
+          file */
+            int fe_flags;                 /* flags to see/dl this file */
+            char fe_reserved[17];
+            };
+
+          This format is encountered in files called FILELIST.BBS which is
+          located in each file area's directory.  This new format leads to
+          three major problems which can be easily resolved as follows:
+
+               First is that it is no longer easily edited using a text
+               editor (since it is binary, not text).  The solution to this
+               problem is in SCONFIG in the form of an editor for file
+               areas.
+
+               Second is that one cannot personalize file areas by putting
+               header information at the top of FILES.BBS.  This problem is
+               solved by Simplex showing a text file called FILEHEAD.BBS in
+               each file area (if it exists) which can contain any
+               information that the Sysop wants to include.
+
+               Third is that specialized file-tossing programs for SDS-like
+               echos (such as TIC and FLEA) toss files into areas and
+               create entries in a FILES.BBS in those areas.  The solution
+               to this problem lies in a program called SFAC which compiles
+               the resultant FILES.BBS and adds its contents to
+               FILELIST.BBS.
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       A User's Manual          Simplex BBS                                       A User's Manual
+                                       Page 16                                       Page 16
+
+
+
+
+
+
+          The new format introduces many handy features that are worth the
+          extra effort.  Here is a list of some of these features:
+
+               a.  Files can be listed in areas and the file entries can
+                   point at the actual areas where they are located (other
+                   than the current area).  This introduces the concept of
+                   file aliasing.
+               b.  Files have a privilege level and flags attached to them.
+                   This strictly enforces visibility and downloadability of
+                   files.
+               c.  Files that are not contained in FILELIST.BBS cannot be
+                   downloaded by anyone.  There is no fear of someone
+                   accidentally finding a backdoor to download a crucial
+                   file.
+               d.  File information can be searched easily which enables
+                   cross-area downloading.  Cross-area searching should be
+                   quicker too since Simplex doesn't have to waste time
+                   parsing text files.
+               e.  The upload date is kept.  Thus, protocols which provide
+                   the timestamp of files being uploaded can set the
+                   timestamp of the file correctly once receieved.  When a
+                   person asks to see new files since a specific date,
+                   files that have a timestamp or an upload date later than
+                   said date are shown as new.
+               f.  The name of the uploader is kept.  One can judge the
+                   reliability of a file once the source is known.
+               g.  A download tally is kept on each file.  It is possible
+                   to see which files are popular and which ones are not.
+               h.  The date of the last download is kept on each file.
+                   This permits programs to be developed that kill off
+                   useless files and free valuable disk space.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       A User's Manual          Simplex BBS                                       A User's Manual
+                                       Page 17                                       Page 17
+
+
+
+
+
+          _________________________________________________________________
+
+                                      Chapter 7                                      Chapter 7
+
+                               Virus Checker Interface                               Virus Checker Interface
+          _________________________________________________________________
+
+
+
+
+          Version 1.05.02 of Simplex was the first version to support virus
+          checking after uploads.  SCONFIG allows you to specify a virus
+          checking program to be called after uploads.  The program is
+          called after the upload but before the user is asked for
+          descriptions.  NOTICE that regardless of the program information,
+          Simplex will add on two other arguments.  These are (a) the full
+          pathname to the upload list (UPLOAD#?.BBS where ? is the node
+          number) and (b) the node number which will be used for the
+          (DORINFO?.DEF).  If there is the name of a program in SCONFIG,
+          then when the program gets called, it will have 2 arguments.
+
+          The virus checker is expected to open the upload list file, read
+          it and then check all files listed as OK.  If it finds a virus
+          file, it must replace the OK with BAD and delete the file.  When
+          Simplex regains control, it will get descriptions for the files
+          marked OK and will attempt to delete the ones marked BAD.
+
+          Each line in the upload list file is organized as follows:
+
+                  OK  filename filesize
+                  BAD filename 0
+
+          Notice that "OK " is replaced by "BAD" if an uploaded file is
+          bad, and no description is needed.
+
+          Notice that the virus checking interface program can call any
+          virus scanner and is responsible for determining the archive
+          type.  Notice that duplicate files are renamed to filename.###
+          where ### is a three digit number.  Hence, the archive type must
+          be determined from looking for signatures in the file.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       A User's Manual          Simplex BBS                                       A User's Manual
+                                       Page 18                                       Page 18
+
+
+
+
+
+          _________________________________________________________________
+
+                                      Chapter 8                                      Chapter 8
+
+                                Simplex Sysop Options                                Simplex Sysop Options
+          _________________________________________________________________
+
+
+
+
+          There are a number of features in Simplex that cater exclusively
+          to the sysop or the user running in local mode.  These are
+          evaluated in the following sections.
+
+
+
+          8.1-The Sysop's Keyboard          8.1-The Sysop's Keyboard
+          _________________________________________________________________
+
+
+
+
+          While a user is online, the Sysop has a number of keys at his
+          disposal.  These can be used to raise or lower the user's time,
+          drop into chat mode, or terminate a user.
+
+          The following keys are active on the Sysop's keyboard when a user
+          is online:
+
+               Alt-A      Abort upload or download.  This key combination
+                          is the only one active during uploads and
+                          downloads and has no meaning otherwise.
+               Alt-C      Initiate chat mode.  Once in chat mode, ESC exits
+                          and returns the user to the BBS.  Ctrl-G sends a
+                          beep to the other terminal and Ctrl-L toggles the
+                          Sysop's chat log on and off.  Ctrl-F toggles in
+                          an 8th bit filter which is handy when you
+                          encounter a user who is online with 7-E-1 instead
+                          of 8-N-1 and you wish to chat with them and tell
+                          them of their mistake!
+               Alt-F      Edit a user's flags.  In this mode, merely press
+                          the letter corresponding to the flag you wish to
+                          toggle and press Enter to finish.
+               Alt-H      Help!  Toggle showing of sysop keys on status
+                          line.
+               Alt-J      Jump to DOS (or OS/2) shell.  This suspends the
+                          BBS and allows you to work at the DOS prompt.
+                          When you are finished, type "exit" at the prompt
+                          and the BBS will regain control.
+               Alt-K      Switch keyboard on or off.  This is handy if
+                          there is any danger of keys being pressed
+                          accidentally by little fingers.
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       A User's Manual          Simplex BBS                                       A User's Manual
+                                       Page 19                                       Page 19
+
+
+
+
+
+
+               Alt-L      Logoff Notification.  This option will play a
+                          tune when a user logs off to inform the Sysop
+                          that the system is available.  This is a toggle
+                          option.  When active, the user's time left in the
+                          status line will indicate an asterisk (*) next to
+                          it.
+               Alt-P      Edit a user's privilege level.  Once in this
+                          mode, type in the new user's privilege level
+                          (between 1 and 255) and hit Enter to change it.
+                          To cancel changes, just press Enter on an empty
+                          field.
+               Alt-T      Terminate a user's session.  Hangs up the modem
+                          immediately.
+               Alt-X      Exit Simplex while it is waiting for a call.
+
+               Ctrl-PgUp  Increase a user's time by one minute.
+               Ctrl-PgDn  Decrease a user's time by one minute.
+
+
+
+          8.2-Local Uploading and Downloading          8.2-Local Uploading and Downloading
+          _________________________________________________________________
+
+
+
+
+          While in local mode, the upload and download options would seem
+          superfluous.  However, Simplex uses them as specialized copy
+          commands.
+
+          A local download will ask for a destination directory and then a
+          list of filenames.  It would then copy the files to that
+          directory.
+
+          A local upload will ask for a source directory and then a list of
+          filenames.  It would then copy the files in to the current file
+          area and then prompt for file descriptions for each file.
+
+
+
+          8.3-Message Exporting          8.3-Message Exporting
+          _________________________________________________________________
+
+
+
+
+          In local mode, a privileged user (user with Sysop level in that
+          message area) will have an <E>xport option on his/her message
+          menu.  This permits the user to send a copy of the message to any
+          file or device.  To send the message to the printer on lpt1:,
+          just enter the name LPT1 as the export filename and press Enter.
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       A User's Manual          Simplex BBS                                       A User's Manual
+                                       Page 20                                       Page 20
+
+
+
+
+
+
+          8.4-Yelling          8.4-Yelling
+          _________________________________________________________________
+
+
+
+
+          The Sysop can set the hours that yelling for a chat is permitted.
+          By default, the hours are set from 00:00 to 23:59.  The hours can
+          wrap around midnight if that is desired (e.g. start at 23:00 and
+          end at 04:00).
+
+          In addition to setting the hours for yelling, the Sysop can set
+          the duration of the yell tone.
+
+          There is a special option in Simplex which allows the Sysop to
+          set up a special "timeless" yell.  This can be protected by
+          privilege level and flags to only permit close friends or clients
+          to access it!
+
+
+
+          8.5-Downloading Hours          8.5-Downloading Hours
+          _________________________________________________________________
+
+
+
+
+          Simplex, as of v 1.04.02, enforces downloading hours as set up in
+          SCONFIG.  By default, these hours extend from 00:00 to 23:59 (all
+          day), but they can be set to reflect any downloading time zone
+          that you care to enforce.  The start time does not HAVE to be
+          earlier than the stop time (e.g. from 17:00 to 08:00) since it
+          will wrap around the midnight hour.
+
+          Sysops can still download outside of these hours.  In order to
+          implement this feature in v 1.04.02, everyone with a priv level
+          of 250->255 is considered "Sysop" level.  This will disappear in
+          a future version of Simplex wherein you can set the level to what
+          you prefer it to be.
+
+
+
+          8.6-File Moving within Simplex          8.6-File Moving within Simplex
+          _________________________________________________________________
+
+
+
+
+          There is an option in Simplex which permits a user (preferably
+          set for the Sysop only!) to move files from one area to another.
+          The Sysop can then create a list of files to move from one area
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       A User's Manual          Simplex BBS                                       A User's Manual
+                                       Page 21                                       Page 21
+
+
+
+
+
+
+          to another, and then Simplex will move the files and the
+          description records to the new area.  Notice:  When Simplex moves
+          the description records, it will change the privilege level and
+          flags for each moved file to match those of the destination area.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       A User's Manual          Simplex BBS                                       A User's Manual
+                                       Page 22                                       Page 22
+
+
+
+
+
+          _________________________________________________________________
+
+                                      Chapter 9                                      Chapter 9
+
+                               Basic Simplex Utilities                               Basic Simplex Utilities
+          _________________________________________________________________
+
+
+
+
+          Simplex is distributed with a few basic utilities.  Here is how
+          these utilities work.
+
+
+
+          9.1-SFAC: Simplex File Area Compiler          9.1-SFAC: Simplex File Area Compiler
+          _________________________________________________________________
+
+
+
+
+          Version 1.06 of Simplex was the first version to break with the
+          time-honored FILES.BBS method of handling file areas.
+          Essentially, FILES.BBS was a text file which contained lines of
+          text which were formatted as <FILENAME> <DESCRIPTION>.  In order
+          to implement a secure and fast file handling system, Simplex had
+          to move over to using binary files containing information about
+          each file.
+
+          In order to gain the extra power promised by the newer database
+          format, it appeared that Sysops would lose the convenience of
+          Network SDS file utilities such as TIC and FLEA, which output
+          their information into FILES.BBS format!
+
+          SFAC (SFAC2 in OS/2) overcomes this apparent dilemma by taking
+          FILES.BBS and compiling into the format needed in the new binary
+          FILELIST.BBS and appending the results to the end of
+          FILELIST.BBS.  SFAC can be told to set the upload date to today's
+          date, to set the uploader name to some string, and to delete
+          FILES.BBS if conversion is successful.
+
+          SFAC's command line is:
+
+                  sfac [-options] Filearea
+
+          SFAC's options are as follows:
+
+               -d               use current date as upload date.
+               -k               kill "files.bbs" after transferring data.
+               -uuploader_name  set uploader name to "uploader name".
+               -f               create a files.bbs listing from
+               filelist.bbs.
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       A User's Manual          Simplex BBS                                       A User's Manual
+                                       Page 23                                       Page 23
+
+
+
+
+
+
+          If you use SFAC by itself (no options), it will look in the
+          specified file area and open FILES.BBS and convert any file
+          listings that have corresponding files (i.e. files are not
+          missing) and add them to the end of the FILELIST.BBS.  The
+          uploader's name is left blank and the upload date is set to the
+          file's date.  The FILES.BBS is left intact after the operation.
+
+          The -K option will make SFAC delete FILES.BBS after a successful
+          transfer of its contents to FILELIST.BBS.
+
+          Using the -D option will set the upload date to the current date,
+          regardless of the file's date.
+
+          The -U option allows you to set the uploader's name to a string
+          (maximum length is 40 characters).  Notice that you must insert
+          underscores (_) to substitute for spaces (e.g. User's_Name).
+
+          The -F option permits you to run SFAC to generate a standard
+          FILES.BBS file for some reason or another.  This is added to
+          provide compatibility with other software which uses this format.
+
+          If you run TIC to import SDS files, you can let TIC create a
+          regular FILES.BBS in the target area and immediately afterwards
+          run SFAC to update FILELIST.BBS with the new files.  Here is a
+          sample from a batch file:
+
+                  ticp
+                  sfac2 -u"SDS file imported by TIC" -d -k 41
+                  sfac2 -u"SDS file imported by TIC" -d -k 42
+                  sfac2 -u"SDS file imported by TIC" -d -k 43
+                  sfac2 -u"SDS file imported by TIC" -d -k 44
+                  sfac2 -u"SDS file imported by TIC" -d -k 45
+
+          This assumes that TIC tosses files into file areas 41 through 45.
+          If nothing is tossed into any of the areas, SFAC will report that
+          there is nothing to do and exit.
+
+
+
+          9.2-SANSI: Simplex Ansi Compiler          9.2-SANSI: Simplex Ansi Compiler
+          _________________________________________________________________
+
+
+
+
+          In order to assist you in preparing your ANSI and ASCII files,
+          Simplex includes a compiler and a high-level language.  This
+          system is called SANSI.  You can write a single "source" file
+          which includes all of the information for screens which can be
+          compiled into the respective .ANS and .ASC files.  The compiler
+          will leave any ANSI statements out of of the .ASC files.
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       A User's Manual          Simplex BBS                                       A User's Manual
+                                       Page 24                                       Page 24
+
+
+
+
+
+
+          The SANSI language will also access to special Simplex features
+          as well as ANSI codes.  Special SANSI codes are introduced with `
+          (forward single quote) in the .ANS and .ASC files (`` is
+          interpreted by Simplex as being a `), however, use of the high-
+          level language is strongly recommended for ease of maintenance.
+
+          SANSI keywords are encoded in text in curly braces as in
+          {sequence}.  Any number of SANSI keywords may be included in the
+          curly braces separated by spaces (like {stopoff cls bell}).  To
+          encode an true opening curly brace, simply type two in a row like
+          this {{.  For a description of the SANSI language, see the
+          respective section in SETUP.DOC.
+
+
+
+          9.3-SMC: Simplex Menu Compiler          9.3-SMC: Simplex Menu Compiler
+          _________________________________________________________________
+
+
+
+
+          SMC can be used instead of SCONFIG to lay out menus.
+          Essentially, SMC can decompile a standard .MNU file into an ASCII
+          representation which can then be edited using a plain text
+          editor.  The resulting file can then be submitted to SMC to be
+          recompiled into a menu file.
+
+          To decompile a menu, you can use SMC as follows:
+
+                  smc /d file.mnu > file.smc
+
+          The "> file.smc" is needed since SMC outputs its decompilation
+          information to standard output (normally the screen).  Using the
+          ">" allows you to send it into whatever file you wish to.  DOS
+          and OS/2 gurus will also recognize the ability to concatenate a
+          bunch of menus into one file using the ">>" operator!
+
+          Running SMC by itself gives a listing of the currently supported
+          menu types.  It is handy to have a printout of these, so a good
+          idea might be to do:
+
+                  smc > prn
+
+          or whatever printer device you wish.
+
+          To compile a menu .SMC file, you need to do:
+
+                  smc file.smc
+
+          and it will create menu files according to the menu directives
+          contained in the source file.
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       A User's Manual          Simplex BBS                                       A User's Manual
+                                       Page 25                                       Page 25
+
+
+
+
+
+
+          Using the SMC compiler will permit you to use the script language
+          to put together a series of menus (you can have more than one
+          menu in a .SMC file) and avoid the overhead of using the line-
+          by-line menu editor in SCONFIG.
+
+
+
+          9.4-SUPACK: Simplex Deleted User Packing Utility          9.4-SUPACK: Simplex Deleted User Packing Utility
+          _________________________________________________________________
+
+
+
+
+          SUPACK.EXE (or SUPACK2.EXE for OS/2) is a utility to purge
+          deleted users from the Simplex user's list.  Just run the utility
+          from the command line whenever you have deleted users.  This
+          utility will pack the USERLIST.BBS file, the MSGCOMB.BBS (for
+          combined boards), and MSGREAD.BBS (for lastread pointers) into
+          .BAK files.  If everything is successful, the .BBS files will
+          then be deleted and the .BAK files will be renamed.
+
+
+
+          9.5-SAPACK: Simplex Advertising Area Packing Utility          9.5-SAPACK: Simplex Advertising Area Packing Utility
+          _________________________________________________________________
+
+
+
+
+          If a Sysop chooses to use Simplex's advertising areas, he/she
+          will eventually have to purge deleted ads out of the *.AD files.
+          To do this, Simplex provides SAPACK.EXE.  Using SAPACK is a
+          breeze.  Simply
+
+                  sapack filename[.ad]
+
+          To purge ads from a file called FOR_SALE.AD, either of the
+          following command lines will work:
+
+                  sapack for_sale.ad
+                  sapack for_sale
+
+          When finished, SAPACK will provide a small report on how many
+          entries were purged.
+
+
+
+
+
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       A User's Manual          Simplex BBS                                       A User's Manual
+                                       Page 26                                       Page 26
+
+
+
+
+
+
+          9.6-SUSAGE and SRECENT: Simplex Screen Builders          9.6-SUSAGE and SRECENT: Simplex Screen Builders
+          _________________________________________________________________
+
+
+
+
+          There are two utilities which can be used by Simplex in order to
+          generate special screens.  These are SUSAGE, a utility which
+          generates an hourly usage chart for your system, and SRECENT, a
+          utility which creates and maintains a recent callers listing.  In
+          order to take advantage of these utilities, one must have the BBS
+          exit after each user has logged off.  Both of these utilities
+          read and utilize the USERINFO.BBS file created when a user logs
+          in.
+
+          SUSAGE must have the -G option enabled in order to generate usage
+          files.  These files are placed in the screens directory and are
+          appropriately named SUSAGE.ANS and SUSAGE.ASC.  These files
+          normally use normal 7-bit ASCII characters to build the bar
+          charts, but should you prefer to use IBM 8-bit characters, you
+          can specify that with the optional -I switch.
+
+          SRECENT must have a numeric option which specifies the number of
+          last callers that you want to keep up with.  SRECENT 30 will keep
+          information on 30 users and will build the screens with that
+          information.  The resulting screens are placed in the screens
+          directory and are called SRECENT.ANS and SRECENT.ASC.
+
+          You may list names which you do not wish to show up on the recent
+          callers list by creating a file with an editor in the Simplex
+          directory called SRECENT.CFG.  This file would contain the first
+          and last names of people who are exempt from SRECENT separated by
+          an ENTER.  For example:
+
+          Susan Smith
+          Fred Flintstone
+          John Doe
+          Jane Doe
+
+          Whenever these people log off, they will not be included in the
+          recent-callers list.
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       A User's Manual          Simplex BBS                                       A User's Manual
+                                       Page 27                                       Page 27
+
+
+
+
+
+
+          9.7-SQUOTE: Simplex Quote File Compiler          9.7-SQUOTE: Simplex Quote File Compiler
+          _________________________________________________________________
+
+
+
+
+          You may create quote files for Simplex which are searched for
+          random sayings either on login (see DAYQUOTE.CQ and DAYQUOT2.CQ
+          in SETUP.DOC) or in response to a type 52 menu option.  These
+          files can contain salty wisdom sayings, scripture verses,
+          variations on Murphy's Law, short jokes, or whatever else you
+          desire.  Simplex can "randomly" select one of these sayings on
+          demand and show it to the user.
+
+          Creating quote files is a rather simple operation.  You need to
+          edit a flat-ASCII file containing one quote per line (Maximum of
+          512 characters per saying) and then compile it using SQUOTE.  The
+          quote file produced by SQUOTE must be placed in the screen files
+          directory.  The uncompiled quote file must have a .Q extension
+          (e.g. DAYQUOTE.Q) and the compiler will create a file with a .CQ
+          extension (e.g. DAYQUOTE.CQ).
+
+          Here is an example of a simple uncompiled quote file:
+
+             The toast always falls on the carpet buttered-side down!
+             A penny saved is a penny earned.
+
+             God is love. (I John 4:16a NIV)
+             For the wages of sin is death, but the gift of God is eternal
+               life in Chris Jesus our Lord. (Romans 6:23 NIV)
+
+          Notice that each line is an individual saying.  Blank lines
+          between quote lines will not hurt anything so you could group
+          similar sayings together and separate them with blank lines as
+          above.  This might make it easier to maintain your quote files.
+
+          Assume that the above file is called DAYQUOTE.Q, compiling it is
+          achieved by doing either of the following:
+
+                  squote dayquote
+                  squote dayquote.q
+
+          where the .Q is assumed and is optional.  The compiler will
+          indicate how many lines of quotes it found and write out a
+          DAYQUOTE.CQ file.
+
+
+
+
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       A User's Manual          Simplex BBS                                       A User's Manual
+                                       Page 28                                       Page 28
+
+
+
+
+
+          _________________________________________________________________
+
+                                     Chapter 10                                     Chapter 10
+
+                             Acknowlegements and Thanks                             Acknowlegements and Thanks
+          _________________________________________________________________
+
+
+
+
+          First of all, thanks goes to God for His strength and guidance
+          during the development of Simplex BBS.  Without His Spirit, this
+          project would never have made it off of the ground!
+
+          I know that it is not very often that I seem appreciative of the
+          many bug reports from my beta testers, especially since bugs pop
+          up at the most inconvenient times.  I know that getting a BBS up
+          and running can be rough especially when you have bugs to contend
+          with, and users who jump all over you when features break down!!
+          Thank you guys for a job well done, and may I add, keep up the
+          good work.
+
+          The job accomplished by beta testers is so important and yet it
+          is downplayed.  These are the guys who actually stand on the
+          front line and get pounded by bugs and undocumented "features".
+          Special thanks goes to my beta testers:
+
+               Scott Hughes of NightHawk BBS
+               Tony Till of The Starship BBS
+               Dale Robertson of D & R BBS
+               Robbie Foust of Stardate Multiline BBS
+
+          Thanks goes especially for my wife, Sherry, a "computer widow"
+          who spent much time listening to me pecking at the keyboard late
+          into the night for the many months spent while developing
+          Simplex.  She is the one who named the package and I dedicate it
+          to her and to my lovely daughter Rebekah.
+
+          Thanks to Brady Flowers of Oberon Software in Mankato, MN for
+          helping me through some of OS/2's uncharted reefs!
+
+          Thanks to those who have helped in many little ways, including
+          beta testing over the past versions.  I would like to mention the
+          following names in this regard:
+
+               Kelly Hughes of Bedside Manor BBS
+               Fred Niemczenia of The Warped Drive BBS
+               Robbie Foust of Stardate Multiline BBS
+               Craig Newlander of Chicago, Ill
+               Steven Tower of Neutral Zone BBS
+               Al Pollenz of Dateline 2100 BBS
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       A User's Manual          Simplex BBS                                       A User's Manual
+                                       Page 29                                       Page 29
+
+
+
+
+
+
+          Thanks to the many people who have made excellent suggestions for
+          features in Simplex over the course of time.  Thanks also to the
+          many kind souls who reported bugs and who sent messages of
+          encouragement.
+
+          Thanks to those dedicated users who have taken time to write
+          utilities for Simplex.  Any BBS package is improved by having a
+          rich set of external programs to enhance it.  In this respect,
+          Simplex's ultimate success will depend upon the utility writers.
+          Sometimes, the utility authors help to improve the package by
+          making suggestions for additional features to support their
+          utilities.  Invariably this helps to shape Simplex into a better
+          package!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  --------------------------------------------------
+          Simplex BBS                                       A User's Manual          Simplex BBS                                       A User's Manual
+                                       Page 30                                       Page 30
+
+
+
+
+
+          ____________________________________________________________
+
+
+                               Table of Contents                               Table of Contents
+          ____________________________________________________________
+
+
+
+
+
+               Chapter 1  Legalistic Mumbo-Jumbo (i.e. Better Read               Chapter 1
+                          This Stuff)                                2
+
+               Chapter 2  Introduction to Simplex                    4               Chapter 2
+
+               Chapter 3  Simplex Support                            5               Chapter 3
+
+               Chapter 4  Installing Simplex                         6               Chapter 4
+                  4.1   Simplex and Answering the Phone  . . . . . . 7                  4.1
+                  4.2   Presumptions Underlying Simplex's Net Mail . 7                  4.2
+                  4.3   Installing a Network Node  . . . . . . . . . 9                  4.3
+                  4.4   Setting up a non-Net BBS . . . . . . . . .  10                  4.4
+                  4.5   Configuring Simplex  . . . . . . . . . . .  11                  4.5
+
+               Chapter 5  Running Simplex                           12               Chapter 5
+
+               Chapter 6  Simplex's File Areas                      16               Chapter 6
+
+               Chapter 7  Virus Checker Interface                   18               Chapter 7
+
+               Chapter 8  Simplex Sysop Options                     19               Chapter 8
+                  8.1   The Sysop's Keyboard . . . . . . . . . . .  19                  8.1
+                  8.2   Local Uploading and Downloading  . . . . .  20                  8.2
+                  8.3   Message Exporting  . . . . . . . . . . . .  20                  8.3
+                  8.4   Yelling  . . . . . . . . . . . . . . . . .  21                  8.4
+                  8.5   Downloading Hours  . . . . . . . . . . . .  21                  8.5
+                  8.6   File Moving within Simplex . . . . . . . .  21                  8.6
+
+               Chapter 9  Basic Simplex Utilities                   23               Chapter 9
+                  9.1   SFAC: Simplex File Area Compiler . . . . .  23                  9.1
+                  9.2   SANSI: Simplex Ansi Compiler . . . . . . .  24                  9.2
+                  9.3   SMC: Simplex Menu Compiler . . . . . . . .  25                  9.3
+                  9.4   SUPACK: Simplex Deleted User Packing                  9.4
+                        Utility  . . . . . . . . . . . . . . . . .  26
+                  9.5   SAPACK: Simplex Advertising Area Packing                  9.5
+                        Utility  . . . . . . . . . . . . . . . . .  26
+                  9.6   SUSAGE and SRECENT: Simplex Screen                  9.6
+                        Builders . . . . . . . . . . . . . . . . .  27
+                  9.7   SQUOTE: Simplex Quote File Compiler  . . .  28                  9.7
+
+               Chapter 10  Acknowlegements and Thanks               29               Chapter 10
+
+
+
+
+                                          i
+

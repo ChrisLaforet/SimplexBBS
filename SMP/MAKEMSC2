@@ -1,0 +1,36 @@
+# Makefile
+#
+# For SMP - Simplex mail packer
+
+smp2.exe : os2\smp.obj os2\s_action.obj os2\s_arc.obj os2\s_file.obj \
+	os2\s_getmsg.obj os2\s_outb.obj os2\s_pack.obj
+	link os2\smp os2\s_action os2\s_arc os2\s_file os2\s_getmsg os2\s_outb os2\s_pack,smp2,/MAP,/NOD:clibce clibcep doscalls,smp2.def
+
+os2\smp.obj : smp.c smp.h
+	cl -AC -Ocgilnt -Zp1 -FPi -G2s -DPROTECTED -Foos2\ -c smp.c > smp.err
+	type smp.err
+
+os2\s_action.obj : s_action.c smp.h
+	cl -AC -Ocgilnt -Zp1 -FPi -G2s -DPROTECTED -Foos2\ -c s_action.c > s_action.err
+	type s_action.err
+
+os2\s_arc.obj : s_arc.c smp.h
+	cl -AC -Ocgilnt -Zp1 -FPi -G2s -DPROTECTED -Foos2\ -c s_arc.c > s_arc.err
+	type s_arc.err
+
+os2\s_file.obj : s_file.c smp.h
+	cl -AC -Ocgilnt -Zp1 -FPi -G2s -DPROTECTED -Foos2\ -c s_file.c > s_file.err
+	type s_file.err
+
+os2\s_getmsg.obj : s_getmsg.c smp.h
+	cl -AC -Ocgilnt -Zp1 -FPi -G2s -DPROTECTED -Foos2\ -c s_getmsg.c > s_getmsg.err
+	type s_getmsg.err
+
+os2\s_outb.obj : s_outb.c smp.h
+	cl -AC -Ocgilnt -Zp1 -FPi -G2s -DPROTECTED -Foos2\ -c s_outb.c > s_outb.err
+	type s_outb.err
+
+os2\s_pack.obj : s_pack.c smp.h
+	cl -AC -Ocgilnt -Zp1 -FPi -G2s -DPROTECTED -Foos2\ -c s_pack.c > s_pack.err
+	type s_pack.err
+

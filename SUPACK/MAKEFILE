@@ -1,0 +1,7 @@
+supack.exe : supack.obj
+	wlink @makefile.lst
+
+supack.obj : supack.c supack.h
+	wcl -mc -ox -s -zp1 -w4 -c supack.c > supack.err
+	type supack.err
+

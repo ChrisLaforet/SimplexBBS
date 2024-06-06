@@ -1,0 +1,15 @@
+`0[0;31;1mHelp for the [0;32;1mQuickscan Menu [0;35;1m------------------
+
+[0;33;1m<F> Qscan Forward  [0;36m- Perform a Quick Scan of messages in forward order
+                     from a specified message number.
+[0;33;1m<R> Qscan Reverse  [0;36m- Perform a Quick Scan of messages in reverse order
+                     from a specified message number.
+[0;33;1m<N> Qscan New      [0;36m- Perform a Quick Scan of new messages from the last
+                     message that you read.
+[0;33;1m<S> Qscan Search   [0;36m- Perform a Quick Scan in the fields:  To Name, From
+                     Name, or Subject.  You will be prompted for the
+                     field of your choice.
+[0;33;1m<X> Exit           [0;36m- Exits to the previous menu.
+
+[0;36;1mPress [0;31;1m[5mENTER [0;36;1mto continue....`4
+

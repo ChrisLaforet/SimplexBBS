@@ -1,0 +1,4 @@
+This is version 1.01 of SFAC, the Simplex File Area Compiler.  Among other
+things the following were done:
+
+ - Added support for new 1.07 cfg struct.

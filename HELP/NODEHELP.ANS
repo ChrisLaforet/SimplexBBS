@@ -1,0 +1,12 @@
+`0[0;31;1mHelp for the [0;32;1mNodelist Search [0;35;1m------------------
+
+[0;33;1m<N> Search by Net   [0;36m- This will search the entire nodelist for a NET number
+                      that you specify and display ALL BBS nodes with that 
+                      Net number.
+[0;33;1m<B> Search by BBS   [0;36m- This will search all BBS names in the nodelist
+                      and look for the string that you specify.  
+[0;33;1m<C> Search by City  [0;36m- This will search the nodelist for a city that 
+                      you specify.
+[0;33;1m<X> Exit            [0;36m- Exits to the previous menu.
+
+[0;36;1mPress [0;31;1m[5mENTER [0;36;1mto continue....`4

@@ -1,0 +1,6 @@
+NAME 		SUPACK WINDOWCOMPAT
+STACKSIZE 	4096
+HEAPSIZE	8192
+DESCRIPTION 	'SUPACK --  Simplex Deleted User Packing Utility. Copyright (c) 1991, Christopher Laforet'
+EXETYPE		OS2
+

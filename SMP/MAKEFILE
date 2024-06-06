@@ -1,0 +1,40 @@
+# Makefile for Watcom C 9.0
+#
+# For SMP - Simplex mail packer
+
+smp.exe : smp.obj s_action.obj s_arc.obj s_file.obj s_getmsg.obj \
+	s_outb.obj s_pack.obj s_pass.obj
+	wlink @makefile.lst
+
+smp.obj : smp.c smp.h
+	wcl -ml -ox -s -zp1 -w4 -c smp.c > smp.err
+	type smp.err
+
+s_action.obj : s_action.c smp.h	   
+	wcl -ml -ox -s -zp1 -w4 -c s_action.c > s_action.err
+	type s_action.err
+
+s_arc.obj : s_arc.c smp.h
+	wcl -ml -ox -s -zp1 -w4 -c s_arc.c > s_arc.err
+	type s_arc.err
+
+s_file.obj : s_file.c smp.h
+	wcl -ml -ox -s -zp1 -w4 -c s_file.c > s_file.err
+	type s_file.err
+
+s_getmsg.obj : s_getmsg.c smp.h
+	wcl -ml -ox -s -zp1 -w4 -c s_getmsg.c > s_getmsg.err
+	type s_getmsg.err
+
+s_outb.obj : s_outb.c smp.h
+	wcl -ml -ox -s -zp1 -w4 -c s_outb.c > s_outb.err
+	type s_outb.err
+
+s_pack.obj : s_pack.c smp.h
+	wcl -ml -ox -s -zp1 -w4 -c s_pack.c > s_pack.err
+	type s_pack.err
+
+s_pass.obj : s_pass.c smp.h
+	wcl -ml -ox -s -zp1 -w4 -c s_pass.c > s_pass.err
+	type s_pass.err
+

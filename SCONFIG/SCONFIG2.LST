@@ -1,0 +1,11 @@
+/NOI os2\sconfig os2\s_apath os2\s_date +
+os2\s_event os2\s_fedit os2\s_file +
+os2\s_flist os2\s_gen os2\s_gpath os2\s_main +
+os2\s_medit os2\s_menu os2\s_misc os2\s_modem +
+os2\s_msel os2\s_msg os2\s_npath os2\s_upath +
+os2\s_users os2\s_util,
+sconfig2,
+/MAP,
+/NOD:llibce llibcep doscalls,
+sconfig2.def;
+

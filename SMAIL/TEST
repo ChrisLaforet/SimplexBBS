@@ -1,0 +1,3 @@
+os2\smail os2\s_areas os2\s_badmsg os2\s_date +
+os2\s_export os2\s_file os2\s_import os2\s_sig +
+os2\s_unarc,smail2,/MAP,/NOD:clibce clibcep doscalls,smail2.def

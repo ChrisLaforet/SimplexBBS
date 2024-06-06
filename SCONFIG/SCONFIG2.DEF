@@ -1,0 +1,7 @@
+NAME 		SCONFIG2 WINDOWCOMPAT
+PROTMODE
+STACKSIZE 	8192
+HEAPSIZE	8192
+DESCRIPTION 	'SConfig/2 -- Configuration editor for Simplex/2. Copyright (c) 1989-92, Christopher Laforet'
+EXETYPE		OS2
+

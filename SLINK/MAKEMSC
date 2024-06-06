@@ -1,0 +1,11 @@
+slink.exe : slink.obj s_build.obj
+	link /ST:8192 slink s_build;
+
+slink.obj : slink.c slink.h
+	cl -AC -Ocgilnt -Zp1 -FPi -W3 -Gs -c slink.c > slink.err
+	type slink.err
+	
+s_build.obj : s_build.c slink.h
+	cl -AC -Ocgilnt -Zp1 -FPi -W3 -Gs -c s_build.c > s_build.err
+	type s_build.err
+	

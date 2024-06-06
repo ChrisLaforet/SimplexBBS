@@ -1,0 +1,7 @@
+supack2.exe : os2\supack.obj
+	wlink @makeos2.lst
+
+os2\supack.obj : supack.c supack.h
+	wcl -mc -ox -2 -s -zp1 -fo=os2\ -w4 -dPROTECTED -c supack.c > supack.err
+	type supack.err
+

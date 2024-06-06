@@ -1,0 +1,7 @@
+stop.exe : stop.obj
+	link stop,stop,/MAP,/NOD:clibce clibcep os2,stop.def
+	bind stop.exe e:\lib\os2.lib
+
+stop.obj : stop.c stop.h
+	cl -AC -Zp1 -W3 -Ocglnt -Lp -Gs -c stop.c > stop.err
+	type stop.err

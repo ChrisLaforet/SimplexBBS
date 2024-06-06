@@ -1,0 +1,16 @@
+TARGET : from101.exe from1012.exe
+	@echo Targets finished.
+
+from101.exe : from101.obj
+	link /ST:8192 from101;
+
+from1012.exe : from1012.obj
+	link from1012,,,/NOD:llibce llibcep os2,from1012.def
+
+from101.obj : from101.c
+	cl -AL -Zp1 -Ocgit -Gs -W3 -c from101.c > from101.err
+	type from101.err
+
+from1012.obj : from101.c
+	cl -AL -Zp1 -Ocgit -G2s -DPROTECTED -Fofrom1012 -W3 -c from101.c > from101.err
+	type from101.err

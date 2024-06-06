@@ -1,0 +1,17 @@
+`0[0;31;1mHelp for the [0;32;1mRead Topics Menu [0;35;1m------------------
+
+[0;32;1mAn asterisk (*) next to the choice indicates that the topic has new
+messages since you last read in this area.  The number in square brackets is
+the number of messages in that topic.
+
+[0;33;1m<0-9> Read Topic    [0;36m- Choose the topic or subject of interest and then
+                      enter the number next to the topic to read ALL messages
+                      in that topic thread.
+[0;33;1m<A-J> Read Topic    [0;36m- Choose the topic or subject of interest and then
+                      enter the letter next to the topic to read only NEW
+                      messages in that topic thread.
+[0;33;1m<P> Previous        [0;36m- This will take you back one page of choices.
+[0;33;1m<N> Next            [0;36m- This will take you forward one page of choices.
+[0;33;1m<X> Exit            [0;36m- Exit to the previous menu.
+
+[0;36;1mPress [0;31;1m[5mENTER [0;36;1mto continue....`4

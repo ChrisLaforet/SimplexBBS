@@ -1,0 +1,14 @@
+name sfac2.exe
+format os2 pmcompatible
+option protmode
+option packcode=64k
+option caseexact
+option map
+option stack=8192
+option heapsize=1024
+library clibc.lib
+library os2.lib
+file os2\sfac
+file os2\s_date
+file os2\s_flist
+

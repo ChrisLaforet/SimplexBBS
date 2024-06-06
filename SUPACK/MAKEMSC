@@ -1,0 +1,7 @@
+supack.exe : supack.obj
+	link /ST:4096 supack;
+
+supack.obj : supack.c supack.h
+	cl -AC -FPi -Zp1 -Oit -W3 -Gs -c supack.c > supack.err
+	type supack.err
+

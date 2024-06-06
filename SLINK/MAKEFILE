@@ -1,0 +1,11 @@
+slink.exe : slink.obj s_build.obj
+	wlink @makefile.lst
+
+slink.obj : slink.c slink.h
+	wcl -mc -ox -s -zp1 -w4 -c slink.c > slink.err
+	type slink.err
+	
+s_build.obj : s_build.c slink.h
+	wcl -mc -ox -s -zp1 -w4 -c s_build.c > s_build.err
+	type s_build.err
+	

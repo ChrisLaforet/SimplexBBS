@@ -1,0 +1,8 @@
+squote.exe : squote.obj
+	wlink @makefile.lst
+	bind squote.exe e:\lib\os2.lib 
+
+squote.obj : squote.c squote.h
+	wcl -mc -ox -0 -s -zp1 -w4 -c squote.c > squote.err
+	type squote.err
+

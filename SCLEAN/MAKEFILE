@@ -1,0 +1,28 @@
+# Makefile for Watcom 9.0
+#
+# SCLEAN - Mail Cleaning for Simplex
+
+
+sclean.exe : sclean.obj s_all.obj s_date.obj s_num.obj s_recv.obj
+	wlink @makefile.lst
+
+sclean.obj : sclean.c sclean.h
+	wcl -mc -ox -s -zp1 -w4 -c sclean.c > sclean.err
+	type sclean.err
+
+s_all.obj : s_all.c sclean.h
+	wcl -mc -ox -s -zp1 -w4 -c s_all.c > s_all.err
+	type s_all.err
+
+s_date.obj : s_date.c sclean.h
+	wcl -mc -ox -s -zp1 -w4 -c s_date.c > s_date.err
+	type s_date.err
+
+s_num.obj : s_num.c sclean.h
+	wcl -mc -ox -s -zp1 -w4 -c s_num.c > s_num.err
+	type s_num.err
+
+s_recv.obj : s_recv.c sclean.h
+	wcl -mc -ox -s -zp1 -w4 -c s_recv.c > s_recv.err
+	type s_recv.err
+

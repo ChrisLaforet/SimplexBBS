@@ -1,0 +1,296 @@
+WATCOM Linker Version 8.0
+Copyright by WATCOM Systems Inc. 1985, 1992.  All rights reserved.
+Created on:       92/08/20 20:54:09
+Executable Image: sclean.exe
+creating a DOS executable
+
+
+                        +---------------+
+                        |    Groups     |
+                        +---------------+
+
+Group                           Address              Size
+=====                           =======              ====
+
+DGROUP                          074c:0000            000037f0
+
+
+
+                        +---------------+
+                        |   Segments    |
+                        +---------------+
+
+Segment                Class          Group          Address         Size
+=======                =====          =====          =======         ====
+
+BEGTEXT                CODE                          0000:0000       00000006
+_TEXT                  CODE                          0000:0006       00007476
+FAR_DATA               FAR_DATA                      0000:747c       00000000
+cmain6_DATA            FAR_DATA                      0748:0000       00000032
+_NULL                  BEGDATA        DGROUP         074c:0000       00000020
+_AFTERNULL             BEGDATA        DGROUP         074e:0000       00000002
+CONST                  DATA           DGROUP         074e:0002       000007ce
+CONST2                 DATA           DGROUP         07cb:0000       00000000
+_DATA                  DATA           DGROUP         07cb:0000       00000550
+STRINGS                DATA           DGROUP         0820:0000       00000000
+XIB                    DATA           DGROUP         0820:0000       00000000
+XI                     DATA           DGROUP         0820:0000       0000001e
+XIE                    DATA           DGROUP         0821:000e       00000000
+YIB                    DATA           DGROUP         0821:000e       00000000
+YI                     DATA           DGROUP         0821:000e       00000006
+YIE                    DATA           DGROUP         0822:0004       00000000
+DATA                   DATA           DGROUP         0822:0004       00000000
+BCSD                   DATA           DGROUP         0822:0004       00000000
+_EMU_INIT_START        EMU            DGROUP         0822:0004       00000000
+_EMU_INIT_END          EMU            DGROUP         0822:0004       00000000
+_BSS                   BSS            DGROUP         0822:0004       0000028c
+STACK                  STACK          DGROUP         084b:0000       00002800
+
+
+                        +---------------+
+                        |  Memory Map   |
+                        +---------------+
+
+* = unreferenced symbol
++ = symbol only referenced locally
+
+Address        Symbol               Defined by
+=======        ======               ==========
+
+0000:0006      main_                spack.obj(spack.c)
+074c:07f0      _valid_headers
+074c:07f2      _deleted_headers
+074c:07f4      _valid_bytes
+074c:07f8      _deleted_bytes
+074c:07fc      _inplace
+074c:07fe*     _keep
+074c:0800+     _pack
+074c:0802+     _ana
+074c:0804      _kill
+074c:0806      _quiet_flag
+074c:0d64      _mlinkfd
+074c:0d68      _mbodyfd
+074c:0d6c      _mheadfd
+074c:0d70      _mdatafd
+074c:0d74      _bheadfd
+074c:0d78      _bbodyfd
+074c:0d7c      _bbspath
+0000:0552      analyse_             s_analys.obj(s_analys.c)
+0000:086a      do_pack_             s_pack.obj(s_pack.c)
+074c:0808      __fmode              e:\wlib\lib286\dos\clibc.lib(iob.c)
+074c:080a      ___iob
+074c:0b8e*     ___tmpfnext
+0000:1110      fprintf_             e:\wlib\lib286\dos\clibc.lib(fprintf)
+0000:113c      __sigabort_          e:\wlib\lib286\dos\clibc.lib(signal)
+0000:1142      __sigfpe_handler_
+0000:116e      signal_
+0000:11e2      raise_
+0000:1247      getenv_              e:\wlib\lib286\dos\clibc.lib(getenv)
+0000:12d9      getcwd_              e:\wlib\lib286\dos\clibc.lib(getcwd)
+0000:1373      printf_              e:\wlib\lib286\dos\clibc.lib(printf)
+0000:13b6      sprintf_             e:\wlib\lib286\dos\clibc.lib(sprintf)
+0000:13f2*     vsprintf_
+0000:141b      __open_flags_        e:\wlib\lib286\dos\clibc.lib(fopen)
+0000:15b0      fopen_
+0000:15e7*     freopen_
+0000:1624      fclose_              e:\wlib\lib286\dos\clibc.lib(fclose)
+0000:164a      __doclose_
+0000:16d8      unlink_              e:\wlib\lib286\dos\clibc.lib(unlink)
+0000:16f4      rename_              e:\wlib\lib286\dos\clibc.lib(rename)
+0000:197b      __GETDS              e:\wlib\lib286\dos\clibc.lib(cstart)
+0000:192a      __exit_
+0000:1823*     _Not_Enough_Memory_
+0000:1716      _cstart_
+074c:0000*     __nullarea
+0000:1949      __exit_with_msg_
+0000:1986      _small_code_         e:\wlib\lib286\dos\clibc.lib(cmodel)
+0000:1986*     CodeModelMismatch
+074c:0baa      __argc               e:\wlib\lib286\dos\clibc.lib(argcargv)
+074c:0bac      __argv
+0000:1986      fseek_               e:\wlib\lib286\dos\clibc.lib(fseek)
+0000:1b3b      fread_               e:\wlib\lib286\dos\clibc.lib(fread)
+0000:1cc8      __I4M                e:\wlib\lib286\dos\clibc.lib(i4m)
+0000:1cc8      __U4M
+0000:1ce0      fwrite_              e:\wlib\lib286\dos\clibc.lib(fwrite)
+0000:1e6d      fflush_              e:\wlib\lib286\dos\clibc.lib(fflush)
+0000:1f53      toupper_             e:\wlib\lib286\dos\clibc.lib(toupper)
+0000:1f62      _dos_getdrive_       e:\wlib\lib286\dos\clibc.lib(dosdrive)
+0000:1f76*     _dos_setdrive_
+0000:1f8c      _dos_getdiskfree_    e:\wlib\lib286\dos\clibc.lib(dosdisk)
+0000:1fb8      filelength_          e:\wlib\lib286\dos\clibc.lib(filelen)
+0000:2012      __I4D                e:\wlib\lib286\dos\clibc.lib(i4d)
+0000:205f      __U4D
+0000:20ed      calloc_              e:\wlib\lib286\dos\clibc.lib(calloc)
+0000:212e      __null_int23_exit_   e:\wlib\lib286\dos\clibc.lib(exit)
+0000:212f      exit_
+0000:2144*     _exit_
+074c:0bb0      ___ioexit
+074c:0bb2      ___atexit
+074c:0bb4      ___int23_exit
+074c:0bb6      ___FPE_handler_exit
+0000:2158      chsize_              e:\wlib\lib286\dos\clibc.lib(chsize)
+0000:2262      ftell_               e:\wlib\lib286\dos\clibc.lib(ftell)
+0000:22ad*     _ffree_              e:\wlib\lib286\dos\clibc.lib(ffree)
+0000:22ad      free_
+0000:22e4      __fprtf_             e:\wlib\lib286\dos\clibc.lib(fprtf)
+0000:2363      __get_errno_ptr_     e:\wlib\lib286\dos\clibc.lib(errno)
+0000:236a*     __get_doserrno_ptr_
+074c:0de0      _errno
+074c:0de2      __doserrno
+0000:2388      __terminate_         e:\wlib\lib286\dos\clibc.lib(abort)
+0000:2393*     abort_
+074c:0bb8      ___abort
+0000:240b      __grab_int23_        e:\wlib\lib286\dos\clibc.lib(sigsys)
+0000:2447      __grab_fpe_          e:\wlib\lib286\math87c.lib(grabfpe)
+074c:0bc2      ___env_mask          e:\wlib\lib286\dos\clibc.lib(environ)
+074c:0bbe      _environ
+0000:244a      strnicmp_            e:\wlib\lib286\dos\clibc.lib(strnicmp)
+0000:24a1*     _fmalloc_            e:\wlib\lib286\dos\clibc.lib(fmalloc)
+0000:24a1      malloc_
+074c:0bc6      ___fheap
+0000:255a      strncpy_             e:\wlib\lib286\dos\clibc.lib(strncpy)
+0000:2592      __prtf_              e:\wlib\lib286\dos\clibc.lib(prtf)
+0000:2f05      tolower_             e:\wlib\lib286\dos\clibc.lib(tolower)
+0000:2f13      open_                e:\wlib\lib286\dos\clibc.lib(open)
+0000:2f4e      sopen_
+0000:312c*     __set_binary_
+0000:3185      __allocfp_           e:\wlib\lib286\dos\clibc.lib(allocfp)
+0000:31ca      __freefp_
+0000:31d8      __ioalloc_           e:\wlib\lib286\dos\clibc.lib(ioalloc)
+0000:325d      __chktty_
+0000:3284      close_               e:\wlib\lib286\dos\clibc.lib(close)
+0000:32be      remove_              e:\wlib\lib286\dos\clibc.lib(remove)
+0000:32c1*     _dosret0_            e:\wlib\lib286\dos\clibc.lib(dosret)
+0000:32c8*     _dosretax_
+0000:32cd      __EINVAL_
+0000:32e2      _set_errno_
+074c:0bec      __no87               e:\wlib\lib286\dos\clibc.lib(crwdata)
+074c:0bea      __child
+074c:0bfa      __FPE_handler
+074c:0be8      __cbyte
+074c:0bf2      __restore_ovl_stack
+074c:0be3      __HShift
+074c:0be2      __osmode
+074c:0bdc      __curbrk
+074c:0bfa      ___FPE_handler
+074c:0be0      __osmajor
+074c:0be1      __osminor
+074c:0bee      __get_ovl_stack
+074c:0be4      __STACKLOW
+074c:0be6      __STACKTOP
+074c:0bf6      __close_ovl_file
+074c:0bfe      __LpCmdLine
+074c:0c02      __LpPgmName
+074c:0bde      __psp
+0000:333d      __CMain              e:\wlib\lib286\dos\clibc.lib(dos\cmain.c)
+0000:3360      _init_files_
+0000:3467      __FiniRtns           e:\wlib\lib286\dos\clibc.lib(initrtns)
+0000:344c      __InitRtns
+0000:3482*     __FFiniRtns
+0000:347e*     __FInitRtns
+0000:3486      __DOSseg__           e:\wlib\lib286\dos\clibc.lib(dosseg)
+0000:3487      __Init_Argv_         e:\wlib\lib286\dos\clibc.lib(initargv)
+0000:3636      lseek_               e:\wlib\lib286\dos\clibc.lib(lseek)
+0000:366f*     fgetc_               e:\wlib\lib286\dos\clibc.lib(fgetc)
+0000:36d4      __filbuf_
+0000:36f6      __fill_buffer_
+0000:379d      tell_                e:\wlib\lib286\dos\clibc.lib(tell)
+0000:37cd      __qread_             e:\wlib\lib286\dos\clibc.lib(qread)
+0000:37f1      write_               e:\wlib\lib286\dos\clibc.lib(write)
+0000:39b4      fputc_               e:\wlib\lib286\dos\clibc.lib(fputc)
+0000:3a58      flushall_            e:\wlib\lib286\dos\clibc.lib(flushall)
+0000:3a5b      __flushall_
+0000:3a9f      __qwrite_            e:\wlib\lib286\dos\clibc.lib(qwrite)
+0000:3b09      _nmalloc_            e:\wlib\lib286\dos\clibc.lib(nmalloc)
+0000:3b6e      __LastFree_
+0000:3b96      __ExpandDGROUP_
+074c:0c06      ___nheap
+074c:0c08+     ___nheapbeg
+074c:0c0a      ___nheapblk
+0000:3d04      _nfree_              e:\wlib\lib286\dos\clibc.lib(nfree)
+0000:3d1e      __MemAllocator       e:\wlib\lib286\dos\clibc.lib(memalloc)
+0000:3dc2      __MemFree
+074c:0de4      ___nheap_clean       e:\wlib\lib286\dos\clibc.lib(heapmod)
+074c:0de5      ___fheap_clean
+0000:3ecc      _chain_intr_         e:\wlib\lib286\dos\clibc.lib(chainint)
+0000:3ee1      _dos_setvect_        e:\wlib\lib286\dos\clibc.lib(d_setvec)
+0000:3eee      _dos_getvect_        e:\wlib\lib286\dos\clibc.lib(d_getvec)
+0000:3efb      __GrabFP87_          e:\wlib\lib286\dos\clibc.lib(grabfp87)
+0000:3f23      __setenvp_           e:\wlib\lib286\dos\clibc.lib(setenvp)
+0000:4017      __AllocSeg_          e:\wlib\lib286\dos\clibc.lib(allocseg)
+0000:40ac      __GrowSeg_           e:\wlib\lib286\dos\clibc.lib(growseg)
+0000:4194      __fmemneed_          e:\wlib\lib286\dos\clibc.lib(fmemneed)
+0000:41bc+     utoa_                e:\wlib\lib286\dos\clibc.lib(itoa)
+0000:421b      itoa_
+074c:0c20      ___EFG_printf        e:\wlib\lib286\dos\clibc.lib(noefgfmt)
+074c:0c22*     ___EFG_scanf
+0000:4292      ultoa_               e:\wlib\lib286\dos\clibc.lib(ltoa)
+0000:4301      ltoa_
+0000:4331      isatty_              e:\wlib\lib286\dos\clibc.lib(isatty)
+074c:0c24      ___umaskval          e:\wlib\lib286\dos\clibc.lib(umaskval)
+074c:0c26      ___NFiles            e:\wlib\lib286\dos\clibc.lib(nfiles.c)
+074c:0c28      __iomode
+0000:434d      __full_io_exit_      e:\wlib\lib286\dos\clibc.lib(ioexit)
+0000:4380+     fcloseall_
+0000:43bc*     _heapgrow_           e:\wlib\lib286\dos\clibc.lib(heapgrow)
+0000:43bc*     _fheapgrow_
+0000:43bd      _nheapgrow_
+074c:0de6      ____Argv             e:\wlib\lib286\dos\clibc.lib(___argc)
+074c:0dea      ____Argc
+074c:0c8c      __amblksiz           e:\wlib\lib286\dos\clibc.lib(amblksiz)
+0000:4431      getche_              e:\wlib\lib286\dos\clibc.lib(getche)
+0000:4451      stackavail_          e:\wlib\lib286\dos\clibc.lib(stacka)
+0000:4487      __STKOVERFLOW_       e:\wlib\lib286\dos\clibc.lib(stk)
+0000:4467*     __STK
+0000:44a4      __nmemneed_          e:\wlib\lib286\dos\clibc.lib(nmemneed)
+0000:44a7*     sbrk_                e:\wlib\lib286\dos\clibc.lib(sbrk)
+0000:44b8      __brk_
+0000:45af*     __FPEHandler         e:\wlib\lib286\dos\clibc.lib(fpe87)
+0000:4524      __Enable_FPE_
+0000:4577      __Fini_FPE_handler_
+0000:453f      __Init_FPE_handler_
+0000:4855      putch_               e:\wlib\lib286\dos\clibc.lib(putch)
+0000:fe32*     FIARQQ               e:\wlib\lib286\dos\emu87.lib(initemu.ASM)
+0000:4000*     FJARQQ
+0000:0e32*     FICRQQ
+0000:c000*     FJCRQQ
+0000:5c32      FIDRQQ
+0000:1632      FIERQQ
+0000:0632*     FISRQQ
+0000:8000*     FJSRQQ
+0000:a23d      FIWRQQ
+0000:4921*     __fini_87_emulator
+0000:489c*     __init_87_emulator
+074c:0ccf      __real87             e:\wlib\lib286\dos\clibc.lib(8087)
+074c:0cce      __8087
+0000:4a4a      __int34              e:\wlib\lib286\dos\emu87.lib(emu8087.ASM)
+0000:4a87      __int3c
+0000:739e      __init_8087_emu      e:\wlib\lib286\dos\clibc.lib(init8087)
+0000:73a2      __init_80x87
+0000:73ff      __init_8087_         e:\wlib\lib286\dos\clibc.lib(chk8087)
+0000:7425*     _fpreset_
+0000:7437      __chk8087_
+074c:0d3a      ___Save8087          e:\wlib\lib286\dos\clibc.lib(save8087)
+074c:0d3c      ___Rest8087
+074c:0d3e      __8087cw             e:\wlib\lib286\dos\clibc.lib(8087cw)
+
+
+                        +---------------+
+                        |   Libraries   |
+                        |     Used      |
+                        +---------------+
+
+e:\wlib\lib286\dos\clibc.lib
+e:\wlib\lib286\math87c.lib
+e:\wlib\lib286\dos\emu87.lib
+
+
+                        +---------------+
+                        |    Linker     |
+                        |  Statistics   |
+                        +---------------+
+
+Stack size:  2800 (10240.)
+Memory size:  acb0 (44208.)
+Entry point address: 0000:1716
+Link time: 00:02.94

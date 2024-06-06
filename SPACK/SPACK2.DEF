@@ -1,0 +1,7 @@
+NAME 		SPACK2 WINDOWCOMPAT
+PROTMODE
+STACKSIZE 	10240
+HEAPSIZE	8192
+DESCRIPTION 	'SPack/2 -- Message base packing utility for Simplex BBS. Copyright (c) 1989-90, Christopher Laforet'
+EXETYPE		OS2
+

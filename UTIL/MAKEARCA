@@ -1,0 +1,7 @@
+arca.obj : arca.c
+	cl -AS -FPi -Oailnt -G2s -W3 -c arca.c > arca.err
+	type arca.err
+
+arca.exe : arca.obj
+	link arca,,,/NOD:slibce slibcep doscalls,arca.def;
+

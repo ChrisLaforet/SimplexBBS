@@ -1,0 +1,23 @@
+name smail2.exe
+format os2 pmcompatible
+option protmode
+option packcode=64k
+option caseexact
+option map
+option stack=10240
+option heapsize=8192
+library clibl.lib
+library os2.lib
+file os2\smail
+file os2\s_areas
+file os2\s_badmsg
+file os2\s_date
+file os2\s_export
+file os2\s_file
+file os2\s_impmsg
+file os2\s_import
+file os2\s_pass
+file os2\s_sig
+file os2\s_toss
+file os2\s_twit
+file os2\s_unarc

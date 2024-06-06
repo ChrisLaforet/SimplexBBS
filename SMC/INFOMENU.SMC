@@ -1,0 +1,62 @@
+/* Decompilation of menu file infomenu.mnu
+**
+** Achieved by SMC (v 0.01)
+*/
+
+
+menu "infomenu"
+
+  prompt "[^$r min^] What is your choice?"
+  	color 15	hilite 14
+
+  /* Line 1> Type: Show menu line */
+  line "[ ^Information Menu^ >----------------------------------------"
+  	type 0	expert
+  	priv 0	color 13	hilite 14
+
+  /* Line 2> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 3> Type: Show menu line */
+  line ""
+  	type 0
+  	priv 0	color 7	hilite 15
+
+  /* Line 4> Type: Show ascii/ansi file */
+  line "<^R^> Read the Rulebook                   $c"
+  	type 48
+  	key "R"	data "rulebook"
+  	priv 0	color 11	hilite 14
+
+  /* Line 5> Type: Show ascii/ansi file */
+  line "<^B^> Read the Bulletin"
+  	type 48
+  	key "B"	data "bulletin"
+  	priv 0	color 11	hilite 14
+
+  /* Line 6> Type: Show ascii/ansi file */
+  line "<^I^> Information about Simplex           $c"
+  	type 48
+  	key "I"	data "info"
+  	priv 0	color 10	hilite 14
+
+  /* Line 7> Type: Answer questionaire file */
+  line "<^Q^> Answer our questionnaire"
+  	type 51
+  	key "Q"	data "general"
+  	priv 0	color 10	hilite 14
+
+  /* Line 8> Type: Return to previous menu */
+  line "<^M^> Return to the main menu"
+  	type 3
+  	key "M"
+  	priv 0	color 12	hilite 14
+
+  /* Line 9> Type: Call new menu - Add to return stack */
+  line "<^G^> Goodbye! Log off!!"
+  	type 1
+  	key "G"	data "logoff"
+  	priv 0	color 13	hilite 14
+

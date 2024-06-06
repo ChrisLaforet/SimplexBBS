@@ -1,0 +1,7 @@
+supack2.exe : os2\supack.obj
+	link os2\supack,supack2,,/NOD:clibce clibcep os2,supack.def
+
+os2\supack.obj : supack.c supack.h
+	cl -AC -FPi -Zp1 -Oit -W3 -G2s -Fo.\os2\ -c supack.c > supack.err
+	type supack.err
+

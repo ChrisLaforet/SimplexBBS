@@ -1,0 +1,400 @@
+WATCOM Linker Version 10.0
+Copyright by WATCOM International Corp. 1985, 1994. All rights reserved.
+Created on:       94/10/07 04:35:43
+Executable Image: srecent.exe
+creating an OS/2 executable
+
+
+                        +------------+
+                        |   Groups   |
+                        +------------+
+
+Group                           Address              Size
+=====                           =======              ====
+
+DGROUP                          0002:0000            00002580
+
+
+
+                        +--------------+
+                        |   Segments   |
+                        +--------------+
+
+Segment                Class          Group          Address         Size
+=======                =====          =====          =======         ====
+
+BEGTEXT                CODE                          0001:0000       00000007
+_TEXT                  CODE                          0001:0010       00004076
+_NULL                  BEGDATA        DGROUP         0002:0000       00000020
+_AFTERNULL             BEGDATA        DGROUP         0002:0020       00000002
+CONST                  DATA           DGROUP         0002:0022       0000082c
+CONST2                 DATA           DGROUP         0002:084e       00000102
+_DATA                  DATA           DGROUP         0002:0950       000002b7
+XIB                    DATA           DGROUP         0002:0c08       00000000
+XI                     DATA           DGROUP         0002:0c08       00000012
+XIE                    DATA           DGROUP         0002:0c1a       00000000
+YIB                    DATA           DGROUP         0002:0c1a       00000000
+YI                     DATA           DGROUP         0002:0c1a       00000006
+YIE                    DATA           DGROUP         0002:0c20       00000000
+STRINGS                DATA           DGROUP         0002:0c20       00000000
+_BSS                   BSS            DGROUP         0002:0c20       0000095c
+STACK                  STACK          DGROUP         0002:1580       00001000
+
+
+                        +----------------+
+                        |   Memory Map   |
+                        +----------------+
+
+* = unreferenced symbol
++ = symbol only referenced locally
+
+Address        Symbol
+=======        ======
+
+Module: srecent.obj(G:\SIMPLEX\srecent\SRECENT.C)
+0001:0010+     date_to_day_
+0001:008d+     comp_
+0001:00bc      main_
+0002:0950+     _total
+0002:0952+     _recent
+0002:0954+     _cur_recent
+0002:0956+     _max_recent
+0002:0958+     _unlisted
+0002:095a+     _cur_unlisted
+0002:095c+     _max_unlisted
+0002:095e+     _months
+0002:0976+     _days
+0002:0984+     _day_table
+0002:099c+     _jan1
+0002:0c20+     _bbspath
+0002:0c98+     _srfd
+0002:0c9a+     _userinfo
+0002:0cdb+     _cfg
+Module: f:\watcom\lib286\os2\clibs.lib(iob)
+0002:0a64      ___iob
+0002:0b7c*     ___tmpfnext
+0002:0b7d      __fmode
+0002:1554      ___ClosedStreams
+Module: f:\watcom\lib286\os2\clibs.lib(fprintf)
+0001:0f3f      fprintf_
+Module: f:\watcom\lib286\os2\clibs.lib(getenv)
+0001:0f5d      getenv_
+Module: f:\watcom\lib286\os2\clibs.lib(gtcwdos2)
+0001:0fb8      getcwd_
+Module: f:\watcom\lib286\os2\clibs.lib(sprintf)
+0001:1052      sprintf_
+Module: f:\watcom\lib286\os2\clibs.lib(fopen)
+0001:1080+     __open_flags_
+0001:11d4+     _fsopen_
+0001:11eb      fopen_
+0001:124b*     freopen_
+Module: f:\watcom\lib286\os2\clibs.lib(printf)
+0001:1282      printf_
+Module: f:\watcom\lib286\os2\clibs.lib(fread)
+0001:12a0      fread_
+Module: f:\watcom\lib286\os2\clibs.lib(fclose)
+0001:1414      fclose_
+0001:1436      __shutdown_stream_
+0001:1453+     __MkTmpFile_
+0001:14b5      __doclose_
+Module: f:\watcom\lib286\os2\clibs.lib(fgets)
+0001:1533      fgets_
+Module: f:\watcom\lib286\os2\clibs.lib(istable)
+0002:084e      __IsTable
+Module: f:\watcom\lib286\os2\clibs.lib(nrealloc)
+0001:158e*     _nrealloc_
+0001:158e      realloc_
+Module: f:\watcom\lib286\os2\clibs.lib(calloc)
+0001:15ff      calloc_
+Module: f:\watcom\lib286\os2\clibs.lib(atoi)
+0001:163a      atoi_
+Module: f:\watcom\lib286\os2\clibs.lib(fseek)
+0001:16cd      fseek_
+Module: f:\watcom\lib286\os2\clibs.lib(stricmp)
+0001:17ca      stricmp_
+0001:17ca*     _stricmp_
+0001:17ca*     strcmpi_
+Module: f:\watcom\lib286\os2\clibs.lib(qsort)
+0001:1864      qsort_
+Module: f:\watcom\lib286\os2\clibs.lib(nfree)
+0001:1bdb      _nfree_
+0001:1bdb      free_
+Module: f:\watcom\lib286\os2\clibs.lib(chsizos2)
+0001:1c18      chsize_
+Module: f:\watcom\lib286\os2\clibs.lib(fwrite)
+0001:1c25      fwrite_
+Module: f:\watcom\lib286\os2\clibs.lib(cstrto16)
+0001:0003*     ___begtext
+0002:0000*     __nullarea
+0001:1db0      _cstart_
+0001:1db0*     __DLLstart_
+Module: f:\watcom\lib286\os2\clibs.lib(cmodel)
+0001:1e44      _small_code_
+0001:1e44*     CodeModelMismatch
+Module: f:\watcom\lib286\os2\clibs.lib(argcv086)
+0002:0b82      __argc
+0002:0b84      __argv
+Module: f:\watcom\lib286\os2\clibs.lib(stinit)
+0002:1556      ___OpenStreams
+Module: f:\watcom\lib286\os2\clibs.lib(fprtf)
+0001:1e53      __fprtf_
+Module: f:\watcom\lib286\os2\clibs.lib(environ)
+0002:0b88      _environ
+0002:0b8a      ___env_mask
+Module: f:\watcom\lib286\os2\clibs.lib(strnicmp)
+0001:1eb8      strnicmp_
+Module: f:\watcom\lib286\os2\clibs.lib(dosret)
+0001:1f01*     _dosret0_
+0001:1f08*     _dosretax_
+0001:1f0d      __set_errno_dos_
+Module: f:\watcom\lib286\os2\clibs.lib(nmalloc)
+0001:1f51      _nmalloc_
+0001:1f51      malloc_
+0002:0ba0      ___nheapbeg
+0002:0ba2      ___MiniHeapRover
+0002:0ba4      ___LargestSizeB4MiniHeapRover
+Module: f:\watcom\lib286\os2\clibs.lib(seterrno)
+0001:1fff*     __set_EDOM_
+0001:2002      __set_errno_
+0001:2010*     __set_ERANGE_
+0001:2015*     __set_EINVAL_
+0001:201f      __set_doserrno_
+0001:2028*     __FPE_exception_
+Module: f:\watcom\lib286\os2\clibs.lib(strncpy)
+0001:202d      strncpy_
+Module: f:\watcom\lib286\os2\clibs.lib(prtf)
+0001:2056      __prtf_
+Module: f:\watcom\lib286\os2\clibs.lib(tolower)
+0001:28e3      tolower_
+0001:28e3*     _tolower_
+Module: f:\watcom\lib286\os2\clibs.lib(openos2)
+0001:28f4*     open_
+0001:2912      sopen_
+Module: f:\watcom\lib286\os2\clibs.lib(allocfp)
+0001:2a5b      __allocfp_
+0001:2aef      __freefp_
+0001:2b1c      __purgefp_
+Module: f:\watcom\lib286\os2\clibs.lib(chktty)
+0001:2b3e      __chktty_
+Module: f:\watcom\lib286\os2\clibs.lib(winrtns)
+0002:0ba6      __WindowsIsWindowedHandle
+0002:0ba8      __WindowsRemoveWindowedHandle
+0002:0baa      __WindowsNewWindow
+0002:0bac      __WindowsCloseWindow
+0002:0bae*     __WindowsSetAbout
+0002:0bb0*     __WindowsSetAppTitle
+0002:0bb2*     __WindowsSetConTitle
+0002:0bb4*     __WindowsDestroyOnClose
+0002:0bb6*     __WindowsYieldControl
+0002:0bb8*     __WindowsShutDown
+0002:0bba      __WindowsStdin
+0002:0bbc      __WindowsStdout
+0002:0bbe*     __WindowsKbhit
+0002:0bc0      __WindowsGetch
+0002:0bc2*     __WindowsGetche
+0002:0bc4      __WindowsPutch
+0002:0bc6      __WindowExitRtn
+Module: f:\watcom\lib286\os2\clibs.lib(ioalloc)
+0001:2b61      __ioalloc_
+Module: f:\watcom\lib286\os2\clibs.lib(qread)
+0001:2bbe      __qread_
+Module: f:\watcom\lib286\os2\clibs.lib(fgetc)
+0001:2c0b      fgetc_
+0001:2c6e+     __filbuf_
+0001:2c8b      __fill_buffer_
+Module: f:\watcom\lib286\os2\clibs.lib(gtpidos2)
+0001:2d17      getpid_
+Module: f:\watcom\lib286\os2\clibs.lib(flush)
+0001:2d34      __flush_
+Module: f:\watcom\lib286\os2\clibs.lib(ftell)
+0001:2dca      ftell_
+Module: f:\watcom\lib286\os2\clibs.lib(lseekos2)
+0001:2e10      lseek_
+0001:2e10*     _lseek_
+Module: f:\watcom\lib286\os2\clibs.lib(_clseos2)
+0001:2e45      __close_
+Module: f:\watcom\lib286\os2\clibs.lib(remove)
+0001:2e93      remove_
+Module: f:\watcom\lib286\os2\clibs.lib(nmsize)
+0001:2e96      _nmsize_
+0001:2e96*     _msize_
+Module: f:\watcom\lib286\os2\clibs.lib(nexpand)
+0001:2ea3      _nexpand_
+0001:2ea3*     _expand_
+0001:2eca+     __HeapManager_expand_
+Module: f:\watcom\lib286\os2\clibs.lib(i4m)
+0001:307e*     __I4M
+0001:307e      __U4M
+Module: f:\watcom\lib286\os2\clibs.lib(tellos2)
+0001:3096      tell_
+Module: f:\watcom\lib286\os2\clibs.lib(memalloc)
+0001:30cc      __MemAllocator
+0001:3170      __MemFree
+Module: f:\watcom\lib286\os2\clibs.lib(heapmod)
+0002:1558      ___fheap_clean
+0002:1559      ___nheap_clean
+Module: f:\watcom\lib286\os2\clibs.lib(write)
+0001:3279      write_
+Module: f:\watcom\lib286\os2\clibs.lib(fputc)
+0001:34a8      fputc_
+Module: f:\watcom\lib286\os2\clibs.lib(maino16)
+0001:3530+     __null_FPE_handler_
+0001:3531      __OS2Main
+0001:35f1*     _Not_Enough_Memory_
+0001:3601      __exit_
+0002:0bc8      ___FPE_handler
+0002:155a      __LpCmdLine
+0002:155e      __LpPgmName
+0002:1562+     __HShift
+0002:1564      __STACKTOP
+0002:1566      __STACKLOW
+0002:1568      __curbrk
+0002:156a      __cbyte2
+0002:156c      __cbyte
+0002:156e+     __dynend
+0002:1570+     __osminor
+0002:1571+     __osmajor
+0002:1572      __osmode
+Module: f:\watcom\lib286\os2\clibs.lib(seg086)
+0001:361c      __DOSseg__
+Module: f:\watcom\lib286\os2\clibs.lib(initargv)
+0001:361d      __Init_Argv_
+Module: f:\watcom\lib286\os2\clibs.lib(initfile)
+0001:3796      __InitFiles_
+Module: f:\watcom\lib286\os2\clibs.lib(ioexit)
+0001:37ed      __full_io_exit_
+0001:37f5*     fcloseall_
+Module: f:\watcom\lib286\os2\clibs.lib(setenvp)
+0001:3843      __setenvp_
+Module: f:\watcom\lib286\os2\clibs.lib(grownear)
+0001:3987+     __LastFree_
+0001:39ab      __ExpandDGROUP_
+Module: f:\watcom\lib286\os2\clibs.lib(nmemneed)
+0001:3abe      __nmemneed_
+Module: f:\watcom\lib286\os2\clibs.lib(errno)
+0001:3ac1      __get_errno_ptr_
+0001:3ac5      __get_doserrno_ptr_
+0002:1574+     __doserrno
+0002:1576+     _errno
+Module: f:\watcom\lib286\os2\clibs.lib(itoa)
+0001:3aee+     utoa_
+0001:3b32      itoa_
+0001:3b32*     _itoa_
+Module: f:\watcom\lib286\os2\clibs.lib(noefgfmt)
+0002:0bcc      ___EFG_printf
+0002:0bce*     ___EFG_scanf
+Module: f:\watcom\lib286\os2\clibs.lib(ltoa)
+0001:3b80      ultoa_
+0001:3bd2      ltoa_
+0001:3bd2*     _ltoa_
+Module: f:\watcom\lib286\os2\clibs.lib(toupper)
+0001:3bf0      toupper_
+0001:3bf0*     _toupper_
+Module: f:\watcom\lib286\os2\clibs.lib(iomode)
+0001:3bfe      __IOMode_
+0001:3c45      __SetIOMode_
+0002:0bd0      ___NFiles
+0002:0bd2      ___init_mode
+0002:0bfa      __iomode
+Module: f:\watcom\lib286\os2\clibs.lib(isattos2)
+0001:3c55      isatty_
+Module: f:\watcom\lib286\os2\clibs.lib(flushall)
+0001:3c82*     flushall_
+0001:3c85      __flushall_
+Module: f:\watcom\lib286\os2\clibs.lib(gtcheos2)
+0001:3cb4      getche_
+Module: f:\watcom\lib286\os2\clibs.lib(qwrit)
+0001:3cd4      __qwrite_
+Module: f:\watcom\lib286\os2\clibs.lib(unlnkos2)
+0001:3d4e      unlink_
+Module: f:\watcom\lib286\os2\clibs.lib(bfree)
+0001:3d6b      _bfree_
+Module: f:\watcom\lib286\os2\clibs.lib(stack086)
+0001:3d89      stackavail_
+Module: f:\watcom\lib286\os2\clibs.lib(stko16)
+0001:3d92*     __STK
+0001:3da2      __STKOVERFLOW_
+Module: f:\watcom\lib286\os2\clibs.lib(growiomd)
+0001:3db5      __grow_iomode_
+Module: f:\watcom\lib286\os2\clibs.lib(inirt086)
+0001:3e8c      __InitRtns
+0001:3eaa      __FiniRtns
+0001:3ec3*     __FInitRtns
+0001:3ec7*     __FFiniRtns
+Module: f:\watcom\lib286\os2\clibs.lib(cmain086)
+0001:3ecb      __CMain
+Module: f:\watcom\lib286\os2\clibs.lib(xmsgo16)
+0001:3ee1+     __exit_with_msg_
+0001:3f15      __fatal_runtime_error_
+Module: f:\watcom\lib286\os2\clibs.lib(___argc)
+0002:1578      ____Argc
+0002:157a      ____Argv
+Module: f:\watcom\lib286\os2\clibs.lib(heapen)
+0001:3f2c*     _heapenable_
+0002:0bfc      ___heap_enabled
+Module: f:\watcom\lib286\os2\clibs.lib(sbrk)
+0001:3f38*     sbrk_
+0001:3f3c      __brk_
+Module: f:\watcom\lib286\os2\clibs.lib(amblksiz)
+0002:0bfe      __amblksiz
+Module: f:\watcom\lib286\os2\clibs.lib(getchos2)
+0001:3f7f      getch_
+Module: f:\watcom\lib286\os2\clibs.lib(putchos2)
+0001:3ff4      putch_
+Module: f:\watcom\lib286\os2\clibs.lib(_getds)
+0001:4034      __GETDS
+Module: f:\watcom\lib286\os2\clibs.lib(exit)
+0001:403c+     __null_int23_exit_
+0001:403d      exit_
+0001:404f+     _exit_
+0002:0c00+     ___atexit
+0002:0c02+     ___int23_exit
+0002:0c04+     ___FPE_handler_exit
+Module: f:\watcom\lib286\os2\clibs.lib(enterdb)
+0001:406a      __EnterWVIDEO_
+0002:0c06+     ___WD_Present
+
+
+                        +----------------------+
+                        |   Imported Symbols   |
+                        +----------------------+
+
+Symbol                              Module
+======                              ======
+
+DOSQCURDIR                          DOSCALLS
+DOSQCURDISK                         DOSCALLS
+DOSNEWSIZE                          DOSCALLS
+DOSOPEN                             DOSCALLS
+DOSREAD                             DOSCALLS
+DOSGETPID                           DOSCALLS
+DOSCHGFILEPTR                       DOSCALLS
+DOSCLOSE                            DOSCALLS
+DOSWRITE                            DOSCALLS
+DOSGETHUGESHIFT                     DOSCALLS
+DOSGETMACHINEMODE                   DOSCALLS
+DOSGETVERSION                       DOSCALLS
+DOSEXIT                             DOSCALLS
+DOSGETENV                           DOSCALLS
+DOSQHANDTYPE                        DOSCALLS
+DOSDELETE                           DOSCALLS
+VIOWRTTTY                           VIOCALLS
+DOSREALLOCSEG                       DOSCALLS
+KBDCHARIN                           KBDCALLS
+
+
+                        +--------------------+
+                        |   Libraries Used   |
+                        +--------------------+
+
+f:\watcom\lib286\os2\clibs.lib
+e:\lib\os2.lib
+
+
+                        +-----------------------+
+                        |   Linker Statistics   |
+                        +-----------------------+
+
+Stack size:  1000 (4096.)
+Memory size:  6606 (26118.)
+Entry point address: 0001:1db0

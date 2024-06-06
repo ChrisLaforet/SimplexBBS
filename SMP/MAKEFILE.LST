@@ -1,0 +1,15 @@
+name smp.exe
+format dos
+option dosseg
+option stack=10240
+option caseexact
+option map
+library clibl.lib
+file smp.obj
+file s_action.obj
+file s_arc.obj
+file s_file.obj
+file s_getmsg.obj
+file s_outb.obj
+file s_pack.obj
+file s_pass.obj

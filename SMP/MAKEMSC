@@ -1,0 +1,37 @@
+# Makefile
+#
+# For SMP - Simplex mail packer
+
+smp.exe : smp.obj s_action.obj s_arc.obj s_file.obj s_getmsg.obj \
+	s_outb.obj s_pack.obj
+	link /ST:10240 smp s_action s_arc s_file s_getmsg s_outb s_pack,smp;
+
+smp.obj : smp.c smp.h
+	cl -AC -Ocgilnt -Zp1 -FPi -Gs -c smp.c > smp.err
+	type smp.err
+
+s_action.obj : s_action.c smp.h	   
+	cl -AC -Ocgilnt -Zp1 -FPi -Gs -c s_action.c > s_action.err
+	type s_action.err
+
+s_arc.obj : s_arc.c smp.h
+	cl -AC -Ocgilnt -Zp1 -FPi -Gs -c s_arc.c > s_arc.err
+	type s_arc.err
+
+s_file.obj : s_file.c smp.h
+	cl -AC -Ocgilnt -Zp1 -FPi -Gs -c s_file.c > s_file.err
+	type s_file.err
+
+s_getmsg.obj : s_getmsg.c smp.h
+	cl -AC -Ocgilnt -Zp1 -FPi -Gs -c s_getmsg.c > s_getmsg.err
+	type s_getmsg.err
+
+s_outb.obj : s_outb.c smp.h
+	cl -AC -Ocgilnt -Zp1 -FPi -Gs -c s_outb.c > s_outb.err
+	type s_outb.err
+
+s_pack.obj : s_pack.c smp.h
+	cl -AC -Ocgilnt -Zp1 -FPi -Gs -c s_pack.c > s_pack.err
+	type s_pack.err
+
+

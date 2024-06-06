@@ -1,0 +1,7 @@
+NAME 		LISTGEN2 WINDOWCOMPAT
+PROTMODE
+STACKSIZE 	4096
+HEAPSIZE	8192
+DESCRIPTION 	'Listgen/2 -- A Simplex/2 File List Generator. Copyright (c) 1989-90, Chris Laforet Software.'
+EXETYPE		OS2
+

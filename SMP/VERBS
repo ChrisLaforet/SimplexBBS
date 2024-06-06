@@ -1,0 +1,42 @@
+HOLDTO <destination> <sources...>	; causes all mail bound to sources to be held for destination
+HOSTHOLD <destinations...>		; causes all mail bound to destinations to be held for network host
+
+ROUTETO <destination> <sources...>	; causes all mail bound to sources to get routed to destination
+HOSTROUTE <destinations...>	     	; causes all mail bound to destinations to get routed to network host
+
+DIRECTTO <destination> <sources...>	; causes all mail bound to sources to get directed (CM) to destination
+HOSTDIRECT <destinations...>		; causes all mail bound to destinations to get directed (CM) to network host
+
+ARCHOLD <destination> <sources...>	; ARCs held mail bound to sources to destination
+ZIPHOLD <destination> <sources...>	; ZIPs held mail bound to sources to destination
+LZHHOLD <destination> <sources...>	; LZHs held mail bound to sources to destination
+ZOOHOLD <destination> <sources...>	; ZOOs held mail bound to sources to destination
+
+ARCROUTE <destination> <sources...>	; ARCs routed mail bound to sources to destination
+ZIPROUTE <destination> <sources...>	; ZIPs routed mail bound to sources to destination
+LZHROUTE <destination> <sources...>	; LZHs routed mail bound to sources to destination
+ZOOROUTE <destination> <sources...>	; ZOOs routed mail bound to sources to destination
+
+ARCDIRECT <destination> <sources...>	; ARCs direct mail (CM) bound to sources to destination
+ZIPDIRECT <destination> <sources...>	; ZIPs direct mail (CM) bound to sources to destination
+LZHDIRECT <destination> <sources...>	; LZHs direct mail (CM) bound to sources to destination
+ZOODIRECT <destination> <sources...>	; ZOOs direct mail (CM) bound to sources to destination
+
+HOLDROUTE <destinations...>    		; Converts held mail bound to destinations to routed mail
+HOLDDIRECT <destinations...>   		; Converts held mail bound to destinations to direct mail
+
+ROUTEHOLD <destinations...>		; Converts routed mail bound to destinations to held mail
+ROUTEDIRECT <destinations...>   	; Converts routed mail bound to destinations to direct mail
+
+DIRECTHOLD <destinations...>		; Converts direct (CM) mail bound to destinations to held mail
+DIRECTROUTE <destinations...>    	; Converts direct (CM) mail bound to destinationsto routed mail
+
+LEAVEHOLD <destinations...>		; Leaves (renames to non-active extension) mail that was marked hold to destinations
+LEAVEROUTE <destinations...>		; Leaves (renames to non-active extension) mail that was marked routed to destinations
+LEAVEDIRECT <destinations...>		; Leaves (renames to non-active extension) mail that was marked directed to destinations
+
+SENDHOLD <destinations...>		; Marks as held mail that was marked leavehold to destinations
+SENDROUTE <destinations...>		; Marks as routed mail that was marked leaveroute to destinations
+SENDDIRECT <destinations...>		; Marks as direct mail (CM) that was marked leavedirect to destinations
+
+POLL <destinations...>			; Generate a direct poll (CM) file to destinations

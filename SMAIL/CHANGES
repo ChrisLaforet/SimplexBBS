@@ -1,0 +1,10 @@
+This is version 1.09.  Among other things the following were done:
+
+ - Corrected possibility of two messages exiting with the same MSGID.
+ - Added new unarchiver option %P which is the destination path without a
+   trailing backslash (as %D).
+ - Added support for packet-level passwording.
+ - Trim off leading whitespace before scanning for P or area-number on
+   each line in areas.bbs.
+ - Added twit filtration capabilities to inbound mail.
+ - Added 1.07's cfg struct.

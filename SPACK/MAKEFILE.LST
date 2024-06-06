@@ -1,0 +1,11 @@
+name spack.exe
+format dos
+option dosseg
+option stack=10240
+option caseexact
+option map
+option stack=10240
+library clibc.lib
+file spack.obj
+file s_analys.obj
+file s_pack.obj

@@ -1,0 +1,818 @@
+
+ CONFIG2
+
+ Start     Length     Name                   Class
+ 0001:0000 00700H     CONFIG_TEXT            CODE
+ 0001:0700 00480H     C_EDIT_TEXT            CODE
+ 0001:0B80 00E62H     C_EVENT_TEXT           CODE
+ 0001:19E2 009F4H     C_FILE_TEXT            CODE
+ 0001:23D6 0121AH     C_INFO_TEXT            CODE
+ 0001:35F0 02190H     C_MED_TEXT             CODE
+ 0001:5780 0162EH     C_MEDIT_TEXT           CODE
+ 0001:6DAE 00C98H     C_MENU_TEXT            CODE
+ 0001:7A46 01D0EH     C_MISC_TEXT            CODE
+ 0001:9754 01100H     C_MODEM_TEXT           CODE
+ 0001:A854 010E2H     C_MSG_TEXT             CODE
+ 0001:B936 00CE4H     C_NET_TEXT             CODE
+ 0001:C61A 01446H     C_USER_TEXT            CODE
+ 0002:0000 03010H     _TEXT                  CODE
+ 0002:3010 00002H     EMULATOR_TEXT          CODE
+ 0002:3012 00000H     _FILE_TEXT             CODE
+ 0002:3012 0016CH     ASKYN_TEXT             CODE
+ 0002:317E 01626H     EDITOR_TEXT            CODE
+ 0002:47A4 00174H     ERROR_TEXT             CODE
+ 0002:4918 00880H     HELP_TEXT              CODE
+ 0002:5198 0043CH     KEYUTIL_TEXT           CODE
+ 0002:55D4 00270H     KEYREDEF_TEXT          CODE
+ 0002:5844 000CAH     PARSE_TEXT             CODE
+ 0002:590E 003D8H     POPMENU_TEXT           CODE
+ 0002:5CE6 0043EH     SELMENU_TEXT           CODE
+ 0002:6124 00034H     CLRBLK_TEXT            CODE
+ 0002:6158 00026H     CLS_TEXT               CODE
+ 0002:617E 00126H     CRSRTYPE_TEXT          CODE
+ 0002:62A4 0012EH     DRAWBOX_TEXT           CODE
+ 0002:63D2 00044H     GETCURSR_TEXT          CODE
+ 0002:6416 00074H     KEYBOARD_TEXT          CODE
+ 0002:648A 001DEH     NORMAL_TEXT            CODE
+ 0002:6668 00022H     PHANTOM_TEXT           CODE
+ 0002:668A 00060H     PRMOV_TEXT             CODE
+ 0002:66EA 0004EH     PRNOMOV_TEXT           CODE
+ 0002:6738 0004CH     PRNOMOVF_TEXT          CODE
+ 0002:6784 00056H     PRNTCENT_TEXT          CODE
+ 0002:67DA 00054H     SCRINIT_TEXT           CODE
+ 0002:682E 0006AH     SCROLLUP_TEXT          CODE
+ 0002:6898 00074H     SETCURSR_TEXT          CODE
+ 0002:690C 002A2H     SHADOW_TEXT            CODE
+ 0002:6BAE 00030H     VBR_TEXT               CODE
+ 0002:6BDE 00028H     VBW_TEXT               CODE
+ 0002:6C06 00030H     VCW_TEXT               CODE
+ 0002:6C36 00044H     VSW_TEXT               CODE
+ 0002:6C7A 00000H     C_ETEXT                ENDCODE
+ 0003:0000 00000H     EMULATOR_DATA          FAR_DATA
+ 0003:0000 00A5AH     FAR_BSS                FAR_BSS
+ 0004:0000 00042H     NULL                   BEGDATA
+ 0004:0042 04C20H     _DATA                  DATA
+ 0004:4C62 00000H     XPB                    DATA
+ 0004:4C62 00004H     XP                     DATA
+ 0004:4C66 00000H     XPE                    DATA
+ 0004:4C66 0000EH     CDATA                  DATA
+ 0004:4C74 00000H     XIFB                   DATA
+ 0004:4C74 00000H     XIF                    DATA
+ 0004:4C74 00000H     XIFE                   DATA
+ 0004:4C74 00000H     XIB                    DATA
+ 0004:4C74 00000H     XI                     DATA
+ 0004:4C74 00000H     XIE                    DATA
+ 0004:4C74 00000H     XCB                    DATA
+ 0004:4C74 00000H     XC                     DATA
+ 0004:4C74 00000H     XCE                    DATA
+ 0004:4C74 00000H     XCFB                   DATA
+ 0004:4C74 00000H     XCF                    DATA
+ 0004:4C74 00000H     XCFE                   DATA
+ 0004:4C74 00048H     CONST                  CONST
+ 0004:4CBC 00008H     HDR                    MSG
+ 0004:4CC4 00102H     MSG                    MSG
+ 0004:4DC6 00002H     PAD                    MSG
+ 0004:4DC8 00001H     EPAD                   MSG
+ 0004:4DCA 00060H     _BSS                   BSS
+ 0004:4E2A 00000H     XOB                    BSS
+ 0004:4E2A 00000H     XO                     BSS
+ 0004:4E2A 00000H     XOE                    BSS
+ 0004:4E30 00200H     c_common               BSS
+ 0004:5030 02000H     STACK                  STACK
+
+ Origin   Group
+ 0004:0   DGROUP
+
+  Address         Publics by Name
+
+ 0000:0000  Imp  DOSALLOCSEG          (DOSCALLS.34)
+ 0000:0000  Imp  DOSBEEP              (DOSCALLS.50)
+ 0000:0000  Imp  DOSCHGFILEPTR        (DOSCALLS.58)
+ 0000:0000  Imp  DOSCLOSE             (DOSCALLS.59)
+ 0000:0000  Imp  DOSDELETE            (DOSCALLS.60)
+ 0000:0000  Imp  DOSEXIT              (DOSCALLS.5)
+ 0000:0000  Imp  DOSFINDFIRST         (DOSCALLS.64)
+ 0000:0000  Imp  DOSFINDNEXT          (DOSCALLS.65)
+ 0000:0000  Imp  DOSGETDATETIME       (DOSCALLS.33)
+ 0000:0000  Imp  DOSGETMACHINEMODE    (DOSCALLS.49)
+ 0000:0000  Imp  DOSGETVERSION        (DOSCALLS.92)
+ 0000:0000  Imp  DOSMOVE              (DOSCALLS.67)
+ 0000:0000  Imp  DOSNEWSIZE           (DOSCALLS.68)
+ 0000:0000  Imp  DOSOPEN              (DOSCALLS.70)
+ 0000:0000  Imp  DOSQCURDIR           (DOSCALLS.71)
+ 0000:0000  Imp  DOSQCURDISK          (DOSCALLS.72)
+ 0000:0000  Imp  DOSQFILEMODE         (DOSCALLS.75)
+ 0000:0000  Imp  DOSQHANDTYPE         (DOSCALLS.77)
+ 0000:0000  Imp  DOSREAD              (DOSCALLS.137)
+ 0000:0000  Imp  DOSREALLOCSEG        (DOSCALLS.38)
+ 0000:0000  Imp  DOSSELECTDISK        (DOSCALLS.81)
+ 0000:0000  Imp  DOSSETSIGHANDLER     (DOSCALLS.14)
+ 0000:0000  Imp  DOSSETVEC            (DOSCALLS.89)
+ 0000:0000  Imp  DOSSLEEP             (DOSCALLS.32)
+ 0000:0000  Imp  DOSWRITE             (DOSCALLS.138)
+ 0000:0000  Imp  KBDCHARIN            (KBDCALLS.4)
+ 0000:0000  Imp  KBDGETSTATUS         (KBDCALLS.10)
+ 0000:0000  Imp  KBDPEEK              (KBDCALLS.22)
+ 0000:0000  Imp  KBDSETSTATUS         (KBDCALLS.11)
+ 0004:4278       STKHQQ
+ 0000:0000  Imp  VIOGETCONFIG         (VIOCALLS.46)
+ 0000:0000  Imp  VIOGETCURPOS         (VIOCALLS.9)
+ 0000:0000  Imp  VIOGETCURTYPE        (VIOCALLS.27)
+ 0000:0000  Imp  VIOREADCELLSTR       (VIOCALLS.24)
+ 0000:0000  Imp  VIOSCROLLUP          (VIOCALLS.7)
+ 0000:0000  Imp  VIOSETCURPOS         (VIOCALLS.15)
+ 0000:0000  Imp  VIOSETCURTYPE        (VIOCALLS.32)
+ 0000:0000  Imp  VIOWRTCELLSTR        (VIOCALLS.10)
+ 0000:0000  Imp  VIOWRTCHARSTRATT     (VIOCALLS.48)
+ 0000:0000  Imp  VIOWRTNATTR          (VIOCALLS.26)
+ 0000:0000  Imp  VIOWRTNCELL          (VIOCALLS.52)
+ 0000:0000  Imp  VIOWRTTTY            (VIOCALLS.19)
+ 0002:3012       _askyn
+ 0002:1B7C       _atoi
+ 0002:1B80       _atol
+ 0004:2E0A       _background
+ 0004:3588       _baud
+ 0002:55BA       _beep
+ 0004:377E       _board_type
+ 0002:23BA       _calloc
+ 0003:0150       _cfg
+ 0003:0950       _cfgfd
+ 0003:0954       _cfgpath
+ 0004:4C5A       _cga_here
+ 0002:1FF0       _chsize
+ 0002:12E8       _close
+ 0002:512A       _close_help
+ 0002:316E       _close_message
+ 0002:6AE8       _close_shadow_window
+ 0002:65A4       _close_window
+ 0002:6124       _clrblk
+ 0004:0492       _color
+ 0004:2DCC       _cur_evts
+ 0004:2DC4       _cur_files
+ 0004:1A96       _cur_menu
+ 0004:234C       _cur_menus
+ 0004:2DBC       _cur_msgs
+ 0002:4BB0       _deregister_help
+ 0002:56D6       _deregister_key
+ 0002:55A4       _do_sound
+ 0002:62A4       _drawbox
+ 0001:BF92       _draw_archivers
+ 0001:0B80       _draw_evt
+ 0001:19FA       _draw_file
+ 0001:23D6       _draw_info
+ 0001:42F2       _draw_menu_edit
+ 0001:3A88       _draw_menu_screen
+ 0001:579E       _draw_menu_select
+ 0001:7E50       _draw_misc
+ 0001:9754       _draw_modem
+ 0001:A86C       _draw_msg
+ 0001:B936       _draw_paths
+ 0001:C61A       _draw_users
+ 0004:4DCA       _edata
+ 0001:C356       _edit_archivers
+ 0001:1082       _edit_evt
+ 0002:317E       _edit_field
+ 0001:1CFE       _edit_file
+ 0001:7A46       _edit_flags
+ 0001:27A2       _edit_info
+ 0001:589A       _edit_menu
+ 0001:4772       _edit_menus
+ 0001:8812       _edit_misc
+ 0001:9FBC       _edit_modem
+ 0001:AD9E       _edit_msg
+ 0001:BCFA       _edit_paths
+ 0001:D014       _edit_users
+ 0004:4C60       _ega43flag
+ 0004:4C5E       _ega_active
+ 0004:4C58       _ega_here
+ 0004:5030       _end
+ 0004:44E5       _environ
+ 0004:4470       _errno
+ 0002:47A4       _error
+ 0003:0004       _evtfd
+ 0004:2DC8       _evts
+ 0002:57C4       _execute_key
+ 0002:2EB4       _exit
+ 0002:04AE       _fclose
+ 0002:0CCC       _fflush
+ 0003:0A56       _filefd
+ 0002:2178       _filelength
+ 0004:2DC0       _files
+ 0001:19E2       _file_comp
+ 0001:C23C       _fill_archivers
+ 0001:0E5C       _fill_evt
+ 0001:1BDC       _fill_file
+ 0001:2630       _fill_info
+ 0001:4566       _fill_menu_edit
+ 0001:8462       _fill_misc
+ 0001:9C66       _fill_modem
+ 0001:AB2C       _fill_msg
+ 0001:BBFC       _fill_paths
+ 0001:CB32       _fill_users
+ 0002:0D4C       _flushall
+ 0001:5780       _fname_sort
+ 0002:05A8       _fopen
+ 0004:2E24       _foreground
+ 0002:05C4       _fprintf
+ 0002:0604       _fread
+ 0002:181C       _free
+ 0002:1D68       _fseek
+ 0002:1DEA       _ftell
+ 0002:0776       _fwrite
+ 0002:1CAA       _getch
+ 0002:1CA6       _getche
+ 0002:2C54       _getcwd
+ 0002:1C18       _getenv
+ 0001:0AA6       _get_anychar
+ 0001:0700       _get_anychar_first
+ 0002:63F2       _get_cursor_type
+ 0001:83EC       _get_field
+ 0001:07C4       _get_filename
+ 0001:8422       _get_menu
+ 0001:093E       _get_pname
+ 0001:83AC       _get_status
+ 0002:51CA       _get_time
+ 0004:4B5C       _in_help
+ 0002:1BDA       _itoa
+ 0001:3C92       _load_menu
+ 0002:2FE6       _longjmp
+ 0002:1312       _lseek
+ 0001:0000       _main
+ 0001:6DAE       _main_menu
+ 0002:1816       _malloc
+ 0004:2DCE       _max_evts
+ 0004:2DC6       _max_files
+ 0004:1A94       _max_menu
+ 0004:234A       _max_menus
+ 0004:2DBE       _max_msgs
+ 0002:2540       _memcpy
+ 0002:2476       _memmove
+ 0002:259E       _memset
+ 0004:1A90       _menu
+ 0004:2346       _menus
+ 0004:1A98       _menutype
+ 0001:35F0       _menu_comp
+ 0004:4C5C       _mono_here
+ 0003:0000       _msgfd
+ 0004:2DB8       _msgs
+ 0001:A854       _msg_comp
+ 0004:3792       _msg_type
+ 0003:0008       _mtypelines
+ 0004:37A2       _nodes
+ 0002:1361       _open
+ 0002:4918       _open_help
+ 0002:30EA       _open_message
+ 0002:690C       _open_shadow_window
+ 0002:648A       _open_window
+ 0001:3608       _parse_color
+ 0002:5844       _parse_entry
+ 0002:6668       _phantom
+ 0002:505C       _pop_help
+ 0002:590E       _pop_menu
+ 0004:3560       _port
+ 0002:6784       _prntcenter
+ 0002:668A       _prntmov
+ 0002:66EA       _prntnomov
+ 0002:6738       _prntnomovf
+ 0002:240E       _putch
+ 0002:264A       _qsort
+ 0002:4BB6       _query_help_topic
+ 0002:5768       _query_key
+ 0002:2880       _raise
+ 0002:1516       _read
+ 0002:545A       _read_keyboard
+ 0002:22EC       _realloc
+ 0002:4B86       _register_help
+ 0002:55D4       _register_key
+ 0002:2D74       _remove
+ 0002:2D50       _rename
+ 0002:5224       _screen_save
+ 0002:682E       _scroll_up
+ 0002:67DA       _scr_init
+ 0001:378C       _select_color
+ 0002:5CE6       _select_menu
+ 0002:2FBC       _setjmp
+ 0002:21FE       _setmode
+ 0002:4916       _set_critical_error
+ 0002:617E       _set_cursor_type
+ 0002:4B60       _set_help_colors
+ 0002:510A       _set_help_key
+ 0002:51C2       _set_jump_off
+ 0002:5198       _set_jump_on
+ 0002:6898       _set_new_cursor
+ 0001:52D4       _show_screen
+ 0002:5368       _show_time
+ 0002:2964       _signal
+ 0002:1350       _sopen
+ 0002:1F84       _sprintf
+ 0002:1802       _stackavail
+ 0004:413C       _status
+ 0002:1AAC       _strcat
+ 0002:2430       _strcmpi
+ 0002:1AF2       _strcpy
+ 0002:2430       _stricmp
+ 0002:1B28       _strlen
+ 0002:1B40       _strncmp
+ 0002:1C02       _toupper
+ 0002:2D74       _unlink
+ 0002:543E       _update_time
+ 0003:094C       _userfd
+ 0004:4C56       _vga_here
+ 0002:2F52       _vsprintf
+ 0002:1658       _write
+ 0004:06BA       _yn
+ 0004:4274       __aaltstkovr
+ 0004:425A       __acfinfo
+ 0004:423C       __acmdln
+ 0000:9876  Abs  __acrtmsg
+ 0000:9876  Abs  __acrtused
+ 0000:D6D6  Abs  __aDBdoswp
+ 0004:4270       __adbgmsg
+ 0000:D6D6  Abs  __aDBused
+ 0004:423E       __aenvseg
+ 0004:4242       __aexit_rtn
+ 0002:1D48       __aFahdiff
+ 0002:011A       __aFchkstk
+ 0002:2D92       __aFldiv
+ 0000:0000  Imp  __AHINCR             (DOSCALLS.136)
+ 0000:0000  Imp  __AHSHIFT            (DOSCALLS.135)
+ 0004:4300       __amblksiz
+ 0002:0090       __amsg_exit
+ 0004:0042       __anullsize
+ 0004:426A       __aseghi
+ 0004:4268       __aseglo
+ 0004:4244       __asizds
+ 0004:431E       __asizeC
+ 0004:431F       __asizeD
+ 0002:0010       __astart
+ 0004:4240       __atopsp
+ 0004:4E30       __bufin
+ 0002:1B84       __catox
+ 0002:2EC3       __cexit
+ 0004:4302       __cfltcvt_tab
+ 0004:4284       __cflush
+ 0004:4422       __chbuf
+ 0002:2C3F       __chdrive
+ 0004:44ED       __child
+ 0002:011A       __chkstk
+ 0002:2E2C       __cinit
+ 0002:0086       __cintDIV
+ 0002:6158       __cls
+ 0002:25E6       __cltoasub
+ 0002:2F31       __ctermsub
+ 0004:4320       __ctype
+ 0004:4320       __ctype_
+ 0004:4B9A       __cur_keys
+ 0002:1504       __cXENIXtoDOSmode
+ 0002:25F3       __cxtoa
+ 0002:2ECD       __c_exit
+ 0002:00F0       __dataseg
+ 0004:4477       __doserrno
+ 0004:4476       __dosmode
+ 0002:0471       __dosret
+ 0002:0462       __dosretf
+ 0004:4474       __dosvermajor
+ 0004:4475       __dosverminor
+ 0002:3010       __EmDataSeg
+ 0002:2EBB       __exit
+ 0004:4466       __fac
+ 0002:1822       __ffree
+ 0002:00F2       __FF_MSGBANNER
+ 0004:42F2       __fheap
+ 0002:090E       __filbuf
+ 0002:1A5A       __findlast
+ 0002:23E8       __findseg
+ 0002:09AA       __flsbuf
+ 0002:1835       __fmalloc
+ 0004:42F0       __fmode
+ 0004:4C68       __fpinit
+ 0002:0114       __fptrap
+ 0002:2266       __frealloc
+ 0002:0A90       __freebuf
+ 0002:0574       __fsopen
+ 0002:0C84       __ftbuf
+ 0002:0AC8       __getbuf
+ 0002:63D2       __getcurpos
+ 0002:2C6C       __getdcwd
+ 0002:2C2A       __getdrive
+ 0002:129A       __getstream
+ 0002:6472       __get_shift_status
+ 0002:1998       __growseg
+ 0002:1A27       __incseg
+ 0002:18B2       __initseg
+ 0004:44F0       __iob
+ 0004:4748       __iob2
+ 0004:42F0       __iomode
+ 0004:4B94       __keys
+ 0004:49A0       __lastiob
+ 0002:18E6       __linkseg
+ 0004:4B98       __max_keys
+ 0002:1A7A       __newseg
+ 0004:4479       __nfile
+ 0004:4246       __nheap_desc
+ 0002:038E       __NMSG_TEXT
+ 0002:03BE       __NMSG_WRITE
+ 0002:013E       __nullcheck
+ 0002:0B14       __openfile
+ 0004:4477       __oserr
+ 0004:447B       __osfile
+ 0004:4474       __osmajor
+ 0004:4475       __osminor
+ 0004:4476       __osmode
+ 0004:4474       __osversion
+ 0002:0DB0       __output
+ 0004:44E9       __pgmptr
+ 0004:44AD       __pipech
+ 0002:6416       __read_keyboard
+ 0002:22F2       __resize
+ 0002:6452       __scan_keyboard
+ 0002:191C       __searchseg
+ 0002:0162       __setargv
+ 0002:68E4       __setcurmode
+ 0002:68CC       __setcurpos
+ 0002:02EA       __setenvp
+ 0002:2AD2       __sigentry
+ 0004:431C       __sigintoff
+ 0004:431A       __sigintseg
+ 0004:4426       __sigtab
+ 0002:0C0C       __stbuf
+ 0002:03F4       __stdalloc
+ 0002:1BF6       __toupper
+ 0004:4472       __umaskval
+ 0002:6BAE       __vbr
+ 0002:6BDE       __vbw
+ 0002:6C06       __vcw
+ 0002:6C36       __vsw
+ 0004:426E       ___aDBrterr
+ 0004:426C       ___aDBswpflg
+ 0004:44DF       ___argc
+ 0004:44E1       ___argv
+ 0004:4A4A       ___error_color
+
+  Address         Publics by Value
+
+ 0000:0000  Imp  DOSWRITE             (DOSCALLS.138)
+ 0000:0000  Imp  __AHSHIFT            (DOSCALLS.135)
+ 0000:0000  Imp  VIOGETCONFIG         (VIOCALLS.46)
+ 0000:0000  Imp  DOSGETMACHINEMODE    (DOSCALLS.49)
+ 0000:0000  Imp  VIOWRTNCELL          (VIOCALLS.52)
+ 0000:0000  Imp  DOSREAD              (DOSCALLS.137)
+ 0000:0000  Imp  DOSREALLOCSEG        (DOSCALLS.38)
+ 0000:0000  Imp  VIOWRTTTY            (VIOCALLS.19)
+ 0000:0000  Imp  VIOSCROLLUP          (VIOCALLS.7)
+ 0000:0000  Imp  DOSFINDNEXT          (DOSCALLS.65)
+ 0000:0000  Imp  __AHINCR             (DOSCALLS.136)
+ 0000:0000  Imp  DOSGETVERSION        (DOSCALLS.92)
+ 0000:0000  Imp  VIOGETCURPOS         (VIOCALLS.9)
+ 0000:0000  Imp  DOSQFILEMODE         (DOSCALLS.75)
+ 0000:0000  Imp  DOSSLEEP             (DOSCALLS.32)
+ 0000:0000  Imp  DOSSETVEC            (DOSCALLS.89)
+ 0000:0000  Imp  DOSNEWSIZE           (DOSCALLS.68)
+ 0000:0000  Imp  DOSALLOCSEG          (DOSCALLS.34)
+ 0000:0000  Imp  DOSOPEN              (DOSCALLS.70)
+ 0000:0000  Imp  DOSGETDATETIME       (DOSCALLS.33)
+ 0000:0000  Imp  DOSSETSIGHANDLER     (DOSCALLS.14)
+ 0000:0000  Imp  DOSQHANDTYPE         (DOSCALLS.77)
+ 0000:0000  Imp  DOSMOVE              (DOSCALLS.67)
+ 0000:0000  Imp  DOSDELETE            (DOSCALLS.60)
+ 0000:0000  Imp  KBDGETSTATUS         (KBDCALLS.10)
+ 0000:0000  Imp  DOSEXIT              (DOSCALLS.5)
+ 0000:0000  Imp  KBDCHARIN            (KBDCALLS.4)
+ 0000:0000  Imp  VIOSETCURTYPE        (VIOCALLS.32)
+ 0000:0000  Imp  DOSBEEP              (DOSCALLS.50)
+ 0000:0000  Imp  DOSFINDFIRST         (DOSCALLS.64)
+ 0000:0000  Imp  DOSQCURDIR           (DOSCALLS.71)
+ 0000:0000  Imp  VIOGETCURTYPE        (VIOCALLS.27)
+ 0000:0000  Imp  VIOWRTNATTR          (VIOCALLS.26)
+ 0000:0000  Imp  DOSCLOSE             (DOSCALLS.59)
+ 0000:0000  Imp  DOSSELECTDISK        (DOSCALLS.81)
+ 0000:0000  Imp  KBDPEEK              (KBDCALLS.22)
+ 0000:0000  Imp  VIOREADCELLSTR       (VIOCALLS.24)
+ 0000:0000  Imp  VIOWRTCELLSTR        (VIOCALLS.10)
+ 0000:0000  Imp  KBDSETSTATUS         (KBDCALLS.11)
+ 0000:0000  Imp  DOSCHGFILEPTR        (DOSCALLS.58)
+ 0000:0000  Imp  VIOSETCURPOS         (VIOCALLS.15)
+ 0000:0000  Imp  VIOWRTCHARSTRATT     (VIOCALLS.48)
+ 0000:0000  Imp  DOSQCURDISK          (DOSCALLS.72)
+ 0000:9876  Abs  __acrtmsg
+ 0000:9876  Abs  __acrtused
+ 0000:D6D6  Abs  __aDBdoswp
+ 0000:D6D6  Abs  __aDBused
+ 0001:0000       _main
+ 0001:0700       _get_anychar_first
+ 0001:07C4       _get_filename
+ 0001:093E       _get_pname
+ 0001:0AA6       _get_anychar
+ 0001:0B80       _draw_evt
+ 0001:0E5C       _fill_evt
+ 0001:1082       _edit_evt
+ 0001:19E2       _file_comp
+ 0001:19FA       _draw_file
+ 0001:1BDC       _fill_file
+ 0001:1CFE       _edit_file
+ 0001:23D6       _draw_info
+ 0001:2630       _fill_info
+ 0001:27A2       _edit_info
+ 0001:35F0       _menu_comp
+ 0001:3608       _parse_color
+ 0001:378C       _select_color
+ 0001:3A88       _draw_menu_screen
+ 0001:3C92       _load_menu
+ 0001:42F2       _draw_menu_edit
+ 0001:4566       _fill_menu_edit
+ 0001:4772       _edit_menus
+ 0001:52D4       _show_screen
+ 0001:5780       _fname_sort
+ 0001:579E       _draw_menu_select
+ 0001:589A       _edit_menu
+ 0001:6DAE       _main_menu
+ 0001:7A46       _edit_flags
+ 0001:7E50       _draw_misc
+ 0001:83AC       _get_status
+ 0001:83EC       _get_field
+ 0001:8422       _get_menu
+ 0001:8462       _fill_misc
+ 0001:8812       _edit_misc
+ 0001:9754       _draw_modem
+ 0001:9C66       _fill_modem
+ 0001:9FBC       _edit_modem
+ 0001:A854       _msg_comp
+ 0001:A86C       _draw_msg
+ 0001:AB2C       _fill_msg
+ 0001:AD9E       _edit_msg
+ 0001:B936       _draw_paths
+ 0001:BBFC       _fill_paths
+ 0001:BCFA       _edit_paths
+ 0001:BF92       _draw_archivers
+ 0001:C23C       _fill_archivers
+ 0001:C356       _edit_archivers
+ 0001:C61A       _draw_users
+ 0001:CB32       _fill_users
+ 0001:D014       _edit_users
+ 0002:0010       __astart
+ 0002:0086       __cintDIV
+ 0002:0090       __amsg_exit
+ 0002:00F0       __dataseg
+ 0002:00F2       __FF_MSGBANNER
+ 0002:0114       __fptrap
+ 0002:011A       __chkstk
+ 0002:011A       __aFchkstk
+ 0002:013E       __nullcheck
+ 0002:0162       __setargv
+ 0002:02EA       __setenvp
+ 0002:038E       __NMSG_TEXT
+ 0002:03BE       __NMSG_WRITE
+ 0002:03F4       __stdalloc
+ 0002:0462       __dosretf
+ 0002:0471       __dosret
+ 0002:04AE       _fclose
+ 0002:0574       __fsopen
+ 0002:05A8       _fopen
+ 0002:05C4       _fprintf
+ 0002:0604       _fread
+ 0002:0776       _fwrite
+ 0002:090E       __filbuf
+ 0002:09AA       __flsbuf
+ 0002:0A90       __freebuf
+ 0002:0AC8       __getbuf
+ 0002:0B14       __openfile
+ 0002:0C0C       __stbuf
+ 0002:0C84       __ftbuf
+ 0002:0CCC       _fflush
+ 0002:0D4C       _flushall
+ 0002:0DB0       __output
+ 0002:129A       __getstream
+ 0002:12E8       _close
+ 0002:1312       _lseek
+ 0002:1350       _sopen
+ 0002:1361       _open
+ 0002:1504       __cXENIXtoDOSmode
+ 0002:1516       _read
+ 0002:1658       _write
+ 0002:1802       _stackavail
+ 0002:1816       _malloc
+ 0002:181C       _free
+ 0002:1822       __ffree
+ 0002:1835       __fmalloc
+ 0002:18B2       __initseg
+ 0002:18E6       __linkseg
+ 0002:191C       __searchseg
+ 0002:1998       __growseg
+ 0002:1A27       __incseg
+ 0002:1A5A       __findlast
+ 0002:1A7A       __newseg
+ 0002:1AAC       _strcat
+ 0002:1AF2       _strcpy
+ 0002:1B28       _strlen
+ 0002:1B40       _strncmp
+ 0002:1B7C       _atoi
+ 0002:1B80       _atol
+ 0002:1B84       __catox
+ 0002:1BDA       _itoa
+ 0002:1BF6       __toupper
+ 0002:1C02       _toupper
+ 0002:1C18       _getenv
+ 0002:1CA6       _getche
+ 0002:1CAA       _getch
+ 0002:1D48       __aFahdiff
+ 0002:1D68       _fseek
+ 0002:1DEA       _ftell
+ 0002:1F84       _sprintf
+ 0002:1FF0       _chsize
+ 0002:2178       _filelength
+ 0002:21FE       _setmode
+ 0002:2266       __frealloc
+ 0002:22EC       _realloc
+ 0002:22F2       __resize
+ 0002:23BA       _calloc
+ 0002:23E8       __findseg
+ 0002:240E       _putch
+ 0002:2430       _strcmpi
+ 0002:2430       _stricmp
+ 0002:2476       _memmove
+ 0002:2540       _memcpy
+ 0002:259E       _memset
+ 0002:25E6       __cltoasub
+ 0002:25F3       __cxtoa
+ 0002:264A       _qsort
+ 0002:2880       _raise
+ 0002:2964       _signal
+ 0002:2AD2       __sigentry
+ 0002:2C2A       __getdrive
+ 0002:2C3F       __chdrive
+ 0002:2C54       _getcwd
+ 0002:2C6C       __getdcwd
+ 0002:2D50       _rename
+ 0002:2D74       _unlink
+ 0002:2D74       _remove
+ 0002:2D92       __aFldiv
+ 0002:2E2C       __cinit
+ 0002:2EB4       _exit
+ 0002:2EBB       __exit
+ 0002:2EC3       __cexit
+ 0002:2ECD       __c_exit
+ 0002:2F31       __ctermsub
+ 0002:2F52       _vsprintf
+ 0002:2FBC       _setjmp
+ 0002:2FE6       _longjmp
+ 0002:3010       __EmDataSeg
+ 0002:3012       _askyn
+ 0002:30EA       _open_message
+ 0002:316E       _close_message
+ 0002:317E       _edit_field
+ 0002:47A4       _error
+ 0002:4916       _set_critical_error
+ 0002:4918       _open_help
+ 0002:4B60       _set_help_colors
+ 0002:4B86       _register_help
+ 0002:4BB0       _deregister_help
+ 0002:4BB6       _query_help_topic
+ 0002:505C       _pop_help
+ 0002:510A       _set_help_key
+ 0002:512A       _close_help
+ 0002:5198       _set_jump_on
+ 0002:51C2       _set_jump_off
+ 0002:51CA       _get_time
+ 0002:5224       _screen_save
+ 0002:5368       _show_time
+ 0002:543E       _update_time
+ 0002:545A       _read_keyboard
+ 0002:55A4       _do_sound
+ 0002:55BA       _beep
+ 0002:55D4       _register_key
+ 0002:56D6       _deregister_key
+ 0002:5768       _query_key
+ 0002:57C4       _execute_key
+ 0002:5844       _parse_entry
+ 0002:590E       _pop_menu
+ 0002:5CE6       _select_menu
+ 0002:6124       _clrblk
+ 0002:6158       __cls
+ 0002:617E       _set_cursor_type
+ 0002:62A4       _drawbox
+ 0002:63D2       __getcurpos
+ 0002:63F2       _get_cursor_type
+ 0002:6416       __read_keyboard
+ 0002:6452       __scan_keyboard
+ 0002:6472       __get_shift_status
+ 0002:648A       _open_window
+ 0002:65A4       _close_window
+ 0002:6668       _phantom
+ 0002:668A       _prntmov
+ 0002:66EA       _prntnomov
+ 0002:6738       _prntnomovf
+ 0002:6784       _prntcenter
+ 0002:67DA       _scr_init
+ 0002:682E       _scroll_up
+ 0002:6898       _set_new_cursor
+ 0002:68CC       __setcurpos
+ 0002:68E4       __setcurmode
+ 0002:690C       _open_shadow_window
+ 0002:6AE8       _close_shadow_window
+ 0002:6BAE       __vbr
+ 0002:6BDE       __vbw
+ 0002:6C06       __vcw
+ 0002:6C36       __vsw
+ 0003:0000       _msgfd
+ 0003:0004       _evtfd
+ 0003:0008       _mtypelines
+ 0003:0150       _cfg
+ 0003:094C       _userfd
+ 0003:0950       _cfgfd
+ 0003:0954       _cfgpath
+ 0003:0A56       _filefd
+ 0004:0042       __anullsize
+ 0004:0492       _color
+ 0004:06BA       _yn
+ 0004:1A90       _menu
+ 0004:1A94       _max_menu
+ 0004:1A96       _cur_menu
+ 0004:1A98       _menutype
+ 0004:2346       _menus
+ 0004:234A       _max_menus
+ 0004:234C       _cur_menus
+ 0004:2DB8       _msgs
+ 0004:2DBC       _cur_msgs
+ 0004:2DBE       _max_msgs
+ 0004:2DC0       _files
+ 0004:2DC4       _cur_files
+ 0004:2DC6       _max_files
+ 0004:2DC8       _evts
+ 0004:2DCC       _cur_evts
+ 0004:2DCE       _max_evts
+ 0004:2E0A       _background
+ 0004:2E24       _foreground
+ 0004:3560       _port
+ 0004:3588       _baud
+ 0004:377E       _board_type
+ 0004:3792       _msg_type
+ 0004:37A2       _nodes
+ 0004:413C       _status
+ 0004:423C       __acmdln
+ 0004:423E       __aenvseg
+ 0004:4240       __atopsp
+ 0004:4242       __aexit_rtn
+ 0004:4244       __asizds
+ 0004:4246       __nheap_desc
+ 0004:425A       __acfinfo
+ 0004:4268       __aseglo
+ 0004:426A       __aseghi
+ 0004:426C       ___aDBswpflg
+ 0004:426E       ___aDBrterr
+ 0004:4270       __adbgmsg
+ 0004:4274       __aaltstkovr
+ 0004:4278       STKHQQ
+ 0004:4284       __cflush
+ 0004:42F0       __iomode
+ 0004:42F0       __fmode
+ 0004:42F2       __fheap
+ 0004:4300       __amblksiz
+ 0004:4302       __cfltcvt_tab
+ 0004:431A       __sigintseg
+ 0004:431C       __sigintoff
+ 0004:431E       __asizeC
+ 0004:431F       __asizeD
+ 0004:4320       __ctype
+ 0004:4320       __ctype_
+ 0004:4422       __chbuf
+ 0004:4426       __sigtab
+ 0004:4466       __fac
+ 0004:4470       _errno
+ 0004:4472       __umaskval
+ 0004:4474       __osversion
+ 0004:4474       __dosvermajor
+ 0004:4474       __osmajor
+ 0004:4475       __osminor
+ 0004:4475       __dosverminor
+ 0004:4476       __osmode
+ 0004:4476       __dosmode
+ 0004:4477       __doserrno
+ 0004:4477       __oserr
+ 0004:4479       __nfile
+ 0004:447B       __osfile
+ 0004:44AD       __pipech
+ 0004:44DF       ___argc
+ 0004:44E1       ___argv
+ 0004:44E5       _environ
+ 0004:44E9       __pgmptr
+ 0004:44ED       __child
+ 0004:44F0       __iob
+ 0004:4748       __iob2
+ 0004:49A0       __lastiob
+ 0004:4A4A       ___error_color
+ 0004:4B5C       _in_help
+ 0004:4B94       __keys
+ 0004:4B98       __max_keys
+ 0004:4B9A       __cur_keys
+ 0004:4C56       _vga_here
+ 0004:4C58       _ega_here
+ 0004:4C5A       _cga_here
+ 0004:4C5C       _mono_here
+ 0004:4C5E       _ega_active
+ 0004:4C60       _ega43flag
+ 0004:4C68       __fpinit
+ 0004:4DCA       _edata
+ 0004:4E30       __bufin
+ 0004:5030       _end
+
+Program entry point at 0002:0010
